@@ -16,6 +16,7 @@ Imports:
     rlang (>= 0.4.11),
     WikipediR
 Suggests: 
+    covr,
     roxygen2,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
