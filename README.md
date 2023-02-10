@@ -4,6 +4,8 @@
 # wikkitidy
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/wikihistories/wikkidity/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wikihistories/wikkidity/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 A package for tidy analysis of Wikipedia in R.

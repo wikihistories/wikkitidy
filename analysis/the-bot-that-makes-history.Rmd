@@ -1,0 +1,22 @@
+---
+title: "The Bot That Makes History"
+author: "Michael Falk"
+date: "2/6/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Yapperbot: uncurrenter
+
+Since the 15th of June 2020, a bot has been responsible for consigning Wikipedia articles to history. *[Yapperbot uncurrenter](https://en.wikipedia.org/wiki/Wikipedia:Bots/Requests_for_approval/Yapperbot_2)* regularly queries English Wikipedia for articles that contain [Template:Current](https://en.wikipedia.org/wiki/Template:Current), and removes the template if more than five hours have passed since the last edit.
+
+The activities of this pose profound questions for the study of history-making on Wikipedia. Is history really just five hours old? In this article, we unpack the relationship between the past and the present, memory and forgetting, by following *uncurrenter* and the articles it touches through Wikipedia.
+
+## The bot's recent contributions
+
+```{r}
+yapperbot <- WikipediR::user_contributions(language = "en", project = "wikipedia", username = "Yapperbot", properties =  c("ids","comment"), limit = 500)
+```
