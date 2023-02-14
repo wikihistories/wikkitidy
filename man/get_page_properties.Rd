@@ -24,7 +24,7 @@ additional parameters to control their behavior, which can be passed
 to this function as named arguments.
 }
 \details{
-\code{get_page_properties} can be used in combination with \code{get_generator_of}
+\code{get_page_properties} can be used in combination with \code{generate_pages_by}
 to choose what information to retrieve about the generated pages. If you
 already have a list of page ids or titles, you can build a query using
 \code{get_page_properties} to collect information about them.
@@ -34,7 +34,7 @@ already have a list of page ids or titles, you can build a query using
 # language wikis
 
 resp <- wiki_action_request() \%>\%
-  get_generator_of("search", srsearch="seagull") \%>\%
+  generate_pages_by("search", srsearch="seagull") \%>\%
   get_page_properties("langlinks") \%>\%
   httr2::req_perform() \%>\%
   httr2::resp_body_json()
