@@ -34,7 +34,7 @@ wiki_action_request <- function(..., action = "query", language = "en") {
   req <- httr2::request(base_url) %>%
     httr2::req_url_query(!!!params) %>%
     httr2::req_user_agent(
-      "wikkidity R package (https://github.com/wikihistories/wikkidity"
+      "wikkidity R package (https://github.com/wikihistories/wikkidity)"
     )
 }
 
