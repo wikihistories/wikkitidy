@@ -25,17 +25,15 @@ the name of the generator. You can \code{generate_pages_by} with
 \code{get_page_properties} to choose what properties of each page to return.
 }
 \details{
-When selecting a generator to use, or when setting additional
-parameters, you must prepend a "g". For example, to generate pages
-by the "categorymembers" list, you must pass "gcategorymembers" as the
-generator name. Likewise, to set the limit on the number of category
-members to return, you need to pass the parameter "gcmlimit"
+To set additional parameters to a generator, prepend the parameter with "g".
+For instance, to set a limit of 10 to the number of pages returned by the
+\code{categorymembers} generator, set the parameter \code{gcmlimit = 10}.
 }
 \examples{
 # Search for articles about seagulls
 
 resp <- wiki_action_request() \%>\%
-  generate_pages_by("gsearch", gsrsearch="seagull") \%>\%
+  generate_pages_by("search", gsrsearch="seagull") \%>\%
   httr2::req_perform() \%>\%
   httr2::resp_body_json()
 

@@ -34,7 +34,7 @@ already have a list of page ids or titles, you can build a query using
 # language wikis
 
 resp <- wiki_action_request() \%>\%
-  generate_pages_by("search", srsearch="seagull") \%>\%
+  generate_pages_by("search", gsrsearch="seagull") \%>\%
   get_page_properties("langlinks") \%>\%
   httr2::req_perform() \%>\%
   httr2::resp_body_json()
