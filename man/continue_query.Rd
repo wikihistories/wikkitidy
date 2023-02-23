@@ -7,7 +7,12 @@
 continue_query(.req, data = NULL, continue = NULL)
 }
 \arguments{
-\item{continue}{}
+\item{.req}{A httr2_request object describing the API query}
+
+\item{data}{Data returned from a previous iteration of the query, if any}
+
+\item{continue}{\href{https://www.mediawiki.org/wiki/API:Continue}{Continue}
+parameter returned from previous iteration of the query, if any}
 }
 \value{
 A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble

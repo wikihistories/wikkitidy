@@ -5,7 +5,7 @@
 \alias{retrieve_all.httr2_request}
 \alias{retrieve_all.wiki_tbl}
 \title{Continue requesting data from the MediaWiki Action API until there is none
-left.}
+left}
 \usage{
 retrieve_all(x)
 
@@ -34,3 +34,22 @@ retrieves all the data for the desired query.
 \item \code{retrieve_all(wiki_tbl)}: Complete a query from an incomplete wiki_tbl
 
 }}
+\examples{
+# Create a request object, then repeatedly retrieve all the pages
+# NB: the 'uclimit' parameter sets the number of pages retrieved by each
+# API call.
+jimbos_contributions <- wiki_action_request() \%>\%
+  get_list_of("usercontribs", ucuser="Jimbo_Wales", uclimit=500) \%>\%
+  retrieve_all()
+# To confirm, the resulting tibble has more than 500 rows
+nrow(jimbos_contributions)
+
+# Alternatively, you can try out a request using perform_query_once(), and
+# if you are happy with the resulting data, retrieve the rest of the results
+# from the returned data frame
+preview <- wiki_action_request() \%>\%
+  get_page_properties("categories", titles="Albert Einstein") \%>\%
+  perform_query_once()
+print(preview)
+all_results <- retrieve_all(preview)
+}

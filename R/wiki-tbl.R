@@ -4,11 +4,9 @@
 #' @param x A tibble
 #' @param request The httr2_request object used to generate the tibble
 #' @param continue The continue parameter returned by the API
-#' @param batchomplete The batchcomplete parameter returned by the API
+#' @param batchcomplete The batchcomplete parameter returned by the API
 #'
 #' @return A tibble: an S3 data.frame with class `wiki_tbl`.
-#'
-#' @examples
 as_wiki_tbl <- function(x, request, continue, batchcomplete) {
   request <- if (is.null(request)) NA else request
   continue <- if(is.null(continue)) NA else continue
@@ -37,27 +35,23 @@ validate_wiki_tbl <- function(x) {
 }
 
 get_request <- function(wiki_tbl) {
-  attr(wiki_tbl, "request", exact = T)
+  attr(wiki_tbl, "request")
 }
 
 get_continue <- function(wiki_tbl) {
-  attr(wiki_tbl, "continue", exact = T)
+  attr(wiki_tbl, "continue")
 }
 
 set_continue <- function(wiki_tbl, x) {
   x <- if (is.null(x)) NA else x
-  attr(wiki_tbl, "continue", exact = T) <- x
+  attr(wiki_tbl, "continue") <- x
 }
 
 get_batchcomplete <- function(wiki_tbl) {
-  attr(wiki_tbl, "batchcomplete", exact = T)
+  attr(wiki_tbl, "batchcomplete")
 }
 
 set_batchcomplete <- function(wiki_tbl, x) {
   x <- if (is.null(x)) NA else x
-  attr(wiki_tbl, "batchcomplete", exact = T) <- x
-}
-
-wiki_tbl_incomplete <- function(wiki_tbl) {
-  !is.na(get_continue(wiki_tbl))
+  attr(wiki_tbl, "batchcomplete") <- x
 }

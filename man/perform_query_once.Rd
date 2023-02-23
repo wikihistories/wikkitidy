@@ -15,3 +15,11 @@ A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble
 \description{
 Get first batch of results for a MediaWiki Action API request
 }
+\examples{
+# List the first batch of categories that Albert Einstein belongs to
+response <- wiki_action_request(
+  prop = "categories",
+  titles = "Albert Einstein"
+  ) \%>\%
+  perform_query_once()
+}

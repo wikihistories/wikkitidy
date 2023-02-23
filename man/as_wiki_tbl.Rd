@@ -14,7 +14,7 @@ as_wiki_tbl(x, request, continue, batchcomplete)
 
 \item{continue}{The continue parameter returned by the API}
 
-\item{batchomplete}{The batchcomplete parameter returned by the API}
+\item{batchcomplete}{The batchcomplete parameter returned by the API}
 }
 \value{
 A tibble: an S3 data.frame with class \code{wiki_tbl}.

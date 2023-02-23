@@ -1,18 +1,24 @@
 #' Get first batch of results for a MediaWiki Action API request
 #'
-#' @param .req
+#' @param .req A httr2_request object describing the API query
 #'
 #' @return A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble
 #' @export
 #'
 #' @examples
+#' # List the first batch of categories that Albert Einstein belongs to
+#' response <- wiki_action_request(
+#'   prop = "categories",
+#'   titles = "Albert Einstein"
+#'   ) %>%
+#'   perform_query_once()
 perform_query_once <- function(.req) {
   resp <- httr2::req_perform(.req) %>%
     httr2::resp_body_json()
   continue <- purrr::pluck(resp, "continue")
   batchcomplete <- purrr::pluck(resp, "batchcomplete")
   resp %>%
-    .$query %>%
+    purrr::pluck("query") %>%
     unname() %>%
     dplyr::bind_rows() %>%
     as_wiki_tbl(request = .req,
@@ -38,6 +44,23 @@ perform_query_once <- function(.req) {
 #' @export
 #'
 #' @examples
+#' # Create a request object, then repeatedly retrieve all the pages
+#' # NB: the 'uclimit' parameter sets the number of pages retrieved by each
+#' # API call.
+#' jimbos_contributions <- wiki_action_request() %>%
+#'   get_list_of("usercontribs", ucuser="Jimbo_Wales", uclimit=500) %>%
+#'   retrieve_all()
+#' # To confirm, the resulting tibble has more than 500 rows
+#' nrow(jimbos_contributions)
+#'
+#' # Alternatively, you can try out a request using perform_query_once(), and
+#' # if you are happy with the resulting data, retrieve the rest of the results
+#' # from the returned data frame
+#' preview <- wiki_action_request() %>%
+#'   get_page_properties("categories", titles="Albert Einstein") %>%
+#'   perform_query_once()
+#' print(preview)
+#' all_results <- retrieve_all(preview)
 retrieve_all <- function(x) {
   UseMethod("retrieve_all")
 }
@@ -64,13 +87,12 @@ retrieve_all.wiki_tbl <- function(x) {
 #' parameters returned by the MediaWiki Action API to the request and retrieving
 #' the next batch.
 #'
-#' @param .req
-#' @param data
-#' @param continue
+#' @param .req A httr2_request object describing the API query
+#' @param data Data returned from a previous iteration of the query, if any
+#' @param continue [Continue](https://www.mediawiki.org/wiki/API:Continue)
+#'   parameter returned from previous iteration of the query, if any
 #'
 #' @return A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble
-#'
-#' @examples
 continue_query <- function(.req,
                            data = NULL,
                            continue = NULL) {
