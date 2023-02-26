@@ -5,9 +5,9 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/wikihistories/wikkidity/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wikihistories/wikkidity/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/wikihistories/wikkitidy/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wikihistories/wikkitidy/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/wikihistories/wikkidity/branch/main/graph/badge.svg)](https://app.codecov.io/gh/wikihistories/wikkidity?branch=main)
+coverage](https://codecov.io/gh/wikihistories/wikkitidy/branch/main/graph/badge.svg)](https://app.codecov.io/gh/wikihistories/wikkitidy?branch=main)
 <!-- badges: end -->
 
 A package for tidy analysis of Wikipedia in R.
@@ -19,5 +19,5 @@ You can install the development version of wikkitidy from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("wikihistories/wikkidity")
+devtools::install_github("wikihistories/wikkitidy")
 ```
