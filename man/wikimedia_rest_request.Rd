@@ -20,7 +20,7 @@ low latency. As a result, it is also the only one of the main APIs that requires
 users to throttle their usage.
 }
 \examples{
-# Get the text of the 'Earth' article
+# Get the html of the 'Earth' article
 response <- wikimedia_rest_request() \%>\%
   httr2::req_url_path_append("page", "html", "Earth") \%>\%
   httr2::req_perform()

@@ -28,6 +28,7 @@ reference:
 - subtitle: Build a REST request
   contents:
   - wikimedia_rest_request
+  - core_rest_request
 - subtitle: Vector functions
   contents:
   - get_page_properties
