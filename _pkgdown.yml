@@ -10,7 +10,7 @@ reference:
   contents:
   - wiki_action_request
   - query_generate_pages
-  - query_list_pages
+  - query_list_of
   - query_page_properties
 - subtitle: Perform a query
   desc: >
@@ -29,3 +29,4 @@ reference:
 - title: Utilities
   contents:
   - as_wiki_tbl
+  - prefix_params
