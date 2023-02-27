@@ -1,4 +1,31 @@
 url: https://wikihistories.github.io/wikkitidy/
 template:
   bootstrap: 5
-
+reference:
+- title: Query Wikipedia using the Action API
+- subtitle: Build a query
+  desc: >
+    Functions to construct a request to the Action API's Query module. Define your
+    search criteria to find relevant pages.
+  contents:
+  - wiki_action_request
+  - query_generate_pages
+  - query_list_pages
+  - query_page_properties
+- subtitle: Perform a query
+  desc: >
+    Functions to send your query request to Wikipedia, and format the results
+    as tidy data.
+  contents:
+  - perform_query_once
+  - continue_query
+  - retrieve_all
+- title: Get page data
+  desc: >
+    Functions to retrieve additional data about pages. These functions typically
+    operate on a vector of page ids, revision ids or page titles
+  contents:
+  - get_page_properties
+- title: Utilities
+  contents:
+  - as_wiki_tbl

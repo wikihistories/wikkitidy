@@ -1,7 +1,7 @@
 #' Find out more about a page or vector of pages
 #'
-#' This function will make one API call per page. So to beware of requesting
-#' data about too many pages.
+#' This function will make one API call per page. Beware of requesting
+#' data about many pages!
 #'
 #' @param .x A vector of pageids, titles or revisionids
 #' @param by The type of information contained in .x
