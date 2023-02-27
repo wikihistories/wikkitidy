@@ -14,6 +14,7 @@
 #' @export
 #'
 #' @examples
+#'
 get_page_properties <- function(.x, by=c("pageid","title","revid"), properties, ...) {
   rlang::arg_match(by)
   by <- paste0(by, "s")

@@ -4,20 +4,23 @@
 \alias{get_page_properties}
 \title{Find out more about a page or vector of pages}
 \usage{
-get_page_properties(.x, by = c("pageid", "title", "revid"), properties)
+get_page_properties(.x, by = c("pageid", "title", "revid"), properties, ...)
 }
 \arguments{
 \item{.x}{A vector of pageids, titles or revisionids}
 
 \item{by}{The type of information contained in .x}
 
-\item{...}{Name-value pairs of properties you wish to obtain and further
-parameters}
+\item{properties}{The desired properties; can be either a string delimited by
+"|" or a character vector}
+
+\item{...}{Name-value pairs of additional parameters for the particular
+properties requested}
 }
 \value{
 A list of the same length as .x, containing the returned properties.
 }
 \description{
-This function will make one API call per page. So to beware of requesting
-data about too many pages.
+This function will make one API call per page. Beware of requesting
+data about many pages!
 }

@@ -33,9 +33,7 @@ wiki_action_request <- function(..., action = "query", language = "en") {
   )
   req <- httr2::request(base_url) %>%
     httr2::req_url_query(!!!params) %>%
-    httr2::req_user_agent(
-      "wikkitidy R package (https://github.com/wikihistories/wikkitidy)"
-    )
+    wikkitidy_user_agent()
 }
 
 #' Specify which pages to list from the action API

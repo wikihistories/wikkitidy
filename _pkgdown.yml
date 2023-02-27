@@ -23,7 +23,12 @@ reference:
 - title: Get page data
   desc: >
     Functions to retrieve additional data about pages. These functions typically
-    operate on a vector of page ids, revision ids or page titles
+    rely on one of Wikipedia's REST APIs, and work on a vector of page ids, titles
+    or revision ids.
+- subtitle: Build a REST request
+  contents:
+  - wikimedia_rest_request
+- subtitle: Vector functions
   contents:
   - get_page_properties
 - title: Utilities

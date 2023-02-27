@@ -4,9 +4,17 @@
 \name{wikkitidy-package}
 \alias{wikkitidy}
 \alias{wikkitidy-package}
-\title{wikkitidy: Tidy Analysis of Wikipedia}
+\title{wikkitidy: Retrieve Tidy Data from Wikipedia's Many APIs}
 \description{
-Explore the world's largest knowledge system using the world's most elegant environment for statistical programming. Why not?
+A wrapper around Wikipedia's major APIs, including the MediaWiki Action API and the REST API. Wikipedia's APIs are vast. They provide many kinds of data for many purposes. 'wikkitidy' combines these APIs into a single interface for researchers, focussing just on those aspects that matter most for Wikipedia research.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://wikihistories.github.io/wikkitidy/}
+  \item Report bugs at \url{https://github.com/wikihistories/wikkitidy/issues}
+}
+
 }
 \author{
 \strong{Maintainer}: Michael Falk \email{michaelgfalk@gmail.com} (\href{https://orcid.org/0000-0001-9261-8390}{ORCID})
