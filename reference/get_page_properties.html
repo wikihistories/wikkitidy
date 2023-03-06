@@ -81,6 +81,15 @@ properties requested</p></dd>
 <p>A list of the same length as .x, containing the returned properties.</p>
     </div>
 
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># List all members of a category, then retrieve page information</span></span></span>
+<span class="r-in"><span><span class="va">page_ids</span> <span class="op">&lt;-</span> <span class="fu"><a href="wiki_action_request.html">wiki_action_request</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span><span class="fu"><a href="query_list_of.html">query_list_of</a></span><span class="op">(</span><span class="st">"categorymembers"</span>, cmtitle<span class="op">=</span><span class="st">"Category:ATP_Cup"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="retrieve_all.html">retrieve_all</a></span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">page_info</span> <span class="op">&lt;-</span> <span class="fu">get_page_properties</span><span class="op">(</span><span class="va">page_ids</span><span class="op">$</span><span class="va">pageid</span>, by<span class="op">=</span><span class="st">"pageid"</span>, <span class="st">"info"</span><span class="op">)</span></span></span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 
