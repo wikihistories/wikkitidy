@@ -32,6 +32,7 @@ reference:
 - subtitle: Vector functions
   contents:
   - get_page_properties
+  - get_diff
 - title: Utilities
   contents:
   - as_wiki_tbl
