@@ -24,3 +24,10 @@ A list of the same length as .x, containing the returned properties.
 This function will make one API call per page. Beware of requesting
 data about many pages!
 }
+\examples{
+# List all members of a category, then retrieve page information
+page_ids <- wiki_action_request() \%>\%
+query_list_of("categorymembers", cmtitle="Category:ATP_Cup") \%>\%
+  retrieve_all()
+page_info <- get_page_properties(page_ids$pageid, by="pageid", "info")
+}

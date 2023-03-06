@@ -20,11 +20,13 @@ Imports:
     magrittr,
     purrr,
     rlang (>= 0.4.11),
+    stringr,
     tibble
 Suggests: 
     covr,
     roxygen2,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    tidyr
 Config/testthat/edition: 3
 URL: https://wikihistories.github.io/wikkitidy/
 BugReports: https://github.com/wikihistories/wikkitidy/issues

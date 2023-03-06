@@ -14,11 +14,16 @@
 #' @export
 #'
 #' @examples
-#'
+#' # List all members of a category, then retrieve page information
+#' page_ids <- wiki_action_request() %>%
+#' query_list_of("categorymembers", cmtitle="Category:ATP_Cup") %>%
+#'   retrieve_all()
+#' page_info <- get_page_properties(page_ids$pageid, by="pageid", "info")
 get_page_properties <- function(.x, by=c("pageid","title","revid"), properties, ...) {
   rlang::arg_match(by)
   by <- paste0(by, "s")
-  purrr::map(.x, \(x) one_page_properties(x, !!by, properties, ...))
+  purrr::map(.x, \(x) one_page_properties(x, !!by, properties, ...)) %>%
+    dplyr::bind_rows()
 }
 
 one_page_properties <- function(id, id_type, properties, ...) {

@@ -13,17 +13,30 @@
 #'   ) %>%
 #'   perform_query_once()
 perform_query_once <- function(.req) {
-  resp <- httr2::req_perform(.req) %>%
-    httr2::resp_body_json()
-  continue <- purrr::pluck(resp, "continue")
-  batchcomplete <- purrr::pluck(resp, "batchcomplete")
-  resp %>%
-    purrr::pluck("query") %>%
-    unname() %>%
+  resp <- httr2::req_perform(.req)
+  body <- httr2::resp_body_json(resp)
+  continue <- purrr::pluck(body, "continue")
+  batchcomplete <- purrr::pluck(body, "batchcomplete")
+  results <- .get_query_results(resp$url, body)
+  results %>%
     dplyr::bind_rows() %>%
     as_wiki_tbl(request = .req,
                 continue = continue,
                 batchcomplete = batchcomplete)
+}
+
+# Get a flat, unnamed list of results for dplyr::bind_rows()
+# The results are in the `query` key of the response body
+# For 'generator' or 'prop' calls, the results are in `pages`.
+# For 'list' calls, the results are stored under the name of the list
+.get_query_results <- function(url, body) {
+  params <- httr2::url_parse(url) %>% purrr::pluck("query")
+  if ("prop" %in% names(params) | "generator" %in% names(params)) {
+    purrr::pluck(body, "query", "pages")
+  } else if ("list" %in% names(params)) {
+    list_types = stringr::str_split_1(params$list, "\\|")
+    purrr::map(list_types, \(x) purrr::pluck(body, "query", x))
+  }
 }
 
 #' Continue requesting data from the MediaWiki Action API until there is none

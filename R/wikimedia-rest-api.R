@@ -23,24 +23,3 @@ wikimedia_rest_request <- function(language = "en") {
     httr2::req_throttle(199 / 1) %>%
     wikkitidy_user_agent()
 }
-
-#' Base request for [MediaWiki Core REST API](https://www.mediawiki.org/wiki/API:REST_API)
-#'
-#' The [MediaWiki Core REST API](https://www.mediawiki.org/wiki/API:REST_API) is
-#' the basic REST API available on all MediaWiki wikis. It is not as performant
-#' as the [Wikimedia REST API](https://www.mediawiki.org/wiki/Wikimedia_REST_API),
-#' which is used by [wikimedia_rest_request].
-#'
-#' @inheritParams wikimedia_rest_request
-#'
-#' @examples
-#' # Get the html of the 'Earth' article
-#' response <- core_rest_request() %>%
-#'   httr2::req_url_path_append("page", "Earth", "html") %>%
-#'   httr2::req_perform()
-core_rest_request <- function(language = "en") {
-  request <- httr2::request(
-    glue::glue("https://{language}.wikipedia.org/w/rest.php/v1")
-  ) %>%
-    wikkitidy_user_agent()
-}
