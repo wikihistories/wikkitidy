@@ -18,7 +18,7 @@ in any order, across any span of revisions."><!-- mathjax --><script src="https:
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,7 +110,7 @@ represented as R lists</p>
 <span class="r-in"><span><span class="co"># See diffs for the last five revisions of the Main Page</span></span></span>
 <span class="r-in"><span><span class="va">revisions</span> <span class="op">&lt;-</span> <span class="fu"><a href="wiki_action_request.html">wiki_action_request</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu"><a href="query_page_properties.html">query_page_properties</a></span><span class="op">(</span></span></span>
-<span class="r-in"><span>    <span class="st">"revisions"</span>, titles<span class="op">=</span><span class="st">"Main_page"</span>, rvlimit<span class="op">=</span><span class="fl">5</span>, rvprop<span class="op">=</span><span class="st">"ids"</span>, rvdir<span class="op">=</span><span class="st">"older"</span></span></span>
+<span class="r-in"><span>    <span class="st">"revisions"</span>, titles<span class="op">=</span><span class="st">"Main_Page"</span>, rvlimit<span class="op">=</span><span class="fl">5</span>, rvprop<span class="op">=</span><span class="st">"ids"</span>, rvdir<span class="op">=</span><span class="st">"older"</span></span></span>
 <span class="r-in"><span>  <span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu"><a href="perform_query_once.html">perform_query_once</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/hoist.html" class="external-link">hoist</a></span><span class="op">(</span><span class="va">revisions</span>, <span class="st">"parentid"</span>, <span class="st">"revid"</span><span class="op">)</span></span></span>

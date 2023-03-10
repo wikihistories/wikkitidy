@@ -58,6 +58,9 @@
     <loc>https://wikihistories.github.io/wikkitidy/reference/tidyeval.html</loc>
   </url>
   <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/verify_xml_integrity.html</loc>
+  </url>
+  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/wiki_action_request.html</loc>
   </url>
   <url>
@@ -65,5 +68,8 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/wikkitidy-package.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/wikkitidy_example.html</loc>
   </url>
 </urlset>
