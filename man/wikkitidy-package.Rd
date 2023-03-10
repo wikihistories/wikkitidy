@@ -4,9 +4,9 @@
 \name{wikkitidy-package}
 \alias{wikkitidy}
 \alias{wikkitidy-package}
-\title{wikkitidy: Retrieve Tidy Data from Wikipedia's Many APIs}
+\title{wikkitidy: Tidy analysis of Wikipedia in R}
 \description{
-A wrapper around Wikipedia's major APIs, including the MediaWiki Action API and the REST API. Wikipedia's APIs are vast. They provide many kinds of data for many purposes. 'wikkitidy' combines these APIs into a single interface for researchers, focussing just on those aspects that matter most for Wikipedia research.
+A wrapper around Wikipedia's major APIs: the MediaWiki Action API, REST API and Wikmedia REST API. These three APIs provide complementary functionality for the analysis of Wikipedia by social scientists and digital humanists. This package provides a tidy interface to all three APIs, along with a range of functions that solve common tasks in Wikipedia research.
 }
 \seealso{
 Useful links:

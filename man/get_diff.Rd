@@ -45,7 +45,7 @@ diffs[[1]]$diff[[2]]$type
 # See diffs for the last five revisions of the Main Page
 revisions <- wiki_action_request() \%>\%
   query_page_properties(
-    "revisions", titles="Main_page", rvlimit=5, rvprop="ids", rvdir="older"
+    "revisions", titles="Main_Page", rvlimit=5, rvprop="ids", rvdir="older"
   ) \%>\%
   perform_query_once() \%>\%
   tidyr::hoist(revisions, "parentid", "revid")

@@ -18,6 +18,7 @@ Imports:
     glue,
     httr2,
     magrittr,
+    openssl,
     purrr,
     rlang (>= 0.4.11),
     stringr,

@@ -33,7 +33,11 @@ reference:
   contents:
   - get_page_properties
   - get_diff
+- title: Use WikiMedia XML dumps
+  contents:
+  - verify_xml_integrity
 - title: Utilities
   contents:
   - as_wiki_tbl
   - prefix_params
+  - wikkitidy_example
