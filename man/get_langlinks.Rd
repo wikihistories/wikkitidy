@@ -41,5 +41,14 @@ albums_des_beatles <- wiki_action_request(language = "fr") \%>\%
   retrieve_all() \%>\%
   dplyr::mutate(links = get_langlinks(title, language="fr"))
 
-
+# links is a list column, so [tidyr] and [purrr] are useful
+# Count the number of langlinks for each page
+albums_des_beatles \%>\% dplyr::mutate(
+  count = purrr::map_dbl(links, length)
+)
+# Unnest the data frame to get one row per interwiki link, and extract
+# the language code and page title for each interwiki link
+albums_des_beatles \%>\%
+  tidyr::unnest(links) \%>\%
+  tidyr::hoist(links, "code", linked_title = "title")
 }
