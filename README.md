@@ -41,13 +41,13 @@ minimal of data wrangling and cleaning.
 
 ## Getting to 1.0
 
-| Version | Feature                                                                                                       | Done?               |
-|---------|---------------------------------------------------------------------------------------------------------------|---------------------|
-| 0.1     | Basic request objects                                                                                         | :white_check_mark   |
-| 0.2     | Calls and response objects for [Core REST API](https://www.mediawiki.org/wiki/API:REST_API)                   | :white_large_square |
-| 0.3     | Calls and response objects for [MediaWiki Action API Query Modules](https://www.mediawiki.org/wiki/API:Query) | :white_large_square |
-| 0.4     | Calls and response objects for [Wikimedia REST API](https://www.mediawiki.org/wiki/Wikimedia_REST_API)        | :white_large_square |
-| 0.5     | Implementation of [Wikiblame](https://github.com/FlominatorTM/wikiblame)                                      | :white_large_square |
+| Version | Feature                                                                                                       | Done?                |
+|---------|---------------------------------------------------------------------------------------------------------------|----------------------|
+| 0.1     | Basic request objects                                                                                         | :white_check_mark    |
+| 0.2     | Calls and response objects for [Core REST API](https://www.mediawiki.org/wiki/API:REST_API)                   | :white_large_square: |
+| 0.3     | Calls and response objects for [MediaWiki Action API Query Modules](https://www.mediawiki.org/wiki/API:Query) | :white_large_square: |
+| 0.4     | Calls and response objects for [Wikimedia REST API](https://www.mediawiki.org/wiki/Wikimedia_REST_API)        | :white_large_square: |
+| 0.5     | Implementation of [Wikiblame](https://github.com/FlominatorTM/wikiblame)                                      | :white_large_square  |
 
 ## Installation
 
