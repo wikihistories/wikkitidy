@@ -22,7 +22,8 @@ Imports:
     purrr,
     rlang (>= 0.4.11),
     stringr,
-    tibble
+    tibble,
+    vctrs
 Suggests: 
     covr,
     roxygen2,

@@ -1,9 +1,7 @@
 #' Base request for [MediaWiki Core REST API](https://www.mediawiki.org/wiki/API:REST_API)
 #'
 #' The [MediaWiki Core REST API](https://www.mediawiki.org/wiki/API:REST_API) is
-#' the basic REST API available on all MediaWiki wikis. It is not as performant
-#' as the [Wikimedia REST API](https://www.mediawiki.org/wiki/Wikimedia_REST_API),
-#' which is used by [wikimedia_rest_request].
+#' the basic REST API available on all MediaWiki wikis.
 #'
 #' @inheritParams wikimedia_rest_request
 #'
@@ -131,10 +129,11 @@ get_diff <- function(from, to, language = "en") {
 #'   tidyr::hoist(links, "code", linked_title = "title")
 get_langlinks <- function(titles, language = "en") {
   titles <- str_for_rest(titles)
+  params <- vctrs::vec_recycle_common(titles, language)
   langlinks <-
-    purrr::map(
-      titles,
-      \(title) .get_one_resource("page", title, "links", "language", language = language)
+    purrr::pmap(
+      params,
+      \(title, lang) .get_one_resource("page", title, "links", "language", language=lang)
     )
 }
 
@@ -143,4 +142,8 @@ get_langlinks <- function(titles, language = "en") {
     httr2::req_url_path_append(...) %>%
     httr2::req_perform() %>%
     httr2::resp_body_json()
+}
+
+.process_rest_params <- function(...) {
+
 }
