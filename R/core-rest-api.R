@@ -59,17 +59,20 @@ core_rest_request <- function(language = "en") {
 #' # See diffs for the last five revisions of the Main Page
 #' revisions <- wiki_action_request() %>%
 #'   query_page_properties(
-#'     "revisions", titles="Main_Page", rvlimit=5, rvprop="ids", rvdir="older"
+#'     "revisions",
+#'     titles = "Main_Page", rvlimit = 5, rvprop = "ids", rvdir = "older"
 #'   ) %>%
 #'   perform_query_once() %>%
 #'   tidyr::hoist(revisions, "parentid", "revid")
-#' diffs <- get_diff(from=revisions$parentid, to=revisions$revid)
+#' diffs <- get_diff(from = revisions$parentid, to = revisions$revid)
 get_diff <- function(from, to, language = "en") {
   if (length(from) != length(to)) {
-    stop("Arguments must be the same length: length(rev_from) == ",
-         length(from),
-         " length(rev_to) == ",
-         length(to))
+    stop(
+      "Arguments must be the same length: length(rev_from) == ",
+      length(from),
+      " length(rev_to) == ",
+      length(to)
+    )
   }
   get_one_diff <- purrr::partial(.get_one_diff, lang = language)
   purrr::map2(from, to, get_one_diff)
@@ -111,10 +114,10 @@ get_diff <- function(from, to, language = "en") {
 #' # Get a tbl of pages from French Wikipedia using the Action API, then
 #' # find their interwiki links
 #' albums_des_beatles <- wiki_action_request(language = "fr") %>%
-#'   query_generate_pages("categorymembers", gcmtitle="Catégorie:Album_des_Beatles", gcmtype="page") %>%
+#'   query_generate_pages("categorymembers", gcmtitle = "Catégorie:Album_des_Beatles", gcmtype = "page") %>%
 #'   query_page_properties("title") %>%
 #'   retrieve_all() %>%
-#'   dplyr::mutate(links = get_langlinks(title, language="fr"))
+#'   dplyr::mutate(links = get_langlinks(title, language = "fr"))
 #'
 #' # links is a list column, so [tidyr] and [purrr] are useful
 #' # Count the number of langlinks for each page
@@ -127,13 +130,17 @@ get_diff <- function(from, to, language = "en") {
 #'   tidyr::unnest(links) %>%
 #'   tidyr::hoist(links, "code", linked_title = "title")
 get_langlinks <- function(titles, language = "en") {
-  .titles <- str_for_rest(titles)
-  langlinks <- purrr::map(.titles, .get_one_langlink, language = language)
+  titles <- str_for_rest(titles)
+  langlinks <-
+    purrr::map(
+      titles,
+      \(title) .get_one_resource("page", title, "links", "language", language = language)
+    )
 }
 
-.get_one_langlink <- function(title, language = "en") {
+.get_one_resource <- function(..., language) {
   core_rest_request(language = language) %>%
-    httr2::req_url_path_append("page", title, "links", "language") %>%
+    httr2::req_url_path_append(...) %>%
     httr2::req_perform() %>%
     httr2::resp_body_json()
 }
