@@ -29,7 +29,7 @@ core_rest_request <- function(language = "en") {
 #'
 #' @param from Vector of revision ids
 #' @param to Vector of revision ids
-#' @param language Two-letter language code for Wikipedia
+#' @param language Vector of two-letter language codes (will be recyled if length==1)
 #'
 #' @return A list the same length as `from` and `to`, comprising
 #'   [wikidiff2
@@ -64,32 +64,12 @@ core_rest_request <- function(language = "en") {
 #'   tidyr::hoist(revisions, "parentid", "revid")
 #' diffs <- get_diff(from = revisions$parentid, to = revisions$revid)
 get_diff <- function(from, to, language = "en") {
-  if (length(from) != length(to)) {
-    stop(
-      "Arguments must be the same length: length(rev_from) == ",
-      length(from),
-      " length(rev_to) == ",
-      length(to)
-    )
-  }
-  get_one_diff <- purrr::partial(.get_one_diff, lang = language)
-  purrr::map2(from, to, get_one_diff)
-}
-
-.get_one_diff <- function(from, to, lang) {
-  core_rest_request(language = lang) %>%
-    httr2::req_url_path_append("revision", from, "compare", to) %>%
-    httr2::req_perform() %>%
-    httr2::resp_body_json()
+  params <- vctrs::vec_recycle_common(from, to, language)
+  purrr::pmap(params,
+              \(from, to, lang) .get_one_resource("revision", from, "compare", to, language=lang))
 }
 
 #' Find out which other-language wikis have linked pages
-#'
-#' All pages passed to the function must be from the same language edition of
-#' Wikipedia. For example, if you have a set of English pages, you can find all
-#' the interwiki links for those pages. If you have a set of pages from
-#' disparate language editions, you can segment the data using [dplyr::group_by]
-#' or similar.
 #'
 #' If the function fails to find any interwiki links for the passed title, it
 #' will fail silently.
@@ -142,8 +122,4 @@ get_langlinks <- function(titles, language = "en") {
     httr2::req_url_path_append(...) %>%
     httr2::req_perform() %>%
     httr2::resp_body_json()
-}
-
-.process_rest_params <- function(...) {
-
 }

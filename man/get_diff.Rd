@@ -12,7 +12,7 @@ get_diff(from, to, language = "en")
 
 \item{to}{Vector of revision ids}
 
-\item{language}{Two-letter language code for Wikipedia}
+\item{language}{Vector of two-letter language codes (will be recyled if length==1)}
 }
 \value{
 A list the same length as \code{from} and \code{to}, comprising
@@ -45,9 +45,10 @@ diffs[[1]]$diff[[2]]$type
 # See diffs for the last five revisions of the Main Page
 revisions <- wiki_action_request() \%>\%
   query_page_properties(
-    "revisions", titles="Main_Page", rvlimit=5, rvprop="ids", rvdir="older"
+    "revisions",
+    titles = "Main_Page", rvlimit = 5, rvprop = "ids", rvdir = "older"
   ) \%>\%
   perform_query_once() \%>\%
   tidyr::hoist(revisions, "parentid", "revid")
-diffs <- get_diff(from=revisions$parentid, to=revisions$revid)
+diffs <- get_diff(from = revisions$parentid, to = revisions$revid)
 }

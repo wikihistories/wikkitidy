@@ -11,9 +11,7 @@ core_rest_request(language = "en")
 }
 \description{
 The \href{https://www.mediawiki.org/wiki/API:REST_API}{MediaWiki Core REST API} is
-the basic REST API available on all MediaWiki wikis. It is not as performant
-as the \href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{Wikimedia REST API},
-which is used by \link{wikimedia_rest_request}.
+the basic REST API available on all MediaWiki wikis.
 }
 \examples{
 # Get the html of the 'Earth' article

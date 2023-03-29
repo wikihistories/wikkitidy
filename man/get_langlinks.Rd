@@ -19,13 +19,6 @@ linked page was found; while \code{key} and \code{title} identify the page on th
 linked wiki.
 }
 \description{
-All pages passed to the function must be from the same language edition of
-Wikipedia. For example, if you have a set of English pages, you can find all
-the interwiki links for those pages. If you have a set of pages from
-disparate language editions, you can segment the data using \link[dplyr:group_by]{dplyr::group_by}
-or similar.
-}
-\details{
 If the function fails to find any interwiki links for the passed title, it
 will fail silently.
 }
@@ -36,10 +29,10 @@ get_langlinks("Charles_Harpur")
 # Get a tbl of pages from French Wikipedia using the Action API, then
 # find their interwiki links
 albums_des_beatles <- wiki_action_request(language = "fr") \%>\%
-  query_generate_pages("categorymembers", gcmtitle="Catégorie:Album_des_Beatles", gcmtype="page") \%>\%
+  query_generate_pages("categorymembers", gcmtitle = "Catégorie:Album_des_Beatles", gcmtype = "page") \%>\%
   query_page_properties("title") \%>\%
   retrieve_all() \%>\%
-  dplyr::mutate(links = get_langlinks(title, language="fr"))
+  dplyr::mutate(links = get_langlinks(title, language = "fr"))
 
 # links is a list column, so [tidyr] and [purrr] are useful
 # Count the number of langlinks for each page
