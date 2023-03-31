@@ -47,9 +47,6 @@ get_langlinks <- function(titles, language = "en") {
   langlinks
 }
 
-# resp_body <- purrr::list_transpose(resp_body[[1]])
-# rlang::inject(new_page_language_object(!!!resp_body))
-
 # The constructor
 new_page_language_object <- function(code = character(), name = character(), key = character(), title = character()) {
   if (!is.character(code)) {
