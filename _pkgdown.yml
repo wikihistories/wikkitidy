@@ -37,8 +37,12 @@ reference:
 - title: Use WikiMedia XML dumps
   contents:
   - verify_xml_integrity
-- title: Utilities
+- title: Data types
+  desc: >
+    Data types returned by wikkitidy functions.
   contents:
-  - as_wiki_tbl
+  - has_keyword("data_type")
+- title: Low-level utilities
+  contents:
   - prefix_params
   - wikkitidy_example

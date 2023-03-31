@@ -20,7 +20,7 @@ perform_query_once <- function(.req) {
   results <- .get_query_results(resp$url, body)
   results %>%
     dplyr::bind_rows() %>%
-    as_wiki_tbl(request = .req,
+    wiki_tbl(request = .req,
                 continue = continue,
                 batchcomplete = batchcomplete)
 }
@@ -126,7 +126,7 @@ continue_query <- function(.req,
     continue <- get_continue(response_list[[next_idx]])
     batchcomplete <- get_batchcomplete(response_list[[next_idx]])
   }
-  dplyr::bind_rows(response_list) %>% as_wiki_tbl(request = base_request,
+  dplyr::bind_rows(response_list) %>% wiki_tbl(request = base_request,
                                                   continue = continue,
                                                   batchcomplete = batchcomplete)
 }

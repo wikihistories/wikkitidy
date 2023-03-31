@@ -7,10 +7,17 @@
 #' @param batchcomplete The batchcomplete parameter returned by the API
 #'
 #' @return A tibble: an S3 data.frame with class `wiki_tbl`.
-as_wiki_tbl <- function(x, request, continue, batchcomplete) {
+#'
+#' @keywords data_type
+wiki_tbl <- function(x, request, continue, batchcomplete) {
   request <- if (is.null(request)) NA else request
   continue <- if(is.null(continue)) NA else continue
   batchcomplete <- if(is.null(batchcomplete)) NA else batchcomplete
+  new_wiki_tbl(x, request, continue, batchcomplete)
+}
+
+# The constructor
+new_wiki_tbl <- function(x, request, continue, batchcomplete) {
   tibble::new_tibble(
     x,
     request = request,
@@ -18,6 +25,34 @@ as_wiki_tbl <- function(x, request, continue, batchcomplete) {
     batchcomplete = batchcomplete,
     class = "wiki_tbl"
   )
+}
+
+#' @export
+tbl_sum.wiki_tbl <- function(x, ...) {
+  url <- get_request(x)$url
+  c(
+    cli::cli_text("{.cls {class(x)[1]}}"),
+    cli::cli_text("Request URL: {url}"),
+    NextMethod()
+  )
+}
+
+#' @export
+tbl_format_footer.wiki_tbl <- function(x, ...) {
+  # Unfortunately the messages appear above the body of the tbl, rather than
+  # underneath it... TODO: Report issue!
+  default_footer <- NextMethod()
+  query_message <- if (anyNA(get_continue(x))) {
+    cli::cli_alert_success("All results downloaded from server")
+  } else {
+    cli::cli_alert_info("There are more results on the server. Retrieve them with `next_batch()` or `retrieve_all()`")
+  }
+  batch_message <- if (!is.na(get_batchcomplete(x))) {
+    cli::cli_alert_success("Data complete for all records")
+  } else {
+    cli::cli_alert_warning("Data not fully downloaded for last batch. Retrieve it with `next_batch()` or `retrieve_all()`.")
+  }
+  default_footer
 }
 
 validate_wiki_tbl <- function(x) {
