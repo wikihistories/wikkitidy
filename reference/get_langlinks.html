@@ -40,7 +40,7 @@ will fail silently."><!-- mathjax --><script src="https://cdnjs.cloudflare.com/a
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Find out which other-language wikis have linked pages</h1>
-      <small class="dont-index">Source: <a href="https://github.com/wikihistories/wikkitidy/blob/HEAD/R/core-rest-api.R" class="external-link"><code>R/core-rest-api.R</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/wikihistories/wikkitidy/blob/HEAD/R/get-langlinks.R" class="external-link"><code>R/get-langlinks.R</code></a></small>
       <div class="d-none name"><code>get_langlinks.Rd</code></div>
     </div>
 
@@ -61,71 +61,81 @@ will fail silently.</p>
 
 
 <dt>language</dt>
-<dd><p>The language edition of Wikipedia that the titles come from</p></dd>
+<dd><p>A character vector of two-letter language codes. If it has
+a length of 1, it will be recycled.</p></dd>
 
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
 
-<p>A list of arrays of <a href="https://www.mediawiki.org/wiki/API:REST_API/Reference#Page_language_object" class="external-link">page language objects</a>,
-the same length as the passed list of <code>titles</code>. Each page language object
-has keys: <code>code</code> and <code>name</code> describe the language edition in which the
-linked page was found; while <code>key</code> and <code>title</code> identify the page on the
-linked wiki.</p>
+<p>A list of <a href="page_language_object.html">page_language_object</a> vectors.</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Get language links for a single page on English Wikipedia</span></span></span>
 <span class="r-in"><span><span class="fu">get_langlinks</span><span class="op">(</span><span class="st">"Charles_Harpur"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [[1]]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;page_language_object[2]&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] de:Charles Harpur fr:Charles Harpur</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Get a tbl of pages from French Wikipedia using the Action API, then</span></span></span>
 <span class="r-in"><span><span class="co"># find their interwiki links</span></span></span>
 <span class="r-in"><span><span class="va">albums_des_beatles</span> <span class="op">&lt;-</span> <span class="fu"><a href="wiki_action_request.html">wiki_action_request</a></span><span class="op">(</span>language <span class="op">=</span> <span class="st">"fr"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="query_generate_pages.html">query_generate_pages</a></span><span class="op">(</span><span class="st">"categorymembers"</span>, gcmtitle <span class="op">=</span> <span class="st">"Catégorie:Album_des_Beatles"</span>, gcmtype <span class="op">=</span> <span class="st">"page"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="query_generate_pages.html">query_generate_pages</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span>    <span class="st">"categorymembers"</span>,</span></span>
+<span class="r-in"><span>    gcmtitle <span class="op">=</span> <span class="st">"Catégorie:Album_des_Beatles"</span>,</span></span>
+<span class="r-in"><span>    gcmtype <span class="op">=</span> <span class="st">"page"</span></span></span>
+<span class="r-in"><span>    <span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu"><a href="query_page_properties.html">query_page_properties</a></span><span class="op">(</span><span class="st">"title"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu"><a href="retrieve_all.html">retrieve_all</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>links <span class="op">=</span> <span class="fu">get_langlinks</span><span class="op">(</span><span class="va">title</span>, language <span class="op">=</span> <span class="st">"fr"</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># links is a list column, so [tidyr] and [purrr] are useful</span></span></span>
-<span class="r-in"><span><span class="co"># Count the number of langlinks for each page</span></span></span>
-<span class="r-in"><span><span class="va">albums_des_beatles</span> <span class="op"><a href="pipe.html">%&gt;%</a></span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span></span></span>
-<span class="r-in"><span>  count <span class="op">=</span> <span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map_dbl</a></span><span class="op">(</span><span class="va">links</span>, <span class="va">length</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 30 × 5</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      pageid    ns title                                             links  count</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                             <span style="color: #949494; font-style: italic;">&lt;list&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>   <span style="text-decoration: underline;">314</span>256     0 The Beatles (album)                               <span style="color: #949494;">&lt;list&gt;</span>    54</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>   <span style="text-decoration: underline;">466</span>773     0 Abbey Road (album)                                <span style="color: #949494;">&lt;list&gt;</span>    58</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>   <span style="text-decoration: underline;">639</span>219     0 A Hard Day's Night (album)                        <span style="color: #949494;">&lt;list&gt;</span>    53</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>   <span style="text-decoration: underline;">639</span>231     0 Beatles for Sale                                  <span style="color: #949494;">&lt;list&gt;</span>    46</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>  3<span style="text-decoration: underline;">776</span>338     0 Beatles '65                                       <span style="color: #949494;">&lt;list&gt;</span>    17</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>  4<span style="text-decoration: underline;">899</span>948     0 The Beatles at the Hollywood Bowl                 <span style="color: #949494;">&lt;list&gt;</span>    14</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>  9<span style="text-decoration: underline;">342</span>535     0 The Beatles' Long Tall Sally                      <span style="color: #949494;">&lt;list&gt;</span>     9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 11<span style="text-decoration: underline;">105</span>806     0 Pochette de Sgt. Pepper's Lonely Hearts Club Band <span style="color: #949494;">&lt;list&gt;</span>     5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 13<span style="text-decoration: underline;">345</span>678     0 The Beatles' First !                              <span style="color: #949494;">&lt;list&gt;</span>     8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 14<span style="text-decoration: underline;">065</span>386     0 Les Beatles (album français)                      <span style="color: #949494;">&lt;list&gt;</span>     0</span>
+<span class="r-in"><span><span class="va">albums_des_beatles</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB;">&lt;wiki_tbl&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Request URL:</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> https://fr.wikipedia.org/w/api.php?action=query&amp;format=json&amp;formatversion=2&amp;generator=categorymembers&amp;gcmtitle=Cat%C3%A9gorie%3AAlbum_des_Beatles&amp;gcmtype=page&amp;prop=title</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> All results downloaded from server</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Data complete for all records</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 30 × 4</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      pageid    ns title                                             links    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                             <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>   <span style="text-decoration: underline;">314</span>256     0 The Beatles (album)                               <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>   <span style="text-decoration: underline;">466</span>773     0 Abbey Road (album)                                <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>   <span style="text-decoration: underline;">639</span>219     0 A Hard Day's Night (album)                        <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>   <span style="text-decoration: underline;">639</span>231     0 Beatles for Sale                                  <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>  3<span style="text-decoration: underline;">776</span>338     0 Beatles '65                                       <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>  4<span style="text-decoration: underline;">899</span>948     0 The Beatles at the Hollywood Bowl                 <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>  9<span style="text-decoration: underline;">342</span>535     0 The Beatles' Long Tall Sally                      <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 11<span style="text-decoration: underline;">105</span>806     0 Pochette de Sgt. Pepper's Lonely Hearts Club Band <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 13<span style="text-decoration: underline;">345</span>678     0 The Beatles' First !                              <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 14<span style="text-decoration: underline;">065</span>386     0 Les Beatles (album français)                      <span style="color: #949494;">&lt;lng_lnk&gt;</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 20 more rows</span></span>
-<span class="r-in"><span><span class="co"># Unnest the data frame to get one row per interwiki link, and extract</span></span></span>
-<span class="r-in"><span><span class="co"># the language code and page title for each interwiki link</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Sort pages by number of links</span></span></span>
 <span class="r-in"><span><span class="va">albums_des_beatles</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html" class="external-link">unnest</a></span><span class="op">(</span><span class="va">links</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/hoist.html" class="external-link">hoist</a></span><span class="op">(</span><span class="va">links</span>, <span class="st">"code"</span>, linked_title <span class="op">=</span> <span class="st">"title"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 897 × 6</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    pageid    ns title               code     linked_title          links       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) af       The Beatles (album)   <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) ar       البيتلز (ألبوم)       <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) az       The Beatles (albom)   <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) be       The Beatles (альбом)  <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) be-x-old The Beatles (альбом)  <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) bg       The Beatles (албум)   <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) br       The Beatles (pladenn) <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) bs       The Beatles (album)   <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) ca       The Beatles (àlbum)   <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> <span style="text-decoration: underline;">314</span>256     0 The Beatles (album) ceb      The Beatles (Album)   <span style="color: #949494;">&lt;named list&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 887 more rows</span></span>
+<span class="r-in"><span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>count <span class="op">=</span> <span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map</a></span><span class="op">(</span><span class="va">links</span>, <span class="va">length</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="va">links</span>, desc <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB;">&lt;wiki_tbl&gt;</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Request URL:</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> https://fr.wikipedia.org/w/api.php?action=query&amp;format=json&amp;formatversion=2&amp;generator=categorymembers&amp;gcmtitle=Cat%C3%A9gorie%3AAlbum_des_Beatles&amp;gcmtype=page&amp;prop=title</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> All results downloaded from server</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Data complete for all records</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 30 × 5</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      pageid    ns title                                          links     count</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                          <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;lis&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>   <span style="text-decoration: underline;">314</span>256     0 The Beatles (album)                            <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>   <span style="text-decoration: underline;">466</span>773     0 Abbey Road (album)                             <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>   <span style="text-decoration: underline;">639</span>219     0 A Hard Day's Night (album)                     <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>   <span style="text-decoration: underline;">639</span>231     0 Beatles for Sale                               <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>  3<span style="text-decoration: underline;">776</span>338     0 Beatles '65                                    <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>  4<span style="text-decoration: underline;">899</span>948     0 The Beatles at the Hollywood Bowl              <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>  9<span style="text-decoration: underline;">342</span>535     0 The Beatles' Long Tall Sally                   <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 11<span style="text-decoration: underline;">105</span>806     0 Pochette de Sgt. Pepper's Lonely Hearts Club … <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 13<span style="text-decoration: underline;">345</span>678     0 The Beatles' First !                           <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 14<span style="text-decoration: underline;">065</span>386     0 Les Beatles (album français)                   <span style="color: #949494;">&lt;lng_lnk&gt;</span> <span style="color: #949494;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 20 more rows</span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

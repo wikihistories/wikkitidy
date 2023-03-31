@@ -16,9 +16,6 @@
     <loc>https://wikihistories.github.io/wikkitidy/index.html</loc>
   </url>
   <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/as_wiki_tbl.html</loc>
-  </url>
-  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/continue_query.html</loc>
   </url>
   <url>
@@ -35,6 +32,9 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/page_language_object.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/perform_query_once.html</loc>
@@ -65,6 +65,9 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/wiki_action_request.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/wiki_tbl.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/wikimedia_rest_request.html</loc>
