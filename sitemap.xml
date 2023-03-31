@@ -31,10 +31,16 @@
     <loc>https://wikihistories.github.io/wikkitidy/reference/get_page_properties.html</loc>
   </url>
   <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/history_count.html</loc>
+  </url>
+  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/index.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/page_language_object.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/page_object.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/perform_query_once.html</loc>
@@ -68,6 +74,9 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/wiki_tbl.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/wikidiff_tbl.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/wikimedia_rest_request.html</loc>
