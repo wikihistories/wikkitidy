@@ -17,13 +17,13 @@ wiki_tbl <- function(x, request, continue, batchcomplete) {
 }
 
 # The constructor
-new_wiki_tbl <- function(x, request, continue, batchcomplete) {
+new_wiki_tbl <- function(x, request, continue, batchcomplete, class=NULL) {
   tibble::new_tibble(
     x,
     request = request,
     continue = continue,
     batchcomplete = batchcomplete,
-    class = "wiki_tbl"
+    class = c(class, "wiki_tbl")
   )
 }
 
