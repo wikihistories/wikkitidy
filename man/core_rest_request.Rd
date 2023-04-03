@@ -4,10 +4,14 @@
 \alias{core_rest_request}
 \title{Base request for \href{https://www.mediawiki.org/wiki/API:REST_API}{MediaWiki Core REST API}}
 \usage{
-core_rest_request(language = "en")
+core_rest_request(..., language = "en")
 }
 \arguments{
-\item{language}{The language edition of Wikipedia you wish to access}
+\item{...}{<\code{\link[rlang:dyn-dots]{dynamic-dots}}> Components to add to the URL.
+These are passed to \link[httr2:req_url]{httr2::req_url_path_append}. If you pass named arguments,
+the names will be dropped.}
+
+\item{language}{The two-letter language code for the Wikipedia edition}
 }
 \value{
 A \code{core_rest_request}, an S3 vector that subclasses \code{httr2_request}
@@ -18,8 +22,7 @@ The \href{https://www.mediawiki.org/wiki/API:REST_API}{MediaWiki Core REST API} 
 the basic REST API available on all MediaWiki wikis.
 }
 \examples{
-# Get the html of the 'Earth' article
-response <- core_rest_request() \%>\%
-  httr2::req_url_path_append("page", "Earth", "html") \%>\%
+# Get the html of the 'Earth' article on English Wikipedia
+response <- core_rest_request("page", "Earth", "html") \%>\%
   httr2::req_perform()
 }

@@ -4,10 +4,14 @@
 \alias{wikimedia_rest_request}
 \title{Base request for \href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{Wikimedia REST API}}
 \usage{
-wikimedia_rest_request(language = "en")
+wikimedia_rest_request(..., language = "en")
 }
 \arguments{
-\item{language}{The language edition of Wikipedia you wish to access}
+\item{...}{<\code{\link[rlang:dyn-dots]{dynamic-dots}}> Components to add to the URL.
+These are passed to \link[httr2:req_url]{httr2::req_url_path_append}. If you pass named arguments,
+the names will be dropped.}
+
+\item{language}{The two-letter language code for the Wikipedia edition}
 }
 \value{
 A \code{wikimedia_rest_request}, an S3 vector that subclasses
@@ -22,7 +26,6 @@ users to throttle their usage.
 }
 \examples{
 # Get the html of the 'Earth' article
-response <- wikimedia_rest_request() \%>\%
-  httr2::req_url_path_append("page", "html", "Earth") \%>\%
+response <- wikimedia_rest_request("page", "html", "Earth") \%>\%
   httr2::req_perform()
 }

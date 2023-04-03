@@ -29,7 +29,7 @@ prefixed with \code{cm}).
 When the request is performed, the data is returned in the body of the
 request under the \code{query} object, labeled by the chosen list action.
 
-If you want to study the actual pages listed, it is adviseable to retrieve
+If you want to study the actual pages listed, it is advisable to retrieve
 the pages directly using a generator, rather than listing their IDs using a
 list action. When using a list action, a second request is required to get
 further information about each page. Using a generator, you can query pages
