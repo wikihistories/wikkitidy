@@ -8,3 +8,4 @@
 # wikkitidy 0.1.0.9000
 
 * Added a `NEWS.md` file to track changes to the package.
+* New low-level helper, [get_rest_resource], for generating REST API calls; refactored existing calls to use this function
