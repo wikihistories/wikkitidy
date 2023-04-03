@@ -43,7 +43,5 @@
 #'   tidyr::hoist(revisions, "parentid", "revid")
 #' diffs <- get_diff(from = revisions$parentid, to = revisions$revid)
 get_diff <- function(from, to, language = "en") {
-  params <- vctrs::vec_recycle_common(from, to, language)
-  purrr::pmap(params,
-              \(from, to, lang) .get_one_resource("revision", from, "compare", to, language=lang))
+  get_rest_resource("revision", from, "compare", to, language = language)
 }

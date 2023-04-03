@@ -33,12 +33,8 @@
 #'   dplyr::arrange(links, desc = TRUE)
 get_langlinks <- function(titles, language = "en") {
   titles <- str_for_rest(titles)
-  params <- vctrs::vec_recycle_common(titles, language)
   langlinks <-
-    purrr::pmap(
-      params,
-      \(title, lang) .get_one_resource("page", title, "links", "language", language = lang)
-    ) %>%
+    get_rest_resource("page", titles, "links", "language", language = language) %>%
     purrr::map(purrr::list_transpose) %>%
     purrr::map(
       \(x)
