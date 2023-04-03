@@ -54,13 +54,19 @@ the basic REST API available on all MediaWiki wikis.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">core_rest_request</span><span class="op">(</span>language <span class="op">=</span> <span class="st">"en"</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">core_rest_request</span><span class="op">(</span><span class="va">...</span>, language <span class="op">=</span> <span class="st">"en"</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>language</dt>
-<dd><p>The language edition of Wikipedia you wish to access</p></dd>
+    <dl><dt>...</dt>
+<dd><p>&lt;<code><a href="https://rlang.r-lib.org/reference/dyn-dots.html" class="external-link">dynamic-dots</a></code>&gt; Components to add to the URL.
+These are passed to <a href="https://httr2.r-lib.org/reference/req_url.html" class="external-link">httr2::req_url_path_append</a>. If you pass named arguments,
+the names will be dropped.</p></dd>
+
+
+<dt>language</dt>
+<dd><p>The two-letter language code for the Wikipedia edition</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -75,9 +81,8 @@ the basic REST API available on all MediaWiki wikis.</p>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Get the html of the 'Earth' article</span></span></span>
-<span class="r-in"><span><span class="va">response</span> <span class="op">&lt;-</span> <span class="fu">core_rest_request</span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu">httr2</span><span class="fu">::</span><span class="fu"><a href="https://httr2.r-lib.org/reference/req_url.html" class="external-link">req_url_path_append</a></span><span class="op">(</span><span class="st">"page"</span>, <span class="st">"Earth"</span>, <span class="st">"html"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Get the html of the 'Earth' article on English Wikipedia</span></span></span>
+<span class="r-in"><span><span class="va">response</span> <span class="op">&lt;-</span> <span class="fu">core_rest_request</span><span class="op">(</span><span class="st">"page"</span>, <span class="st">"Earth"</span>, <span class="st">"html"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu">httr2</span><span class="fu">::</span><span class="fu"><a href="https://httr2.r-lib.org/reference/req_perform.html" class="external-link">req_perform</a></span><span class="op">(</span><span class="op">)</span></span></span>
 </code></pre></div>
     </div>
