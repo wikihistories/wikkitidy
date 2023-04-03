@@ -22,4 +22,6 @@ wikimedia_rest_request <- function(language = "en") {
   ) %>%
     httr2::req_throttle(199 / 1) %>%
     wikkitidy_user_agent()
+  class(request) <- c("wikimedia_rest_request", class(request))
+  request
 }

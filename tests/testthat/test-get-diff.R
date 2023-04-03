@@ -1,0 +1,23 @@
+test_that("`get_diff` throws an error for mismatched vectors", {
+  from = 1:3
+  to = 4
+  expect_error(get_diff(from, to))
+})
+
+test_that("`get_diff` returns a diff object for a known request", {
+  # request taken from example in API documentation
+  diffs <- get_diff(847170467, 851733941)
+  expect_equal(length(diffs), 1)
+  expect_named(diffs[[1]], c("from", "to", "diff"))
+  expect_length(diffs[[1]]$diff, 6)
+})
+
+test_that("`get_diff` works properly with length(from | to) > 1", {
+  test_length <- 3
+  from <- rep(847170467, test_length)
+  to <- rep(851733941, test_length)
+  diffs <- get_diff(from, to)
+  expect_length(diffs, test_length)
+  expect_named(diffs[[1]], c("from", "to", "diff"))
+  expect_length(diffs[[1]]$diff, 6)
+})
