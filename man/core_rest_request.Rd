@@ -9,6 +9,10 @@ core_rest_request(language = "en")
 \arguments{
 \item{language}{The language edition of Wikipedia you wish to access}
 }
+\value{
+A \code{core_rest_request}, an S3 vector that subclasses \code{httr2_request}
+(see \link[httr2:request]{httr2::request})
+}
 \description{
 The \href{https://www.mediawiki.org/wiki/API:REST_API}{MediaWiki Core REST API} is
 the basic REST API available on all MediaWiki wikis.

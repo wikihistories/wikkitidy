@@ -15,7 +15,8 @@ wiki_action_request(..., action = "query", language = "en")
 'fr'}
 }
 \value{
-An HTTP response: an S3 list with class httr2_request.
+A \code{wiki_action_request}, an S3 list that subclasses \code{httr2_request}
+(see \link[httr2:request]{httr2::request})
 }
 \description{
 Generate request for the \href{https://www.mediawiki.org/wiki/API:Main_page}{MediaWiki Action API}

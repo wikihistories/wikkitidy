@@ -10,7 +10,8 @@ wikimedia_rest_request(language = "en")
 \item{language}{The language edition of Wikipedia you wish to access}
 }
 \value{
-A httr2_request
+A \code{wikimedia_rest_request}, an S3 vector that subclasses
+\code{httr2_request} (see \link[httr2:request]{httr2::request})
 }
 \description{
 The \href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{Wikimedia REST API} is one of

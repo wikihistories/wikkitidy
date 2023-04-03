@@ -8,7 +8,8 @@
 #'
 #' @param language The language edition of Wikipedia you wish to access
 #'
-#' @return A httr2_request
+#' @return A `wikimedia_rest_request`, an S3 vector that subclasses
+#'  `httr2_request` (see [httr2::request])
 #' @export
 #'
 #' @examples

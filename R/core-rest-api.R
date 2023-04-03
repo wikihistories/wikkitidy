@@ -1,9 +1,13 @@
-#' Base request for [MediaWiki Core REST API](https://www.mediawiki.org/wiki/API:REST_API)
+#' Base request for [MediaWiki Core REST
+#' API](https://www.mediawiki.org/wiki/API:REST_API)
 #'
 #' The [MediaWiki Core REST API](https://www.mediawiki.org/wiki/API:REST_API) is
 #' the basic REST API available on all MediaWiki wikis.
 #'
 #' @inheritParams wikimedia_rest_request
+#'
+#' @return A `core_rest_request`, an S3 vector that subclasses `httr2_request`
+#'   (see [httr2::request])
 #'
 #' @export
 #'

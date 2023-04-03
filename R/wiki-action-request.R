@@ -6,7 +6,8 @@
 #' @param language The language edition of Wikipedia to request, e.g. 'en' or
 #'   'fr'
 #'
-#' @return An HTTP response: an S3 list with class httr2_request.
+#' @return A `wiki_action_request`, an S3 list that subclasses `httr2_request`
+#'  (see [httr2::request])
 #' @export
 #'
 #' @examples
