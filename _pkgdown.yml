@@ -29,6 +29,7 @@ reference:
   contents:
   - wikimedia_rest_request
   - core_rest_request
+  - get_rest_resource
 - subtitle: Vector functions
   contents:
   - get_page_properties
