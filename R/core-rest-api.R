@@ -33,9 +33,3 @@ core_rest_request <- function(..., language = "en") {
   class(request) <- c("core_rest_request", class(request))
   request
 }
-
-.get_one_resource <- function(..., language) {
-  core_rest_request(..., language = language) %>%
-    httr2::req_perform() %>%
-    httr2::resp_body_json()
-}
