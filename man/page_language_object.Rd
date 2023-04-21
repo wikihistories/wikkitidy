@@ -22,8 +22,8 @@ A vector of page_language_objects.
 A page language object as returned from the \href{https://www.mediawiki.org/wiki/API:REST_API/Reference#Page_language_object}{Core REST API}
 }
 \examples{
-# This is the return type of [get_langlinks]:
-austen <- get_langlinks("Jane Austen")
+# This is the return type of [get_page_langlinks]:
+austen <- get_page_langlinks("Jane Austen")
 class(austen)
 }
 \keyword{data_type}

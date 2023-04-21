@@ -12,8 +12,8 @@
 #' @keywords data_type
 #'
 #' @examples
-#' # This is the return type of [get_langlinks]:
-#' austen <- get_langlinks("Jane Austen")
+#' # This is the return type of [get_page_langlinks]:
+#' austen <- get_page_langlinks("Jane Austen")
 #' class(austen)
 page_language_object <- function(code, name, key, title) {
   new_page_language_object(code, name, key, title)

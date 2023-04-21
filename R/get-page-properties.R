@@ -20,7 +20,7 @@
 #'   retrieve_all()
 #' page_info <- get_page_properties(page_ids$pageid, by="pageid", "info")
 get_page_properties <- function(.x, by=c("pageid","title","revid"), properties, ...) {
-  rlang::arg_match(by)
+  by <- rlang::arg_match(by)
   by <- paste0(by, "s")
   purrr::map(.x, \(x) one_page_properties(x, !!by, properties, ...)) %>%
     dplyr::bind_rows()

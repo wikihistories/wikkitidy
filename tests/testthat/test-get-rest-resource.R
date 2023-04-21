@@ -10,3 +10,9 @@ test_that("`get-rest-resource` vectorises correctly over languages", {
   response <- get_rest_resource("page", ttl, "html", language = lng, response_type = "html")
   expect_length(response, 2)
 })
+
+test_that("`get_rest_resource` correctly encodes URLS", {
+  ttl <- c("Charles Harpur", "Charles_Baudelaire", "Earth")
+  response <- get_rest_resource("page", ttl)
+  expect_length(response, 3)
+})
