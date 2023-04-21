@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# wikkitidy
+# wikkitidy <a href="https://wikihistories.github.io/wikkitidy/"><img src="man/figures/logo.png" align="right" height="100" /></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/wikihistories/wikkitidy/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wikihistories/wikkitidy/actions/workflows/R-CMD-check.yaml)
