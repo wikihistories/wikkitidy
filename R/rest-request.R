@@ -1,21 +1,26 @@
 #' Build a REST request
 #'
-#' @description `core_request_request()` builds a request for the [MediaWiki
-#' Core REST API](https://www.mediawiki.org/wiki/API:REST_API) is the basic REST
+#' Low-level functions for accessing Wikipedia's REST APIs. They do minimal
+#' error-checking, and are primarily for developer use.
+#'
+#' @description
+#' `core_request_request()` builds a request for the [MediaWiki
+#' Core REST API](https://www.mediawiki.org/wiki/API:REST_API), the basic REST
 #' API available on all MediaWiki wikis.
 #'
 #' `wikimedia_rest_request()` builds a request for the [Wikimedia REST
-#' API](https://www.mediawiki.org/wiki/Wikimedia_REST_API) is an additional
+#' API](https://www.mediawiki.org/wiki/Wikimedia_REST_API), an additional
 #' endpoint just for Wikipedia and other wikis managed by the Wikimedia
 #' Foundation
 #'
 #' @param ... <[`dynamic-dots`][rlang::dyn-dots]> Components to add to the URL.
 #'   Unnamed arguments are added to the path of the request, while named
-#'   arguments are added as query parameters. See above.
+#'   arguments are added as query parameters.
 #' @param language The two-letter language code for the Wikipedia edition
 #'
 #' @return A `core/rest` or `wikimedia/rest` object, an S3 vector that
-#'   subclasses `httr2_request` (see [httr2::request])
+#'   subclasses `httr2_request` (see [httr2::request]). The request needs to be
+#'   passed to [httr2::req_perform] to retrieve data from the API.
 #'
 #' @export
 #'
@@ -26,6 +31,12 @@
 #'
 #' response <- wikimedia_rest_request("page", "html", "Earth") %>%
 #'   httr2::req_perform()
+#'
+#' # Some REST requests take query parameters. Pass these as named arguments.
+#' # To search German Wikipedia for articles about Goethe
+#' response <- core_rest_request("search/page", q="Goethe", limit=2, language="de") %>%
+#'   httr2::req_perform() %>%
+#'   httr2::resp_body_json()
 core_rest_request <- function(..., language = "en") {
   request <- rest_request(..., endpoint = "w/rest.php/v1", language = language)
   class(request) <- c("core", class(request))
@@ -44,9 +55,6 @@ wikimedia_rest_request <- function(..., language = "en") {
 rest_request <- function(..., endpoint = character(), language = "en") {
   dots <- rlang::dots_list(..., .named=FALSE)
   path_components <- dots[!rlang::have_name(dots)]
-  if (length(path_components) == 0) {
-    rlang::abort("Invalid request: you have not provided any URL components")
-  }
   query_params <- dots[rlang::have_name(dots)]
   url <- glue::glue("https://{language}.wikipedia.org/")
   rlang::inject(

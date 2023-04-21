@@ -12,21 +12,26 @@ wikimedia_rest_request(..., language = "en")
 \arguments{
 \item{...}{<\code{\link[rlang:dyn-dots]{dynamic-dots}}> Components to add to the URL.
 Unnamed arguments are added to the path of the request, while named
-arguments are added as query parameters. See above.}
+arguments are added as query parameters.}
 
 \item{language}{The two-letter language code for the Wikipedia edition}
 }
 \value{
 A \code{core/rest} or \code{wikimedia/rest} object, an S3 vector that
-subclasses \code{httr2_request} (see \link[httr2:request]{httr2::request})
+subclasses \code{httr2_request} (see \link[httr2:request]{httr2::request}). The request needs to be
+passed to \link[httr2:req_perform]{httr2::req_perform} to retrieve data from the API.
 }
 \description{
-\code{core_request_request()} builds a request for the \href{https://www.mediawiki.org/wiki/API:REST_API}{MediaWiki Core REST API} is the basic REST
+\code{core_request_request()} builds a request for the \href{https://www.mediawiki.org/wiki/API:REST_API}{MediaWiki Core REST API}, the basic REST
 API available on all MediaWiki wikis.
 
-\code{wikimedia_rest_request()} builds a request for the \href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{Wikimedia REST API} is an additional
+\code{wikimedia_rest_request()} builds a request for the \href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{Wikimedia REST API}, an additional
 endpoint just for Wikipedia and other wikis managed by the Wikimedia
 Foundation
+}
+\details{
+Low-level functions for accessing Wikipedia's REST APIs. They do minimal
+error-checking, and are primarily for developer use.
 }
 \examples{
 # Get the html of the 'Earth' article on English Wikipedia
@@ -35,4 +40,10 @@ response <- core_rest_request("page", "Earth", "html") \%>\%
 
 response <- wikimedia_rest_request("page", "html", "Earth") \%>\%
   httr2::req_perform()
+
+# Some REST requests take query parameters. Pass these as named arguments.
+# To search German Wikipedia for articles about Goethe
+response <- core_rest_request("search/page", q="Goethe", limit=2, language="de") \%>\%
+  httr2::req_perform() \%>\%
+  httr2::resp_body_json()
 }
