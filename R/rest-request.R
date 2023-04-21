@@ -33,6 +33,7 @@ core_rest_request <- function(..., language = "en") {
 }
 
 #' @rdname core_rest_request
+#' @export
 wikimedia_rest_request <- function(..., language = "en") {
   request <- rest_request(..., endpoint = "api/rest_v1", language = language) %>%
     httr2::req_throttle(199 / 1)
