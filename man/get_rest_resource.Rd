@@ -24,7 +24,7 @@ vectors must have the same length or be of length one.}
 "\href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{wikimedia}"}
 
 \item{response_type}{The expected Content-Type of the response. Currently
-.  "html" and "json" are supported.}
+"html" and "json" are supported.}
 }
 \value{
 A list of responses. If \code{response_type} == "json", then the responses
