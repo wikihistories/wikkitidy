@@ -9,3 +9,4 @@
 
 * Added a `NEWS.md` file to track changes to the package.
 * New low-level helper, [get_rest_resource], for generating REST API calls; refactored existing calls to use this function
+* REST requests now accept query parameters
