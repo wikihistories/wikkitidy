@@ -2,7 +2,7 @@ pandoc: 2.19.2
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles: {}
-last_built: 2023-04-21T01:13Z
+last_built: 2023-04-21T01:50Z
 urls:
   reference: https://wikihistories.github.io/wikkitidy/reference
   article: https://wikihistories.github.io/wikkitidy/articles
