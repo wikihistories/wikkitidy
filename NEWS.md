@@ -1,3 +1,8 @@
+# wikkitidy (development version)
+
+* `get_history_counts()`: find out how many times a page has been edited
+* Improved handling of `get_diff()` response data
+
 # wikkitidy 0.1.1
 
 * Better parsing of response values. All functions will now return a simple vector, tbl_df, or a list of tbl_dfs, with the exception of the Action API Query modules, whose response object has been renamed `query_tbl()` for clarity
