@@ -8,28 +8,24 @@
 #'
 #' @param from Vector of revision ids
 #' @param to Vector of revision ids
-#' @param language Vector of two-letter language codes (will be recyled if length==1)
+#' @param language Vector of two-letter language codes (will be recycled if
+#'   length==1)
+#' @param simplify logical: should R simplify the result (see [return])
 #'
-#' @return A list the same length as `from` and `to`, comprising
-#'   [wikidiff2
-#'   responses](https://www.mediawiki.org/wiki/API:REST_API/Reference#Response_schema_3),
-#'   represented as R lists
+#' @return The return value depends on the `simplify` parameter.
+#' * If `simplify` == TRUE: Either a list of [tibble::tbl_df] objects the same
+#'   length as `from` and `to`, or a single [tibble::tbl_df] if they are of
+#'   length 1.
+#'  * If `simplify` == FALSE: A list the same length as `from` and `to`
+#'   containing the full [wikidiff2
+#'   response](https://www.mediawiki.org/wiki/API:REST_API/Reference#Response_schema_3)
+#'   for each pair of revisions. This response includes additional data for
+#'   displaying diffs onscreen.
 #' @export
 #'
 #' @examples
 #' # Compare revision 847170467 to 851733941 on English Wikipedia
-#' diffs <- get_diff(847170467, 851733941)
-#'
-#' # Each wikidiff2 response contains three main keys:
-#' names(diffs[[1]])
-#' # [1] "from" "to" "diff"
-#'
-#' # To see the text that has been inserted, deleted, or moved, look in the
-#' # `diff` key, which contains a numbered list of differences
-#' diffs[[1]]$diff[[2]]$text
-#'
-#' # In this case, the diff is of type `0`, which means an insertion
-#' diffs[[1]]$diff[[2]]$type
+#' get_diff(847170467, 851733941)
 #'
 #' # The function is vectorised, so you can compare multiple pairs of revisions
 #' # in a single call
@@ -40,8 +36,38 @@
 #'     titles = "Main_Page", rvlimit = 5, rvprop = "ids", rvdir = "older"
 #'   ) %>%
 #'   perform_query_once() %>%
-#'   tidyr::hoist(revisions, "parentid", "revid")
-#' diffs <- get_diff(from = revisions$parentid, to = revisions$revid)
-get_diff <- function(from, to, language = "en") {
-  get_rest_resource("revision", from, "compare", to, language = language)
+#'   tidyr::hoist(revisions, "parentid", "revid") %>%
+#'   dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
+get_diff <- function(from, to, language = "en", simplify = T) {
+  if (!rlang::is_scalar_logical(simplify)) {
+    rlang::abort("`simplify` must be either TRUE or FALSE")
+  }
+  response_type <- if (simplify) "wikidiff2" else NULL
+  get_rest_resource(
+    "revision", from, "compare", to,
+    language = language, response_type = response_type)
+}
+
+diff_to_tbl <- function(diff_list) {
+  purrr::map(diff_list, simplify_diff) %>%
+    dplyr::bind_rows() %>%
+    dplyr::filter(type != 0)
+}
+
+simplify_diff <- function(diff) {
+  diff <- purrr::modify_at(diff, "highlightRanges", dplyr::bind_rows)
+  diff <- purrr::list_flatten(diff)
+}
+
+#' @export
+#' @describeIn parse_response Simplify a wikidiff2 response to a dataframe of
+#'  textual differences, discarding display data
+parse_response.wikidiff2 <- function(response) {
+  diff_list <- purrr::map(response, "diff")
+  diffs <- purrr::map(diff_list, diff_to_tbl)
+  if (rlang::is_scalar_list(diffs)) {
+    diffs[[1]]
+  } else {
+    diffs
+  }
 }

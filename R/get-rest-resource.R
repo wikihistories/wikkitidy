@@ -30,8 +30,9 @@ get_rest_resource <- function(
     endpoint = c("core", "wikimedia"),
     response_format = c("json", "html"),
     response_type = NULL) {
-  dots <- rlang::list2(...)
-  dots <- purrr::map_if(dots, is.character, str_for_rest)
+  dots <- rlang::list2(...) %>%
+    purrr::keep(\(x) !is.null(x)) %>%
+    purrr::map_if(is.character, str_for_rest)
   req_fn <- switch(rlang::arg_match(endpoint),
     "core" = core_rest_request,
     "wikimedia" = wikimedia_rest_request

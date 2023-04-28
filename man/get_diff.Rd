@@ -5,19 +5,29 @@
 \title{Search for insertions, deletions or relocations of text between two versions
 of a Wikipedia page}
 \usage{
-get_diff(from, to, language = "en")
+get_diff(from, to, language = "en", simplify = T)
 }
 \arguments{
 \item{from}{Vector of revision ids}
 
 \item{to}{Vector of revision ids}
 
-\item{language}{Vector of two-letter language codes (will be recyled if length==1)}
+\item{language}{Vector of two-letter language codes (will be recycled if
+length==1)}
+
+\item{simplify}{logical: should R simplify the result (see \link{return})}
 }
 \value{
-A list the same length as \code{from} and \code{to}, comprising
-\href{https://www.mediawiki.org/wiki/API:REST_API/Reference#Response_schema_3}{wikidiff2 responses},
-represented as R lists
+The return value depends on the \code{simplify} parameter.
+\itemize{
+\item If \code{simplify} == TRUE: Either a list of \link[tibble:tbl_df-class]{tibble::tbl_df} objects the same
+length as \code{from} and \code{to}, or a single \link[tibble:tbl_df-class]{tibble::tbl_df} if they are of
+length 1.
+\item If \code{simplify} == FALSE: A list the same length as \code{from} and \code{to}
+containing the full \href{https://www.mediawiki.org/wiki/API:REST_API/Reference#Response_schema_3}{wikidiff2 response}
+for each pair of revisions. This response includes additional data for
+displaying diffs onscreen.
+}
 }
 \description{
 Any two revisions of a Wikipedia page can be compared using the 'diff' tool.
@@ -27,18 +37,7 @@ in any order, across any span of revisions.
 }
 \examples{
 # Compare revision 847170467 to 851733941 on English Wikipedia
-diffs <- get_diff(847170467, 851733941)
-
-# Each wikidiff2 response contains three main keys:
-names(diffs[[1]])
-# [1] "from" "to" "diff"
-
-# To see the text that has been inserted, deleted, or moved, look in the
-# `diff` key, which contains a numbered list of differences
-diffs[[1]]$diff[[2]]$text
-
-# In this case, the diff is of type `0`, which means an insertion
-diffs[[1]]$diff[[2]]$type
+get_diff(847170467, 851733941)
 
 # The function is vectorised, so you can compare multiple pairs of revisions
 # in a single call
@@ -49,6 +48,6 @@ revisions <- wiki_action_request() \%>\%
     titles = "Main_Page", rvlimit = 5, rvprop = "ids", rvdir = "older"
   ) \%>\%
   perform_query_once() \%>\%
-  tidyr::hoist(revisions, "parentid", "revid")
-diffs <- get_diff(from = revisions$parentid, to = revisions$revid)
+  tidyr::hoist(revisions, "parentid", "revid") \%>\%
+  dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
 }

@@ -69,7 +69,7 @@ get_page_related <- function(title, language = "en") {
 get_page_talk <- function(title, language = "en") {
   get_rest_resource(
     "page", "talk", title,
-    language = language, endpoint = "wikimedia", response_format = "json"
+    language = language, endpoint = "wikimedia"
   )
 }
 

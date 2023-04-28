@@ -8,3 +8,7 @@
 #' @importFrom vctrs vec_ptype_full
 ## usethis namespace: end
 NULL
+
+# Suppress 'global variable' warnings due to using dplyr
+# See https://dplyr.tidyverse.org/articles/in-packages.html
+utils::globalVariables("type")
