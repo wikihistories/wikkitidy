@@ -38,7 +38,7 @@ Count how many times Wikipedia articles have been edited
 \examples{
 # Get the number of edits made by auto-confirmed editors to a page between
 # revisions 384955912 and 406217369
-get_history_count("Jupiter", "edits", 384955912, 406217369)
+get_history_count("Jupiter", "editors", 384955912, 406217369)
 
 # Compare which authors have the most edit activity
 authors <- tibble::tribble(
@@ -48,4 +48,5 @@ authors <- tibble::tribble(
   "Emily Dickinson"
 ) \%>\%
   dplyr::mutate(get_history_count(author))
+authors
 }

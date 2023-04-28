@@ -50,4 +50,5 @@ revisions <- wiki_action_request() \%>\%
   perform_query_once() \%>\%
   tidyr::hoist(revisions, "parentid", "revid") \%>\%
   dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
+revisions
 }
