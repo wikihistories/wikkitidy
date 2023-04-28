@@ -31,58 +31,53 @@
 #' # Get language links for a known page on English Wikipedia
 #' get_page_langlinks("Charles Harpur")
 get_page_metadata <- function(title, language = "en") {
-  response <- get_rest_resource(
+  get_rest_resource(
     "page", "title", title,
-    language = language, endpoint = "wikimedia", response_format = "json"
+    language = language, endpoint = "wikimedia"
   )
-  response
 }
 
 #' @rdname get_page_metadata
 #' @export
 get_page_html <- function(title, language = "en") {
-  response <- get_rest_resource(
+  get_rest_resource(
     "page", "html", title,
     language = language, endpoint = "wikimedia", response_format = "html"
   )
-  response
 }
 
 #' @rdname get_page_metadata
 #' @export
 get_page_summary <- function(title, language = "en") {
-  response <- get_rest_resource(
+  get_rest_resource(
     "page", "summary", title,
-    language = language, endpoint = "wikimedia", response_format = "json"
+    language = language, endpoint = "wikimedia"
   )
-  response
 }
 
 #' @rdname get_page_metadata
 #' @export
 get_page_related <- function(title, language = "en") {
-  response <- get_rest_resource(
+  get_rest_resource(
     "page", "related", title,
-    language = language, endpoint = "wikimedia", response_format = "json"
+    language = language, endpoint = "wikimedia"
   )
-  response
 }
 
 #' @rdname get_page_metadata
 #' @export
 get_page_talk <- function(title, language = "en") {
-  response <- get_rest_resource(
+  get_rest_resource(
     "page", "talk", title,
     language = language, endpoint = "wikimedia", response_format = "json"
   )
-  response
 }
 
 #' @rdname get_page_metadata
 #' @export
 get_page_langlinks <- function(title, language = "en") {
-  langlinks <-
-    get_rest_resource("page", title, "links", "language", language = language,
-                      response_type = "page_language_object")
-  langlinks
+  get_rest_resource(
+    "page", title, "links", "language",
+    language = language, response_type = "page_language_object"
+  )
 }
