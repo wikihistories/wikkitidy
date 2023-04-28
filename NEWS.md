@@ -1,4 +1,4 @@
-# wikkitidy (development version)
+# wikkitidy 0.1.1
 
 * Underlying interface to the three main APIs: `core_rest_request()`, `wiki_action_request()` and `wikimedia_rest_request()`
 * First few vector functions for getting page-level data
