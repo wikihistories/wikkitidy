@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0.9004</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,16 +45,17 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="development version" id="wikkitidy-development-version">wikkitidy (development version)<a class="anchor" aria-label="anchor" href="#wikkitidy-development-version"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.1.1" id="wikkitidy-011">wikkitidy 0.1.1<a class="anchor" aria-label="anchor" href="#wikkitidy-011"></a></h2>
+<ul><li>Better parsing of response values. All functions will now return a simple vector, tbl_df, or a list of tbl_dfs, with the exception of the Action API Query modules, whose response object has been renamed <code><a href="../reference/query_tbl.html">query_tbl()</a></code> for clarity</li>
+</ul></div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.1.0" id="wikkitidy-010">wikkitidy 0.1.0<a class="anchor" aria-label="anchor" href="#wikkitidy-010"></a></h2>
 <ul><li>Underlying interface to the three main APIs: <code><a href="../reference/core_rest_request.html">core_rest_request()</a></code>, <code><a href="../reference/wiki_action_request.html">wiki_action_request()</a></code> and <code><a href="../reference/core_rest_request.html">wikimedia_rest_request()</a></code>
 </li>
 <li>First few vector functions for getting page-level data</li>
 <li>First few helper functions to build more complex Action API requests</li>
 <li>First few data types for response values</li>
-</ul></div>
-    <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.1.0" id="wikkitidy-010">wikkitidy 0.1.0<a class="anchor" aria-label="anchor" href="#wikkitidy-010"></a></h2>
-<ul><li>Added a <code>NEWS.md</code> file to track changes to the package.</li>
+<li>Added a <code>NEWS.md</code> file to track changes to the package.</li>
 <li>New low-level helper, <code><a href="../reference/get_rest_resource.html">get_rest_resource()</a></code>, for generating REST API calls; refactored existing calls to use this function</li>
 <li>REST requests now accept query parameters</li>
 <li>New family of <code>get_page</code> functions to retrieve data about a vector of page titles, e.g. <code><a href="../reference/get_page_metadata.html">get_page_metadata()</a></code>
