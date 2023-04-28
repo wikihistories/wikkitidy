@@ -38,6 +38,7 @@
 #'   perform_query_once() %>%
 #'   tidyr::hoist(revisions, "parentid", "revid") %>%
 #'   dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
+#' revisions
 get_diff <- function(from, to, language = "en", simplify = T) {
   if (!rlang::is_scalar_logical(simplify)) {
     rlang::abort("`simplify` must be either TRUE or FALSE")

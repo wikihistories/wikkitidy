@@ -1,6 +1,6 @@
 # wikkitidy (development version)
 
-* `get_history_counts()`: find out how many times a page has been edited
+* `get_history_count()`: find out how many times a page has been edited
 * Improved handling of `get_diff()` response data
 
 # wikkitidy 0.1.1
