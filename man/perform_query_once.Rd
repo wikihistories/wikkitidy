@@ -10,7 +10,7 @@ perform_query_once(.req)
 \item{.req}{A httr2_request object describing the API query}
 }
 \value{
-A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble
+A query_tbl: an S3 dataframe that is a subclass of tibble::tibble
 }
 \description{
 Get first batch of results for a MediaWiki Action API request

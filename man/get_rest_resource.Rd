@@ -8,14 +8,17 @@ get_rest_resource(
   ...,
   language = "en",
   endpoint = c("core", "wikimedia"),
-  response_type = c("json", "html")
+  response_format = c("json", "html"),
+  response_type = NULL
 )
 }
 \arguments{
-\item{...}{<\code{\link[rlang:dyn-dots]{dynamic-dots}}> The URL components of the
-desired resources. Names of the arguments are ignored. The function follows
-the \href{https://vctrs.r-lib.org/reference/vector_recycling_rules}{tidyverse vector recycling rules}, so all
-vectors must have the same length or be of length one.}
+\item{...}{<\code{\link[rlang:dyn-dots]{dynamic-dots}}> The URL components and query
+parameters of the desired resources. Names of the arguments are ignored.
+The function follows the \href{https://vctrs.r-lib.org/reference/vector_recycling_rules}{tidyverse vector recycling rules}, so all
+vectors must have the same length or be of length one. Unnamed arguments
+will be appended to the URL path; named arguments will be added as query
+parameters}
 
 \item{language}{Character vector of two-letter language codes}
 
@@ -23,13 +26,17 @@ vectors must have the same length or be of length one.}
 "\href{https://www.mediawiki.org/wiki/API:REST_API}{core}" or
 "\href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{wikimedia}"}
 
-\item{response_type}{The expected Content-Type of the response. Currently
-"html" and "json" are supported.}
+\item{response_format}{The expected Content-Type of the response. Currently "html" and
+"json" are supported.}
+
+\item{response_type}{The schema of the response. If supplied, the results will
+be parsed using the schema.}
 }
 \value{
-A list of responses. If \code{response_type} == "json", then the responses
-will be simple R lists. If \code{response_type} == "html", then the responses
-will \code{xml_document} objects.
+A list of responses. If \code{response_format} == "json", then the responses
+will be simple R lists. If \code{response_format} == "html", then the responses
+will \code{xml_document} objects. If \code{response_type} is supplied, the response
+will be coerced into a \link[tibble:tbl_df-class]{tibble::tbl_df} or vector using the relevant schema.
 }
 \description{
 This function is intended for developer use. It makes it easy to quickly

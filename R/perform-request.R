@@ -2,7 +2,7 @@
 #'
 #' @param .req A httr2_request object describing the API query
 #'
-#' @return A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble
+#' @return A query_tbl: an S3 dataframe that is a subclass of tibble::tibble
 #' @export
 #'
 #' @examples
@@ -20,7 +20,7 @@ perform_query_once <- function(.req) {
   results <- .get_query_results(resp$url, body)
   results %>%
     dplyr::bind_rows() %>%
-    wiki_tbl(request = .req,
+    query_tbl(request = .req,
                 continue = continue,
                 batchcomplete = batchcomplete)
 }
@@ -50,10 +50,10 @@ perform_query_once <- function(.req) {
 #' further batches of data. This function handles the continue object and
 #' retrieves all the data for the desired query.
 #'
-#' @param x An object describing the desired request. Either a wiki_tbl or a
+#' @param x An object describing the desired request. Either a query_tbl or a
 #'   httr2_request
 #'
-#' @return A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble
+#' @return A query_tbl: an S3 dataframe that is a subclass of tibble::tibble
 #' @export
 #'
 #' @examples
@@ -84,9 +84,9 @@ retrieve_all.httr2_request <- function(x) {
   continue_query(.req = x, data = NULL)
 }
 
-#' @describeIn retrieve_all Complete a query from an incomplete wiki_tbl
+#' @describeIn retrieve_all Complete a query from an incomplete query_tbl
 #' @export
-retrieve_all.wiki_tbl <- function(x) {
+retrieve_all.query_tbl <- function(x) {
   request = get_request(x)
   continue = get_continue(x)
   continue_query(.req = request,
@@ -105,7 +105,7 @@ retrieve_all.wiki_tbl <- function(x) {
 #' @param continue [Continue](https://www.mediawiki.org/wiki/API:Continue)
 #'   parameter returned from previous iteration of the query, if any
 #'
-#' @return A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble
+#' @return A query_tbl: an S3 dataframe that is a subclass of tibble::tibble
 continue_query <- function(.req,
                            data = NULL,
                            continue = NULL) {
@@ -126,7 +126,7 @@ continue_query <- function(.req,
     continue <- get_continue(response_list[[next_idx]])
     batchcomplete <- get_batchcomplete(response_list[[next_idx]])
   }
-  dplyr::bind_rows(response_list) %>% wiki_tbl(request = base_request,
+  dplyr::bind_rows(response_list) %>% query_tbl(request = base_request,
                                                   continue = continue,
                                                   batchcomplete = batchcomplete)
 }

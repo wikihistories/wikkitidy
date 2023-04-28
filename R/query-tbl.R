@@ -1,34 +1,35 @@
-#' Representation of Wikipedia data as tibble, with request metadata stored as
-#' attributes
+#' Representation of Wikipedia data returned from an [Action API Query
+#' module](https://www.mediawiki.org/wiki/API:Query) as tibble, with request
+#' metadata stored as attributes.
 #'
 #' @param x A tibble
 #' @param request The httr2_request object used to generate the tibble
 #' @param continue The continue parameter returned by the API
 #' @param batchcomplete The batchcomplete parameter returned by the API
 #'
-#' @return A tibble: an S3 data.frame with class `wiki_tbl`.
+#' @return A tibble: an S3 data.frame with class `query_tbl`.
 #'
 #' @keywords data_type
-wiki_tbl <- function(x, request, continue, batchcomplete) {
+query_tbl <- function(x, request, continue, batchcomplete) {
   request <- if (is.null(request)) NA else request
   continue <- if(is.null(continue)) NA else continue
   batchcomplete <- if(is.null(batchcomplete)) NA else batchcomplete
-  new_wiki_tbl(x, request, continue, batchcomplete)
+  new_query_tbl(x, request, continue, batchcomplete)
 }
 
 # The constructor
-new_wiki_tbl <- function(x, request, continue, batchcomplete, class=NULL) {
+new_query_tbl <- function(x, request, continue, batchcomplete, class=NULL) {
   tibble::new_tibble(
     x,
     request = request,
     continue = continue,
     batchcomplete = batchcomplete,
-    class = c(class, "wiki_tbl")
+    class = c(class, "query_tbl")
   )
 }
 
 #' @export
-tbl_sum.wiki_tbl <- function(x, ...) {
+tbl_sum.query_tbl <- function(x, ...) {
   url <- get_request(x)$url
   c(
     cli::cli_text("{.cls {class(x)[1]}}"),
@@ -38,7 +39,7 @@ tbl_sum.wiki_tbl <- function(x, ...) {
 }
 
 #' @export
-tbl_format_footer.wiki_tbl <- function(x, ...) {
+tbl_format_footer.query_tbl <- function(x, ...) {
   # Unfortunately the messages appear above the body of the tbl, rather than
   # underneath it... TODO: Report issue!
   default_footer <- NextMethod()
@@ -55,7 +56,7 @@ tbl_format_footer.wiki_tbl <- function(x, ...) {
   default_footer
 }
 
-validate_wiki_tbl <- function(x) {
+validate_query_tbl <- function(x) {
   if (!tibble::is_tibble(x)) {
     stop("`x` is not a valid tibble",
          .call = FALSE)
@@ -69,24 +70,24 @@ validate_wiki_tbl <- function(x) {
   x
 }
 
-get_request <- function(wiki_tbl) {
-  attr(wiki_tbl, "request")
+get_request <- function(query_tbl) {
+  attr(query_tbl, "request")
 }
 
-get_continue <- function(wiki_tbl) {
-  attr(wiki_tbl, "continue")
+get_continue <- function(query_tbl) {
+  attr(query_tbl, "continue")
 }
 
-set_continue <- function(wiki_tbl, x) {
+set_continue <- function(query_tbl, x) {
   x <- if (is.null(x)) NA else x
-  attr(wiki_tbl, "continue") <- x
+  attr(query_tbl, "continue") <- x
 }
 
-get_batchcomplete <- function(wiki_tbl) {
-  attr(wiki_tbl, "batchcomplete")
+get_batchcomplete <- function(query_tbl) {
+  attr(query_tbl, "batchcomplete")
 }
 
-set_batchcomplete <- function(wiki_tbl, x) {
+set_batchcomplete <- function(query_tbl, x) {
   x <- if (is.null(x)) NA else x
-  attr(wiki_tbl, "batchcomplete") <- x
+  attr(query_tbl, "batchcomplete") <- x
 }

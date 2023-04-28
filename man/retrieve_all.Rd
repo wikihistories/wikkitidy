@@ -3,7 +3,7 @@
 \name{retrieve_all}
 \alias{retrieve_all}
 \alias{retrieve_all.httr2_request}
-\alias{retrieve_all.wiki_tbl}
+\alias{retrieve_all.query_tbl}
 \title{Continue requesting data from the MediaWiki Action API until there is none
 left}
 \usage{
@@ -11,14 +11,14 @@ retrieve_all(x)
 
 \method{retrieve_all}{httr2_request}(x)
 
-\method{retrieve_all}{wiki_tbl}(x)
+\method{retrieve_all}{query_tbl}(x)
 }
 \arguments{
-\item{x}{An object describing the desired request. Either a wiki_tbl or a
+\item{x}{An object describing the desired request. Either a query_tbl or a
 httr2_request}
 }
 \value{
-A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble
+A query_tbl: an S3 dataframe that is a subclass of tibble::tibble
 }
 \description{
 Typically a request to the \href{https://www.mediawiki.org/wiki/API:Main_page}{MediaWiki Action API} will only return a limited
@@ -31,7 +31,7 @@ retrieves all the data for the desired query.
 \itemize{
 \item \code{retrieve_all(httr2_request)}: Get all available data from a constructed request
 
-\item \code{retrieve_all(wiki_tbl)}: Complete a query from an incomplete wiki_tbl
+\item \code{retrieve_all(query_tbl)}: Complete a query from an incomplete query_tbl
 
 }}
 \examples{

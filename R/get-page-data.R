@@ -33,7 +33,7 @@
 get_page_metadata <- function(title, language = "en") {
   response <- get_rest_resource(
     "page", "title", title,
-    language = language, endpoint = "wikimedia", response_type = "json"
+    language = language, endpoint = "wikimedia", response_format = "json"
   )
   response
 }
@@ -43,7 +43,7 @@ get_page_metadata <- function(title, language = "en") {
 get_page_html <- function(title, language = "en") {
   response <- get_rest_resource(
     "page", "html", title,
-    language = language, endpoint = "wikimedia", response_type = "html"
+    language = language, endpoint = "wikimedia", response_format = "html"
   )
   response
 }
@@ -53,7 +53,7 @@ get_page_html <- function(title, language = "en") {
 get_page_summary <- function(title, language = "en") {
   response <- get_rest_resource(
     "page", "summary", title,
-    language = language, endpoint = "wikimedia", response_type = "json"
+    language = language, endpoint = "wikimedia", response_format = "json"
   )
   response
 }
@@ -63,7 +63,7 @@ get_page_summary <- function(title, language = "en") {
 get_page_related <- function(title, language = "en") {
   response <- get_rest_resource(
     "page", "related", title,
-    language = language, endpoint = "wikimedia", response_type = "json"
+    language = language, endpoint = "wikimedia", response_format = "json"
   )
   response
 }
@@ -73,7 +73,7 @@ get_page_related <- function(title, language = "en") {
 get_page_talk <- function(title, language = "en") {
   response <- get_rest_resource(
     "page", "talk", title,
-    language = language, endpoint = "wikimedia", response_type = "json"
+    language = language, endpoint = "wikimedia", response_format = "json"
   )
   response
 }
@@ -82,11 +82,7 @@ get_page_talk <- function(title, language = "en") {
 #' @export
 get_page_langlinks <- function(title, language = "en") {
   langlinks <-
-    get_rest_resource("page", title, "links", "language", language = language) %>%
-    purrr::map(purrr::list_transpose) %>%
-    purrr::map(
-      \(x)
-      rlang::inject(new_page_language_object(!!!x))
-    )
+    get_rest_resource("page", title, "links", "language", language = language,
+                      response_type = "page_language_object")
   langlinks
 }

@@ -30,6 +30,6 @@ test_that("`get_page_langlinks` returns data for known requests", {
   titles <- c("Charles Harpur", "Percy_Bysshe_Shelley")
   links <- get_page_langlinks(titles)
   expect_length(links, 2)
-  expect_s3_class(links[[1]], "page_language_object")
-  expect_s3_class(links[[2]], "page_language_object")
+  expect_s3_class(links[[1]], "tbl_df")
+  expect_s3_class(links[[2]], "tbl_df")
 })

@@ -15,7 +15,7 @@ continue_query(.req, data = NULL, continue = NULL)
 parameter returned from previous iteration of the query, if any}
 }
 \value{
-A wiki_tbl: an S3 dataframe that is a subclass of tibble::tibble
+A query_tbl: an S3 dataframe that is a subclass of tibble::tibble
 }
 \description{
 This function drives \code{retrieve_all}, by repeatedly appending the continue

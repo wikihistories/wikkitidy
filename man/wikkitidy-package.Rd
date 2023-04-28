@@ -6,6 +6,8 @@
 \alias{wikkitidy-package}
 \title{wikkitidy: Tidy analysis of Wikipedia in R}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 A wrapper around Wikipedia's major APIs: the MediaWiki Action API, REST API and Wikmedia REST API. These three APIs provide complementary functionality for the analysis of Wikipedia by social scientists and digital humanists. This package provides a tidy interface to all three APIs, along with a range of functions that solve common tasks in Wikipedia research.
 }
 \seealso{
