@@ -16,9 +16,15 @@ parse_response <- function(response) {
 }
 
 #' @export
-#' @describeIn parse_response By default, create a list of nested tbl_dfs, and
-#'  unnest it if it has length == 1
+#' @describeIn parse_response By default, create a list of nested tbl_dfs
 parse_response.default <- function(response) {
   parsed <- purrr::map(response, dplyr::bind_rows)
-  parsed <- if (rlang::is_scalar_list(parsed)) parsed[[1]] else parsed
+  parsed
+}
+
+flatten_bind <- function(response) {
+  parsed <- purrr::map(response, purrr::list_flatten)
+  parsed <- purrr::list_transpose(parsed)
+  parsed <- tibble::tibble(!!!parsed)
+  parsed
 }

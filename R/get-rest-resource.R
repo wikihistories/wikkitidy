@@ -24,7 +24,8 @@
 #'   will be simple R lists. If `response_format` == "html", then the responses
 #'   will `xml_document` objects. If `response_type` is supplied, the response
 #'   will be coerced into a [tibble::tbl_df] or vector using the relevant schema.
-#'
+#'   If the response is a 'scalar list' (i.e. a list of length == 1), then it is
+#'   silently unlisted, returning a simple list or vector.
 get_rest_resource <- function(
     ..., language = "en",
     endpoint = c("core", "wikimedia"),
@@ -46,10 +47,11 @@ get_rest_resource <- function(
   }
   params <- vctrs::vec_recycle_common(!!!dots, language = language)
   get_one <- purrr::compose(req_fn, httr2::req_perform, resp_fn, .dir = "forward")
-  response <- purrr::pmap(params, get_one)
+  response <- purrr::pmap(params, get_one, .progress = T)
   if (!is.null(response_type)) {
     class(response) <- response_type
     response <- parse_response(response)
   }
+  response <- if (rlang::is_scalar_list(response)) response[[1]] else response
   response
 }

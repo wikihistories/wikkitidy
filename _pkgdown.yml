@@ -33,7 +33,7 @@ reference:
 - subtitle: Vector functions
   contents:
   - get_page_properties
-  - get_page_metadata
+  - page_vector_functions
   - get_diff
   - get_history_count
 - title: Use WikiMedia XML dumps

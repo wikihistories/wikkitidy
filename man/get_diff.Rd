@@ -22,7 +22,9 @@ The return value depends on the \code{simplify} parameter.
 \itemize{
 \item If \code{simplify} == TRUE: Either a list of \link[tibble:tbl_df-class]{tibble::tbl_df} objects the same
 length as \code{from} and \code{to}, or a single \link[tibble:tbl_df-class]{tibble::tbl_df} if they are of
-length 1.
+length 1. Most of the response data is stripped away, leaving just the
+textual differences between the revisions, their location, type and
+'highlightRanges' if the textual differences are complicated.
 \item If \code{simplify} == FALSE: A list the same length as \code{from} and \code{to}
 containing the full \href{https://www.mediawiki.org/wiki/API:REST_API/Reference#Response_schema_3}{wikidiff2 response}
 for each pair of revisions. This response includes additional data for

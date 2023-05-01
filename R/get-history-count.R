@@ -47,8 +47,7 @@ get_history_count <- function(
   )
 }
 
-#' @export
-#' @describeIn parse_response Output a tbl_df of the same length as `response`
+#' @exportS3Method
 parse_response.history_count_object <- function(response) {
   dplyr::bind_rows(!!!response)
 }

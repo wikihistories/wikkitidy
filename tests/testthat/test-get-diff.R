@@ -7,8 +7,7 @@ test_that("`get_diff` returns a single `tbl_df` for a known request", {
 
 test_that("`get_diff` returns a list of the right kind when simplify=FALSE", {
   diffs <- get_diff(847170467, 851733941, simplify = FALSE)
-  expect_length(diffs, 1L)
-  expect_named(diffs[[1]], c("from", "to", "diff"))
+  expect_named(diffs, c("from", "to", "diff"))
   expect_true(rlang::is_bare_list(diffs))
 })
 

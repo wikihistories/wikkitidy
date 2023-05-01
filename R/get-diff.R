@@ -15,7 +15,9 @@
 #' @return The return value depends on the `simplify` parameter.
 #' * If `simplify` == TRUE: Either a list of [tibble::tbl_df] objects the same
 #'   length as `from` and `to`, or a single [tibble::tbl_df] if they are of
-#'   length 1.
+#'   length 1. Most of the response data is stripped away, leaving just the
+#'   textual differences between the revisions, their location, type and
+#'   'highlightRanges' if the textual differences are complicated.
 #'  * If `simplify` == FALSE: A list the same length as `from` and `to`
 #'   containing the full [wikidiff2
 #'   response](https://www.mediawiki.org/wiki/API:REST_API/Reference#Response_schema_3)
