@@ -12,7 +12,7 @@ generate vectorised calls to the different API endpoints."><meta property="og:im
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9001</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,7 +101,9 @@ be parsed using the schema.</p></dd>
 <p>A list of responses. If <code>response_format</code> == "json", then the responses
 will be simple R lists. If <code>response_format</code> == "html", then the responses
 will <code>xml_document</code> objects. If <code>response_type</code> is supplied, the response
-will be coerced into a <a href="https://tibble.tidyverse.org/reference/tbl_df-class.html" class="external-link">tibble::tbl_df</a> or vector using the relevant schema.</p>
+will be coerced into a <a href="https://tibble.tidyverse.org/reference/tbl_df-class.html" class="external-link">tibble::tbl_df</a> or vector using the relevant schema.
+If the response is a 'scalar list' (i.e. a list of length == 1), then it is
+silently unlisted, returning a simple list or vector.</p>
     </div>
 
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

@@ -18,7 +18,7 @@ in any order, across any span of revisions."><meta property="og:image" content="
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.1.9001</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +91,9 @@ length==1)</p></dd>
 
 <p>The return value depends on the <code>simplify</code> parameter.</p><ul><li><p>If <code>simplify</code> == TRUE: Either a list of <a href="https://tibble.tidyverse.org/reference/tbl_df-class.html" class="external-link">tibble::tbl_df</a> objects the same
 length as <code>from</code> and <code>to</code>, or a single <a href="https://tibble.tidyverse.org/reference/tbl_df-class.html" class="external-link">tibble::tbl_df</a> if they are of
-length 1.</p></li>
+length 1. Most of the response data is stripped away, leaving just the
+textual differences between the revisions, their location, type and
+'highlightRanges' if the textual differences are complicated.</p></li>
 <li><p>If <code>simplify</code> == FALSE: A list the same length as <code>from</code> and <code>to</code>
 containing the full <a href="https://www.mediawiki.org/wiki/API:REST_API/Reference#Response_schema_3" class="external-link">wikidiff2 response</a>
 for each pair of revisions. This response includes additional data for
