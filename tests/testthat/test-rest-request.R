@@ -10,6 +10,24 @@ test_that("`wikimedia_rest_request` returns a 200 for a basic request", {
   expect_equal(httr2::resp_status(response), 200)
 })
 
+test_that("`wikimedia_org_rest_request` returns a 200 for a known request", {
+  response <- wikimedia_org_rest_request(
+    endpoint = "/metrics/pageviews/top/",
+    "all-access", 2022, "05", "01",
+    language = "en"
+  ) %>% httr2::req_perform()
+  expect_equal(httr2::resp_status(response), 200)
+})
+
+test_that("`xtools_rest_request` returns a 200 for a known request", {
+  response <- xtools_rest_request(
+    endpoint = c("user", "simple_editcount"),
+    "michaelgfalk",
+    language = "en"
+  ) %>% httr2::req_perform()
+  expect_equal(httr2::resp_status(response), 200)
+})
+
 test_that("Named arguments are handled correctly", {
   lim <- 2
   core_resp <- core_rest_request("search", "page", q="Goethe", limit=lim, language="de") %>%

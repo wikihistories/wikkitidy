@@ -100,6 +100,8 @@ retrieve_all.query_tbl <- function(x) {
 #' parameters returned by the MediaWiki Action API to the request and retrieving
 #' the next batch.
 #'
+#' @keywords internal
+#'
 #' @param .req A httr2_request object describing the API query
 #' @param data Data returned from a previous iteration of the query, if any
 #' @param continue [Continue](https://www.mediawiki.org/wiki/API:Continue)

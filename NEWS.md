@@ -3,6 +3,7 @@
 * `get_history_count()`: find out how many times a page has been edited
 * Improved handling of `get_diff()` response data
 * Improved handling of `page_vector_functions()` response data. Most functions now return a tbl or list of tbls
+* Basic support for `wikimedia_rest_apis()`
 
 # wikkitidy 0.1.1
 

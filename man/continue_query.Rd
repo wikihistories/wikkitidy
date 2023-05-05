@@ -22,3 +22,4 @@ This function drives \code{retrieve_all}, by repeatedly appending the continue
 parameters returned by the MediaWiki Action API to the request and retrieving
 the next batch.
 }
+\keyword{internal}

@@ -18,7 +18,6 @@ reference:
     as tidy data.
   contents:
   - perform_query_once
-  - continue_query
   - retrieve_all
 - title: Get page data
   desc: >
@@ -27,8 +26,8 @@ reference:
     or revision ids.
 - subtitle: Build a REST request
   contents:
-  - wikimedia_rest_request
-  - core_rest_request
+  - wikipedia_rest_apis
+  - wikimedia_rest_apis
   - get_rest_resource
 - subtitle: Vector functions
   contents:
