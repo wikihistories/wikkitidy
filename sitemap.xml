@@ -22,9 +22,6 @@
     <loc>https://wikihistories.github.io/wikkitidy/reference/continue_query.html</loc>
   </url>
   <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/core_rest_request.html</loc>
-  </url>
-  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/get_diff.html</loc>
   </url>
   <url>
@@ -77,6 +74,12 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/wiki_action_request.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/wikimedia_rest_apis.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/wikipedia_rest_apis.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/wikkitidy-package.html</loc>
