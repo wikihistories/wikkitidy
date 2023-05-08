@@ -19,6 +19,12 @@
     <loc>https://wikihistories.github.io/wikkitidy/news/index.html</loc>
   </url>
   <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/check_limit.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/check_namespace.html</loc>
+  </url>
+  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/continue_query.html</loc>
   </url>
   <url>
@@ -32,6 +38,9 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/get_rest_resource.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/id_or_title.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/index.html</loc>
@@ -50,6 +59,12 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/prefix_params.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/process_timestamps.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/query_category_members.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/query_generate_pages.html</loc>
