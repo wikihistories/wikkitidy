@@ -58,8 +58,8 @@ physics_members
 
 # Retrieve interwiki links for the first 10 pages in the 'Beatles Albums'
 # category on Danish Wikipedia
+# TODO: This currently doesn't work, because incomplete batches aren't properly handled
 beatles <- query_category_members("Beatles-album", language = "da") \%>\%
   query_page_properties("langlinks") \%>\%
   next_batch()
-beatles
 }
