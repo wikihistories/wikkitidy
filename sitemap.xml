@@ -37,13 +37,13 @@
     <loc>https://wikihistories.github.io/wikkitidy/reference/index.html</loc>
   </url>
   <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/next_batch.html</loc>
+  </url>
+  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/page_vector_functions.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/parse_response.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/perform_query_once.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/pipe.html</loc>
