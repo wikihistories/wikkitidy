@@ -49,7 +49,7 @@ revisions <- wiki_action_request() \%>\%
     "revisions",
     titles = "Main_Page", rvlimit = 5, rvprop = "ids", rvdir = "older"
   ) \%>\%
-  perform_query_once() \%>\%
+  next_batch() \%>\%
   tidyr::hoist(revisions, "parentid", "revid") \%>\%
   dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
 revisions

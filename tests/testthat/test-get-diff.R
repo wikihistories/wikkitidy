@@ -21,7 +21,7 @@ test_that("`get_diff` vectorises correctly over `from` and `to`", {
       "revisions",
       titles = "Main_Page", rvlimit = 5, rvprop = "ids", rvdir = "older"
     ) %>%
-    perform_query_once() %>%
+    next_batch() %>%
     tidyr::hoist(revisions, "parentid", "revid")
   diffs <- get_diff(revisions$parentid, revisions$revid)
   expect_equal(nrow(revisions), length(diffs))

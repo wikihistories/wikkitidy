@@ -17,8 +17,11 @@ reference:
     Functions to send your query request to Wikipedia, and format the results
     as tidy data.
   contents:
-  - perform_query_once
+  - next_batch
   - retrieve_all
+- subtitle: Common queries
+  desc: >
+    Query Wikipedia using the most useful query modules of the Action API
 - title: Get page data
   desc: >
     Functions to retrieve additional data about pages. These functions typically

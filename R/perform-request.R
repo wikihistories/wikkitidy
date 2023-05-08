@@ -11,8 +11,8 @@
 #'   prop = "categories",
 #'   titles = "Albert Einstein"
 #'   ) %>%
-#'   perform_query_once()
-perform_query_once <- function(.req) {
+#'   next_batch()
+next_batch <- function(.req) {
   resp <- httr2::req_perform(.req)
   body <- httr2::resp_body_json(resp)
   continue <- purrr::pluck(body, "continue")
@@ -66,12 +66,12 @@ perform_query_once <- function(.req) {
 #' # To confirm, the resulting tibble has more than 500 rows
 #' nrow(jimbos_contributions)
 #'
-#' # Alternatively, you can try out a request using perform_query_once(), and
+#' # Alternatively, you can try out a request using next_batch(), and
 #' # if you are happy with the resulting data, retrieve the rest of the results
 #' # from the returned data frame
 #' preview <- wiki_action_request() %>%
 #'   query_page_properties("categories", titles="Albert Einstein") %>%
-#'   perform_query_once()
+#'   next_batch()
 #' print(preview)
 #' all_results <- retrieve_all(preview)
 retrieve_all <- function(x) {
@@ -124,7 +124,7 @@ continue_query <- function(.req,
       next_idx <- length(response_list) + 1
       response_list <- c(response_list, vector("list", 100))
     }
-    response_list[[next_idx]] <- perform_query_once(new_request)
+    response_list[[next_idx]] <- next_batch(new_request)
     continue <- get_continue(response_list[[next_idx]])
     batchcomplete <- get_batchcomplete(response_list[[next_idx]])
   }

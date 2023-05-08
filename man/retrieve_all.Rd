@@ -44,12 +44,12 @@ jimbos_contributions <- wiki_action_request() \%>\%
 # To confirm, the resulting tibble has more than 500 rows
 nrow(jimbos_contributions)
 
-# Alternatively, you can try out a request using perform_query_once(), and
+# Alternatively, you can try out a request using next_batch(), and
 # if you are happy with the resulting data, retrieve the rest of the results
 # from the returned data frame
 preview <- wiki_action_request() \%>\%
   query_page_properties("categories", titles="Albert Einstein") \%>\%
-  perform_query_once()
+  next_batch()
 print(preview)
 all_results <- retrieve_all(preview)
 }
