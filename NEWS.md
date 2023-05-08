@@ -1,3 +1,7 @@
+# wikkitidy (development version)
+
+* `query_category_members()`: the first of a set of new helper functions to provide user-friendly access to the [Action API](https://www.mediawiki.org/wiki/API).
+
 # wikkitidy 0.1.2
 
 * `get_history_count()`: find out how many times a page has been edited
