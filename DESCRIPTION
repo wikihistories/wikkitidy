@@ -18,6 +18,7 @@ Imports:
     dplyr,
     glue,
     httr2,
+    lubridate,
     magrittr,
     openssl,
     pillar,

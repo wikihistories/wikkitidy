@@ -22,6 +22,8 @@ reference:
 - subtitle: Common queries
   desc: >
     Query Wikipedia using the most useful query modules of the Action API
+  contents:
+  - query_category_members
 - title: Get page data
   desc: >
     Functions to retrieve additional data about pages. These functions typically

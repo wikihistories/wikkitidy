@@ -35,6 +35,10 @@ wiki_action_request <- function(..., action = "query", language = "en") {
   req <- httr2::request(base_url) %>%
     httr2::req_url_query(!!!params) %>%
     wikkitidy_user_agent()
+  structure(
+    req,
+    class = c(action, "action_api", class(req))
+  )
 }
 
 #' Specify which pages to list from the action API
@@ -146,8 +150,11 @@ query_page_properties <- function(.req, properties, ...) {
 }
 
 .set_action <- function(.req, action_type, action, ...) {
-  action_type <- rlang::ensym(action_type)
+  action_sym <- rlang::ensym(action_type)
   action_string <- paste0(action, collapse = "|")
   action_params <- rlang::list2(...)
-  httr2::req_url_query(.req = .req, !!action_type := action_string, !!!action_params)
+  structure(
+    httr2::req_url_query(.req = .req, !!action_sym := action_string, !!!action_params),
+    class = c(action_type, class(.req))
+  )
 }
