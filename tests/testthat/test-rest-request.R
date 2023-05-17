@@ -43,3 +43,7 @@ test_that("Named arguments are handled correctly", {
   expect_equal(wiki_302$url, "https://en.wikipedia.org/api/rest_v1/page/html/The_Tragedy_of_Donohoe")
 })
 
+test_that("appropriate error if no path components provided", {
+  expect_error(core_rest_request(), "no path components")
+})
+

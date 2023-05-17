@@ -9,7 +9,7 @@ test_that("`next_batch` returns a tibble of results", {
 test_that("`retrieve_all` continues the query from a httr2_request", {
   limit <- 10
   resp <- wiki_action_request() %>%
-    query_list_of("usercontribs", ucuser="michaelgfalk", uclimit=limit) %>%
+    query_list_pages("usercontribs", ucuser="michaelgfalk", uclimit=limit) %>%
     retrieve_all()
   expect_no_error(validate_query_tbl(resp))
   expect_gt(nrow(resp), limit)
@@ -18,7 +18,7 @@ test_that("`retrieve_all` continues the query from a httr2_request", {
 test_that("`retrieve_all` completes the query from a query_tbl", {
   limit <- 10
   once <- wiki_action_request() %>%
-    query_list_of("usercontribs", ucuser="michaelgfalk", uclimit=limit) %>%
+    query_list_pages("usercontribs", ucuser="michaelgfalk", uclimit=limit) %>%
     next_batch()
   complete <- retrieve_all(once)
   expect_equal(complete$revid[1:limit], once$revid[1:limit])

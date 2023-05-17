@@ -10,8 +10,9 @@ reference:
   contents:
   - wiki_action_request
   - query_generate_pages
-  - query_list_of
+  - query_list_pages
   - query_page_properties
+  - query_by_
 - subtitle: Perform a query
   desc: >
     Functions to send your query request to Wikipedia, and format the results
@@ -24,6 +25,9 @@ reference:
     Query Wikipedia using the most useful query modules of the Action API
   contents:
   - query_category_members
+- subtitle: Low-level API
+  contents:
+  - has_keyword("low_level_action_api")
 - title: Get page data
   desc: >
     Functions to retrieve additional data about pages. These functions typically

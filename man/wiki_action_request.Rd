@@ -2,12 +2,12 @@
 % Please edit documentation in R/wiki-action-request.R
 \name{wiki_action_request}
 \alias{wiki_action_request}
-\title{Generate request for the \href{https://www.mediawiki.org/wiki/API:Main_page}{MediaWiki Action API}}
+\title{Query Wikipedia using the \href{https://www.mediawiki.org/wiki/API:Main_page}{MediaWiki Action API}}
 \usage{
 wiki_action_request(..., action = "query", language = "en")
 }
 \arguments{
-\item{...}{Parameters for the request}
+\item{...}{<\code{\link[rlang:dyn-dots]{dynamic-dots}}> Parameters for the request}
 
 \item{action}{The action to perform, typically 'query'}
 
@@ -15,24 +15,49 @@ wiki_action_request(..., action = "query", language = "en")
 'fr'}
 }
 \value{
-A \code{wiki_action_request}, an S3 list that subclasses \code{httr2_request}
-(see \link[httr2:request]{httr2::request})
+An \code{action_api} object, an S3 list that subclasses \link[httr2:request]{httr2::request}.
+The dependencies between different aspects of the Action API are complex.
+At the time of writing, there are five major subclasses of
+\code{action_api/httr2_request}:
+\itemize{
+\item \code{generator/action_api/httr2_request}, returned (sometimes) by \link{query_generate_pages}
+\item \code{list/action_api/httr2_request}, returned by \link{query_list_pages}
+\item \code{titles}, \code{pageids} and \code{revids/action_api/httr2_request}, returned by the various \link{query_by_} functions
+
+You can use \link{query_page_properties} to modify any kind of query \emph{except}
+for \code{list} queries: indeed, the central limitation of the \code{list} queries is
+that you cannot choose what properties to return for the pages the meet the
+given criterion. The concept of a \code{generator} is complex. If the
+\code{generator} is based on a
+\href{https://www.mediawiki.org/wiki/API:Properties}{property} module, then it
+must be combined with a \link{query_by_} function to produce a valid query. If
+the generator is based on a \href{https://www.mediawiki.org/wiki/API:Lists}{list module}, then it \emph{cannot} be
+combined with a \link{query_by_} query.
+}
 }
 \description{
-Generate request for the \href{https://www.mediawiki.org/wiki/API:Main_page}{MediaWiki Action API}
+Wikipedia exposes a To build up a query, you first call
+\code{\link[=wiki_action_request]{wiki_action_request()}} to create the basic request object, then use the
+helper functions \code{\link[=query_page_properties]{query_page_properties()}}, \code{\link[=query_list_pages]{query_list_pages()}} and
+\code{\link[=query_generate_pages]{query_generate_pages()}} to modify the request, before calling \code{\link[=next_batch]{next_batch()}}
+or \code{\link[=retrieve_all]{retrieve_all()}} to perform the query and download results from the
+server.
+}
+\details{
+\link{wikkitidy} provides an ergonomic API for the Action API's \href{https://www.mediawiki.org/wiki/API:Query}{Query modules}. These modules are most
+useful for researchers, because they allow you to explore the stucture of
+Wikipedia and its back pages. You can obtain a list of available modules in
+your R console using \code{\link[=list_all_property_modules]{list_all_property_modules()}}, \code{\link[=list_all_list_modules]{list_all_list_modules()}}
+and \code{\link[=list_all_generators]{list_all_generators()}},
 }
 \examples{
 # List the first 10 pages in the category 'Australian historians'
-
-request <- wiki_action_request(
-  list = "categorymembers",
-  cmtitle = "Category:Australian_historians",
-  cmlimit = 10
-)
-request \%>\%
-  httr2::req_perform() \%>\%
-  httr2::resp_body_json() \%>\%
-  .$query \%>\%
-  .$categorymembers
-
+historians <- wiki_action_request() \%>\%
+  query_list_pages(
+    "categorymembers",
+    cmtitle = "Category:Australian_historians",
+    cmlimit = 10
+  ) \%>\%
+  next_batch()
+historians
 }

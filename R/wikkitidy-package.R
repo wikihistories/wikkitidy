@@ -12,3 +12,8 @@ NULL
 # Suppress 'global variable' warnings due to using dplyr
 # See https://dplyr.tidyverse.org/articles/in-packages.html
 utils::globalVariables("type")
+utils::globalVariables("generator")
+utils::globalVariables("group")
+utils::globalVariables("name")
+utils::globalVariables(".")
+utils::globalVariables("is_generator")

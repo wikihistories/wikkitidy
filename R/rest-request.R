@@ -127,6 +127,11 @@ wm_rest_request <- function(..., base_url, project, endpoint, language) {
 
 rest_dots <- function(...) {
   dots <- rlang::dots_list(..., .named = FALSE)
+  if (length(dots) == 0) {
+    rlang::abort(
+      "no path components provided for REST request"
+    )
+  }
   path_components <- dots[!rlang::have_name(dots)]
   query_params <- dots[rlang::have_name(dots)]
   list("path" = path_components, "query" = query_params)

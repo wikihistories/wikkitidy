@@ -61,7 +61,7 @@ next_batch <- function(.req) {
 #' # NB: the 'uclimit' parameter sets the number of pages retrieved by each
 #' # API call.
 #' jimbos_contributions <- wiki_action_request() %>%
-#'   query_list_of("usercontribs", ucuser="Jimbo_Wales", uclimit=500) %>%
+#'   query_list_pages("usercontribs", ucuser="Jimbo_Wales", uclimit=500) %>%
 #'   retrieve_all()
 #' # To confirm, the resulting tibble has more than 500 rows
 #' nrow(jimbos_contributions)

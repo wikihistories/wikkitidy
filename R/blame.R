@@ -57,7 +57,7 @@ blame <- function(pages,
 
 .get_all_revids <- function(page, id_type, from, to, language) {
   wiki_action_request(language = language) %>%
-    query_list_of(
+    query_list_pages(
       "revisions",
       id_type := page,
       rvprop = "ids",

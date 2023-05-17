@@ -16,7 +16,7 @@
 #' @examples
 #' # List all members of a category, then retrieve page information
 #' page_ids <- wiki_action_request() %>%
-#' query_list_of("categorymembers", cmtitle="Category:ATP_Cup") %>%
+#' query_list_pages("categorymembers", cmtitle="Category:ATP_Cup") %>%
 #'   retrieve_all()
 #' page_info <- get_page_properties(page_ids$pageid, by="pageid", "info")
 get_page_properties <- function(.x, by=c("pageid","title","revid"), properties, ...) {
