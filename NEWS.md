@@ -1,8 +1,9 @@
-# wikkitidy (development version)
+# wikkitidy 0.1.3
 
 * `query_category_members()`: the first of a set of new helper functions to provide user-friendly access to the [Action API](https://www.mediawiki.org/wiki/API).
 * `query_list_of` renamed to [query_list_pages]
 * New functions [query_by_title], [query_by_pageid] and [query_by_revid] to build new kinds of [Action API](https://www.mediawiki.org/wiki/API) queries
+* New type system for Action API: see constructors [new_prop_query], [new_generator_query] and [new_list_query]
 
 # wikkitidy 0.1.2
 
