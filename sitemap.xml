@@ -46,6 +46,15 @@
     <loc>https://wikihistories.github.io/wikkitidy/reference/index.html</loc>
   </url>
   <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/new_generator_query.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/new_list_query.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/new_prop_query.html</loc>
+  </url>
+  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/next_batch.html</loc>
   </url>
   <url>
@@ -64,13 +73,16 @@
     <loc>https://wikihistories.github.io/wikkitidy/reference/process_timestamps.html</loc>
   </url>
   <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/query_by_.html</loc>
+  </url>
+  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/query_category_members.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/query_generate_pages.html</loc>
   </url>
   <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/query_list_of.html</loc>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/query_list_pages.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/query_page_properties.html</loc>

@@ -12,7 +12,7 @@ data about many pages!"><meta property="og:image" content="https://wikihistories
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.2.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.3</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@ properties requested</p></dd>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># List all members of a category, then retrieve page information</span></span></span>
 <span class="r-in"><span><span class="va">page_ids</span> <span class="op">&lt;-</span> <span class="fu"><a href="wiki_action_request.html">wiki_action_request</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span><span class="fu"><a href="query_list_of.html">query_list_of</a></span><span class="op">(</span><span class="st">"categorymembers"</span>, cmtitle<span class="op">=</span><span class="st">"Category:ATP_Cup"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span><span class="fu"><a href="query_list_pages.html">query_list_pages</a></span><span class="op">(</span><span class="st">"categorymembers"</span>, cmtitle<span class="op">=</span><span class="st">"Category:ATP_Cup"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu"><a href="retrieve_all.html">retrieve_all</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">page_info</span> <span class="op">&lt;-</span> <span class="fu">get_page_properties</span><span class="op">(</span><span class="va">page_ids</span><span class="op">$</span><span class="va">pageid</span>, by<span class="op">=</span><span class="st">"pageid"</span>, <span class="st">"info"</span><span class="op">)</span></span></span>
 </code></pre></div>

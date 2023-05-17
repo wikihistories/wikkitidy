@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.2.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.3</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,22 +64,29 @@
           
           <code><a href="wiki_action_request.html">wiki_action_request()</a></code> 
         </dt>
-        <dd>Generate request for the <a href="https://www.mediawiki.org/wiki/API:Main_page" class="external-link">MediaWiki Action API</a></dd>
+        <dd>Query Wikipedia using the <a href="https://www.mediawiki.org/wiki/API:Main_page" class="external-link">MediaWiki Action API</a></dd>
       </dl><dl><dt>
           
-          <code><a href="query_generate_pages.html">query_generate_pages()</a></code> 
+          <code><a href="query_generate_pages.html">query_generate_pages()</a></code> <code><a href="query_generate_pages.html">list_all_generators()</a></code> 
         </dt>
-        <dd>Specify which pages to generate from the Action API</dd>
+        <dd>Generate pages that meet certain criteria, or which are related to a set of
+known pages by certain properties</dd>
       </dl><dl><dt>
           
-          <code><a href="query_list_of.html">query_list_of()</a></code> 
+          <code><a href="query_list_pages.html">query_list_pages()</a></code> <code><a href="query_list_pages.html">list_all_list_modules()</a></code> 
         </dt>
-        <dd>Specify which pages to list from the action API</dd>
+        <dd>List pages that meet certain criteria</dd>
       </dl><dl><dt>
           
-          <code><a href="query_page_properties.html">query_page_properties()</a></code> 
+          <code><a href="query_page_properties.html">query_page_properties()</a></code> <code><a href="query_page_properties.html">list_all_property_modules()</a></code> 
         </dt>
         <dd>Choose properties to return for pages from the action API</dd>
+      </dl><dl><dt>
+          
+          <code><a href="query_by_.html">query_by_title()</a></code> <code><a href="query_by_.html">query_by_pageid()</a></code> <code><a href="query_by_.html">query_by_revid()</a></code> 
+        </dt>
+        <dd>Query the <a href="https://www.mediawiki.org/wiki/API:Main_page" class="external-link">MediaWiki Action API</a> using a vector of
+Wikipedia pages</dd>
       </dl></div><div class="section level2">
       
       <h3 id="perform-a-query">Perform a query<a class="anchor" aria-label="anchor" href="#perform-a-query"></a></h3>
@@ -118,6 +125,32 @@ left</dd>
           <code><a href="query_category_members.html">query_category_members()</a></code> 
         </dt>
         <dd>Build a query to enumerate the members of a category in Wikipedia</dd>
+      </dl></div><div class="section level2">
+      
+      <h3 id="low-level-api">Low-level API<a class="anchor" aria-label="anchor" href="#low-level-api"></a></h3>
+      
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="new_generator_query.html">new_generator_query()</a></code> 
+        </dt>
+        <dd>Constructor for generator query type</dd>
+      </dl><dl><dt>
+          
+          <code><a href="new_list_query.html">new_list_query()</a></code> 
+        </dt>
+        <dd>Constructor for <a href="https://www.mediawiki.org/wiki/API:Lists" class="external-link">list</a> queries</dd>
+      </dl><dl><dt>
+          
+          <code><a href="new_prop_query.html">new_prop_query()</a></code> 
+        </dt>
+        <dd>Constructor for the property query type</dd>
       </dl></div><div class="section level2">
       <h2 id="get-page-data">Get page data<a class="anchor" aria-label="anchor" href="#get-page-data"></a></h2>
       
