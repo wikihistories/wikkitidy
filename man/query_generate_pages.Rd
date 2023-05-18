@@ -23,7 +23,7 @@ generator}
 }
 \value{
 \link{query_generate_pages}: The modfied request, which can be passed to \link{next_batch} or
-\link{retreive_all} as appropriate.
+\link{retrieve_all} as appropriate.
 
 \link{list_all_generators}: a \link[tibble:tbl_df-class]{tibble} of all the available generator
 modules. The \code{name} column gives the name of the generator, while the

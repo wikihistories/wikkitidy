@@ -5,8 +5,8 @@ reference:
 - title: Query Wikipedia using the Action API
 - subtitle: Build a query
   desc: >
-    Functions to construct a request to the Action API's Query module. Define your
-    search criteria to find relevant pages.
+    Compose a complex query to Wikipedia's Action API, combining list, property,
+    and generator endpoints.
   contents:
   - wiki_action_request
   - query_generate_pages
@@ -14,15 +14,10 @@ reference:
   - query_page_properties
   - query_by_
 - subtitle: Perform a query
-  desc: >
-    Functions to send your query request to Wikipedia, and format the results
-    as tidy data.
   contents:
   - next_batch
   - retrieve_all
 - subtitle: Common queries
-  desc: >
-    Query Wikipedia using the most useful query modules of the Action API
   contents:
   - query_category_members
 - subtitle: Low-level API
@@ -33,17 +28,17 @@ reference:
     Functions to retrieve additional data about pages. These functions typically
     rely on one of Wikipedia's REST APIs, and work on a vector of page ids, titles
     or revision ids.
-- subtitle: Build a REST request
-  contents:
-  - wikipedia_rest_apis
-  - wikimedia_rest_apis
-  - get_rest_resource
 - subtitle: Vector functions
   contents:
   - get_page_properties
   - page_vector_functions
   - get_diff
   - get_history_count
+- subtitle: Low-level API
+  contents:
+  - wikipedia_rest_apis
+  - wikimedia_rest_apis
+  - get_rest_resource
 - title: Use WikiMedia XML dumps
   contents:
   - verify_xml_integrity
@@ -52,7 +47,7 @@ reference:
     Data types returned by wikkitidy functions.
   contents:
   - has_keyword("data_type")
-- title: Low-level utilities
+- title: Utilities
   contents:
   - prefix_params
   - wikkitidy_example
