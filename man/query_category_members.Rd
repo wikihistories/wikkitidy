@@ -2,9 +2,11 @@
 % Please edit documentation in R/query-category-members.R
 \name{query_category_members}
 \alias{query_category_members}
-\title{Build a query to enumerate the members of a category in Wikipedia}
+\alias{build_category_tree}
+\title{Explore Wikipedia's category system}
 \usage{
 query_category_members(
+  .req,
   category,
   namespace = NULL,
   type = c("file", "page", "subcat"),
@@ -15,13 +17,21 @@ query_category_members(
   end = NULL,
   language = "en"
 )
+
+build_category_tree(category, language = "en")
 }
 \arguments{
-\item{category}{The category to start from. Can be named by title or pageid.}
+\item{.req}{A \link[=wiki_action_request]{query request object}}
+
+\item{category}{The category to start from. \code{\link[=query_category_members]{query_category_members()}}
+accepts either a numeric pageid or the page title. \code{\link[=build_category_tree]{build_category_tree()}}
+accepts a vector of page titles.}
 
 \item{namespace}{Only return category members from the provided namespace}
 
-\item{type}{Alternative to \code{namespace}: the type of category member to return}
+\item{type}{Alternative to \code{namespace}: the type of category member to
+return. Multiple types can be requested using a character vector. Defaults
+to all.}
 
 \item{limit}{The number to return each batch. Max 500.}
 
@@ -41,25 +51,51 @@ the category from before this date. The argument is parsed by
 \item{language}{The language edition of Wikipedia to query}
 }
 \value{
-A request object of type \code{generator/query/action_api/httr2_request},
-which can be passed to \code{\link[=next_batch]{next_batch()}} or \code{\link[=retrieve_all]{retrieve_all()}}. You can specify
-which properties to retrieve for each page using \code{\link[=query_page_properties]{query_page_properties()}}.
+\code{\link[=query_category_members]{query_category_members()}}: A request object of type
+\code{generator/query/action_api/httr2_request}, which can be passed to
+\code{\link[=next_batch]{next_batch()}} or \code{\link[=retrieve_all]{retrieve_all()}}. You can specify which properties to
+retrieve for each page using \code{\link[=query_page_properties]{query_page_properties()}}.
+
+\code{\link[=build_category_tree]{build_category_tree()}}: A list containing two dataframes. \code{nodes} lists
+all the subcategories and pages found underneath the passed categories.
+\code{edges} records the connections between them. The \code{source} column gives the
+pageid of the parent category, while the \code{target} column gives the pageid
+of any categories, pages or files contained within the \code{source} category.
+The \code{timestamp} records the moment when the \code{target} page or subcategory
+was included in the \code{source} category. The two dataframes in the list can
+be passed to \link[igraph:graph_from_data_frame]{igraph::graph_from_data_frame} for network analysis.
 }
 \description{
-This function provides access to the
+These functions provide access to the
 \href{https://www.mediawiki.org/wiki/API:Categorymembers}{CategoryMembers}
-endpoint of the Action API. Categories in Wikipedia contain two main kinds of
-'members': subcategories and pages.
+endpoint of the Action API.
+
+\code{\link[=query_category_members]{query_category_members()}} builds a \link[=query_generate_pages]{generator query} to return the members of a given category.
+
+\code{\link[=build_category_tree]{build_category_tree()}} finds all the pages and subcategories beneath the
+passed category, then recursively finds all the pages and subcategories
+beneath them, until it can find no more subcategories.
 }
 \examples{
 # Get the first 10 pages in 'Category:Physics' on English Wikipedia
-physics_members <- query_category_members("Physics") \%>\% next_batch()
+physics_members <- wiki_action_request() \%>\%
+  query_category_members("Physics") \%>\% next_batch()
 physics_members
 
 # Retrieve interwiki links for the first 10 pages in the 'Beatles Albums'
 # category on Danish Wikipedia
 # TODO: This currently doesn't work, because incomplete batches aren't properly handled
-beatles <- query_category_members("Beatles-album", language = "da") \%>\%
+beatles <- wiki_action_request(language = "da") \%>\%
+  query_category_members("Beatles-album") \%>\%
   query_page_properties("langlinks") \%>\%
   next_batch()
+
+# Build the tree of all trees in Wikipedia
+tree <- build_category_tree("Category:Trees (graph theory)")
+tree
+
+# For network analysis and visualisation, you can pass the category tree
+# to igraph
+tree_graph <- igraph::graph_from_data_frame(tree$edges, vertices = tree$nodes)
+tree_graph
 }
