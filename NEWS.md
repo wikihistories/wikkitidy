@@ -1,3 +1,7 @@
+# wikkitidy 0.1.4
+
+* `build_category_tree()`: recur through category system to build up graph of subcategories and pages
+
 # wikkitidy 0.1.3
 
 * `query_category_members()`: the first of a set of new helper functions to provide user-friendly access to the [Action API](https://www.mediawiki.org/wiki/API).
