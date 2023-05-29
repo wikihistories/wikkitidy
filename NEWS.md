@@ -1,3 +1,5 @@
+# wikkitidy 0.1.5
+
 # wikkitidy 0.1.4
 
 * `build_category_tree()`: recur through category system to build up graph of subcategories and pages
