@@ -19,6 +19,9 @@
     <loc>https://wikihistories.github.io/wikkitidy/news/index.html</loc>
   </url>
   <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/append_query_result.html</loc>
+  </url>
+  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/check_limit.html</loc>
   </url>
   <url>
@@ -34,7 +37,7 @@
     <loc>https://wikihistories.github.io/wikkitidy/reference/get_history_count.html</loc>
   </url>
   <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/get_page_properties.html</loc>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/get_query_results.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/get_rest_resource.html</loc>
@@ -53,9 +56,6 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/new_prop_query.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/next_batch.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/page_vector_functions.html</loc>
@@ -89,9 +89,6 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/query_tbl.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/retrieve_all.html</loc>
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/tidyeval.html</loc>

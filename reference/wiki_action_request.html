@@ -59,8 +59,8 @@ server."><meta property="og:image" content="https://wikihistories.github.io/wikk
     <p>Wikipedia exposes a To build up a query, you first call
 <code>wiki_action_request()</code> to create the basic request object, then use the
 helper functions <code><a href="query_page_properties.html">query_page_properties()</a></code>, <code><a href="query_list_pages.html">query_list_pages()</a></code> and
-<code><a href="query_generate_pages.html">query_generate_pages()</a></code> to modify the request, before calling <code><a href="next_batch.html">next_batch()</a></code>
-or <code><a href="retrieve_all.html">retrieve_all()</a></code> to perform the query and download results from the
+<code><a href="query_generate_pages.html">query_generate_pages()</a></code> to modify the request, before calling <code><a href="get_query_results.html">next_batch()</a></code>
+or <code><a href="get_query_results.html">retrieve_all()</a></code> to perform the query and download results from the
 server.</p>
     </div>
 
@@ -122,11 +122,9 @@ and <code><a href="query_generate_pages.html">list_all_generators()</a></code>,<
 <span class="r-in"><span>    cmtitle <span class="op">=</span> <span class="st">"Category:Australian_historians"</span>,</span></span>
 <span class="r-in"><span>    cmlimit <span class="op">=</span> <span class="fl">10</span></span></span>
 <span class="r-in"><span>  <span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="next_batch.html">next_batch</a></span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="get_query_results.html">next_batch</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">historians</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB;">&lt;query_tbl&gt;</span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Request URL:</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> https://en.wikipedia.org/w/api.php?action=query&amp;format=json&amp;formatversion=2&amp;list=categorymembers&amp;cmtitle=Category%3AAustralian_historians&amp;cmlimit=10</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB;">&lt;complete/query_tbl&gt;</span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> There are more results on the server. Retrieve them with `next_batch()` or `retrieve_all()`</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> Data complete for all records</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 10 × 3</span></span>
