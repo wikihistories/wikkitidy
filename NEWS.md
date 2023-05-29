@@ -1,5 +1,8 @@
 # wikkitidy 0.1.5
 
+* The functions that perform queries to the Action API have been rewritten. There is now a family of three functions: `next_result()`, `next_batch()` and `retrieve_all()`.
+* Improvements to the formatting of results. Raw list columns are replaced with lists of tibbles, to enable easy navigation of the results using `tidyr::unnest()`.
+
 # wikkitidy 0.1.4
 
 * `build_category_tree()`: recur through category system to build up graph of subcategories and pages
