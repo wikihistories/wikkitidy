@@ -37,7 +37,7 @@
 query_list_pages <- function(.req, list, ...) {
   check_module(list, "list")
   # TODO: check_params
-  set_action(.req, "list", list, ...)
+  new_list_query(.req, list, ...)
 }
 
 #' @rdname query_list_pages

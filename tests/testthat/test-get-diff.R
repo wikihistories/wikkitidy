@@ -17,12 +17,12 @@ test_that("`get_diff` throws an error with simplify is the wrong type", {
 
 test_that("`get_diff` vectorises correctly over `from` and `to`", {
   revisions <- wiki_action_request() %>%
+    query_by_title("Main Page") %>%
     query_page_properties(
-      "revisions",
-      titles = "Main_Page", rvlimit = 5, rvprop = "ids", rvdir = "older"
+      "revisions", rvlimit = 5, rvprop = "ids", rvdir = "older"
     ) %>%
-    next_batch() %>%
-    tidyr::hoist(revisions, "parentid", "revid")
+    next_result() %>%
+    tidyr::unnest(cols = c(revisions))
   diffs <- get_diff(revisions$parentid, revisions$revid)
   expect_equal(nrow(revisions), length(diffs))
   expect_true(rlang::is_bare_list(diffs))

@@ -108,3 +108,7 @@ check_namespace <- function(namespace) {
   }
   paste0(namespace, collapse = "|")
 }
+
+is_not_null <- function(x) {
+  !rlang::is_null(x)
+}

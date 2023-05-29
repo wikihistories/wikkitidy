@@ -13,10 +13,7 @@ reference:
   - query_list_pages
   - query_page_properties
   - query_by_
-- subtitle: Perform a query
-  contents:
-  - next_batch
-  - retrieve_all
+  - get_query_results
 - subtitle: Common queries
   contents:
   - query_category_members
@@ -30,7 +27,6 @@ reference:
     or revision ids.
 - subtitle: Vector functions
   contents:
-  - get_page_properties
   - page_vector_functions
   - get_diff
   - get_history_count

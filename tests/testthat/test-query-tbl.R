@@ -1,23 +1,23 @@
-test_that("`as_wiki_tibble` creates a valid `query_tbl`", {
+test_that("`query_tibble` returns an object of the correct type", {
   test_tbl <- query_tbl(list(x=1:3, y=4:6), request = NULL, batchcomplete = NULL, continue = NULL)
-  expect_no_error(validate_query_tbl(test_tbl))
+  expect_s3_class(test_tbl, QUERY_TBL_CLASS)
 })
 
 test_that("`validate_query_tbl` throws an error if the data frame is not a tibble", {
   not_a_tibble <- data.frame(a=1:5, b=1:5)
-  expect_error(validate_query_tbl(not_a_tibble), regexp = "not a valid tibble")
+  expect_error(validate_query_tbl(not_a_tibble), class = "invalid")
 })
 
 test_that("`validate_query_tbl` throws an error if key metadata is missing", {
   no_request <- query_tbl(list(x=1:3, y=4:6), request = NULL, batchcomplete = NULL, continue = NULL)
   attr(no_request, "request") <- NULL
-  expect_error(validate_query_tbl(no_request), regexp = "missing one or more")
+  expect_error(validate_query_tbl(no_request), class = "invalid")
   no_continue <- query_tbl(list(x=1:3, y=4:6), request = NULL, batchcomplete = NULL, continue = NULL)
   attr(no_continue, "continue") <- NULL
-  expect_error(validate_query_tbl(no_continue), regexp = "missing one or more")
+  expect_error(validate_query_tbl(no_continue), class = "invalid")
   no_batchcomplete <- query_tbl(list(x=1:3, y=4:6), request = NULL, batchcomplete = NULL, continue = NULL)
   attr(no_batchcomplete, "batchcomplete") <- NULL
-  expect_error(validate_query_tbl(no_batchcomplete), regexp = "missing one or more")
+  expect_error(validate_query_tbl(no_batchcomplete), class = "invalid")
 })
 
 test_that("`get_request` retrieves request object from query_tbl", {

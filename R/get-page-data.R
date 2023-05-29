@@ -67,7 +67,7 @@ get_latest_revision <- function(title, language = "en") {
   )
 }
 
-#' @exportS3Method
+#' @export
 parse_response.revision_metadata <- function(response) {
   purrr::map(response, "items") %>%
     purrr::map(1) %>%
@@ -94,7 +94,7 @@ get_page_summary <- function(title, language = "en") {
   )
 }
 
-#' @exportS3Method
+#' @export
 parse_response.summary <- function(response) {
   flatten_bind(response)
 }
@@ -109,7 +109,7 @@ get_page_related <- function(title, language = "en") {
   )
 }
 
-#' @exportS3Method
+#' @export
 parse_response.summary_array <- function(response) {
   purrr::map(response, "pages") %>% purrr::map(flatten_bind)
 }
@@ -137,7 +137,7 @@ get_page_langlinks <- function(title, language = "en") {
   )
 }
 
-#' @exportS3Method
+#' @export
 parse_response.page_language_object <- function(response) {
   purrr::map(response, dplyr::bind_rows)
 }

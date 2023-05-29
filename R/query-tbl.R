@@ -13,8 +13,14 @@
 query_tbl <- function(x, request, continue, batchcomplete) {
   request <- if (is.null(request)) NA else request
   continue <- if(is.null(continue)) NA else continue
-  batchcomplete <- if(is.null(batchcomplete)) NA else batchcomplete
+  batchcomplete <- if(is.null(batchcomplete)) FALSE else batchcomplete
   new_query_tbl(x, request, continue, batchcomplete)
+}
+
+QUERY_TBL_CLASS = c("query_tbl", "tbl_df", "tbl", "data.frame")
+
+query_tbl_subclass <- function(x) {
+  setdiff(class(x), QUERY_TBL_CLASS)
 }
 
 # The constructor
@@ -32,23 +38,20 @@ new_query_tbl <- function(x, request, continue, batchcomplete, class=NULL) {
 tbl_sum.query_tbl <- function(x, ...) {
   url <- get_request(x)$url
   c(
-    cli::cli_text("{.cls {class(x)[1]}}"),
-    cli::cli_text("Request URL: {url}"),
+    cli::cli_text("{.cls {paste0(class(x)[1:2], collapse = '/')}}"),
     NextMethod()
   )
 }
 
 #' @export
 tbl_format_footer.query_tbl <- function(x, ...) {
-  # Unfortunately the messages appear above the body of the tbl, rather than
-  # underneath it... TODO: Report issue!
   default_footer <- NextMethod()
-  query_message <- if (anyNA(get_continue(x))) {
+  query_message <- if (rlang::is_na(get_continue(x))) {
     cli::cli_alert_success("All results downloaded from server")
   } else {
     cli::cli_alert_info("There are more results on the server. Retrieve them with `next_batch()` or `retrieve_all()`")
   }
-  batch_message <- if (!is.na(get_batchcomplete(x))) {
+  batch_message <- if (rlang::is_true(get_batchcomplete(x))) {
     cli::cli_alert_success("Data complete for all records")
   } else {
     cli::cli_alert_warning("Data not fully downloaded for last batch. Retrieve it with `next_batch()` or `retrieve_all()`.")
@@ -57,26 +60,45 @@ tbl_format_footer.query_tbl <- function(x, ...) {
 }
 
 validate_query_tbl <- function(x) {
+  tbl_var <- rlang::ensym(x)
   if (!tibble::is_tibble(x)) {
-    stop("`x` is not a valid tibble",
-         .call = FALSE)
+    rlang::abort(
+      glue::glue("`{tbl_var}` is not a tibble"),
+      class = "invalid"
+    )
   }
-  if (!all(c("request", "continue", "batchcomplete") %in% names(attributes(x)))) {
-    stop(
-      "`x` is missing one or more of 'request', 'continue' or 'batchcomplete' attributes",
-      .call = FALSE
+  continue <- get_continue(x)
+  if (
+    !(
+      rlang::is_na(continue) ||
+      (rlang::has_name(continue, "continue") && length(continue) > 1)
+    )
+  ) {
+    rlang::abort(
+      glue::glue("`{tbl_var}` lacks a valid `continue` attribute"),
+      class = "invalid"
+    )
+  }
+  if (!rlang::is_scalar_logical(get_batchcomplete(x))) {
+    rlang::abort(
+      glue::glue("`{tbl_var}` lacks a valid `batchcomplete` attribute"),
+      class = "invalid"
+    )
+  }
+  if (!is_action_query(get_request(x))) {
+    rlang::abort(
+      glue::glue("`{tbl_var} lacks a valid `request` attribute"),
+      class = "invalid"
     )
   }
   x
 }
 
-get_request <- function(query_tbl) {
-  attr(query_tbl, "request")
-}
+get_request <- purrr::attr_getter("request")
 
-get_continue <- function(query_tbl) {
-  attr(query_tbl, "continue")
-}
+get_continue <- purrr::attr_getter("continue")
+
+get_batchcomplete <- purrr::attr_getter("batchcomplete")
 
 set_continue <- function(query_tbl, x) {
   x <- if (is.null(x)) NA else x
@@ -90,4 +112,9 @@ get_batchcomplete <- function(query_tbl) {
 set_batchcomplete <- function(query_tbl, x) {
   x <- if (is.null(x)) NA else x
   attr(query_tbl, "batchcomplete") <- x
+}
+
+# A placeholder. The returned item should raise an error nearly everywhere.
+empty_query_tbl <- function() {
+  new_query_tbl(tibble::tibble(), request = NA, continue = NA, batchcomplete = NA)
 }

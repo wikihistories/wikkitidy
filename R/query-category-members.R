@@ -125,11 +125,7 @@ build_category_tree <- function(category, language = "en") {
       timestamp = character()
     )
   )
-  progress <- cli::cli_progress_bar(
-    "Walking subcategories:",
-    .auto_close = FALSE,
-    clear = FALSE
-  )
+  progress <- cli::cli_progress_bar("Walking subcategories:")
   tree <- walk_category_tree(tree, root$page_id, language, progress)
   cli::cli_progress_done(id = progress)
   # strip irrelevant <query_tbl> attributes and metadata
@@ -149,15 +145,15 @@ walk_category_tree <- function(tree, category, language, progress) {
 
 get_one_children <- function(category, language = "en", progress) {
   cli::cli_progress_update(id = progress, force = T)
-  children <- wiki_action_request(language = language) %>%
+  request <- wiki_action_request(language = language) %>%
     new_list_query(
       "categorymembers",
       cmpageid = category,
       cmprop = "ids|title|type|timestamp",
       cmlimit = "max"
-    ) %>%
-    retrieve_all() %>%
-    dplyr::mutate(source = category)
+    )
+  children <- retrieve_all(request)
+  dplyr::mutate(children, source = category)
 }
 
 get_children <- function(category, language = "en", progress) {

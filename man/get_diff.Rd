@@ -5,7 +5,7 @@
 \title{Search for insertions, deletions or relocations of text between two versions
 of a Wikipedia page}
 \usage{
-get_diff(from, to, language = "en", simplify = T)
+get_diff(from, to, language = "en", simplify = TRUE)
 }
 \arguments{
 \item{from}{Vector of revision ids}
@@ -20,11 +20,10 @@ length==1)}
 \value{
 The return value depends on the \code{simplify} parameter.
 \itemize{
-\item If \code{simplify} == TRUE: Either a list of \link[tibble:tbl_df-class]{tibble::tbl_df} objects the same
-length as \code{from} and \code{to}, or a single \link[tibble:tbl_df-class]{tibble::tbl_df} if they are of
-length 1. Most of the response data is stripped away, leaving just the
-textual differences between the revisions, their location, type and
-'highlightRanges' if the textual differences are complicated.
+\item If \code{simplify} == TRUE: A list of \link[tibble:tbl_df-class]{tibble::tbl_df} objects the same
+length as \code{from} and \code{to}. Most of the response data is stripped away,
+leaving just the textual differences between the revisions, their location,
+type and 'highlightRanges' if the textual differences are complicated.
 \item If \code{simplify} == FALSE: A list the same length as \code{from} and \code{to}
 containing the full \href{https://www.mediawiki.org/wiki/API:REST_API/Reference#Response_schema_3}{wikidiff2 response}
 for each pair of revisions. This response includes additional data for
@@ -45,12 +44,13 @@ get_diff(847170467, 851733941)
 # in a single call
 # See diffs for the last five revisions of the Main Page
 revisions <- wiki_action_request() \%>\%
+  query_by_title("Main Page") \%>\%
   query_page_properties(
     "revisions",
-    titles = "Main_Page", rvlimit = 5, rvprop = "ids", rvdir = "older"
+    rvlimit = 5, rvprop = "ids", rvdir = "older"
   ) \%>\%
-  next_batch() \%>\%
-  tidyr::hoist(revisions, "parentid", "revid") \%>\%
+  next_result() \%>\%
+  tidyr::unnest(cols = c(revisions)) \%>\%
   dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
 revisions
 }

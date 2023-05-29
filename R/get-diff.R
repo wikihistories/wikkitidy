@@ -13,11 +13,10 @@
 #' @param simplify logical: should R simplify the result (see [return])
 #'
 #' @return The return value depends on the `simplify` parameter.
-#' * If `simplify` == TRUE: Either a list of [tibble::tbl_df] objects the same
-#'   length as `from` and `to`, or a single [tibble::tbl_df] if they are of
-#'   length 1. Most of the response data is stripped away, leaving just the
-#'   textual differences between the revisions, their location, type and
-#'   'highlightRanges' if the textual differences are complicated.
+#' * If `simplify` == TRUE: A list of [tibble::tbl_df] objects the same
+#'   length as `from` and `to`. Most of the response data is stripped away,
+#'   leaving just the textual differences between the revisions, their location,
+#'   type and 'highlightRanges' if the textual differences are complicated.
 #'  * If `simplify` == FALSE: A list the same length as `from` and `to`
 #'   containing the full [wikidiff2
 #'   response](https://www.mediawiki.org/wiki/API:REST_API/Reference#Response_schema_3)
@@ -33,15 +32,16 @@
 #' # in a single call
 #' # See diffs for the last five revisions of the Main Page
 #' revisions <- wiki_action_request() %>%
+#'   query_by_title("Main Page") %>%
 #'   query_page_properties(
 #'     "revisions",
-#'     titles = "Main_Page", rvlimit = 5, rvprop = "ids", rvdir = "older"
+#'     rvlimit = 5, rvprop = "ids", rvdir = "older"
 #'   ) %>%
-#'   next_batch() %>%
-#'   tidyr::hoist(revisions, "parentid", "revid") %>%
+#'   next_result() %>%
+#'   tidyr::unnest(cols = c(revisions)) %>%
 #'   dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
 #' revisions
-get_diff <- function(from, to, language = "en", simplify = T) {
+get_diff <- function(from, to, language = "en", simplify = TRUE) {
   if (!rlang::is_scalar_logical(simplify)) {
     rlang::abort("`simplify` must be either TRUE or FALSE")
   }
@@ -68,9 +68,5 @@ simplify_diff <- function(diff) {
 parse_response.wikidiff2 <- function(response) {
   diff_list <- purrr::map(response, "diff")
   diffs <- purrr::map(diff_list, diff_to_tbl)
-  if (rlang::is_scalar_list(diffs)) {
-    diffs[[1]]
-  } else {
-    diffs
-  }
+  diffs
 }
