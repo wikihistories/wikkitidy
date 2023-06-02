@@ -18,4 +18,7 @@ the batch is complete.
 \description{
 Combine new results for a query with previously downloaded results
 }
+\seealso{
+\code{\link[=perform_query]{perform_query()}}
+}
 \keyword{internal}

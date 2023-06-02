@@ -1,5 +1,7 @@
 #' Combine new results for a query with previously downloaded results
 #'
+#' @seealso [perform_query()]
+#'
 #' @param old The [query_tbl] of previous results
 #' @param new The [query_tbl] of new results from the server
 #'

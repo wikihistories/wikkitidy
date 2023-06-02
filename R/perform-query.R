@@ -1,3 +1,15 @@
+#' Perform a single request to the Action API.
+#'
+#' This function is the workhorse behind the user-facing [next_result()],
+#' [next_batch()] and [retrieve_all()].
+#'
+#' @seealso [append_query_result()]
+#'
+#' @param request The request object
+#' @param continue The continue parameter returned by the previous request
+#'
+#' @return A [query_tbl()] of the results
+#' @keywords internal
 perform_query <- function(request, continue) {
   UseMethod("perform_query")
 }
