@@ -53,7 +53,7 @@ get_rest_resource <- function(
   get_one <- purrr::compose(req_fn, httr2::req_perform, resp_fn, .dir = "forward")
   response <- purrr::pmap(params, get_one, .progress = T)
   if (!is.null(response_type)) {
-    class(response) <- response_type
+    class(response) <- c(response_type, class(response))
     response <- parse_response(response)
   }
   response <- if (rlang::is_scalar_list(response)) response[[1]] else response

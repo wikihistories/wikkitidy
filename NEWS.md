@@ -1,5 +1,8 @@
 # wikkitidy (development version)
 
+* "endpoint" parameter of `get_rest_resource()` renamed to "api"
+* New 
+
 # wikkitidy 0.1.5
 
 * The functions that perform queries to the Action API have been rewritten. There is now a family of three functions: `next_result()`, `next_batch()` and `retrieve_all()`.
