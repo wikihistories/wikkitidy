@@ -112,3 +112,11 @@ check_namespace <- function(namespace) {
 is_not_null <- function(x) {
   !rlang::is_null(x)
 }
+
+one_if_true <- function(arg) {
+  arg_sym <- rlang::ensym(arg)
+  if (!rlang::is_scalar_logical(arg)) {
+    rlang::abort(glue::glue("Argument `{arg_sym}` must be either TRUE or FALSE"))
+  }
+  if (arg == TRUE) 1 else NULL
+}
