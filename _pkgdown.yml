@@ -30,6 +30,7 @@ reference:
   - page_vector_functions
   - get_diff
   - get_history_count
+  - xtools_page
 - subtitle: Low-level API
   contents:
   - wikipedia_rest_apis
