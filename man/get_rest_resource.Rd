@@ -7,7 +7,7 @@
 get_rest_resource(
   ...,
   language = "en",
-  endpoint = c("core", "wikimedia"),
+  api = c("core", "wikimedia", "wikimedia_org", "xtools"),
   response_format = c("json", "html"),
   response_type = NULL
 )
@@ -22,9 +22,11 @@ parameters}
 
 \item{language}{Character vector of two-letter language codes}
 
-\item{endpoint}{The desired REST endpoint, either
-"\href{https://www.mediawiki.org/wiki/API:REST_API}{core}" or
-"\href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{wikimedia}"}
+\item{api}{The desired REST api:
+"\href{https://www.mediawiki.org/wiki/API:REST_API}{core}",
+"\href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{wikimedia}",
+"\href{https://wikimedia.org/api/rest_v1/}{wikimedia_org}", or
+"\href{https://www.mediawiki.org/wiki/XTools/API}{xtools}"}
 
 \item{response_format}{The expected Content-Type of the response. Currently "html" and
 "json" are supported.}
@@ -42,5 +44,5 @@ silently unlisted, returning a simple list or vector.
 }
 \description{
 This function is intended for developer use. It makes it easy to quickly
-generate vectorised calls to the different API endpoints.
+generate vectorised calls to the different APIs.
 }

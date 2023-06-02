@@ -63,7 +63,7 @@ NULL
 get_latest_revision <- function(title, language = "en") {
   get_rest_resource(
     "page", "title", title,
-    language = language, endpoint = "wikimedia", response_type = "revision_metadata"
+    language = language, api = "wikimedia", response_type = "revision_metadata"
   )
 }
 
@@ -80,7 +80,7 @@ parse_response.revision_metadata <- function(response) {
 get_page_html <- function(title, language = "en") {
   get_rest_resource(
     "page", "html", title,
-    language = language, endpoint = "wikimedia", response_format = "html"
+    language = language, api = "wikimedia", response_format = "html"
   )
 }
 
@@ -89,7 +89,7 @@ get_page_html <- function(title, language = "en") {
 get_page_summary <- function(title, language = "en") {
   get_rest_resource(
     "page", "summary", title,
-    language = language, endpoint = "wikimedia",
+    language = language, api = "wikimedia",
     response_type = "summary"
   )
 }
@@ -104,7 +104,7 @@ parse_response.summary <- function(response) {
 get_page_related <- function(title, language = "en") {
   get_rest_resource(
     "page", "related", title,
-    language = language, endpoint = "wikimedia",
+    language = language, api = "wikimedia",
     response_type = "summary_array"
   )
 }
@@ -124,7 +124,7 @@ get_page_talk <- function(title, language = "en") {
   }
   get_rest_resource(
     "page", "talk", title,
-    language = language, endpoint = "wikimedia"
+    language = language, api = "wikimedia"
   )
 }
 

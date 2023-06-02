@@ -6,7 +6,7 @@
 #'
 #' `wikimedia_rest_request()` builds a request for the [Wikimedia REST
 #' API](https://www.mediawiki.org/wiki/Wikimedia_REST_API), an additional
-#' endpoint just for Wikipedia and other wikis managed by the Wikimedia
+#' api just for Wikipedia and other wikis managed by the Wikimedia
 #' Foundation
 #'
 #' @param ... <[`dynamic-dots`][rlang::dyn-dots]> Components to add to the URL.
@@ -38,7 +38,7 @@ NULL
 #' @rdname wikipedia_rest_apis
 #' @export
 core_rest_request <- function(..., language = "en") {
-  request <- wp_rest_request(..., endpoint = "w/rest.php/v1", language = language)
+  request <- wp_rest_request(..., api = "w/rest.php/v1", language = language)
   class(request) <- c("core", class(request))
   request
 }
@@ -46,7 +46,7 @@ core_rest_request <- function(..., language = "en") {
 #' @rdname wikipedia_rest_apis
 #' @export
 wikimedia_rest_request <- function(..., language = "en") {
-  request <- wp_rest_request(..., endpoint = "api/rest_v1", language = language) %>%
+  request <- wp_rest_request(..., api = "api/rest_v1", language = language) %>%
     httr2::req_throttle(199 / 1, realm = "wikimedia_rest")
   class(request) <- c("wikimedia", class(request))
   request
@@ -97,13 +97,13 @@ xtools_rest_request <- function(endpoint, ..., language = "en") {
   request
 }
 
-wp_rest_request <- function(..., endpoint = character(), language = "en") {
+wp_rest_request <- function(..., api = character(), language = "en") {
   dots <- rest_dots(...)
   url <- glue::glue("https://{language}.wikipedia.org/")
   rlang::inject(
     request <- httr2::request(url) %>%
       wikkitidy_user_agent() %>%
-      httr2::req_url_path_append(!!!endpoint) %>%
+      httr2::req_url_path_append(!!!api) %>%
       httr2::req_url_path_append(!!!dots$path) %>%
       httr2::req_url_query(!!!dots$query)
   )

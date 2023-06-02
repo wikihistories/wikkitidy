@@ -10,7 +10,7 @@ get_random_page <- function(n, format = c("title", "html", "summary", "related")
   format_n <- rep(format, n)
   response <- get_rest_resource(
     "page", "random", format_n,
-    language = language, endpoint = "wikimedia", response_format = response_format
+    language = language, api = "wikimedia", response_format = response_format
   )
   response
 }

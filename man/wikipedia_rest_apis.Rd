@@ -27,7 +27,7 @@ A \code{core/rest}, \code{wikimedia/rest}, object, an S3 vector that subclasses
 API available on all MediaWiki wikis.
 
 \code{wikimedia_rest_request()} builds a request for the \href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{Wikimedia REST API}, an additional
-endpoint just for Wikipedia and other wikis managed by the Wikimedia
+api just for Wikipedia and other wikis managed by the Wikimedia
 Foundation
 }
 \examples{

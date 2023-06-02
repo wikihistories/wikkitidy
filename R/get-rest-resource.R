@@ -2,7 +2,7 @@
 #' APIs](https://www.mediawiki.org/wiki/API)
 #'
 #' This function is intended for developer use. It makes it easy to quickly
-#' generate vectorised calls to the different API endpoints.
+#' generate vectorised calls to the different APIs.
 #'
 #' @param ... <[`dynamic-dots`][rlang::dyn-dots]> The URL components and query
 #'   parameters of the desired resources. Names of the arguments are ignored.
@@ -12,9 +12,11 @@
 #'   will be appended to the URL path; named arguments will be added as query
 #'   parameters
 #' @param language Character vector of two-letter language codes
-#' @param endpoint The desired REST endpoint, either
-#'   "[core](https://www.mediawiki.org/wiki/API:REST_API)" or
-#'   "[wikimedia](https://www.mediawiki.org/wiki/Wikimedia_REST_API)"
+#' @param api The desired REST api:
+#'   "[core](https://www.mediawiki.org/wiki/API:REST_API)",
+#'   "[wikimedia](https://www.mediawiki.org/wiki/Wikimedia_REST_API)",
+#'   "[wikimedia_org](https://wikimedia.org/api/rest_v1/)", or
+#'   "[xtools](https://www.mediawiki.org/wiki/XTools/API)"
 #' @param response_format The expected Content-Type of the response. Currently "html" and
 #'   "json" are supported.
 #' @param response_type The schema of the response. If supplied, the results will
@@ -28,15 +30,17 @@
 #'   silently unlisted, returning a simple list or vector.
 get_rest_resource <- function(
     ..., language = "en",
-    endpoint = c("core", "wikimedia"),
+    api = c("core", "wikimedia", "wikimedia_org", "xtools"),
     response_format = c("json", "html"),
     response_type = NULL) {
   dots <- rlang::list2(...) %>%
     purrr::keep(\(x) !is.null(x)) %>%
     purrr::map_if(is.character, str_for_rest)
-  req_fn <- switch(rlang::arg_match(endpoint),
+  req_fn <- switch(rlang::arg_match(api),
     "core" = core_rest_request,
-    "wikimedia" = wikimedia_rest_request
+    "wikimedia" = wikimedia_rest_request,
+    "wikimedia_org" = wikimedia_org_rest_request,
+    "xtools" = xtools_rest_request
   )
   resp_fn <- switch(rlang::arg_match(response_format),
     "json" = httr2::resp_body_json,
