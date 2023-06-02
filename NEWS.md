@@ -1,3 +1,5 @@
+# wikkitidy (development version)
+
 # wikkitidy 0.1.5
 
 * The functions that perform queries to the Action API have been rewritten. There is now a family of three functions: `next_result()`, `next_batch()` and `retrieve_all()`.
