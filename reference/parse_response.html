@@ -14,7 +14,7 @@ in an R data frame."><meta property="og:image" content="https://wikihistories.gi
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.5</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.5.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,6 +63,9 @@ in an R data frame.</p>
 <span><span class="fu">parse_response</span><span class="op">(</span><span class="va">response</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># S3 method for default</span></span>
+<span><span class="fu">parse_response</span><span class="op">(</span><span class="va">response</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># S3 method for row_list</span></span>
 <span><span class="fu">parse_response</span><span class="op">(</span><span class="va">response</span><span class="op">)</span></span></code></pre></div>
     </div>
 
@@ -85,6 +88,10 @@ a simple vector, a <a href="https://tibble.tidyverse.org/reference/tbl_df-class.
 <ul><li><p><code>parse_response(wikidiff2)</code>: Simplify a wikidiff2 response to a dataframe of
 textual differences, discarding display data</p></li>
 <li><p><code>parse_response(default)</code>: By default, create a list of nested tbl_dfs</p></li>
+<li><p><code>parse_response(row_list)</code>: Many of the endpoints return a list of named
+values for each page, which can easily be row-bound. They often contain
+nested data, however, which is automatically unnested by dplyr::bind_rows.
+Hence this more basic approach.</p></li>
 </ul></div>
 
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

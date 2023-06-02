@@ -64,6 +64,9 @@
     <loc>https://wikihistories.github.io/wikkitidy/reference/parse_response.html</loc>
   </url>
   <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/perform_query.html</loc>
+  </url>
+  <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/pipe.html</loc>
   </url>
   <url>
@@ -110,5 +113,8 @@
   </url>
   <url>
     <loc>https://wikihistories.github.io/wikkitidy/reference/wikkitidy_example.html</loc>
+  </url>
+  <url>
+    <loc>https://wikihistories.github.io/wikkitidy/reference/xtools_page.html</loc>
   </url>
 </urlset>
