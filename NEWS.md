@@ -1,4 +1,4 @@
-# wikkitidy (development version)
+# wikkitidy 0.1.6
 
 * "endpoint" parameter of `get_rest_resource()` renamed to "api"
 * New `xtools_page()` functions, allowing programmatic access to statistics about pages' edit histories, links and quality markers
