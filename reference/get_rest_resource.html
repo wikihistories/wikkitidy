@@ -12,7 +12,7 @@ generate vectorised calls to the different APIs."><meta property="og:image" cont
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.6</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.6.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,8 @@ generate vectorised calls to the different APIs.</p>
 <span>  language <span class="op">=</span> <span class="st">"en"</span>,</span>
 <span>  api <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"core"</span>, <span class="st">"wikimedia"</span>, <span class="st">"wikimedia_org"</span>, <span class="st">"xtools"</span><span class="op">)</span>,</span>
 <span>  response_format <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"json"</span>, <span class="st">"html"</span><span class="op">)</span>,</span>
-<span>  response_type <span class="op">=</span> <span class="cn">NULL</span></span>
+<span>  response_type <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  failure_mode <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"error"</span>, <span class="st">"quiet"</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
@@ -94,6 +95,12 @@ parameters</p></dd>
 <dt>response_type</dt>
 <dd><p>The schema of the response. If supplied, the results will
 be parsed using the schema.</p></dd>
+
+
+<dt>failure_mode</dt>
+<dd><p>How to respond if a request fails
+"error", the default: raise an error
+"quiet", silently return NA</p></dd>
 
 </dl></div>
     <div class="section level2">
