@@ -32,6 +32,7 @@
 #'   calculation
 #' @param classonly TRUE or FALSE: if TRUE, only return the article's assessment
 #'   status, without Wikiproject information
+#' @param failure_mode What to do if no data is found. See [get_rest_resource()]
 #'
 #' @name xtools_page
 #'
@@ -46,37 +47,37 @@ NULL
 
 #' @rdname xtools_page
 #' @export
-get_xtools_page_info <- function(title, language = "en") {
+get_xtools_page_info <- function(title, language = "en", failure_mode = c("error", "quiet")) {
   get_rest_resource(
     endpoint = "page/articleinfo",
     title,
-    api = "xtools", language = language, response_type = "row_list"
+    api = "xtools", language = language, response_type = "row_list", failure_mode = failure_mode
   )
 }
 
 #' @rdname xtools_page
 #' @export
-get_xtools_page_prose <- function(title, language = "en") {
+get_xtools_page_prose <- function(title, language = "en", failure_mode = c("error", "quiet")) {
   get_rest_resource(
     endpoint = "page/prose",
     title,
-    api = "xtools", language = language, response_type = "row_list"
+    api = "xtools", language = language, response_type = "row_list", failure_mode = failure_mode
   )
 }
 
 #' @rdname xtools_page
 #' @export
-get_xtools_page_links <- function(title, language = "en") {
+get_xtools_page_links <- function(title, language = "en", failure_mode = c("error", "quiet")) {
   get_rest_resource(
     endpoint = "page/links",
     title,
-    api = "xtools", language = language, response_type = "row_list"
+    api = "xtools", language = language, response_type = "row_list", failure_mode = failure_mode
   )
 }
 
 #' @rdname xtools_page
 #' @export
-get_xtools_page_top_editors <- function(title, start = NULL, end = NULL, limit = 1000, nobots = FALSE, language = "en") {
+get_xtools_page_top_editors <- function(title, start = NULL, end = NULL, limit = 1000, nobots = FALSE, language = "en", failure_mode = c("error", "quiet")) {
   start <- datetime_for_url(start, .default = "/")
   end <- datetime_for_url(end, .default = "/")
   check_limit(limit, 1000)
@@ -85,19 +86,21 @@ get_xtools_page_top_editors <- function(title, start = NULL, end = NULL, limit =
     endpoint = "page/top_editors",
     title, start, end, limit, nobots = nobots,
     language = language, api = "xtools",
-    response_type = "row_list"
+    response_type = "row_list",
+    failure_mode = failure_mode
   )
 }
 
 #' @rdname xtools_page
 #' @export
-get_xtools_page_assessment <- function(title, classonly = FALSE, language = "en") {
+get_xtools_page_assessment <- function(title, classonly = FALSE, language = "en", failure_mode = c("error", "quiet")) {
   classonly <- one_if_true(classonly)
   get_rest_resource(
     endpoint = "page/assessments",
     title, classonly = classonly,
     language = language, api = "xtools",
-    response_type = "assessment_table"
+    response_type = "assessment_table",
+    failure_mode = failure_mode
   )
 }
 
