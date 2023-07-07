@@ -2,6 +2,7 @@
 
 * "endpoint" parameter of `get_rest_resource()` renamed to "api"
 * New `xtools_page()` functions, allowing programmatic access to statistics about pages' edit histories, links and quality markers
+* `get_rest_resource()` now supports a 'quiet' failure mode, where 4xx and 5xx errors quietly return no data
 
 # wikkitidy 0.1.5
 

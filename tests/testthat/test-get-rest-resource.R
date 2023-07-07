@@ -16,3 +16,14 @@ test_that("`get_rest_resource` correctly encodes URLS", {
   response <- get_rest_resource("page", ttl)
   expect_length(response, 3)
 })
+
+test_that("`get_rest_resource` is intolerant of failure by default", {
+  ttl <- c("Kharles Harpur", "Charles_Baaaudelaire", "Eurth")
+  expect_error(get_rest_resource("page", ttl), class = "purrr_error_indexed")
+})
+
+test_that("`get_rest_resource` is tolerant of failure when failure_mode == 'quiet'", {
+  ttl <- c("Kharles Harpur", "Charles Baudelaire")
+  response <- get_rest_resource("page", ttl, failure_mode = "quiet")
+  expect_length(response, 2)
+})

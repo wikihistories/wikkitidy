@@ -21,6 +21,9 @@
 #'   "json" are supported.
 #' @param response_type The schema of the response. If supplied, the results will
 #'   be parsed using the schema.
+#' @param failure_mode How to respond if a request fails
+#'   "error", the default: raise an error
+#'   "quiet", silently return NA
 #'
 #' @return A list of responses. If `response_format` == "json", then the responses
 #'   will be simple R lists. If `response_format` == "html", then the responses
@@ -32,25 +35,32 @@ get_rest_resource <- function(
     ..., language = "en",
     api = c("core", "wikimedia", "wikimedia_org", "xtools"),
     response_format = c("json", "html"),
-    response_type = NULL) {
+    response_type = NULL,
+    failure_mode = c("error", "quiet")) {
   dots <- rlang::list2(...) %>%
     purrr::keep(\(x) !is.null(x)) %>%
     purrr::map_if(is.character, str_for_rest)
-  req_fn <- switch(rlang::arg_match(api),
+  pipeline <- list()
+  api <- rlang::arg_match(api)
+  pipeline$req_fn <- switch(api,
     "core" = core_rest_request,
     "wikimedia" = wikimedia_rest_request,
     "wikimedia_org" = wikimedia_org_rest_request,
     "xtools" = xtools_rest_request
   )
-  resp_fn <- switch(rlang::arg_match(response_format),
-    "json" = httr2::resp_body_json,
-    "html" = httr2::resp_body_html
+  failure_mode <- rlang::arg_match(failure_mode)
+  pipeline$error_fn <- switch(failure_mode,
+    "error" = NULL,
+    "quiet" = \(req) httr2::req_error(req, is_error = \(x) FALSE)
   )
+  pipeline$perform_fn <- httr2::req_perform
+  response_format <- rlang::arg_match(response_format)
+  pipeline$resp_fn <- new_response_function(response_format, failure_mode)
   if (!xor(is.null(response_type), rlang::is_scalar_character(response_type))) {
     rlang::abort("`response_type` must be NULL or length 1")
   }
   params <- vctrs::vec_recycle_common(!!!dots, language = language)
-  get_one <- purrr::compose(req_fn, httr2::req_perform, resp_fn, .dir = "forward")
+  get_one <- purrr::compose(!!!pipeline, .dir = "forward")
   response <- purrr::pmap(params, get_one, .progress = T)
   if (!is.null(response_type)) {
     class(response) <- c(response_type, class(response))
@@ -58,4 +68,27 @@ get_rest_resource <- function(
   }
   response <- if (rlang::is_scalar_list(response)) response[[1]] else response
   response
+}
+
+new_response_function <- function(response_format, failure_mode) {
+  handler <- switch(
+    response_format,
+    "html" = httr2::resp_body_html,
+    "json" = httr2::resp_body_json
+  )
+  switch(
+    failure_mode,
+    "error" = handler,
+    "quiet" = handle_without_error(handler)
+    )
+}
+
+handle_without_error <- function(handler) {
+  function(resp) {
+    if (httr2::resp_is_error(resp)) {
+      list()
+    } else {
+      handler(resp)
+    }
+  }
 }

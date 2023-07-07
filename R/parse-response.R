@@ -34,7 +34,9 @@ parse_response.row_list <- function(response) {
 
 flatten_bind <- function(response) {
   parsed <- purrr::map(response, purrr::list_flatten)
-  parsed <- purrr::list_transpose(parsed)
+  template_idx <- purrr::map_int(parsed, length) %>% which.max()
+  template <- names(parsed[[template_idx]])
+  parsed <- purrr::list_transpose(parsed, template = template, default = NA)
   parsed <- tibble::tibble(!!!parsed)
   parsed
 }
