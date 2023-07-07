@@ -28,15 +28,18 @@ parse_response.default <- function(response) {
 #'   nested data, however, which is automatically unnested by dplyr::bind_rows.
 #'   Hence this more basic approach.
 parse_response.row_list <- function(response) {
-  purrr::list_transpose(response) %>%
-    tibble::as_tibble()
+  robust_bind(response)
+}
+
+robust_bind <- function(response) {
+  template_idx <- purrr::map_int(response, length) %>% which.max()
+  template <- names(response[[template_idx]])
+  response <- purrr::list_transpose(response, template = template, default = NA)
+  response <- tibble::tibble(!!!response)
+  response
 }
 
 flatten_bind <- function(response) {
-  parsed <- purrr::map(response, purrr::list_flatten)
-  template_idx <- purrr::map_int(parsed, length) %>% which.max()
-  template <- names(parsed[[template_idx]])
-  parsed <- purrr::list_transpose(parsed, template = template, default = NA)
-  parsed <- tibble::tibble(!!!parsed)
-  parsed
+  response <- purrr::map(response, purrr::list_flatten)
+  robust_bind(response)
 }
