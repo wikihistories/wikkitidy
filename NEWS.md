@@ -1,3 +1,5 @@
+# wikkitidy (development version)
+
 # wikkitidy 0.1.6
 
 * "endpoint" parameter of `get_rest_resource()` renamed to "api"

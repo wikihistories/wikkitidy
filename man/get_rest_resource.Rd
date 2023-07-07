@@ -9,7 +9,8 @@ get_rest_resource(
   language = "en",
   api = c("core", "wikimedia", "wikimedia_org", "xtools"),
   response_format = c("json", "html"),
-  response_type = NULL
+  response_type = NULL,
+  failure_mode = c("error", "quiet")
 )
 }
 \arguments{
@@ -33,6 +34,10 @@ parameters}
 
 \item{response_type}{The schema of the response. If supplied, the results will
 be parsed using the schema.}
+
+\item{failure_mode}{How to respond if a request fails
+"error", the default: raise an error
+"quiet", silently return NA}
 }
 \value{
 A list of responses. If \code{response_format} == "json", then the responses

@@ -9,11 +9,23 @@
 \alias{get_xtools_page_assessment}
 \title{Access page-level statistics from the \href{https://www.mediawiki.org/wiki/XTools/API/Page}{XTools Page API endpoint}}
 \usage{
-get_xtools_page_info(title, language = "en")
+get_xtools_page_info(
+  title,
+  language = "en",
+  failure_mode = c("error", "quiet")
+)
 
-get_xtools_page_prose(title, language = "en")
+get_xtools_page_prose(
+  title,
+  language = "en",
+  failure_mode = c("error", "quiet")
+)
 
-get_xtools_page_links(title, language = "en")
+get_xtools_page_links(
+  title,
+  language = "en",
+  failure_mode = c("error", "quiet")
+)
 
 get_xtools_page_top_editors(
   title,
@@ -21,15 +33,23 @@ get_xtools_page_top_editors(
   end = NULL,
   limit = 1000,
   nobots = FALSE,
-  language = "en"
+  language = "en",
+  failure_mode = c("error", "quiet")
 )
 
-get_xtools_page_assessment(title, classonly = FALSE, language = "en")
+get_xtools_page_assessment(
+  title,
+  classonly = FALSE,
+  language = "en",
+  failure_mode = c("error", "quiet")
+)
 }
 \arguments{
 \item{title}{Character vector of page titles}
 
 \item{language}{Language code for the version of Wikipedia to query}
+
+\item{failure_mode}{What to do if no data is found. See \code{\link[=get_rest_resource]{get_rest_resource()}}}
 
 \item{start}{A character vector or date object (optional): the start date for
 calculating top editors}
