@@ -1,4 +1,4 @@
-# wikkitidy (development version)
+# wikkitidy 0.1.8
 
 * Fixed `perform_query()` bug again, to deal with results that return nothing for the given query for given pages
 * Fewer queries return nested data frames now
