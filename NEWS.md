@@ -1,4 +1,4 @@
-# wikkitidy (development version)
+# wikkitidy 0.1.7
 
 * Fixed bug where `perform_query()` would fail if only a single property was requested from an API:Properties module (i.e. using `new_prop_query()` or `query_page_properties()`)
 
