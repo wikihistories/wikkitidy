@@ -22,7 +22,7 @@ beneath them, until it can find no more subcategories."><meta property="og:image
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.7</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.7.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -189,15 +189,15 @@ be passed to <a href="https://r.igraph.org/reference/graph_from_data_frame.html"
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Build the tree of all trees in Wikipedia</span></span></span>
 <span class="r-in"><span><span class="va">tree</span> <span class="op">&lt;-</span> <span class="fu">build_category_tree</span><span class="op">(</span><span class="st">"Category:Trees (graph theory)"</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ Walking subcategories: 1 done (384/s) | 3ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ Walking subcategories: 2 done (15/s) | 134ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ Walking subcategories: 3 done (13/s) | 234ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ Walking subcategories: 4 done (11/s) | 360ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ Walking subcategories: 5 done (11/s) | 453ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ Walking subcategories: 6 done (11/s) | 538ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ Walking subcategories: 7 done (11/s) | 627ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ Walking subcategories: 8 done (11/s) | 715ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ Walking subcategories: 9 done (11/s) | 822ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ Walking subcategories: 1 done (350/s) | 4ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ Walking subcategories: 2 done (13/s) | 151ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ Walking subcategories: 3 done (10/s) | 292ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ Walking subcategories: 4 done (9.2/s) | 438ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ Walking subcategories: 5 done (9/s) | 559ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ Walking subcategories: 6 done (9/s) | 668ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ Walking subcategories: 7 done (8.9/s) | 784ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ Walking subcategories: 8 done (9/s) | 894ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ Walking subcategories: 9 done (8.8/s) | 1s</span>
 <span class="r-in"><span><span class="va">tree</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $nodes</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 298 × 4</span></span>
@@ -236,9 +236,9 @@ be passed to <a href="https://r.igraph.org/reference/graph_from_data_frame.html"
 <span class="r-in"><span><span class="co"># to igraph</span></span></span>
 <span class="r-in"><span><span class="va">tree_graph</span> <span class="op">&lt;-</span> <span class="fu">igraph</span><span class="fu">::</span><span class="fu"><a href="https://r.igraph.org/reference/graph_from_data_frame.html" class="external-link">graph_from_data_frame</a></span><span class="op">(</span><span class="va">tree</span><span class="op">$</span><span class="va">edges</span>, vertices <span class="op">=</span> <span class="va">tree</span><span class="op">$</span><span class="va">nodes</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">tree_graph</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> IGRAPH 3ee558a DN-B 298 318 -- </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> IGRAPH c76353e DN-B 298 318 -- </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> + attr: name (v/c), ns (v/n), title (v/c), type (v/c), timestamp (e/c)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> + edges from 3ee558a (vertex names):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> + edges from c76353e (vertex names):</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] 17606898-&gt;48560    17606898-&gt;44659935 17606898-&gt;13251077 17606898-&gt;1410431 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [5] 17606898-&gt;29106883 17606898-&gt;48861658 17606898-&gt;16823137 17606898-&gt;68638522</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [9] 17606898-&gt;27258886 17606898-&gt;1266713  17606898-&gt;4557120  17606898-&gt;267355  </span>
