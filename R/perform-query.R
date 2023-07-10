@@ -17,8 +17,7 @@ perform_query <- function(request, continue) {
 #' @export
 perform_query.prop <- function(request, continue) {
   result <- get_result(request, continue, c("query", "pages"))
-  simplified_data <- purrr::list_transpose(result$x)
-  simplified_data <- restore_names(simplified_data, result$x)
+  simplified_data <- purrr::list_transpose(result$x, simplify = FALSE)
   result$x <- tibble::tibble(!!!simplified_data)
   result_to_query_tbl(result)
 }
@@ -71,7 +70,19 @@ result_to_query_tbl <- function(result) {
     result$x,
     dplyr::across(
       dplyr::where(rlang::is_list),
-      \(col) purrr::map(col, dplyr::bind_rows)
+      simplify_if_atomicish
+    )
+  )
+  result$x <- dplyr::mutate(
+    result$x,
+    dplyr::across(
+      dplyr::where(rlang::is_list),
+      \(col) purrr::map(col, robust_bind)
   ))
+  result$x <- tidyr::unnest(
+    result$x,
+    dplyr::where(comprises_one_row_tibbles),
+    keep_empty = TRUE
+  )
   rlang::inject(new_query_tbl(!!!result))
 }

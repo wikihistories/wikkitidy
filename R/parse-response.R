@@ -30,16 +30,3 @@ parse_response.default <- function(response) {
 parse_response.row_list <- function(response) {
   robust_bind(response)
 }
-
-robust_bind <- function(response) {
-  template_idx <- purrr::map_int(response, length) %>% which.max()
-  template <- names(response[[template_idx]])
-  response <- purrr::list_transpose(response, template = template, default = NA)
-  response <- tibble::tibble(!!!response)
-  response
-}
-
-flatten_bind <- function(response) {
-  response <- purrr::map(response, purrr::list_flatten)
-  robust_bind(response)
-}

@@ -1,5 +1,8 @@
 # wikkitidy (development version)
 
+* Fixed `perform_query()` bug again, to deal with results that return nothing for the given query for given pages
+* Fewer queries return nested data frames now
+
 # wikkitidy 0.1.7
 
 * Fixed bug where `perform_query()` would fail if only a single property was requested from an API:Properties module (i.e. using `new_prop_query()` or `query_page_properties()`)

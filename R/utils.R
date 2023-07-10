@@ -122,35 +122,37 @@ one_if_true <- function(arg) {
 }
 
 
-#' Restore names to an oversimplified list
-#'
-#' purrr::list_transpose has the unfortunate side-effect of deleting
-#' the names from a named list if each constituent list has only 1 member.
-#' This occurs if you request only a single page property from the 'pageprops'
-#' query, as an example. Then each item under 'pageprops' will only have a single
-#' value, and the name of the particular property for that value will be deleted
-#' by list_transpose.
-#'
-#' @param simplified_list A list, passed to list_flatten
-#' @param old_list The list before it was passed
-#'
-#' @return simplified_list with names included
-#' @keywords internal
-restore_names <- function(simplified_list, old_list) {
-  unnamed_lists <- purrr::map(
-    simplified_list,
-    \(l) rlang::is_list(l) &&
-      !rlang::is_named(l) &&
-      all(purrr::map_lgl(l, \(x) length(x) == 1)))
-  purrr::iwalk(
-    unnamed_lists,
-    \(is_unnamed, list_idx) {
-      if (rlang::is_true(is_unnamed)) {
-        new_name <- names(old_list[[1]][[list_idx]])
-        simplified_list[[new_name]] <<- unlist(simplified_list[[list_idx]])
-        simplified_list[[list_idx]] <<- NULL
-      }
-    }
-    )
-  simplified_list
+simplify_if_atomicish <- function(list_col) {
+  nulls <- purrr::map_lgl(list_col, is.null)
+  otherwise_atomic <- all(purrr::map_lgl(list_col[!nulls], rlang::is_atomic))
+  if (otherwise_atomic) {
+    list_col[nulls] <- NA
+    unlist(list_col)
+  } else {
+    list_col
+  }
+
+}
+
+robust_bind <- function(response) {
+  if (is.null(response)) {
+    tibble::tibble()
+  } else if (rlang::is_scalar_list(response) && !rlang::is_list(response[[1]])) {
+    tibble::tibble(!!!response)
+  } else {
+    template_idx <- purrr::map_int(response, length) %>% which.max()
+    template <- names(response[[template_idx]])
+    response <- purrr::list_transpose(response, template = template, default = NA)
+    response <- tibble::tibble(!!!response)
+    response
+  }
+}
+
+flatten_bind <- function(response) {
+  response <- purrr::map(response, purrr::list_flatten)
+  robust_bind(response)
+}
+
+comprises_one_row_tibbles <- function(col) {
+  rlang::is_list(col) && all(purrr::map_lgl(col, \(row) nrow(row) <= 1))
 }

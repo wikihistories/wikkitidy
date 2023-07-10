@@ -26,13 +26,13 @@ Imports:
     rlang (>= 0.4.11),
     stringr,
     tibble,
+    tidyr,
     vctrs
 Suggests: 
     covr,
     igraph,
     roxygen2,
-    testthat (>= 3.0.0),
-    tidyr
+    testthat (>= 3.0.0)
 Config/testthat/edition: 3
 URL: https://wikihistories.github.io/wikkitidy/
 BugReports: https://github.com/wikihistories/wikkitidy/issues
