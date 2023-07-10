@@ -24,7 +24,7 @@ get_page_langlinks() returns interwiki links for each title'><meta property="og:
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.7.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.8.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -159,7 +159,7 @@ desired data.</p>
 <span class="r-in"><span><span class="co"># data.</span></span></span>
 <span class="r-in"><span><span class="va">baillie</span> <span class="op">&lt;-</span> <span class="fu">get_page_langlinks</span><span class="op">(</span><span class="st">"Joanna Baillie"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span><span class="fu">get_page_summary</span><span class="op">(</span>title <span class="op">=</span> <span class="va">title</span>, language <span class="op">=</span> <span class="va">code</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span>  <span style="color: #00BB00;">■■■■■■■■■■■■■■                  </span>  44% |  ETA:  3s</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>  <span style="color: #00BB00;">■■■■■■■■■■■■■■■■■■■■■■■         </span>  75% |  ETA:  1s</span>
 <span class="r-in"><span><span class="va">baillie</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 16 × 30</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    code  name       key     title type  displaytitle namespace_id namespace_text</span>
