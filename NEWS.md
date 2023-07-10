@@ -1,5 +1,7 @@
 # wikkitidy (development version)
 
+* Fixed bug where `perform_query()` would fail if only a single property was requested from an API:Properties module (i.e. using `new_prop_query()` or `query_page_properties()`)
+
 # wikkitidy 0.1.6
 
 * "endpoint" parameter of `get_rest_resource()` renamed to "api"

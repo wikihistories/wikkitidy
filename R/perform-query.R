@@ -17,9 +17,9 @@ perform_query <- function(request, continue) {
 #' @export
 perform_query.prop <- function(request, continue) {
   result <- get_result(request, continue, c("query", "pages"))
-  result$x <- result$x %>%
-    purrr::list_transpose() %>%
-    tibble::tibble(!!!.)
+  simplified_data <- purrr::list_transpose(result$x)
+  simplified_data <- restore_names(simplified_data, result$x)
+  result$x <- tibble::tibble(!!!simplified_data)
   result_to_query_tbl(result)
 }
 
