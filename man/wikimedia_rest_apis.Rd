@@ -33,3 +33,14 @@ provides statistical data about Wikimedia Foundation projects
 \code{xtools_rest_request()} builds a request to the \href{https://www.mediawiki.org/wiki/XTools/API}{XTools API}, which provides additional
 statistical data about Wikimedia foundation projects
 }
+\examples{
+# Build request for articleinfo about Kate Bush's page on English Wikipedia
+request <- xtools_rest_request("page/articleinfo", "Kate_Bush")
+
+# Build request for most-viewed pages on German Wikipedia in July 2020
+request <- wikimedia_org_rest_request(
+    "metrics/pageviews/top",
+    "all-access", "2020", "07", "all-days",
+    language = "de"
+    )
+}

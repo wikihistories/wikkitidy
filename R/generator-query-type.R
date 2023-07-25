@@ -91,6 +91,19 @@ list_all_generators <- function() {
 #'   first term in the class vector, i.e.
 #'   `generator/(titles|pageids|revids)/prop/query/action_api/httr2_request`.
 #' @export
+#' @examples
+#' # Build a generator query using a list module
+#' # List all members of Category:Physics on English Wikipedia
+#' physics <- wiki_action_request() %>%
+#'   new_generator_query("categorymembers", gcmtitle = "Category:Physics")
+#'
+#' # Build a generator query on a property module
+#' # Generate the pages that are linked to Albert Einstein's page on English
+#' # Wikipedia
+#' einstein_categories <- wiki_action_request() %>%
+#'   new_prop_query("titles", "Albert Einstein") %>%
+#'   new_generator_query("iwlinks")
+#'
 new_generator_query <- function(.req, generator, ...) {
   UseMethod("new_generator_query")
 }

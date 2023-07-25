@@ -4,7 +4,7 @@
 #' @param prefix A character vector
 #'
 #' @return A character vector
-#'
+#' @keywords internal
 prefix_params <- function(params, prefix) {
   unprefixed <- params[!startsWith(params, prefix)]
   prefixed <- paste0(prefix, unprefixed)

@@ -46,5 +46,4 @@ reference:
   - has_keyword("data_type")
 - title: Utilities
   contents:
-  - prefix_params
   - wikkitidy_example

@@ -17,3 +17,4 @@ A character vector
 \description{
 Add required prefix to URL parameters for MediaWiki Action API request
 }
+\keyword{internal}

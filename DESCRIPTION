@@ -1,18 +1,18 @@
 Package: wikkitidy
-Title: Tidy analysis of Wikipedia in R 
+Title: Tidy Analysis of Wikipedia
 Version: 0.1.8.9000
 Authors@R: 
-    person("Michael", "Falk", , "michaelgfalk@gmail.com", role = c("aut", "cre"),
+    person("Michael", "Falk", , "michaelgfalk@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-9261-8390"))
-Description: A wrapper around Wikipedia's major APIs: the MediaWiki Action API,
-    REST API and Wikmedia REST API. These three APIs provide complementary
-    functionality for the analysis of Wikipedia by social scientists and digital
-    humanists. This package provides a tidy interface to all three APIs, along
-    with a range of functions that solve common tasks in Wikipedia research.
+Description: Access data from Wikipedia's major APIs using a consistent
+    interface. Query Wikipedia, retrieve data about individual pages, and
+    use web-hosted analysis tools such as XTools or pageviews. Receive
+    responses as into tibbles or simple vectors.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+URL: https://wikihistories.github.io/wikkitidy/
+BugReports: https://github.com/wikihistories/wikkitidy/issues
+Depends: 
+    R (>= 2.10)
 Imports: 
     cli,
     dplyr,
@@ -34,7 +34,6 @@ Suggests:
     roxygen2,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-URL: https://wikihistories.github.io/wikkitidy/
-BugReports: https://github.com/wikihistories/wikkitidy/issues
-Depends: 
-    R (>= 2.10)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3

@@ -14,7 +14,7 @@ covariant on the type, so you can also pass all subtypes of \code{prop}.}
 \item{by}{The type of page. Allowed values are: pageids, titles, revids}
 
 \item{pages}{A string, the pages to query by, corresponding to the 'by'
-parameter. Multiple values should be seperated with "|"}
+parameter. Multiple values should be separated with "|"}
 
 \item{...}{<\code{\link[rlang:dyn-dots]{dynamic-dots}}> Further parameters to the
 query}
@@ -40,5 +40,12 @@ this parameter to be set, or they require a
 of property query that do not rely on a generator (see below on the return
 value). A complication is that a \code{prop/query} can \emph{itself} be used as the
 basis for a generator.
+}
+\examples{
+# Build a query on a set of pageids
+# 963273 and 1159171 are Kate Bush albums
+bush_albums_query <- wiki_action_request() \%>\%
+  new_prop_query("pageids", "963273|1159171")
+
 }
 \keyword{low_level_action_api}

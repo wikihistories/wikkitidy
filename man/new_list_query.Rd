@@ -34,4 +34,10 @@ An object of type \code{list/query/action_api/httr2_request}.
 \description{
 This low-level constructor only performs basic type checking.
 }
+\examples{
+# Create a query to list all members of Category:Physics
+physics_query <- wiki_action_request() \%>\%
+  new_list_query("categorymembers", cmtitle="Category:Physics")
+
+}
 \keyword{low_level_action_api}

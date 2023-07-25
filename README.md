@@ -15,15 +15,15 @@ Tidy analysis of Wikipedia in R
 ## What’s in a name?
 
 **wiki**: There are many wikis, but one dominates the Wikiverse.
-[Wikipedia](https://wikipedia.org) is the largest repository of facts
-ever assembled by human hands. Scholars the world over are turning to
-Wikipedia to understand how twenty-first century society understands
+[Wikipedia](https://www.wikipedia.org/) is the largest repository of
+facts ever assembled by human hands. Scholars the world over are turning
+to Wikipedia to understand how twenty-first century society understands
 itself.
 
 **quiddity**: [The ‘whatness’ of a
-thing](https://wikipedia.org/wiki/Quiddity). The kind of thing it is.
-[What is Wikipedia?](https://wikipedia.org/wiki/WP:NOT) Is it merely
-another encyclopaedia? It is news presented as history? Is it the
+thing](https://en.wikipedia.org/wiki/Quiddity). The kind of thing it is.
+[What is Wikipedia?](https://en.wikipedia.org/wiki/Wikipedia:NOT) Is it
+merely another encyclopaedia? It is news presented as history? Is it the
 consensus of a global village, or the battleground of an ideological
 war?
 
@@ -52,10 +52,22 @@ minimal data wrangling and cleaning.
 
 ## Installation
 
-You can install the development version of wikkitidy from
-[GitHub](https://github.com/) with:
+You can install wikkitidy from CRAN with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("wikihistories/wikkitidy")
+install.packages("wikkitidy")
+#> Installing package into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpzTXmzr/temp_libpathb53c13ced990'
+#> (as 'lib' is unspecified)
+#> Warning: package 'wikkitidy' is not available for this version of R
+#> 
+#> A version of this package for your version of R might be available elsewhere,
+#> see the ideas at
+#> https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages
 ```
+
+## Code of Conduct
+
+Please note that the wikkitidy project is released with a [Contributor
+Code of
+Conduct](https://wikihistories.github.io/wikkitidy/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.

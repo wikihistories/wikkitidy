@@ -68,7 +68,7 @@ query_by_revid <- function(.req, revid) {
 #'   covariant on the type, so you can also pass all subtypes of `prop`.
 #' @param by The type of page. Allowed values are: `r PROP_SUBTYPES`
 #' @param pages A string, the pages to query by, corresponding to the 'by'
-#'   parameter. Multiple values should be seperated with "|"
+#'   parameter. Multiple values should be separated with "|"
 #' @param ... <[`dynamic-dots`][rlang::dyn-dots]> Further parameters to the
 #'   query
 #'
@@ -83,6 +83,12 @@ query_by_revid <- function(.req, revid) {
 #' * `generator/pageids/prop/query`
 #' * `generator/revids/prop/query`
 #' @export
+#' @examples
+#' # Build a query on a set of pageids
+#' # 963273 and 1159171 are Kate Bush albums
+#' bush_albums_query <- wiki_action_request() %>%
+#'   new_prop_query("pageids", "963273|1159171")
+#'
 new_prop_query <- function(.req, by, pages, ...) {
   UseMethod("new_prop_query")
 }

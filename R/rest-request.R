@@ -73,6 +73,16 @@ wikimedia_rest_request <- function(..., language = "en") {
 #' @return A `wikimedia_org/rest` or `xtools/rest` object, an S3 vector that
 #'   subclasses [httr2::request].
 #'
+#' @examples
+#' # Build request for articleinfo about Kate Bush's page on English Wikipedia
+#' request <- xtools_rest_request("page/articleinfo", "Kate_Bush")
+#'
+#' # Build request for most-viewed pages on German Wikipedia in July 2020
+#' request <- wikimedia_org_rest_request(
+#'     "metrics/pageviews/top",
+#'     "all-access", "2020", "07", "all-days",
+#'     language = "de"
+#'     )
 #' @name wikimedia_rest_apis
 NULL
 

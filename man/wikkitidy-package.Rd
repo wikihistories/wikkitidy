@@ -4,11 +4,11 @@
 \name{wikkitidy-package}
 \alias{wikkitidy}
 \alias{wikkitidy-package}
-\title{wikkitidy: Tidy analysis of Wikipedia in R}
+\title{wikkitidy: Tidy Analysis of Wikipedia}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-A wrapper around Wikipedia's major APIs: the MediaWiki Action API, REST API and Wikmedia REST API. These three APIs provide complementary functionality for the analysis of Wikipedia by social scientists and digital humanists. This package provides a tidy interface to all three APIs, along with a range of functions that solve common tasks in Wikipedia research.
+Access data from Wikipedia's major APIs using a consistent interface. Query Wikipedia, retrieve data about individual pages, and use web-hosted analysis tools such as XTools or pageviews. Receive responses as into tibbles or simple vectors.
 }
 \seealso{
 Useful links:
@@ -19,7 +19,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Michael Falk \email{michaelgfalk@gmail.com} (\href{https://orcid.org/0000-0001-9261-8390}{ORCID})
+\strong{Maintainer}: Michael Falk \email{michaelgfalk@gmail.com} (\href{https://orcid.org/0000-0001-9261-8390}{ORCID}) [copyright holder]
 
 }
 \keyword{internal}

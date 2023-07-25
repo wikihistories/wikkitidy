@@ -63,6 +63,11 @@ list_all_list_modules <- function() {
 #'
 #' @return An object of type `list/query/action_api/httr2_request`.
 #' @export
+#' @examples
+#' # Create a query to list all members of Category:Physics
+#' physics_query <- wiki_action_request() %>%
+#'   new_list_query("categorymembers", cmtitle="Category:Physics")
+#'
 new_list_query <- function(.req, list, ...) {
   UseMethod("new_list_query")
 }
