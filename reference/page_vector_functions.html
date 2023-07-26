@@ -120,20 +120,18 @@ desired data.</p>
 <span class="r-in"><span>  <span class="op">~</span><span class="va">city</span>,</span></span>
 <span class="r-in"><span>  <span class="st">"Berlin"</span>,</span></span>
 <span class="r-in"><span>  <span class="st">"Darmstadt"</span>,</span></span>
-<span class="r-in"><span>  <span class="st">"Leipzig"</span></span></span>
 <span class="r-in"><span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>related <span class="op">=</span> <span class="fu">get_page_related</span><span class="op">(</span><span class="va">city</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">cities</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 3 × 2</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 2 × 2</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   city      related           </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>            </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Berlin    <span style="color: #949494;">&lt;tibble [20 × 32]&gt;</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> Darmstadt <span style="color: #949494;">&lt;tibble [20 × 32]&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> Leipzig   <span style="color: #949494;">&lt;tibble [20 × 32]&gt;</span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># Use [tidyr::unnest] to get one row per related page:</span></span></span>
+<span class="r-in"><span><span class="co"># Unest to get one row per related page:</span></span></span>
 <span class="r-in"><span><span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html" class="external-link">unnest</a></span><span class="op">(</span><span class="va">cities</span>, <span class="st">"related"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 60 × 33</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 40 × 33</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    city  pageid    ns index type  title displaytitle namespace_id namespace_text</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Berl… 3.72<span style="color: #949494;">e</span>3     0    10 stan… Berl… <span style="color: #949494;">"</span>&lt;span clas…            0 <span style="color: #949494;">""</span>            </span>
@@ -146,7 +144,7 @@ desired data.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Berl… 1.14<span style="color: #949494;">e</span>6     0    12 stan… Hert… <span style="color: #949494;">"</span>&lt;span clas…            0 <span style="color: #949494;">""</span>            </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Berl… 3.06<span style="color: #949494;">e</span>6     0    17 stan… Matt… <span style="color: #949494;">"</span>&lt;span clas…            0 <span style="color: #949494;">""</span>            </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Berl… 5.59<span style="color: #949494;">e</span>6     0     4 stan… Econ… <span style="color: #949494;">"</span>&lt;span clas…            0 <span style="color: #949494;">""</span>            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 50 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 30 more rows</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 24 more variables: wikibase_item &lt;chr&gt;, titles_canonical &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   titles_normalized &lt;chr&gt;, titles_display &lt;chr&gt;, thumbnail_source &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   thumbnail_width &lt;int&gt;, thumbnail_height &lt;int&gt;, originalimage_source &lt;chr&gt;,</span></span>
@@ -156,17 +154,16 @@ desired data.</p>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># The functions are vectorised over title and language</span></span></span>
 <span class="r-in"><span><span class="co"># Find all articles about Joanna Baillie, and retrieve summary data for</span></span></span>
-<span class="r-in"><span><span class="co"># the first 3.</span></span></span>
+<span class="r-in"><span><span class="co"># the first two.</span></span></span>
 <span class="r-in"><span><span class="va">baillie</span> <span class="op">&lt;-</span> <span class="fu">get_page_langlinks</span><span class="op">(</span><span class="st">"Joanna Baillie"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/slice.html" class="external-link">slice</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/slice.html" class="external-link">slice</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span><span class="fu">get_page_summary</span><span class="op">(</span>title <span class="op">=</span> <span class="va">title</span>, language <span class="op">=</span> <span class="va">code</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">baillie</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 3 × 30</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   code  name    key         title type  displaytitle namespace_id namespace_text</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> ar    العربية جوانا_بيلي  جوان… stan… <span style="color: #949494;">"</span>&lt;span clas…            0 <span style="color: #949494;">""</span>            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> arz   مصرى    جوانا_بيلى  جوان… stan… <span style="color: #949494;">"</span>&lt;span clas…            0 <span style="color: #949494;">""</span>            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> avk   Kotava  Johanna_Ba… Joha… stan… <span style="color: #949494;">"</span>&lt;span clas…            0 <span style="color: #949494;">""</span>            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 2 × 30</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   code  name    key        title  type  displaytitle namespace_id namespace_text</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> ar    العربية جوانا_بيلي جوانا… stan… <span style="color: #949494;">"</span>&lt;span clas…            0 <span style="color: #949494;">""</span>            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> arz   مصرى    جوانا_بيلى جوانا… stan… <span style="color: #949494;">"</span>&lt;span clas…            0 <span style="color: #949494;">""</span>            </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 22 more variables: wikibase_item &lt;chr&gt;, titles_canonical &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   titles_normalized &lt;chr&gt;, titles_display &lt;chr&gt;, pageid &lt;int&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   thumbnail_source &lt;chr&gt;, thumbnail_width &lt;int&gt;, thumbnail_height &lt;int&gt;,</span></span>
