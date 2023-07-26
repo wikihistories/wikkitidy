@@ -30,12 +30,12 @@
 #'
 #' # The function is vectorised, so you can compare multiple pairs of revisions
 #' # in a single call
-#' # See diffs for the last five revisions of the Main Page
+#' # See diffs for the last two revisions of the Main Page
 #' revisions <- wiki_action_request() %>%
 #'   query_by_title("Main Page") %>%
 #'   query_page_properties(
 #'     "revisions",
-#'     rvlimit = 5, rvprop = "ids", rvdir = "older"
+#'     rvlimit = 2, rvprop = "ids", rvdir = "older"
 #'   ) %>%
 #'   next_result() %>%
 #'   tidyr::unnest(cols = c(revisions)) %>%

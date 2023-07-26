@@ -42,19 +42,18 @@
 #'   ~city,
 #'   "Berlin",
 #'   "Darmstadt",
-#'   "Leipzig"
 #' ) %>%
 #'   dplyr::mutate(related = get_page_related(city))
 #' cities
 #'
-#' # Use [tidyr::unnest] to get one row per related page:
+#' # Unest to get one row per related page:
 #' tidyr::unnest(cities, "related")
 #'
 #' # The functions are vectorised over title and language
 #' # Find all articles about Joanna Baillie, and retrieve summary data for
-#' # the first 3.
+#' # the first two.
 #' baillie <- get_page_langlinks("Joanna Baillie") %>%
-#'   dplyr::slice(1:3) %>%
+#'   dplyr::slice(1:2) %>%
 #'   dplyr::mutate(get_page_summary(title = title, language = code))
 #' baillie
 NULL
