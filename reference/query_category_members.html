@@ -179,75 +179,54 @@ be passed to <a href="https://r.igraph.org/reference/graph_from_data_frame.html"
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 70<span style="text-decoration: underline;">983</span>414    14 Category:Physics by country   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 71<span style="text-decoration: underline;">976</span>587    14 Category:Physics events       </span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># Retrieve interwiki links for the first 10 pages in the 'Beatles Albums'</span></span></span>
-<span class="r-in"><span><span class="co"># category on Danish Wikipedia</span></span></span>
-<span class="r-in"><span><span class="co"># TODO: This currently doesn't work, because incomplete batches aren't properly handled</span></span></span>
-<span class="r-in"><span><span class="va">beatles</span> <span class="op">&lt;-</span> <span class="fu"><a href="wiki_action_request.html">wiki_action_request</a></span><span class="op">(</span>language <span class="op">=</span> <span class="st">"da"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu">query_category_members</span><span class="op">(</span><span class="st">"Beatles-album"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="query_page_properties.html">query_page_properties</a></span><span class="op">(</span><span class="st">"langlinks"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="get_query_results.html">next_batch</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># Build the tree of all trees in Wikipedia</span></span></span>
-<span class="r-in"><span><span class="va">tree</span> <span class="op">&lt;-</span> <span class="fu">build_category_tree</span><span class="op">(</span><span class="st">"Category:Trees (graph theory)"</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ Walking subcategories: 1 done (338/s) | 4ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ Walking subcategories: 2 done (12/s) | 168ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠸ Walking subcategories: 3 done (9.6/s) | 312ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠼ Walking subcategories: 4 done (8.3/s) | 483ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠴ Walking subcategories: 5 done (8.1/s) | 615ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠦ Walking subcategories: 6 done (8.2/s) | 732ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠧ Walking subcategories: 7 done (8.1/s) | 863ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠇ Walking subcategories: 8 done (8.1/s) | 986ms</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠏ Walking subcategories: 9 done (8.1/s) | 1.1s</span>
+<span class="r-in"><span><span class="co"># Build the tree of all albums for the Melbourne band Custard</span></span></span>
+<span class="r-in"><span><span class="va">tree</span> <span class="op">&lt;-</span> <span class="fu">build_category_tree</span><span class="op">(</span><span class="st">"Category:Custard_(band)_albums"</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠙ Walking subcategories: 1 done (386/s) | 3ms</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> ⠹ Walking subcategories: 2 done (18/s) | 111ms</span>
 <span class="r-in"><span><span class="va">tree</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $nodes</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 300 × 4</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      pageid    ns title                         type </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 17<span style="text-decoration: underline;">606</span>898    14 Category:Trees_(graph_theory) root </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>    <span style="text-decoration: underline;">48</span>560     0 Tree (graph theory)           page </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 44<span style="text-decoration: underline;">659</span>935     0 Agreement forest              page </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 13<span style="text-decoration: underline;">251</span>077     0 Arborescence (graph theory)   page </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>  1<span style="text-decoration: underline;">410</span>431     0 Bethe lattice                 page </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 29<span style="text-decoration: underline;">106</span>883     0 Block graph                   page </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 48<span style="text-decoration: underline;">861</span>658     0 Blossom tree (graph theory)   page </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 16<span style="text-decoration: underline;">823</span>137     0 Branch-decomposition          page </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 68<span style="text-decoration: underline;">638</span>522     0 Buchholz hydra                page </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 27<span style="text-decoration: underline;">258</span>886     0 Caterpillar tree              page </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 290 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 11 × 4</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      pageid    ns title                                      type  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 41<span style="text-decoration: underline;">181</span>643    14 Category:Custard_(band)_albums             root  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 47<span style="text-decoration: underline;">888</span>836     0 Come Back, All Is Forgiven                 page  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 59<span style="text-decoration: underline;">271</span>122     0 The Common Touch (album)                   page  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 30<span style="text-decoration: underline;">333</span>352     0 Loverama                                   page  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 63<span style="text-decoration: underline;">691</span>299     0 Respect All Lifeforms                      page  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 43<span style="text-decoration: underline;">770</span>191     0 Wahooti Fandango                           page  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 30<span style="text-decoration: underline;">333</span>401     0 We Have the Technology                     page  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 43<span style="text-decoration: underline;">769</span>837     0 Wisenheimer                                page  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 41<span style="text-decoration: underline;">148</span>700    14 Category:Custard (band) compilation albums subcat</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 43<span style="text-decoration: underline;">770</span>688     0 Brisbane 1990–1993                         page  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">11</span> 43<span style="text-decoration: underline;">770</span>872     0 Goodbye Cruel World (Custard album)        page  </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $edges</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 320 × 3</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 10 × 3</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      source   target timestamp           </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 17<span style="text-decoration: underline;">606</span>898    <span style="text-decoration: underline;">48</span>560 2008-05-25T15:51:35Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 17<span style="text-decoration: underline;">606</span>898 44<span style="text-decoration: underline;">659</span>935 2014-12-12T11:24:55Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 17<span style="text-decoration: underline;">606</span>898 13<span style="text-decoration: underline;">251</span>077 2010-09-09T15:01:59Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 17<span style="text-decoration: underline;">606</span>898  1<span style="text-decoration: underline;">410</span>431 2008-05-25T15:53:18Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 17<span style="text-decoration: underline;">606</span>898 29<span style="text-decoration: underline;">106</span>883 2010-10-08T00:51:39Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 17<span style="text-decoration: underline;">606</span>898 48<span style="text-decoration: underline;">861</span>658 2015-12-21T22:02:29Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 17<span style="text-decoration: underline;">606</span>898 16<span style="text-decoration: underline;">823</span>137 2008-06-01T07:24:50Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 17<span style="text-decoration: underline;">606</span>898 68<span style="text-decoration: underline;">638</span>522 2021-09-03T22:35:48Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 17<span style="text-decoration: underline;">606</span>898 27<span style="text-decoration: underline;">258</span>886 2010-05-07T00:17:15Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 17<span style="text-decoration: underline;">606</span>898  1<span style="text-decoration: underline;">266</span>713 2008-06-01T07:17:42Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 310 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 41<span style="text-decoration: underline;">181</span>643 47<span style="text-decoration: underline;">888</span>836 2015-09-21T10:58:43Z</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 41<span style="text-decoration: underline;">181</span>643 59<span style="text-decoration: underline;">271</span>122 2019-01-06T17:20:32Z</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 41<span style="text-decoration: underline;">181</span>643 30<span style="text-decoration: underline;">333</span>352 2013-11-24T21:09:05Z</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 41<span style="text-decoration: underline;">181</span>643 63<span style="text-decoration: underline;">691</span>299 2020-04-18T06:08:40Z</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 41<span style="text-decoration: underline;">181</span>643 43<span style="text-decoration: underline;">770</span>191 2014-09-08T08:02:46Z</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 41<span style="text-decoration: underline;">181</span>643 30<span style="text-decoration: underline;">333</span>401 2013-11-24T21:09:09Z</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 41<span style="text-decoration: underline;">181</span>643 43<span style="text-decoration: underline;">769</span>837 2014-09-08T06:31:49Z</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 41<span style="text-decoration: underline;">181</span>643 41<span style="text-decoration: underline;">148</span>700 2013-11-21T14:38:43Z</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 41<span style="text-decoration: underline;">148</span>700 43<span style="text-decoration: underline;">770</span>688 2015-05-20T06:12:07Z</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 41<span style="text-decoration: underline;">148</span>700 43<span style="text-decoration: underline;">770</span>872 2015-04-26T23:42:41Z</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># For network analysis and visualisation, you can pass the category tree</span></span></span>
 <span class="r-in"><span><span class="co"># to igraph</span></span></span>
 <span class="r-in"><span><span class="va">tree_graph</span> <span class="op">&lt;-</span> <span class="fu">igraph</span><span class="fu">::</span><span class="fu"><a href="https://r.igraph.org/reference/graph_from_data_frame.html" class="external-link">graph_from_data_frame</a></span><span class="op">(</span><span class="va">tree</span><span class="op">$</span><span class="va">edges</span>, vertices <span class="op">=</span> <span class="va">tree</span><span class="op">$</span><span class="va">nodes</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">tree_graph</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> IGRAPH 6e01b42 DN-B 300 320 -- </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> IGRAPH d58caaf DN-B 11 10 -- </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> + attr: name (v/c), ns (v/n), title (v/c), type (v/c), timestamp (e/c)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> + edges from 6e01b42 (vertex names):</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] 17606898-&gt;48560    17606898-&gt;44659935 17606898-&gt;13251077 17606898-&gt;1410431 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [5] 17606898-&gt;29106883 17606898-&gt;48861658 17606898-&gt;16823137 17606898-&gt;68638522</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [9] 17606898-&gt;27258886 17606898-&gt;1266713  17606898-&gt;4557120  17606898-&gt;267355  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [13] 17606898-&gt;40006935 17606898-&gt;19716804 17606898-&gt;68857410 17606898-&gt;31104438</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [17] 17606898-&gt;3606300  17606898-&gt;35471883 17606898-&gt;36344169 17606898-&gt;7196522 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [21] 17606898-&gt;2145273  17606898-&gt;4587190  17606898-&gt;53993905 17606898-&gt;1731488 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [25] 17606898-&gt;1650168  17606898-&gt;62951851 17606898-&gt;22192834 17606898-&gt;27561614</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [29] 17606898-&gt;5140949  17606898-&gt;2185021  17606898-&gt;19310129 17606898-&gt;53828785</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> + ... omitted several edges</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> + edges from d58caaf (vertex names):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] 41181643-&gt;47888836 41181643-&gt;59271122 41181643-&gt;30333352 41181643-&gt;63691299</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [5] 41181643-&gt;43770191 41181643-&gt;30333401 41181643-&gt;43769837 41181643-&gt;41148700</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [9] 41148700-&gt;43770688 41148700-&gt;43770872</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
