@@ -135,7 +135,7 @@ simplify_if_atomicish <- function(list_col) {
 }
 
 robust_bind <- function(response) {
-  if (is.null(response)) {
+  if (rlang::is_empty(response)) {
     tibble::tibble()
   } else if (rlang::is_scalar_list(response) && !rlang::is_list(response[[1]])) {
     tibble::tibble(!!!response)

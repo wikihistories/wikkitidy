@@ -35,12 +35,13 @@ this way, then you must use \link{query_generate_pages}, passing the name of the
 property module as the \code{genenerator}.
 }
 \examples{
-# Search for articles about seagulls and return their links to other
-# language wikis
+# Search for articles about seagulls and retrieve their number of
+# watchers
 
 resp <- wiki_action_request() \%>\%
   query_generate_pages("search", gsrsearch = "seagull") \%>\%
-  query_page_properties("langlinks") \%>\%
-  next_batch()
+  query_page_properties("info", inprop = "watchers") \%>\%
+  next_batch() \%>\%
+  dplyr::select(pageid, ns, title, watchers)
 resp
 }

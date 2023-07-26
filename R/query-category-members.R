@@ -52,16 +52,9 @@
 #'   query_category_members("Physics") %>% next_batch()
 #' physics_members
 #'
-#' # Retrieve interwiki links for the first 10 pages in the 'Beatles Albums'
-#' # category on Danish Wikipedia
-#' # TODO: This currently doesn't work, because incomplete batches aren't properly handled
-#' beatles <- wiki_action_request(language = "da") %>%
-#'   query_category_members("Beatles-album") %>%
-#'   query_page_properties("langlinks") %>%
-#'   next_batch()
 #'
-#' # Build the tree of all trees in Wikipedia
-#' tree <- build_category_tree("Category:Trees (graph theory)")
+#' # Build the tree of all albums for the Melbourne band Custard
+#' tree <- build_category_tree("Category:Custard_(band)_albums")
 #' tree
 #'
 #' # For network analysis and visualisation, you can pass the category tree

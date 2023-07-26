@@ -46,7 +46,7 @@ physics <- wiki_action_request() \%>\%
 # Generate the pages that are linked to Albert Einstein's page on English
 # Wikipedia
 einstein_categories <- wiki_action_request() \%>\%
-  new_prop_query("title", "Albert Einstein") \%>\%
+  new_prop_query("titles", "Albert Einstein") \%>\%
   new_generator_query("iwlinks")
 
 }

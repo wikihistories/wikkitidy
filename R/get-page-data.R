@@ -51,9 +51,10 @@
 #' tidyr::unnest(cities, "related")
 #'
 #' # The functions are vectorised over title and language
-#' # Find all articles about Joanna Baillie, and retrieve their summary
-#' # data.
+#' # Find all articles about Joanna Baillie, and retrieve summary data for
+#' # the first 3.
 #' baillie <- get_page_langlinks("Joanna Baillie") %>%
+#'   dplyr::slice(1:3) %>%
 #'   dplyr::mutate(get_page_summary(title = title, language = code))
 #' baillie
 NULL
