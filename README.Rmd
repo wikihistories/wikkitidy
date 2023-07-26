@@ -51,6 +51,13 @@ You can install wikkitidy from CRAN with:
 install.packages("wikkitidy")
 ```
 
+You can install the development version from Github with:
+
+```{r}
+devtools::install_github("wikihistories/wikkitidy")
+```
+
+
 ## Code of Conduct
 
 Please note that the wikkitidy project is released with a [Contributor Code of Conduct](https://wikihistories.github.io/wikkitidy/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

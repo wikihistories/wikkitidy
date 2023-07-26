@@ -56,13 +56,38 @@ You can install wikkitidy from CRAN with:
 
 ``` r
 install.packages("wikkitidy")
-#> Installing package into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpzTXmzr/temp_libpathb53c13ced990'
+#> Installing package into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpLUCsCJ/temp_libpathd6a9284329d9'
 #> (as 'lib' is unspecified)
 #> Warning: package 'wikkitidy' is not available for this version of R
 #> 
 #> A version of this package for your version of R might be available elsewhere,
 #> see the ideas at
 #> https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages
+```
+
+You can install the development version from Github with:
+
+``` r
+devtools::install_github("wikihistories/wikkitidy")
+#> Downloading GitHub repo wikihistories/wikkitidy@HEAD
+#> cpp11   (0.4.4 -> 0.4.5) [CRAN]
+#> openssl (2.0.6 -> 2.1.0) [CRAN]
+#> Installing 2 packages: cpp11, openssl
+#> Installing packages into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpLUCsCJ/temp_libpathd6a9284329d9'
+#> (as 'lib' is unspecified)
+#> 
+#> The downloaded binary packages are in
+#>  /var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T//RtmpT1areM/downloaded_packages
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#> * checking for file ‘/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpT1areM/remotesfd51608fcf86/wikihistories-wikkitidy-d910a14/DESCRIPTION’ ... OK
+#> * preparing ‘wikkitidy’:
+#> * checking DESCRIPTION meta-information ... OK
+#> * checking for LF line-endings in source and make files and shell scripts
+#> * checking for empty or unneeded directories
+#> * looking to see if a ‘data/datalist’ file should be added
+#> * building ‘wikkitidy_0.1.8.9000.tar.gz’
+#> Installing package into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpLUCsCJ/temp_libpathd6a9284329d9'
+#> (as 'lib' is unspecified)
 ```
 
 ## Code of Conduct
