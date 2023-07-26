@@ -1,4 +1,4 @@
-# wikkitidy (development version)
+# wikkitidy 0.1.9
 
 * Release candidate
 * Updated documentation
