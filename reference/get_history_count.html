@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.8.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.9</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,10 +86,10 @@
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
 
-<p>A <a href="https://tibble.tidyverse.org/reference/tbl_df-class.html" class="external-link">tibble::tbl_df</a> with two columns:</p><ul><li><p>'count' <int>: the number of edits of the given type</int></p></li>
-<li><p>'limit' <lgl>: whether the 'count' exceeds the API's limit. Each type of
+<p>A <a href="https://tibble.tidyverse.org/reference/tbl_df-class.html" class="external-link">tibble::tbl_df</a> with two columns:</p><ul><li><p>'count': integer, the number of edits of the given type</p></li>
+<li><p>'limit': logical, whether the 'count' exceeds the API's limit. Each type of
 edit has a different limit. If the 'count' exceeds the limit, then the
-limit is returned as the count and 'limit' is set to TRUE</lgl></p></li>
+limit is returned as the count and 'limit' is set to TRUE</p></li>
 </ul></div>
 
     <div class="section level2">
@@ -114,9 +114,9 @@ limit is returned as the count and 'limit' is set to TRUE</lgl></p></li>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 3 × 3</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   author              count limit</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Jane Austen          <span style="text-decoration: underline;">5</span>884 FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> William Shakespeare <span style="text-decoration: underline;">13</span>390 FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> Emily Dickinson      <span style="text-decoration: underline;">5</span>417 FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> Jane Austen          <span style="text-decoration: underline;">5</span>894 FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> William Shakespeare <span style="text-decoration: underline;">13</span>423 FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> Emily Dickinson      <span style="text-decoration: underline;">5</span>434 FALSE</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
