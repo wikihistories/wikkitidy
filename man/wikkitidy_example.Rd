@@ -9,6 +9,10 @@ wikkitidy_example(file = NULL)
 \arguments{
 \item{file}{Name of file. If \code{NULL}, the example files will be listed.}
 }
+\value{
+A character vector, containing either the path of the chosen file, or
+the nicknames of all available example files.
+}
 \description{
 wikkitidy comes bundled with a number of sample files in its \code{inst/extdata}
 directory. This function make them easy to access

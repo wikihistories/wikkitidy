@@ -7,11 +7,7 @@
 #' @param path The path to the file
 #'
 #' @return True (invisibly) if successful, otherwise error
-#' @export
 #'
-#' @examples
-#' akan_wiki <- wikkitidy_example("akan_wiki")
-#' verify_xml_integrity(akan_wiki)
 verify_xml_integrity <- function(path) {
   checksum <- .get_checksum(path)
   conn <- file(path, open="rb")

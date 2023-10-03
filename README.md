@@ -48,7 +48,7 @@ minimal data wrangling and cleaning.
 | 0.3     | Calls and response objects for [MediaWiki Action API Query Modules](https://www.mediawiki.org/wiki/API:Query)                                                   | :white_large_square: |
 | 0.4     | Interface to Wikipedia XML dumps                                                                                                                                | :white_large_square: |
 | 0.5     | Implementation of [Wikiblame](https://github.com/FlominatorTM/wikiblame)                                                                                        | :white_large_square: |
-| 0.6     | Calls and response objects for the [XTools](https://www.mediawiki.org/wiki/XTools/API) and [WikiMedia](https://wikimedia.org/api/rest_v1/#/) APIs               | :white_large_square: |
+| 0.6     | Calls and response objects for the [XTools](https://www.mediawiki.org/wiki/XTools/API) and [WikiMedia](https://wikimedia.org/api/rest_v1/) APIs                 | :white_large_square: |
 
 ## Installation
 
@@ -56,7 +56,7 @@ You can install wikkitidy from CRAN with:
 
 ``` r
 install.packages("wikkitidy")
-#> Installing package into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpLUCsCJ/temp_libpathd6a9284329d9'
+#> Installing package into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpZ4tkqT/temp_libpath82f55be4dd64'
 #> (as 'lib' is unspecified)
 #> Warning: package 'wikkitidy' is not available for this version of R
 #> 
@@ -70,23 +70,35 @@ You can install the development version from Github with:
 ``` r
 devtools::install_github("wikihistories/wikkitidy")
 #> Downloading GitHub repo wikihistories/wikkitidy@HEAD
-#> cpp11   (0.4.4 -> 0.4.5) [CRAN]
-#> openssl (2.0.6 -> 2.1.0) [CRAN]
-#> Installing 2 packages: cpp11, openssl
-#> Installing packages into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpLUCsCJ/temp_libpathd6a9284329d9'
+#> withr     (2.5.0 -> 2.5.1) [CRAN]
+#> cpp11     (0.4.4 -> 0.4.6) [CRAN]
+#> askpass   (1.1   -> 1.2.0) [CRAN]
+#> purrr     (1.0.1 -> 1.0.2) [CRAN]
+#> dplyr     (1.1.2 -> 1.1.3) [CRAN]
+#> openssl   (2.0.6 -> 2.1.1) [CRAN]
+#> curl      (5.0.1 -> 5.1.0) [CRAN]
+#> lubridate (1.9.2 -> 1.9.3) [CRAN]
+#> Installing 8 packages: withr, cpp11, askpass, purrr, dplyr, openssl, curl, lubridate
+#> Installing packages into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpZ4tkqT/temp_libpath82f55be4dd64'
 #> (as 'lib' is unspecified)
 #> 
+#>   There is a binary version available but the source version is later:
+#>      binary source needs_compilation
+#> curl  5.0.2  5.1.0              TRUE
+#> 
+#> 
 #> The downloaded binary packages are in
-#>  /var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T//RtmpT1areM/downloaded_packages
+#>  /var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T//RtmpzymZQF/downloaded_packages
+#> installing the source package 'curl'
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpT1areM/remotesfd51608fcf86/wikihistories-wikkitidy-d910a14/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpzymZQF/remotes8bcdd5d9964/wikihistories-wikkitidy-d910a14/DESCRIPTION’ ... OK
 #> * preparing ‘wikkitidy’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
 #> * checking for empty or unneeded directories
 #> * looking to see if a ‘data/datalist’ file should be added
 #> * building ‘wikkitidy_0.1.8.9000.tar.gz’
-#> Installing package into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpLUCsCJ/temp_libpathd6a9284329d9'
+#> Installing package into '/private/var/folders/jl/2g6hjzg91d173qhthhcqh7xm0000gn/T/RtmpZ4tkqT/temp_libpath82f55be4dd64'
 #> (as 'lib' is unspecified)
 ```
 

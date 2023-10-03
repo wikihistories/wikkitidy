@@ -4,10 +4,10 @@ Version: 0.1.9
 Authors@R: 
     person("Michael", "Falk", , "michaelgfalk@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-9261-8390"))
-Description: Access data from Wikipedia's major APIs using a consistent
-    interface. Query Wikipedia, retrieve data about individual pages, and
-    use web-hosted analysis tools such as XTools or pageviews. Receive
-    responses as into tibbles or simple vectors.
+Description: Access 'Wikipedia' through the official 'MediaWiki' APIs
+    (<https://www.mediawiki.org/wiki/API>), as well as through the
+    'XTools' API (<https://www.mediawiki.org/wiki/XTools/API>). Ensure
+    your API calls are correct, and recieve results in tidy tibbles.
 License: MIT + file LICENSE
 URL: https://wikihistories.github.io/wikkitidy/
 BugReports: https://github.com/wikihistories/wikkitidy/issues

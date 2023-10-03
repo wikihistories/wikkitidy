@@ -5,6 +5,8 @@
 #'
 #' @param file Name of file. If `NULL`, the example files will be listed.
 #' @export
+#' @return A character vector, containing either the path of the chosen file, or
+#'   the nicknames of all available example files.
 #' @examples
 #' wikkitidy_example()
 #' wikkitidy_example("akan_wiki")

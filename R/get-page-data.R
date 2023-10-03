@@ -1,27 +1,25 @@
 #' Get data about pages from their titles
 #'
-#' @description `get_latest_revision()` returns [metadata about the latest
+#' @description `get_latest_revision()` returns metadata about the latest
 #'   revision of each
-#'   page](https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_title__title_).
+#'   page.
 #'
-#'   `get_page_html()` returns [the rendered html for each
-#'   page](https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_html__title_).
+#'   `get_page_html()` returns the rendered html for each
+#'   page.
 #'
-#'   `get_page_summary()` returns [metadata about the latest revision, along
+#'   `get_page_summary()` returns metadata about the latest revision, along
 #'   with the page description and a summary extracted from the opening
-#'   paragraph](https://en.wikipedia.org/api/rest_v1/#/Page%20content/get_page_summary__title_)
+#'   paragraph
 #'
-#'   `get_page_related()` returns summaries for [20 related pages for each
-#'   passed
-#'   page](https://en.wikipedia.org/api/rest_v1/#/Page%20content/getRelatedPages)
+#'   `get_page_related()` returns summaries for 20 related pages for each
+#'   passed page
 #'
-#'   `get_page_talk()` returns [structured talk page content for each
-#'   title](https://en.wikipedia.org/api/rest_v1/#/Talk%20pages/get_page_talk__title_).
-#'   You must ensure to use the title for the Talk page itself, e.g.
+#'   `get_page_talk()` returns structured talk page content for each
+#'   title. You must ensure to use the title for the Talk page itself, e.g.
 #'   "Talk:Earth" rather than "Earth"
 #'
-#'   `get_page_langlinks()` returns [interwiki links for each
-#'   title](https://www.mediawiki.org/wiki/API:REST_API/Reference#Get_languages)
+#'   `get_page_langlinks()` returns interwiki links for each
+#'   title
 #'
 #' @param title A character vector of page titles.
 #' @param language A character vector of two-letter language codes, either of

@@ -17,7 +17,3 @@ The Wikimedia Foundation publishes MD5 checksums for all its database dumps.
 This function looks up the published sha1 checksums based on the file name,
 then compares them to the locally calcualte has using the \code{openssl} package.
 }
-\examples{
-akan_wiki <- wikkitidy_example("akan_wiki")
-verify_xml_integrity(akan_wiki)
-}

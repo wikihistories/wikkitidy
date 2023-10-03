@@ -8,8 +8,8 @@
 #' @param language Vector of two-letter language codes for Wikipedia editions
 #'
 #' @return A [tibble::tbl_df] with two columns:
-#'  * 'count' <int>: the number of edits of the given type
-#'  * 'limit' <lgl>: whether the 'count' exceeds the API's limit. Each type of
+#'  * 'count': integer, the number of edits of the given type
+#'  * 'limit': logical, whether the 'count' exceeds the API's limit. Each type of
 #'   edit has a different limit. If the 'count' exceeds the limit, then the
 #'   limit is returned as the count and 'limit' is set to TRUE
 #' @export

@@ -26,8 +26,8 @@ get_history_count(
 \value{
 A \link[tibble:tbl_df-class]{tibble::tbl_df} with two columns:
 \itemize{
-\item 'count' \if{html}{\out{<int>}}: the number of edits of the given type
-\item 'limit' \if{html}{\out{<lgl>}}: whether the 'count' exceeds the API's limit. Each type of
+\item 'count': integer, the number of edits of the given type
+\item 'limit': logical, whether the 'count' exceeds the API's limit. Each type of
 edit has a different limit. If the 'count' exceeds the limit, then the
 limit is returned as the count and 'limit' is set to TRUE
 }

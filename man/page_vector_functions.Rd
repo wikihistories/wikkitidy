@@ -33,19 +33,26 @@ A list, vector or tibble, the same length as \code{title}, with the
 desired data.
 }
 \description{
-\code{get_latest_revision()} returns \href{https://en.wikipedia.org/api/rest_v1/#/Page\%20content/get_page_title__title_}{metadata about the latest revision of each page}.
+\code{get_latest_revision()} returns metadata about the latest
+revision of each
+page.
 
-\code{get_page_html()} returns \href{https://en.wikipedia.org/api/rest_v1/#/Page\%20content/get_page_html__title_}{the rendered html for each page}.
+\code{get_page_html()} returns the rendered html for each
+page.
 
-\code{get_page_summary()} returns \href{https://en.wikipedia.org/api/rest_v1/#/Page\%20content/get_page_summary__title_}{metadata about the latest revision, along with the page description and a summary extracted from the opening paragraph}
+\code{get_page_summary()} returns metadata about the latest revision, along
+with the page description and a summary extracted from the opening
+paragraph
 
-\code{get_page_related()} returns summaries for \href{https://en.wikipedia.org/api/rest_v1/#/Page\%20content/getRelatedPages}{20 related pages for each passed page}
+\code{get_page_related()} returns summaries for 20 related pages for each
+passed page
 
-\code{get_page_talk()} returns \href{https://en.wikipedia.org/api/rest_v1/#/Talk\%20pages/get_page_talk__title_}{structured talk page content for each title}.
-You must ensure to use the title for the Talk page itself, e.g.
+\code{get_page_talk()} returns structured talk page content for each
+title. You must ensure to use the title for the Talk page itself, e.g.
 "Talk:Earth" rather than "Earth"
 
-\code{get_page_langlinks()} returns \href{https://www.mediawiki.org/wiki/API:REST_API/Reference#Get_languages}{interwiki links for each title}
+\code{get_page_langlinks()} returns interwiki links for each
+title
 }
 \examples{
 # Get language links for a known page on English Wikipedia

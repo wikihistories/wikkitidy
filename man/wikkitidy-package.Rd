@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Access data from Wikipedia's major APIs using a consistent interface. Query Wikipedia, retrieve data about individual pages, and use web-hosted analysis tools such as XTools or pageviews. Receive responses as into tibbles or simple vectors.
+Access 'Wikipedia' through the official 'MediaWiki' APIs (\url{https://www.mediawiki.org/wiki/API}), as well as through the 'XTools' API (\url{https://www.mediawiki.org/wiki/XTools/API}). Ensure your API calls are correct, and recieve results in tidy tibbles.
 }
 \seealso{
 Useful links:
