@@ -7,4 +7,7 @@
 ## URL check
 
 * urlchecker reports the following as a 404: https://wikimedia.org/api/rest_v1/. I can assure you that this URL exists!
-* tidyeval.Rd has no \value field, consistently with the standard template returned by usethis::use_tidy_eval(). See e.g. tidyeval.Rd in the ggplot2 package.
+
+## 'MediaWiki' APIs
+
+* MediaWiki supports a number of APIs for Wikipedia, which share a single portal for their documentation. Hence the reference to 'several APIs' in DESCRIPTION

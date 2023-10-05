@@ -4,10 +4,10 @@ Version: 0.1.9
 Authors@R: 
     person("Michael", "Falk", , "michaelgfalk@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-9261-8390"))
-Description: Access 'Wikipedia' through the official 'MediaWiki' APIs
+Description: Access 'Wikipedia' through the several 'MediaWiki' APIs
     (<https://www.mediawiki.org/wiki/API>), as well as through the
     'XTools' API (<https://www.mediawiki.org/wiki/XTools/API>). Ensure
-    your API calls are correct, and recieve results in tidy tibbles.
+    your API calls are correct, and receive results in tidy tibbles.
 License: MIT + file LICENSE
 URL: https://wikihistories.github.io/wikkitidy/
 BugReports: https://github.com/wikihistories/wikkitidy/issues

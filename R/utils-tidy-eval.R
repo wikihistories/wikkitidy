@@ -1,18 +1,17 @@
 #' Tidy eval helpers
 #'
-#' @description
-#' This page lists the tidy eval tools reexported in this package from
-#' rlang. To learn about using tidy eval in scripts and packages at a
-#' high level, see the [dplyr programming
-#' vignette](https://dplyr.tidyverse.org/articles/programming.html)
-#' and the [ggplot2 in packages
+#' @description This page lists the tidy eval tools reexported in this package
+#' from rlang. To learn about using tidy eval in scripts and packages at a high
+#' level, see the [dplyr programming
+#' vignette](https://dplyr.tidyverse.org/articles/programming.html) and the
+#' [ggplot2 in packages
 #' vignette](https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html).
-#' The [Metaprogramming
-#' section](https://adv-r.hadley.nz/metaprogramming.html) of [Advanced
-#' R](https://adv-r.hadley.nz) may also be useful for a deeper dive.
+#' The [Metaprogramming section](https://adv-r.hadley.nz/metaprogramming.html)
+#' of [Advanced R](https://adv-r.hadley.nz) may also be useful for a deeper
+#' dive.
 #'
 #' * The tidy eval operators `{{`, `!!`, and `!!!` are syntactic
-#'   constructs which are specially interpreted by tidy eval functions.
+#' constructs which are specially interpreted by tidy eval functions.
 #'   You will mostly need `{{`, as `!!` and `!!!` are more advanced
 #'   operators which you should not have to use in simple cases.
 #'
@@ -103,5 +102,7 @@
 #' @keywords internal
 #' @importFrom rlang enquo enquos .data := as_name as_label
 #' @aliases enquo enquos .data := as_name as_label
+#' @value Consult the original rlang documentation for the return types of these
+#'   re-exported functions.
 #' @export enquo enquos .data := as_name as_label
 NULL
