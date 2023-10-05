@@ -9,12 +9,18 @@
 \alias{as_name}
 \alias{as_label}
 \title{Tidy eval helpers}
+\value{
+Consult the original rlang documentation for the return types of these
+re-exported functions.
+}
 \description{
-This page lists the tidy eval tools reexported in this package from
-rlang. To learn about using tidy eval in scripts and packages at a
-high level, see the \href{https://dplyr.tidyverse.org/articles/programming.html}{dplyr programming vignette}
-and the \href{https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html}{ggplot2 in packages vignette}.
-The \href{https://adv-r.hadley.nz/metaprogramming.html}{Metaprogramming section} of \href{https://adv-r.hadley.nz}{Advanced R} may also be useful for a deeper dive.
+This page lists the tidy eval tools reexported in this package
+from rlang. To learn about using tidy eval in scripts and packages at a high
+level, see the \href{https://dplyr.tidyverse.org/articles/programming.html}{dplyr programming vignette} and the
+\href{https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html}{ggplot2 in packages vignette}.
+The \href{https://adv-r.hadley.nz/metaprogramming.html}{Metaprogramming section}
+of \href{https://adv-r.hadley.nz}{Advanced R} may also be useful for a deeper
+dive.
 \itemize{
 \item The tidy eval operators \verb{\{\{}, \verb{!!}, and \verb{!!!} are syntactic
 constructs which are specially interpreted by tidy eval functions.

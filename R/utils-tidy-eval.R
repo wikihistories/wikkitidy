@@ -102,7 +102,7 @@
 #' @keywords internal
 #' @importFrom rlang enquo enquos .data := as_name as_label
 #' @aliases enquo enquos .data := as_name as_label
-#' @value Consult the original rlang documentation for the return types of these
+#' @return Consult the original rlang documentation for the return types of these
 #'   re-exported functions.
 #' @export enquo enquos .data := as_name as_label
 NULL

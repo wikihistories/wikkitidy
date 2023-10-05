@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Access 'Wikipedia' through the official 'MediaWiki' APIs (\url{https://www.mediawiki.org/wiki/API}), as well as through the 'XTools' API (\url{https://www.mediawiki.org/wiki/XTools/API}). Ensure your API calls are correct, and recieve results in tidy tibbles.
+Access 'Wikipedia' through the several 'MediaWiki' APIs (\url{https://www.mediawiki.org/wiki/API}), as well as through the 'XTools' API (\url{https://www.mediawiki.org/wiki/XTools/API}). Ensure your API calls are correct, and receive results in tidy tibbles.
 }
 \seealso{
 Useful links:
