@@ -1,6 +1,6 @@
 Package: wikkitidy
 Title: Tidy Analysis of Wikipedia
-Version: 0.1.10
+Version: 0.1.10.9000
 Authors@R: 
     person("Michael", "Falk", , "michaelgfalk@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-9261-8390"))
