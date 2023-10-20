@@ -1,4 +1,4 @@
-# wikkitidy (development version)
+# wikkitidy 0.1.11
 
 * Live API calls removed from test suite on CRAN; these are still tested in the package's CI pipeline.
 * Fixed failing test due to Wikimedia server error
