@@ -1,4 +1,5 @@
 test_that("wikimedia API page endpoints return data for known requests", {
+  skip_on_cran()
   title <- c("Negative Dialektik", "Germaine_de_Staël")
   language <- c("de", "fr")
 
@@ -25,6 +26,7 @@ test_that("`get_page_talk` throws a `bad_title` error in the right circumstances
 })
 
 test_that("`get_page_langlinks` returns data for known requests", {
+  skip_on_cran()
   titles <- c("Charles Harpur", "Percy_Bysshe_Shelley")
   links <- get_page_langlinks(titles)
   expect_length(links, 2)

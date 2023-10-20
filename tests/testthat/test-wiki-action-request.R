@@ -12,12 +12,14 @@ test_that("`check_is_action_query() throws the right error with the wrong reques
 })
 
 test_that("MediaWiki Action API request receives a 200 response code and json body", {
+  skip_on_cran()
   resp <- wiki_action_request(list = "categorymembers", cmtitle = "Category:Australian_historians") %>% httr2::req_perform()
   expect_equal(httr2::resp_status(resp), 200)
   expect_equal(httr2::resp_content_type(resp), "application/json")
 })
 
 test_that("query_list_pages generates a valid query string with data in the query attribute", {
+  skip_on_cran()
   resp <- wiki_action_request() %>%
     query_list_pages("usercontribs", ucuser="Michaelgfalk") %>%
     httr2::req_perform()

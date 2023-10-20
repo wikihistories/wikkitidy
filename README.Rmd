@@ -47,16 +47,15 @@ Thus `wikkitidy`'s aim: to help you work out what Wikipedia is with minimal data
 
 You can install wikkitidy from CRAN with:
 
-```{r}
+```
 install.packages("wikkitidy")
 ```
 
 You can install the development version from Github with:
 
-```{r}
+```
 devtools::install_github("wikihistories/wikkitidy")
 ```
-
 
 ## Code of Conduct
 

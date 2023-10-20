@@ -5,6 +5,7 @@ test_that("the rules about `from` and `to` are enforced correctly", {
 })
 
 test_that("`get_history_count` returns properly-structured data for known request", {
+  skip_on_cran()
   authors <- tibble::tribble(
     ~author,
     "Jane Austen",

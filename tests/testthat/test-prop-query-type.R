@@ -57,6 +57,7 @@ test_that("type composition rules are properly enforced", {
 })
 
 test_that("Cases where single properties or missing properties are requested still work", {
+  skip_on_cran()
   batch_w_nulls <- c(3215834, 3916199, 5491364, 5541057, 5658396, 6631781, 7238180, 8170822, 9446340, 9950907, 10771873, 10850302, 12017474, 12097820, 18445575, 20341950, 25603362, 31049868, 32065309, 35912171, 38257800)
   nulls_req <- wiki_action_request() %>% query_by_pageid(batch_w_nulls) %>% query_page_properties("pageprops", ppprop = "wikibase_item")
 

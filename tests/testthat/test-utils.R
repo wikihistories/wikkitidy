@@ -5,6 +5,7 @@ test_that("Request is correctly modified by `wikkitidy_user_agent`", {
 
 
 test_that("`str_for_rest` ensure that REST request works for malformed title", {
+  skip_on_cran()
   bad_title <- "Abbey Road (album)"
   langlinks <- core_rest_request("page", str_for_rest(bad_title), "links", "language", language = "fr") %>%
     httr2::req_perform() %>%

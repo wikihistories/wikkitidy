@@ -1,0 +1,35 @@
+get_diff                Search for insertions, deletions or relocations
+                        of text between two versions of a Wikipedia
+                        page
+get_history_count       Count how many times Wikipedia articles have
+                        been edited
+get_query_results       Perform a query using the MediaWiki Action API
+get_rest_resource       Get resources from one of Wikipedia's two REST
+                        APIs
+new_generator_query     Constructor for generator query type
+new_list_query          Constructor for list queries
+new_prop_query          Constructor for the property query type
+page_vector_functions   Get data about pages from their titles
+query_by_               Query the MediaWiki Action API using a vector
+                        of Wikipedia pages
+query_category_members
+                        Explore Wikipedia's category system
+query_generate_pages    Generate pages that meet certain criteria, or
+                        which are related to a set of known pages by
+                        certain properties
+query_list_pages        List pages that meet certain criteria
+query_page_properties   Choose properties to return for pages from the
+                        action API
+query_tbl               Representation of Wikipedia data returned from
+                        an Action API Query module as tibble, with
+                        request metadata stored as attributes.
+verify_xml_integrity    Check that a Wikimedia XML file has not been
+                        corrupted
+wiki_action_request     Query Wikipedia using the MediaWiki Action API
+wikimedia_rest_apis     Build a REST request to one of the Wikimedia
+                        Foundation's central APIs
+wikipedia_rest_apis     Build a REST request to one of Wikipedia's
+                        specific REST APIs
+wikkitidy_example       Get path to wikkitidy example
+xtools_page             Access page-level statistics from the XTools
+                        Page API endpoint

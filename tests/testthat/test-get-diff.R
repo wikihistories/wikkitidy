@@ -1,4 +1,5 @@
 test_that("`get_diff` returns a single `tbl_df` for a known request", {
+  skip_on_cran()
   # request taken from example in API documentation
   diffs <- get_diff(847170467, 851733941)
   expect_named(diffs, c('type', 'lineNumber', 'text', 'offset_from', 'offset_to'))
@@ -6,6 +7,7 @@ test_that("`get_diff` returns a single `tbl_df` for a known request", {
 })
 
 test_that("`get_diff` returns a list of the right kind when simplify=FALSE", {
+  skip_on_cran()
   diffs <- get_diff(847170467, 851733941, simplify = FALSE)
   expect_named(diffs, c("from", "to", "diff"))
   expect_true(rlang::is_bare_list(diffs))
@@ -16,6 +18,7 @@ test_that("`get_diff` throws an error with simplify is the wrong type", {
 })
 
 test_that("`get_diff` vectorises correctly over `from` and `to`", {
+  skip_on_cran()
   revisions <- wiki_action_request() %>%
     query_by_title("Main Page") %>%
     query_page_properties(

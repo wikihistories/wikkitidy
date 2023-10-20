@@ -1,4 +1,5 @@
 test_that("`next_batch` returns a tibble of results", {
+  skip_on_cran()
   resp <- wiki_action_request() %>%
     query_generate_pages("categorymembers", gcmtitle = "Category:Physics") %>%
     next_batch()
@@ -7,6 +8,7 @@ test_that("`next_batch` returns a tibble of results", {
 })
 
 test_that("`retrieve_all` continues the query from a httr2_request", {
+  skip_on_cran()
   limit <- 10
   resp <- wiki_action_request() %>%
     query_list_pages("usercontribs", ucuser="michaelgfalk", uclimit=limit) %>%
@@ -16,6 +18,7 @@ test_that("`retrieve_all` continues the query from a httr2_request", {
 })
 
 test_that("`retrieve_all` completes the query from a query_tbl", {
+  skip_on_cran()
   limit <- 10
   once <- wiki_action_request() %>%
     query_list_pages("usercontribs", ucuser="michaelgfalk", uclimit=limit) %>%

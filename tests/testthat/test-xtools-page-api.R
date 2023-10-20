@@ -1,4 +1,5 @@
 test_that("all xtools page endpoints retrieve data for known requests", {
+  skip_on_cran()
   expect_gt(nrow(get_xtools_page_info("Albert Einstein")), 0)
   expect_gt(length(get_xtools_page_assessment("Albert Einstein")), 1)
   expect_gt(nrow(get_xtools_page_prose("Albert Einstein", language = "de")), 0)
@@ -14,6 +15,7 @@ test_that("all xtools page endpoints retrieve data for known requests", {
 })
 
 test_that("responses are parsed correctly when failure_mode == 'quiet'", {
+  skip_on_cran()
   titles <- c("Albert Einstein", "chuck doodlemacdoodle7", "Sydney")
   expect_equal(nrow(get_xtools_page_info(titles, failure_mode = "quiet")), 3)
   expect_equal(length(get_xtools_page_assessment(titles, failure_mode = "quiet")), 3)

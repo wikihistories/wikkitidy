@@ -12,3 +12,4 @@
 ^CODE_OF_CONDUCT\.md$
 ^tests/testthat/fixtures/big$
 ^CRAN-SUBMISSION$
+^revdep
