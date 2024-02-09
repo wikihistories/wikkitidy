@@ -1,4 +1,4 @@
-# wikkitidy (development version)
+# wikkitidy 0.1.12
 
 * `tidyr` moved from Imports to Suggests
 * Automatic unnesting, introduced in 0.1.8, removed. It was causing bugs in certain edge cases, when nested data frames duplicated columns from the enclosing data frame. Unnesting is now left to the user, as shown in the examples.
