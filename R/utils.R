@@ -152,7 +152,3 @@ flatten_bind <- function(response) {
   response <- purrr::map(response, purrr::list_flatten)
   robust_bind(response)
 }
-
-comprises_one_row_tibbles <- function(col) {
-  rlang::is_list(col) && all(purrr::map_lgl(col, \(row) nrow(row) <= 1))
-}

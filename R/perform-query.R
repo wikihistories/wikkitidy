@@ -79,10 +79,5 @@ result_to_query_tbl <- function(result) {
       dplyr::where(rlang::is_list),
       \(col) purrr::map(col, robust_bind)
   ))
-  result$x <- tidyr::unnest(
-    result$x,
-    dplyr::where(comprises_one_row_tibbles),
-    keep_empty = TRUE
-  )
   rlang::inject(new_query_tbl(!!!result))
 }
