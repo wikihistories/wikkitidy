@@ -8,6 +8,7 @@
 [![R-CMD-check](https://github.com/wikihistories/wikkitidy/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wikihistories/wikkitidy/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/wikihistories/wikkitidy/branch/main/graph/badge.svg)](https://app.codecov.io/gh/wikihistories/wikkitidy?branch=main)
+[![DOI](https://zenodo.org/badge/597954751.svg)](https://zenodo.org/doi/10.5281/zenodo.10638610)
 <!-- badges: end -->
 
 Tidy analysis of Wikipedia in R
