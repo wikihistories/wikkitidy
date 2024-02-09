@@ -1,6 +1,6 @@
 Package: wikkitidy
 Title: Tidy Analysis of Wikipedia
-Version: 0.1.10.9000
+Version: 0.1.11.9000
 Authors@R: 
     person("Michael", "Falk", , "michaelgfalk@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-9261-8390"))
@@ -13,8 +13,8 @@ URL: https://wikihistories.github.io/wikkitidy/
 BugReports: https://github.com/wikihistories/wikkitidy/issues
 Depends: R (>= 2.10)
 Imports: cli, dplyr, glue, httr2, lubridate, magrittr, openssl, pillar,
-        purrr, rlang (>= 0.4.11), stringr, tibble, tidyr, vctrs
-Suggests: covr, igraph, roxygen2, testthat (>= 3.0.0)
+        purrr, rlang (>= 0.4.11), stringr, tibble, vctrs
+Suggests: covr, igraph, roxygen2, testthat (>= 3.0.0), tidyr
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -22,7 +22,7 @@ RoxygenNote: 7.2.3
 RemoteType: local
 RemoteUrl: /Users/michaelgfalk/github/wikkitidy
 NeedsCompilation: no
-Packaged: 2023-10-20 01:53:05 UTC; michaelgfalk
+Packaged: 2024-02-09 03:20:00 UTC; michaelgfalk
 Author: Michael Falk [aut, cre, cph] (<https://orcid.org/0000-0001-9261-8390>)
 Maintainer: Michael Falk <michaelgfalk@gmail.com>
-Built: R 4.2.3; ; 2023-10-20 01:53:06 UTC; unix
+Built: R 4.2.3; ; 2024-02-09 03:20:01 UTC; unix

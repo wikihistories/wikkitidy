@@ -1,6 +1,6 @@
 Package: wikkitidy
 Title: Tidy Analysis of Wikipedia
-Version: 0.1.10
+Version: 0.1.11
 Authors@R: 
     person("Michael", "Falk", , "michaelgfalk@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-9261-8390"))
@@ -19,9 +19,9 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2023-10-05 08:59:53 UTC; michaelgfalk
+Packaged: 2023-10-20 02:00:38 UTC; michaelgfalk
 Author: Michael Falk [aut, cre, cph] (<https://orcid.org/0000-0001-9261-8390>)
 Maintainer: Michael Falk <michaelgfalk@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-10-06 16:20:02 UTC
-Built: R 4.2.3; ; 2023-10-20 01:52:43 UTC; unix
+Date/Publication: 2023-10-20 09:10:02 UTC
+Built: R 4.2.0; ; 2023-10-20 11:58:01 UTC; unix

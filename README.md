@@ -60,7 +60,7 @@ You can install the development version from Github with:
 
     devtools::install_github("wikihistories/wikkitidy")
 
-## Code of Conduct
+ur \## Code of Conduct
 
 Please note that the wikkitidy project is released with a [Contributor
 Code of
