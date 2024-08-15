@@ -9,7 +9,7 @@ Description: Access 'Wikipedia' through the several 'MediaWiki' APIs
     'XTools' API (<https://www.mediawiki.org/wiki/XTools/API>). Ensure
     your API calls are correct, and receive results in tidy tibbles.
 License: MIT + file LICENSE
-URL: https://wikihistories.github.io/wikkitidy/
+URL: https://wikihistories.github.io/wikkitidy/, https://github.com/wikihistories/wikkitidy
 BugReports: https://github.com/wikihistories/wikkitidy/issues
 Depends: 
     R (>= 2.10)
@@ -36,4 +36,4 @@ Suggests:
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
