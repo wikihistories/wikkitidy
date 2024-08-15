@@ -41,7 +41,10 @@ property module as the \code{genenerator}.
 resp <- wiki_action_request() \%>\%
   query_generate_pages("search", gsrsearch = "seagull") \%>\%
   query_page_properties("info", inprop = "watchers") \%>\%
-  next_batch() \%>\%
+  gracefully(next_batch) \%>\%
   dplyr::select(pageid, ns, title, watchers)
 resp
+}
+\seealso{
+\code{\link[=gracefully]{gracefully()}}
 }

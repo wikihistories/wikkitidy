@@ -45,7 +45,7 @@ server.
 }
 \details{
 \link{wikkitidy} provides an ergonomic API for the Action API's \href{https://www.mediawiki.org/wiki/API:Query}{Query modules}. These modules are most
-useful for researchers, because they allow you to explore the stucture of
+useful for researchers, because they allow you to explore the structure of
 Wikipedia and its back pages. You can obtain a list of available modules in
 your R console using \code{\link[=list_all_property_modules]{list_all_property_modules()}}, \code{\link[=list_all_list_modules]{list_all_list_modules()}}
 and \code{\link[=list_all_generators]{list_all_generators()}},
@@ -58,6 +58,9 @@ historians <- wiki_action_request() \%>\%
     cmtitle = "Category:Australian_historians",
     cmlimit = 10
   ) \%>\%
-  next_batch()
+  gracefully(next_batch)
 historians
+}
+\seealso{
+\code{\link[=gracefully]{gracefully()}}
 }

@@ -23,7 +23,7 @@
 #' @param ... <[`dynamic-dots`][rlang::dyn-dots]> Additional parameters to the
 #'   generator
 #'
-#' @return [query_generate_pages]: The modfied request, which can be passed to [next_batch] or
+#' @return [query_generate_pages]: The modified request, which can be passed to [next_batch] or
 #'   [retrieve_all] as appropriate.
 #'
 #'   [list_all_generators]: a [tibble][tibble::tbl_df] of all the available generator
@@ -34,11 +34,13 @@
 #'   pages' properties should be generated.
 #' @export
 #'
+#' @seealso [gracefully()]
+#'
 #' @examples
 #' # Search for articles about seagulls
 #' seagulls <- wiki_action_request() %>%
 #'   query_generate_pages("search", gsrsearch = "seagull") %>%
-#'   next_batch()
+#'   gracefully(next_batch)
 #'
 #' seagulls
 query_generate_pages <- function(.req, generator, ...) {

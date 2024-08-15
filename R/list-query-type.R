@@ -24,6 +24,8 @@
 #' @return An HTTP response: an S3 list with class httr2_request
 #' @export
 #'
+#' @seealso [gracefully()]
+#'
 #' @examples
 #' # Get the ten most recently added pages in Category:Physics
 #' physics_pages <- wiki_action_request() %>%
@@ -31,7 +33,7 @@
 #'     cmsort = "timestamp",
 #'     cmdir = "desc", cmtitle = "Category:Physics"
 #'   ) %>%
-#'   next_batch()
+#'   gracefully(next_batch)
 #'
 #' physics_pages
 query_list_pages <- function(.req, list, ...) {

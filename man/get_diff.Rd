@@ -49,8 +49,14 @@ revisions <- wiki_action_request() \%>\%
     "revisions",
     rvlimit = 2, rvprop = "ids", rvdir = "older"
   ) \%>\%
-  next_result() \%>\%
-  tidyr::unnest(cols = c(revisions)) \%>\%
-  dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
-revisions
+  gracefully(next_result)
+
+if (tibble::is_tibble(revisions)) {
+  revisions <- revisions \%>\%
+    tidyr::unnest(cols = c(revisions)) \%>\%
+    dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
+
+  print(revisions)
+}
+
 }

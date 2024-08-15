@@ -34,15 +34,19 @@
 #' preview <- wiki_action_request() %>%
 #'   query_by_title("Steve Wozniak") %>%
 #'   query_page_properties("categories", cllimit = 40) %>%
-#'   next_result()
+#'   gracefully(next_result)
 #' preview
 #'
-#' all_results <- retrieve_all(preview)
+#' all_results <- preview %>%
+#'   gracefully(retrieve_all)
 #' all_results
 #'
 #' # tidyr is useful for list-columns.
-#' all_results %>%
-#'   tidyr::unnest(cols=c(categories), names_sep = "_")
+#' if (tibble::is_tibble(all_results)) {
+#'   all_results %>%
+#'     tidyr::unnest(cols=c(categories), names_sep = "_")
+#' }
+#'
 NULL
 
 #' @rdname get_query_results

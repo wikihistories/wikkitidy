@@ -45,7 +45,10 @@ physics_pages <- wiki_action_request() \%>\%
     cmsort = "timestamp",
     cmdir = "desc", cmtitle = "Category:Physics"
   ) \%>\%
-  next_batch()
+  gracefully(next_batch)
 
 physics_pages
+}
+\seealso{
+\code{\link[=gracefully]{gracefully()}}
 }

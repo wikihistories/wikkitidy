@@ -46,10 +46,13 @@
 #'   be passed to [igraph::graph_from_data_frame] for network analysis.
 #' @export
 #'
+#' @seealso [gracefully()]
+#'
 #' @examples
 #' # Get the first 10 pages in 'Category:Physics' on English Wikipedia
 #' physics_members <- wiki_action_request() %>%
-#'   query_category_members("Physics") %>% next_batch()
+#'   query_category_members("Physics") %>%
+#'   gracefully(next_batch)
 #' physics_members
 #'
 #'

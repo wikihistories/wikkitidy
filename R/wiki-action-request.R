@@ -10,7 +10,7 @@
 #'
 #' [wikkitidy] provides an ergonomic API for the Action API's [Query
 #' modules](https://www.mediawiki.org/wiki/API:Query). These modules are most
-#' useful for researchers, because they allow you to explore the stucture of
+#' useful for researchers, because they allow you to explore the structure of
 #' Wikipedia and its back pages. You can obtain a list of available modules in
 #' your R console using [list_all_property_modules()], [list_all_list_modules()]
 #' and [list_all_generators()],
@@ -41,6 +41,8 @@
 #'   combined with a [query_by_] query.
 #' @export
 #'
+#' @seealso [gracefully()]
+#'
 #' @examples
 #' # List the first 10 pages in the category 'Australian historians'
 #' historians <- wiki_action_request() %>%
@@ -49,7 +51,7 @@
 #'     cmtitle = "Category:Australian_historians",
 #'     cmlimit = 10
 #'   ) %>%
-#'   next_batch()
+#'   gracefully(next_batch)
 #' historians
 wiki_action_request <- function(..., action = "query", language = "en") {
   base_url <- glue::glue("https://{language}.wikipedia.org/w/api.php")

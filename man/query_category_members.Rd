@@ -79,7 +79,8 @@ beneath them, until it can find no more subcategories.
 \examples{
 # Get the first 10 pages in 'Category:Physics' on English Wikipedia
 physics_members <- wiki_action_request() \%>\%
-  query_category_members("Physics") \%>\% next_batch()
+  query_category_members("Physics") \%>\%
+  gracefully(next_batch)
 physics_members
 
 
@@ -91,4 +92,7 @@ tree
 # to igraph
 tree_graph <- igraph::graph_from_data_frame(tree$edges, vertices = tree$nodes)
 tree_graph
+}
+\seealso{
+\code{\link[=gracefully]{gracefully()}}
 }

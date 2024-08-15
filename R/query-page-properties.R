@@ -20,6 +20,8 @@
 #' @return An HTTP response: an S3 list with class httr2_request
 #' @export
 #'
+#' @seealso [gracefully()]
+#'
 #' @examples
 #' # Search for articles about seagulls and retrieve their number of
 #' # watchers
@@ -27,7 +29,7 @@
 #' resp <- wiki_action_request() %>%
 #'   query_generate_pages("search", gsrsearch = "seagull") %>%
 #'   query_page_properties("info", inprop = "watchers") %>%
-#'   next_batch() %>%
+#'   gracefully(next_batch) %>%
 #'   dplyr::select(pageid, ns, title, watchers)
 #' resp
 query_page_properties <- function(.req, property, ...) {

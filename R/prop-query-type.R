@@ -22,12 +22,14 @@
 #' @return A request object of type `pages/query/action_api/httr2_request`. To
 #'   perform the query, pass the object to [next_batch] or [retrieve_all]
 #'
+#' @seealso [gracefully()]
+#'
 #' @examples
 #' # Retrieve the categories for Charles Harpur's Wikipedia page
 #'  resp <- wiki_action_request() %>%
 #'   query_by_title("Charles Harpur") %>%
 #'   query_page_properties("categories") %>%
-#'   next_batch()
+#'   gracefully(next_batch)
 NULL
 
 #' @rdname query_by_

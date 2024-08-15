@@ -43,5 +43,8 @@ query to find pages that meet certain criteria using \link{query_list_pages} or
  resp <- wiki_action_request() \%>\%
   query_by_title("Charles Harpur") \%>\%
   query_page_properties("categories") \%>\%
-  next_batch()
+  gracefully(next_batch)
+}
+\seealso{
+\code{\link[=gracefully]{gracefully()}}
 }

@@ -14,6 +14,7 @@ Access 'Wikipedia' through the several 'MediaWiki' APIs (\url{https://www.mediaw
 Useful links:
 \itemize{
   \item \url{https://wikihistories.github.io/wikkitidy/}
+  \item \url{https://github.com/wikihistories/wikkitidy}
   \item Report bugs at \url{https://github.com/wikihistories/wikkitidy/issues}
 }
 

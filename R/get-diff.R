@@ -37,10 +37,16 @@
 #'     "revisions",
 #'     rvlimit = 2, rvprop = "ids", rvdir = "older"
 #'   ) %>%
-#'   next_result() %>%
-#'   tidyr::unnest(cols = c(revisions)) %>%
-#'   dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
-#' revisions
+#'   gracefully(next_result)
+#'
+#' if (tibble::is_tibble(revisions)) {
+#'   revisions <- revisions %>%
+#'     tidyr::unnest(cols = c(revisions)) %>%
+#'     dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
+#'
+#'   print(revisions)
+#' }
+#'
 get_diff <- function(from, to, language = "en", simplify = TRUE) {
   if (!rlang::is_scalar_logical(simplify)) {
     rlang::abort("`simplify` must be either TRUE or FALSE")

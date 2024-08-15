@@ -22,7 +22,7 @@ used, though not all.}
 generator}
 }
 \value{
-\link{query_generate_pages}: The modfied request, which can be passed to \link{next_batch} or
+\link{query_generate_pages}: The modified request, which can be passed to \link{next_batch} or
 \link{retrieve_all} as appropriate.
 
 \link{list_all_generators}: a \link[tibble:tbl_df-class]{tibble} of all the available generator
@@ -52,7 +52,10 @@ For instance, to set a limit of 10 to the number of pages returned by the
 # Search for articles about seagulls
 seagulls <- wiki_action_request() \%>\%
   query_generate_pages("search", gsrsearch = "seagull") \%>\%
-  next_batch()
+  gracefully(next_batch)
 
 seagulls
+}
+\seealso{
+\code{\link[=gracefully]{gracefully()}}
 }
