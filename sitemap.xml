@@ -1,123 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/404.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/index.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/append_query_result.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/check_limit.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/check_namespace.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/continue_query.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/get_diff.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/get_history_count.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/get_query_results.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/get_rest_resource.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/id_or_title.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/new_generator_query.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/new_list_query.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/new_prop_query.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/page_vector_functions.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/parse_response.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/perform_query.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/pipe.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/prefix_params.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/process_timestamps.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/query_by_.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/query_category_members.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/query_generate_pages.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/query_list_pages.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/query_page_properties.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/query_tbl.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/tidyeval.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/verify_xml_integrity.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/wiki_action_request.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/wikimedia_rest_apis.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/wikipedia_rest_apis.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/wikkitidy-package.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/wikkitidy_example.html</loc>
-  </url>
-  <url>
-    <loc>https://wikihistories.github.io/wikkitidy/reference/xtools_page.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://wikihistories.github.io/wikkitidy/404.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/LICENSE-text.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/LICENSE.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/authors.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/index.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/news/index.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/append_query_result.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/check_limit.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/check_namespace.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/continue_query.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/get_diff.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/get_history_count.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/get_query_results.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/get_rest_resource.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/id_or_title.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/index.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/new_generator_query.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/new_list_query.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/new_prop_query.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/page_vector_functions.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/parse_response.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/perform_query.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/pipe.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/prefix_params.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/process_timestamps.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/query_by_.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/query_category_members.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/query_generate_pages.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/query_list_pages.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/query_page_properties.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/query_tbl.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/tidyeval.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/verify_xml_integrity.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/wiki_action_request.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/wikimedia_rest_apis.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/wikipedia_rest_apis.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/wikkitidy-package.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/wikkitidy_example.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/xtools_page.html</loc></url>
 </urlset>
+
