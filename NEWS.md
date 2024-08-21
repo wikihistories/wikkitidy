@@ -1,3 +1,5 @@
+# wikkitidy (development version)
+
 # wikkitidy 0.1.13
 
 * New `gracefully()` function added to allow graceful failure of http requests, as per CRAN policy. All API calls to Wikipedia query modules are now wrapped in `gracefully()` in the examples.
