@@ -19,7 +19,7 @@ prefixed with cm)."><meta property="og:image" content="https://wikihistories.git
 
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.12.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.13.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,6 +91,10 @@ list action. When using a list action, a second request is required to get
 further information about each page. Using a generator, you can query pages
 and retrieve their relevant properties in a single API call.</p>
     </div>
+    <div class="section level2">
+    <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
+    <div class="dont-index"><p><code><a href="gracefully.html">gracefully()</a></code></p></div>
+    </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
@@ -100,7 +104,7 @@ and retrieve their relevant properties in a single API call.</p>
 <span class="r-in"><span>    cmsort <span class="op">=</span> <span class="st">"timestamp"</span>,</span></span>
 <span class="r-in"><span>    cmdir <span class="op">=</span> <span class="st">"desc"</span>, cmtitle <span class="op">=</span> <span class="st">"Category:Physics"</span></span></span>
 <span class="r-in"><span>  <span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="get_query_results.html">next_batch</a></span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="gracefully.html">gracefully</a></span><span class="op">(</span><span class="va">next_batch</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">physics_pages</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB;">&lt;complete/query_tbl&gt;</span></span>

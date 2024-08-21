@@ -17,7 +17,7 @@ server."><meta property="og:image" content="https://wikihistories.github.io/wikk
 
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.12.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.13.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,10 +94,14 @@ combined with a <a href="query_by_.html">query_by_</a> query.</p></li>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     <p><a href="wikkitidy-package.html">wikkitidy</a> provides an ergonomic API for the Action API's <a href="https://www.mediawiki.org/wiki/API:Query" class="external-link">Query modules</a>. These modules are most
-useful for researchers, because they allow you to explore the stucture of
+useful for researchers, because they allow you to explore the structure of
 Wikipedia and its back pages. You can obtain a list of available modules in
 your R console using <code><a href="query_page_properties.html">list_all_property_modules()</a></code>, <code><a href="query_list_pages.html">list_all_list_modules()</a></code>
 and <code><a href="query_generate_pages.html">list_all_generators()</a></code>,</p>
+    </div>
+    <div class="section level2">
+    <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
+    <div class="dont-index"><p><code><a href="gracefully.html">gracefully()</a></code></p></div>
     </div>
 
     <div class="section level2">
@@ -109,7 +113,7 @@ and <code><a href="query_generate_pages.html">list_all_generators()</a></code>,<
 <span class="r-in"><span>    cmtitle <span class="op">=</span> <span class="st">"Category:Australian_historians"</span>,</span></span>
 <span class="r-in"><span>    cmlimit <span class="op">=</span> <span class="fl">10</span></span></span>
 <span class="r-in"><span>  <span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="get_query_results.html">next_batch</a></span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="gracefully.html">gracefully</a></span><span class="op">(</span><span class="va">next_batch</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">historians</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB;">&lt;complete/query_tbl&gt;</span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> There are more results on the server. Retrieve them with `next_batch()` or `retrieve_all()`</span>

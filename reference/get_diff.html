@@ -13,7 +13,7 @@ in any order, across any span of revisions."><meta property="og:image" content="
 
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.12.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.13.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,15 +102,21 @@ displaying diffs onscreen.</p></li>
 <span class="r-in"><span>    <span class="st">"revisions"</span>,</span></span>
 <span class="r-in"><span>    rvlimit <span class="op">=</span> <span class="fl">2</span>, rvprop <span class="op">=</span> <span class="st">"ids"</span>, rvdir <span class="op">=</span> <span class="st">"older"</span></span></span>
 <span class="r-in"><span>  <span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="get_query_results.html">next_result</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html" class="external-link">unnest</a></span><span class="op">(</span>cols <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">revisions</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>diffs <span class="op">=</span> <span class="fu">get_diff</span><span class="op">(</span>from <span class="op">=</span> <span class="va">parentid</span>, to <span class="op">=</span> <span class="va">revid</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">revisions</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="gracefully.html">gracefully</a></span><span class="op">(</span><span class="va">next_result</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/is_tibble.html" class="external-link">is_tibble</a></span><span class="op">(</span><span class="va">revisions</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span>  <span class="va">revisions</span> <span class="op">&lt;-</span> <span class="va">revisions</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span>    <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html" class="external-link">unnest</a></span><span class="op">(</span>cols <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">revisions</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>diffs <span class="op">=</span> <span class="fu">get_diff</span><span class="op">(</span>from <span class="op">=</span> <span class="va">parentid</span>, to <span class="op">=</span> <span class="va">revid</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">revisions</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 2 × 6</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     pageid    ns title          revid   parentid diffs           </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>          </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> 15<span style="text-decoration: underline;">580</span>374     0 Main Page <span style="text-decoration: underline;">1</span>225<span style="text-decoration: underline;">315</span>602 <span style="text-decoration: underline;">1</span>225<span style="text-decoration: underline;">257</span>602 <span style="color: #949494;">&lt;tibble [2 × 6]&gt;</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> 15<span style="text-decoration: underline;">580</span>374     0 Main Page <span style="text-decoration: underline;">1</span>225<span style="text-decoration: underline;">257</span>602 <span style="text-decoration: underline;">1</span>223<span style="text-decoration: underline;">300</span>368 <span style="color: #949494;">&lt;tibble [2 × 6]&gt;</span></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

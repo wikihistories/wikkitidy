@@ -15,7 +15,7 @@ have been returned."><meta property="og:image" content="https://wikihistories.gi
 
     <a class="navbar-brand me-2" href="../index.html">wikkitidy</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.12.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.13.9000</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,7 +92,7 @@ Thus the three functions for <code>next_result()</code>, <code>next_batch()</cod
 <span class="r-in"><span><span class="va">preview</span> <span class="op">&lt;-</span> <span class="fu"><a href="wiki_action_request.html">wiki_action_request</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu"><a href="query_by_.html">query_by_title</a></span><span class="op">(</span><span class="st">"Steve Wozniak"</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
 <span class="r-in"><span>  <span class="fu"><a href="query_page_properties.html">query_page_properties</a></span><span class="op">(</span><span class="st">"categories"</span>, cllimit <span class="op">=</span> <span class="fl">40</span><span class="op">)</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu">next_result</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="gracefully.html">gracefully</a></span><span class="op">(</span><span class="va">next_result</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">preview</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB;">&lt;incomplete/query_tbl&gt;</span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> There are more results on the server. Retrieve them with `next_batch()` or `retrieve_all()`</span>
@@ -102,7 +102,8 @@ Thus the three functions for <code>next_result()</code>, <code>next_batch()</cod
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>           </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span>  <span style="text-decoration: underline;">27</span>848     0 Steve Wozniak <span style="color: #949494;">&lt;tibble [40 × 2]&gt;</span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="va">all_results</span> <span class="op">&lt;-</span> <span class="fu">retrieve_all</span><span class="op">(</span><span class="va">preview</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">all_results</span> <span class="op">&lt;-</span> <span class="va">preview</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span>  <span class="fu"><a href="gracefully.html">gracefully</a></span><span class="op">(</span><span class="va">retrieve_all</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">all_results</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #0000BB;">&lt;final/query_tbl&gt;</span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BB00;">✔</span> All results downloaded from server</span>
@@ -113,8 +114,10 @@ Thus the three functions for <code>next_result()</code>, <code>next_batch()</cod
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span>  <span style="text-decoration: underline;">27</span>848     0 Steve Wozniak <span style="color: #949494;">&lt;tibble [80 × 2]&gt;</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># tidyr is useful for list-columns.</span></span></span>
-<span class="r-in"><span><span class="va">all_results</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
-<span class="r-in"><span>  <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html" class="external-link">unnest</a></span><span class="op">(</span>cols<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">categories</span><span class="op">)</span>, names_sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/is_tibble.html" class="external-link">is_tibble</a></span><span class="op">(</span><span class="va">all_results</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span>  <span class="va">all_results</span> <span class="op"><a href="pipe.html">%&gt;%</a></span></span></span>
+<span class="r-in"><span>    <span class="fu">tidyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html" class="external-link">unnest</a></span><span class="op">(</span>cols<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">categories</span><span class="op">)</span>, names_sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 80 × 5</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    pageid    ns title         categories_ns categories_title                    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                               </span>
@@ -129,6 +132,7 @@ Thus the three functions for <code>next_result()</code>, <code>next_batch()</cod
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>  <span style="text-decoration: underline;">27</span>848     0 Steve Wozniak            14 Category:Amateur radio people       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>  <span style="text-decoration: underline;">27</span>848     0 Steve Wozniak            14 Category:American Freemasons        </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 70 more rows</span></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
