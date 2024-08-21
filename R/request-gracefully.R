@@ -16,6 +16,8 @@
 #'   of the failed request.
 #' @export
 #'
+#' @keywords utility
+#'
 #' @examplesIf rlang::is_installed("webfakes")
 #' # This fails without throwing an error
 #' req <- httr2::request(httr2::example_url()) |>

@@ -42,3 +42,4 @@ resp <- gracefully(req, httr2::req_perform)
 print(resp)
 \dontshow{\}) # examplesIf}
 }
+\keyword{utility}

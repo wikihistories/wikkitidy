@@ -21,3 +21,4 @@ directory. This function make them easy to access
 wikkitidy_example()
 wikkitidy_example("akan_wiki")
 }
+\keyword{utility}

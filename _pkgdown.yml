@@ -46,4 +46,4 @@ reference:
   - has_keyword("data_type")
 - title: Utilities
   contents:
-  - wikkitidy_example
+  - has_keyword("utility")
