@@ -1,5 +1,11 @@
 # wikkitidy (development version)
 
+* Added `failure_mode` parameter to `get_history_count()` and `page_vector_functions`
+* Changed behaviour of `get_rest_resource()` so that the number of output rows is guaranteed to be the same as the number of input rows. Now if a request fails, a new column is added to the output `error_code`, with the http response code.
+* Removed `get_page_related()` due to deprecation of API endpoint
+* `wikkitidy` now depends on R 4.1, due to use of the native pipe
+* Removed use of "redirect" parameter in `wikimedia_rest_request` tests, due to deprecation
+
 # wikkitidy 0.1.13
 
 * New `gracefully()` function added to allow graceful failure of http requests, as per CRAN policy. All API calls to Wikipedia query modules are now wrapped in `gracefully()` in the examples.

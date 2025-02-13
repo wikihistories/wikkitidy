@@ -5,28 +5,27 @@
 \alias{get_latest_revision}
 \alias{get_page_html}
 \alias{get_page_summary}
-\alias{get_page_related}
 \alias{get_page_talk}
 \alias{get_page_langlinks}
 \title{Get data about pages from their titles}
 \usage{
-get_latest_revision(title, language = "en")
+get_latest_revision(title, language = "en", failure_mode = "error")
 
-get_page_html(title, language = "en")
+get_page_html(title, language = "en", failure_mode = "error")
 
-get_page_summary(title, language = "en")
+get_page_summary(title, language = "en", failure_mode = "error")
 
-get_page_related(title, language = "en")
+get_page_talk(title, language = "en", failure_mode = "error")
 
-get_page_talk(title, language = "en")
-
-get_page_langlinks(title, language = "en")
+get_page_langlinks(title, language = "en", failure_mode = "error")
 }
 \arguments{
 \item{title}{A character vector of page titles.}
 
 \item{language}{A character vector of two-letter language codes, either of
 length 1 or the same length as \code{title}}
+
+\item{failure_mode}{Either "quiet" or "error." See \code{\link[=get_rest_resource]{get_rest_resource()}}}
 }
 \value{
 A list, vector or tibble, the same length as \code{title}, with the
@@ -56,26 +55,13 @@ title
 }
 \examples{
 # Get language links for a known page on English Wikipedia
-get_page_langlinks("Charles Harpur")
-
-# Many of these functions return a list of data frames. Tidyr can be useful.
-# Get 20 related pages for German City
-cities <- tibble::tribble(
-  ~city,
-  "Berlin",
-  "Darmstadt",
-) \%>\%
-  dplyr::mutate(related = get_page_related(city))
-cities
-
-# Unest to get one row per related page:
-tidyr::unnest(cities, "related")
+get_page_langlinks("Charles Harpur", failure_mode = "quiet")
 
 # The functions are vectorised over title and language
 # Find all articles about Joanna Baillie, and retrieve summary data for
 # the first two.
 baillie <- get_page_langlinks("Joanna Baillie") \%>\%
   dplyr::slice(1:2) \%>\%
-  dplyr::mutate(get_page_summary(title = title, language = code))
+  dplyr::mutate(get_page_summary(title = title, language = code, failure_mode = "quiet"))
 baillie
 }

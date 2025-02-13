@@ -39,13 +39,6 @@ test_that("Named arguments are handled correctly", {
     httr2::req_perform()
   expect_equal(httr2::resp_status(core_resp), 200)
   expect_length(httr2::resp_body_json(core_resp)$pages, lim)
-
-  wiki_resp <- wikimedia_rest_request("page/html/Stalwart_The_Bushranger", redirect="false") %>%
-    httr2::req_perform()
-  wiki_302 <- wikimedia_rest_request("page/html/Stalwart_The_Bushranger") %>%
-    httr2::req_perform()
-  expect_equal(wiki_resp$url, "https://en.wikipedia.org/api/rest_v1/page/html/Stalwart_The_Bushranger?redirect=false")
-  expect_equal(wiki_302$url, "https://en.wikipedia.org/api/rest_v1/page/html/The_Tragedy_of_Donohoe")
 })
 
 test_that("appropriate error if no path components provided", {

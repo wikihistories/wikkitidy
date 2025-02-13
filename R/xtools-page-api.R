@@ -41,13 +41,13 @@
 #'
 #' @examples
 #' # Get basic statistics about Erich Auerbach on German Wikipedia
-#' auerbach <- get_xtools_page_info("Erich Auerbach", language = "de")
+#' auerbach <- get_xtools_page_info("Erich Auerbach", language = "de", failure_mode = "quiet")
 #' auerbach
 NULL
 
 #' @rdname xtools_page
 #' @export
-get_xtools_page_info <- function(title, language = "en", failure_mode = c("error", "quiet")) {
+get_xtools_page_info <- function(title, language = "en", failure_mode = "error") {
   get_rest_resource(
     endpoint = "page/articleinfo",
     title,

@@ -19,6 +19,6 @@ directory. This function make them easy to access
 }
 \examples{
 wikkitidy_example()
-wikkitidy_example("akan_wiki")
+wikkitidy_example("fatwiki_dump")
 }
 \keyword{utility}

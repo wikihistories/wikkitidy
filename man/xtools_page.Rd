@@ -9,11 +9,7 @@
 \alias{get_xtools_page_assessment}
 \title{Access page-level statistics from the \href{https://www.mediawiki.org/wiki/XTools/API/Page}{XTools Page API endpoint}}
 \usage{
-get_xtools_page_info(
-  title,
-  language = "en",
-  failure_mode = c("error", "quiet")
-)
+get_xtools_page_info(title, language = "en", failure_mode = "error")
 
 get_xtools_page_prose(
   title,
@@ -86,6 +82,6 @@ optional filters by date range and non-bot status
 }
 \examples{
 # Get basic statistics about Erich Auerbach on German Wikipedia
-auerbach <- get_xtools_page_info("Erich Auerbach", language = "de")
+auerbach <- get_xtools_page_info("Erich Auerbach", language = "de", failure_mode = "quiet")
 auerbach
 }

@@ -6,6 +6,7 @@
 #' @param from Optional: a vector of revision ids
 #' @param to Optional: a vector of revision ids
 #' @param language Vector of two-letter language codes for Wikipedia editions
+#' @param failure_mode What to do if no data is found. See [get_rest_resource()]
 #'
 #' @return A [tibble::tbl_df] with two columns:
 #'  * 'count': integer, the number of edits of the given type
@@ -17,7 +18,13 @@
 #' @examples
 #' # Get the number of edits made by auto-confirmed editors to a page between
 #' # revisions 384955912 and 406217369
-#' get_history_count("Jupiter", "editors", 384955912, 406217369)
+#' get_history_count(
+#'   title="Jupiter",
+#'   type="editors",
+#'   from=384955912,
+#'   to=406217369,
+#'   failure_mode="quiet"
+#'   )
 #'
 #' # Compare which authors have the most edit activity
 #' authors <- tibble::tribble(
@@ -26,14 +33,15 @@
 #'   "William Shakespeare",
 #'   "Emily Dickinson"
 #' ) %>%
-#'   dplyr::mutate(get_history_count(author))
+#'   dplyr::mutate(get_history_count(author, failure_mode="quiet"))
 #' authors
 get_history_count <- function(
     title,
     type = c("edits", "anonymous", "bot", "editors", "minor", "reverted"),
     from = NULL,
     to = NULL,
-    language = "en") {
+    language = "en",
+    failure_mode = c("error", "quiet")) {
   type <- rlang::arg_match(type)
   if (xor(is.null(from), is.null(to))) {
     rlang::abort("If using `from` and `to`, then both must be supplied")
@@ -43,7 +51,8 @@ get_history_count <- function(
   }
   get_rest_resource(
     "page", title, "history", "counts", type, from = from, to = to,
-    language = language, response_type = "history_count_object"
+    language = language, response_type = "history_count_object",
+    failure_mode = failure_mode
   )
 }
 

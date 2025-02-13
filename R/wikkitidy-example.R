@@ -11,7 +11,7 @@
 #' @keywords utility
 #' @examples
 #' wikkitidy_example()
-#' wikkitidy_example("akan_wiki")
+#' wikkitidy_example("fatwiki_dump")
 wikkitidy_example <- function(file = NULL) {
   if (is.null(file)) {
     names(.fn_map)
@@ -23,5 +23,6 @@ wikkitidy_example <- function(file = NULL) {
 }
 
 .fn_map <- list(
-  akan_wiki = "akwiki-20230301-pages-articles-multistream-index.txt.bz2"
+  fatwiki_dump = "fatwiki-20240920-pages-articles-multistream.xml.bz2",
+  fatwiki_index = "fatwiki-20240920-pages-articles-multistream-index.txt.bz2"
 )

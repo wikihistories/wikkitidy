@@ -1,0 +1,3566 @@
+568:2:MediaWiki:Sitesupport-url
+568:7:Nhwɛdo:Create New Article
+568:8:Nhwɛdo:Databox
+568:9:Nhwɛdo:Databox generic
+568:10:Nkyekyεmu:Afeha a ɔtɔ do eduonu (20) mu Ghana amanyɛfo
+568:11:Nkyekyεmu:Afeha a ɔtɔ do eduonu kor (21) mu Burkinabé nnyimpa
+568:12:Nkyekyεmu:Afeha a ɔtɔ do eduonu kor (21) mu mbea amanyɛfo
+568:13:Nkyekyεmu:Africa
+568:14:Nkyekyεmu:Amannɔnye nsɛm ho asoafo a wɔyɛ mbea
+568:15:Nkyekyεmu:Amanyɛfo
+568:16:Nkyekyεmu:Benin
+568:17:Nkyekyεmu:Burkina Faso
+568:18:Nkyekyεmu:Burkina Faso Amanyɛnyi
+568:19:Nkyekyεmu:Burkina Faso ananmusifo a wɔwɔ Cape Verde
+568:20:Nkyekyεmu:Burkina Faso ananmusifo a wɔwɔ Gambia
+568:21:Nkyekyεmu:Burkina Faso ananmusifo a wɔwɔ Guinea
+568:22:Nkyekyεmu:Burkina Faso ananmusifo a wɔwɔ Mauritania
+568:23:Nkyekyεmu:Burkina Faso ananmusifo a wɔwɔ Senegal
+568:24:Nkyekyεmu:Burkina Faso asase ho nsɛm a wɔakyerɛw
+568:25:Nkyekyεmu:Burkina Faso atemmuafo ho asoafo
+568:26:Nkyekyεmu:Burkina Faso bɔɔlbɔfo
+568:27:Nkyekyεmu:Burkina Faso otemmuafo
+568:28:Nkyekyεmu:Burkinabé mbea a wɔwɔ amanyɛsɛm mu
+568:29:Nkyekyεmu:Burkinabé mbea ananmusifo
+568:30:Nkyekyεmu:Bɔɔlbɔfo
+568:31:Nkyekyεmu:Contests
+568:32:Nkyekyεmu:Coptic Kristofo a hɔn fri Misraim
+568:33:Nkyekyεmu:Ghana
+568:34:Nkyekyεmu:Ghana Amanyɛnyi
+568:35:Nkyekyεmu:Ghana Mbrahyɛ Bagua Ambatow Mpasua
+568:36:Nkyekyεmu:Ghana mbea a wodzi kan
+568:37:Nkyekyεmu:Ghana mbea aban ananmusifo
+568:38:Nkyekyεmu:Ghana ndwomtofo
+568:39:Nkyekyεmu:Ghana ɔmanfo akwahosan ho nduruyɛfo
+568:40:Nkyekyεmu:Ghananyi wimhyɛnkanyi
+568:41:Nkyekyεmu:Hɔn a hɔn awie Achimota Skuul no
+568:42:Nkyekyεmu:Hɔn a wosie hɔn wɔ Ghana
+568:43:Nkyekyεmu:Hɔn a wowu wɔ afe 2007 mu
+568:44:Nkyekyεmu:Hɔn a wɔwoo hɔn afe 1927 mu
+568:45:Nkyekyεmu:Hɔn a wɔwoo hɔn afe 1932 mu
+568:46:Nkyekyεmu:Hɔn a wɔwoo hɔn afe 1958 mu
+568:47:Nkyekyεmu:Hɔn a wɔwoo hɔn afe 1966 mu
+568:48:Nkyekyεmu:Hɔn a wɔwoo hɔn afe 1997 mu
+568:49:Nkyekyεmu:Interlingue
+568:50:Nkyekyεmu:Kurow
+568:51:Nkyekyεmu:Kurow wɔ Burkina Faso
+568:52:Nkyekyεmu:Kwame Nkrumah
+568:53:Nkyekyεmu:Mbasiaba a hɔn yɛ wimhyɛnkafo
+568:54:Nkyekyεmu:Mbea a nnyimpa dɔɔso wɔ Cascades Mantɔw mu
+568:55:Nkyekyεmu:Mbea a nnyimpa dɔɔso wɔ Plateau-Finimfin Mantɔw mu
+568:56:Nkyekyεmu:Misraimfo a hɔn tu kɔɔ Ghana
+568:57:Nkyekyεmu:Misriamfo a hɔn fri Coptic ebusua mu
+568:58:Nkyekyεmu:Niger
+568:59:Nkyekyεmu:Nkurow a ɔwɔ Africa
+568:60:Nkyekyεmu:Nkurow a ɔwɔ Maps
+568:61:Nkyekyεmu:Nnyimpa a hɔn ewu
+568:62:Nkyekyεmu:Nnyimpa a hɔn tse ase
+568:63:Nkyekyεmu:Nnyimpa a wɔ fir Ouagadougou
+568:64:Nkyekyεmu:Nyimpa
+568:65:Nkyekyεmu:Otemmuafo
+568:66:Nkyekyεmu:Oubritenga Mansin
+568:67:Nkyekyεmu:Plateau-Finimfin Mantɔw mu asase ho nsɛm a wɔakyerɛw
+568:68:Nkyekyεmu:Ramsar mbea a ɔwɔ Burkina Faso
+568:69:Nkyekyεmu:Nhwɛdo
+568:70:Nkyekyεmu:Kurow a ɔwɔ maps
+568:71:Nkyekyεmu:Ɔtare
+568:72:Nkyekyεmu:Ɔtare a ɔwɔ Burkina Faso
+568:73:Nkyekyεmu:Ɔtsɛmbuafo
+568:74:Module:Databox
+568:75:Wikipedia:2023 Mbaa ho nsɛnsɛm na Kodzisɛm
+568:76:Aaron Mike Oquaye
+568:77:Aba Andam
+568:78:Abadzinto
+568:79:Abdul-Rashid Pelpuo
+568:80:Abdul-Rauf Tanko Ibrahim
+568:81:Abdul Baba Rahman
+568:82:Abeiku Crentsil
+568:83:Abena
+568:84:Abena Appiah
+568:85:Abena Busia
+568:86:Abena Takyiwa
+568:87:Abibata Shanni Mahama Zakariah
+568:88:Abigail Ashley
+568:89:Abolimbisa Roger Akantagriwen
+568:90:Abraham Kofi Asante
+568:91:Abraham Laryea Odai
+568:92:Abraham Ossei Aidooh
+568:93:Abu Mena
+568:94:Abubakar Boniface Siddique
+568:95:Abubakari Sumani
+568:96:Abuga Pele
+568:97:Abɛ
+568:98:Acacus Mbepɔw
+568:99:Adam Mahama
+568:100:Adams Ebenezer Mahama
+568:101:Adamu Daramani Sakande
+568:102:Adina
+568:103:Adjoa Bayor
+568:104:Adonten Senior High School
+568:105:Adwengo
+28704:106:Afahyɛ
+28704:107:Afahyɛ ahorow
+28704:108:Afieye Ashong
+28704:109:Agnes Asangalisa Chigabatia
+28704:110:Agona Nkwanta
+28704:111:Agona Swedru
+28704:112:Agyare Koi Larbi
+28704:113:Ahenfie
+28704:114:Ahensi
+28704:115:Ahmed Alhassan Yakubu
+28704:116:Ahmed Ibrahim (Ghana amanyɛnyi)
+28704:117:Ahmed Musah
+28704:118:Ahosu
+28704:119:Aisha Ayensu
+28704:120:Aisha Huang
+28704:121:Akan Ebusuakuw
+28704:122:Akanfo Ebusua
+28704:123:Akofa Edjeani Asiedu
+28704:124:Akosua Adoma Owusu
+28704:125:Akosua Agyapong
+28704:126:Akua Asabea Ayisi
+28704:127:Akua Donkor
+28704:128:Akua Kuenyehia
+28704:129:Akua Obeng-Akrofi
+28704:130:Akua Sena Dansua
+28704:131:Akuamoa Ofosu-Boateng
+28704:132:Akumaa Mama Zimbi
+28704:133:Akwambɔ
+28704:134:Akwasi Afrifa
+28704:135:Akwasi Afrifa (Ghana amanyɛnyi)
+28704:136:Akwasi Dante Afriyie
+28704:137:Akwesi Osei -Adjei
+28704:138:Akwidaa
+28704:139:Akyaawa Yikwan
+28704:140:Akyerɛkyerɛfo skuul a ɔwɔ Ghana
+28704:141:Alabira Ibrahim
+28704:142:Alan John Kyerematen
+28704:143:Alban Bagbin
+28704:144:Albert Abongo
+28704:145:Albert Kan-Dapaah
+28704:146:Albert Kwaku Obbin
+28704:147:Albert Kwasi Zigah
+28704:148:Alberta Sackey
+28704:149:Aleppo Tsetse Kurow
+28704:150:Alex Adomako-Mensah
+28704:151:Alex Kwaku Korankye
+28704:152:Alex Kyeremeh
+28704:153:Alex Seidu Sofo
+28704:154:Alex Tettey-Enyo
+28704:155:Alexander Agyei-Acheampong
+28704:156:Alexander Asum-Ahensah
+28704:157:Alexander Ransford Ababio
+28704:158:Alfred Kwame Agbesi
+28704:159:Alfred Wallace Gbordzor Abayateye
+28704:160:Alhaji Abdulai Salifu
+28704:161:Alhassan Azong
+28704:162:Alhassan Wayo Seini
+28704:163:Alhassan Yakubu
+28704:164:Alice Teni Boon
+28704:165:Alima Mahama
+28704:166:Alima Moro
+28704:167:Aline Koala Kaboré
+28704:168:Allowe Leo Kabah
+28704:169:Alpha Barry
+28704:170:Ama Afo Blay
+28704:171:Ama Ampofo
+28704:172:Ama Ata Aidoo
+28704:173:Ama Benyiwa Doe
+28704:174:Ama Nkrumah
+28704:175:Amadu Ali
+28704:176:Amadu Bukari Sorogho
+28704:177:Amadu Seidu
+28704:178:Amambra
+28704:179:Ameen Salifu
+28704:180:Amerley Ollennu Awua-Asamoa
+28704:181:Amin Amidu Sulemana
+28704:182:Aminata Sana Congo
+28704:183:Amos Lawerh Buertey
+28704:184:Anaji
+28704:185:Anaji Choice Mart
+28704:186:Anansesɛm
+28704:187:Tsetse Dadze Dadze Mbea a ɔwɔ Burkina Faso (Ancient Ferrous Metallurgy Sites of Burkina Faso)
+28704:188:Andrew Kingsford Mensah
+28704:189:Andrews Adjei-Yeboah
+28704:190:Angela Kyerematen-Jimoh
+28704:191:Angelina Baiden-Amissah
+28704:192:Anita-Pearl Ankor
+28704:193:Anita De Sosoo
+28704:194:Anita Erskine
+28704:195:Anna Bossman
+28704:196:Anna Nyamekye
+28704:197:Annie Jiagge
+28704:198:Annie Ruth Jiagge
+28704:199:Ano kasadwin
+28704:200:Anthony Boakye-Yiadom
+28704:201:Anthony Bondong
+28704:202:Anthony Bright Boadi-Mensah
+28704:203:Anthony Christian Dadzie
+28704:204:Anthony Evans Amoah
+28704:205:Anthony K. Gyapong-Mensah
+90955:206:Antoine Somdah
+90955:207:Antoinette Delali Kemavor
+90955:208:Apam
+90955:209:Apam Senior High School
+90955:210:Apiorkor Seyiram Ashong-Abbey
+90955:211:Apremdo
+90955:212:Aprokumase
+90955:213:Apɔtowewa
+90955:214:Apɔtɔyewa
+90955:215:Aquinas Tawiah Quansah
+90955:216:Archbishop Porter Girls Senior High School
+90955:217:Asiedu Nketia
+90955:218:Askia Nda
+90955:220:Assur
+90955:221:Asɛndziibea
+90955:222:Ato Panford
+90955:223:Ato Quarshie
+90955:224:Atsinanana Nsɔtɔekwaa
+90955:225:Audrey Esi Swatson
+90955:226:Audrey Gadzekpo
+90955:227:Austin Akufo Gamey
+90955:228:Avril Lovelace-Johnson
+90955:229:Awoo ntoatoa do edzin
+90955:230:Ayarsabea
+90955:231:Ayesha Harruna Attah
+90955:232:Ayorkor Korsah
+90955:233:Ayɛwoho
+90955:234:Aïr na Ténéré Ɔman Ɔdomankoma abɔdze Korabea
+90955:235:Baba Spirit
+90955:236:Babalami Abu Sadat
+90955:237:Baffour Annor
+90955:238:Banfora
+90955:239:Banku
+90955:241:Barbara Asher Ayisi
+90955:242:Barbara Mensah
+90955:243:Barbara Oteng Gyasi
+90955:244:Battir
+90955:245:Beatrice Gyaman
+90955:246:Becca ndwomtownyi
+90955:247:Becca ɔdwontonyi
+90955:248:Belinda Royall
+90955:249:Benada
+90955:250:Benito Owusu Bio
+90955:251:Benjamin Bimpong Donkor
+90955:252:Benjamin Kofi Ayeh
+90955:253:Benjamin Kumbuor
+90955:254:Benjamin Osei Kuffour
+90955:255:Benkum Senior High School
+90955:256:Bepɔw Nimba Ɔdomankoma abɔdze Korabea
+90955:257:Bernadette Sanou Dao
+90955:258:Bernice Heloo
+90955:259:Betty Acquah
+90955:260:Betty Mould-Iddrisu
+90955:261:Bisease Senior High School
+90955:262:Black Sherif
+90955:263:Boakye Agyarko
+90955:264:Bosra Tsetse Kurow
+90955:265:Bozoma Saint John
+90955:266:Bragor
+90955:267:Brandford Kwame Daniel Adu
+90955:268:Brayɛ, Bragor na Kyirbra
+90955:269:Brigitte Perenyi
+90955:270:Bɛ
+90955:271:Cape Coast
+90955:272:Cape Coast Suapɔn (University of Cape Coast)
+90955:273:Cassiel Ato Baah Forson
+90955:274:Cassiel Ato Forson
+90955:275:Catherine Afeku
+90955:276:Catherine Katuni Tedam
+90955:277:Ceccy Twum
+90955:278:Cecelia Ayanori Bukari-Yakubu
+90955:279:Cecilia Abena Dapaah
+90955:280:Cecilia Bannerman
+90955:281:Cecilia Dapaah
+90955:282:Cecilia Koranteng-Addow
+90955:283:Chan Chan
+90955:284:Charles Hodogbey
+90955:285:Charles Kofi Agbenaza
+90955:286:Charles Omar Nyanor
+90955:287:Charlotte Lily Baidoo
+90955:288:Chief Kweku Andoh
+90955:289:Chloe Asaam
+90955:290:Christian Kwabena Asante
+90955:291:Christine Churcher
+90955:292:Christopher Addae
+90955:293:Christopher Ameyaw-Akumfi
+90955:294:Cina Soul
+90955:295:Clement Kofi Humado
+90955:296:Clement Tumfuga Bugase
+90955:297:Clend Mawuko Sowu
+90955:298:Cletus Avoka
+90955:299:Colleges of Languages Education
+90955:300:Collins Dauda
+90955:301:Comfort Doyoe Cudjoe-Ghansah
+90955:302:Comfort Owusu
+90955:303:Coro na ne Nsuhɛndwirii
+90955:304:Cynthia Lamptey
+90955:305:Cynthia Quartey
+90955:306:Cyrene
+90955:307:Célestine Ouezzin Coulibaly
+157412:308:Céline Yoda
+157412:309:Damascus Tsetse Kurow
+157412:310:Dan Kwasi Abodakpi
+157412:311:Dan Kwesi
+157412:312:Daniel Kwame Ampofo
+157412:313:Daniel Tekpertey
+157412:314:Daoud Anum Yemoh
+157412:315:David Apasera
+157412:316:David Kwasi Amankwah
+157412:317:David Lamptey
+157412:318:David Nana Larbie
+157412:319:David Tetteh Assumeng
+157412:320:David Yaw Mensah
+157412:321:Deborah Ahenkorah
+157412:322:Della Sowah
+157412:323:Diana Hamilton
+157412:324:Dipo
+157412:325:Djenné Nkurow Adadaw
+157412:326:Dominic Azimbe Azumah
+157412:327:Dominic Fobih
+157412:328:Dominic Nitiwul
+157412:329:Donald Dari Soditey
+157412:330:Dorcas Coker-Appiah
+157412:331:Doreen Andoh
+157412:332:Doris Asibi Seidu
+157412:333:Doris Dartey
+157412:334:Doris Wiredu
+157412:335:Douroula
+157412:336:Dwowda
+157412:337:Dzifa Gomashie
+157412:338:Dzifuu
+157412:339:Dzigbordi Dosoo
+157412:340:Dzin
+157412:341:Dzin Ahorow
+157412:342:Dzin hun
+157412:343:Dzodzi Tsikata
+157412:344:Ebenezer Kobina Fosu
+157412:345:Ebenezer Kojo Kum
+157412:346:Ebisaa na Abrɔme
+157412:347:Ebusua Ahyɛnsewdze
+157412:348:Ebɔbira
+157412:349:Ebɔw
+157412:350:Edgar de Wahl
+157412:351:Edith Hazel
+157412:352:Edward Adjaho
+157412:353:Edward Michael Ennin
+157412:354:Edward Osei-Kwaku
+157412:355:Edward Osei Kwueku
+157412:356:Edward Salia
+157412:357:Efe Grace
+157412:358:Effiakuma
+157412:359:Efua Dorkenoo
+157412:360:Elise Foniyama Thiombioano Ilboudo
+157412:361:Elizabeth Agyemang
+157412:362:Elizabeth Akua Ohene
+157412:363:Elizabeth Amoah Tetteh
+157412:364:Elizabeth Dadzie
+157412:365:Elizabeth Frances Sey
+157412:366:Elizabeth II
+157412:367:Elizabeth Salamatu Forgor
+157412:368:Ellen Serwaa Nee-Whang
+157412:369:Elsie Effah Kaufmann
+157412:370:Elsie Owusu
+157412:371:Emil Kwadzo Brantuo
+157412:372:Emma Morrison
+157412:373:Emmanuel Aboagye Didieye
+157412:374:Emmanuel Acheampong
+157412:375:Emmanuel Adjei Boye
+157412:376:Emmanuel Armah Kofi Buah
+157412:377:Emmanuel Asamoah Owusu-Ansah
+157412:378:Emmanuel Baah Danquah
+157412:379:Emmanuel Kinsford Kwesi Teye
+157412:380:Emmanuel Kwame Duut
+157412:381:Emmanuel Kwasi Bandua
+157412:382:Emmanuel Opam-Brown Akolbire
+157412:383:Emmanuel Owusu-Mainu
+157412:384:Emmanuel Samba Zumakpeh
+157412:385:Empress Gifty
+157412:386:Enigye mbea wɔ Anaji
+157412:387:Eno Barony
+157412:388:Enoch Teye Mensah
+157412:389:Eric Amoateng
+157412:391:Eric Opoku (amayɛnyi)
+157412:392:Ernest Attuquaye Armah
+157412:393:Ernest Debrah
+157412:394:Ernest Kofi Yakah
+157412:395:Ernestina Abambila
+157412:396:Ernestina Naadu Mills
+157412:397:Esi Sutherland-Addy
+157412:398:Essikado Assopiti
+157412:399:Estelle Akofio-Sowah
+157412:400:Esther Dzifa Ofori
+157412:401:Esther Obeng Dapaah
+157412:402:Esther Smith
+157412:403:Esusow Aketseaba
+157412:404:Ethel Delali Cofie
+157412:405:Etsew
+157412:406:Eugenia Date-Bah
+157412:407:Eureka Emefa Adomako
+157412:408:Evans Kodjo Ahorsey
+216310:409:Evelyn Amarteifio
+216310:410:Evelyn Badu
+216310:411:Everglades Ɔman Prama
+216310:412:Ewusiejoe
+216310:413:Faiza Ibrahim
+216310:414:Fankwa
+216310:415:Wikipedia:Fante Wikimedians Community/Contest I
+216310:416:Wikipedia:Fante Wikimedians Comunity/Art+Feminism 2023
+216310:417:Farouk Braimah
+216310:418:Fathia Nkrumah
+216310:419:Fati Habib-Jawula
+216310:420:Fati Seidu
+216310:421:Fatimatu Abubakar
+216310:422:Faustina Ampah
+216310:423:Felicia Abban
+216310:424:Felix Twumasi-Appiah
+216310:425:Felix owusu Adjpong
+216310:427:Fida
+216310:428:Florence Dadson
+216310:429:Florence Kumi
+216310:430:Florence Oboshie Sai-Coffie
+216310:431:Fortunate Atubiga
+216310:432:Francis Adu-Poku
+216310:433:Francis Aggrey Agbotse
+216310:434:Francis Gyafiry Korbieh
+216310:435:Francis Kojo Arthur
+216310:436:Francis Kwame Nyarko
+216310:437:Francis Kwasi Buor
+216310:438:Francis Osafo Mensah
+216310:439:Francis Yaw Osei Sarfo
+216310:440:Francisca Oteng-Mensah
+216310:441:Frank Boakye Agyen
+216310:442:Franklin Winfred Aheto
+216310:443:Freddie Blay
+216310:444:Frederick Opare-Ansah
+216310:445:Frema Opare
+216310:446:Fritz Baffour
+216310:447:Fufu
+216310:448:Fulera Limann
+216310:449:Fuzzy Dapaah Torbay
+216310:450:Arli National Park
+216310:451:Gabriel Barima
+216310:452:Gabriel Kodwo Essilfie
+216310:453:Gabriel Yaw Amoah
+216310:454:Garamba Ɔman Prama
+216310:455:Gemma Acheampong
+216310:456:Genevive Delali Tsegah
+216310:457:George Boakye (amanyɛni)
+216310:458:George Buadi
+216310:459:George Gyan-Baffour
+216310:460:George Kofi Arthur
+216310:461:George Kofi Nfodjoh
+216310:462:George Kuntu Blankson
+216310:463:George Kwame Aboagye
+216310:464:George Loh
+216310:465:George Mpambi Dagmanyi
+216310:466:Georgina Theodora Wood
+216310:467:Gershon Kofi Bediako Gbediame
+216310:468:Gertrude Torkornoo
+216310:469:Ghadamés Nkurow Adadaw
+216310:470:Ghana
+216310:471:Ghana at the FIFA Women's World Cup
+216310:472:Ghana women's national football team results
+216310:473:Ghartey VII Article Talk
+216310:474:Gibril Adamu Mohammed
+216310:475:Gifty Acheampong
+216310:476:Gifty Anti
+216310:477:Gifty Eugenia Kwofie
+216310:478:Gifty Klenam
+216310:479:Gifty Ohene-Konadu
+216310:480:Gifty Twum Ampofo
+216310:481:Gina Blay
+216310:482:Gladys Abena Nsoah
+216310:483:Gladys Asmah
+216310:484:Gladys Nortey Ashitey
+216310:485:Gloria Akuffo
+216310:486:Gloria Amon Nikoi
+216310:487:Gloria Sarfo
+216310:488:Godfred Kwame Otsere
+216310:489:Godfrey Tangu Bayon
+216310:490:Gorom Gorom
+216310:491:Grace Adams
+216310:492:Grace Amey-Obeng
+216310:493:Grace Amponsah-Ababio
+216310:494:Grace Armah
+216310:495:Grace Bakari
+216310:496:Grace Coleman
+216310:497:Grace Kwami
+216310:498:Grace Omaboe
+216310:499:Guamu
+216310:500:Gushiegu
+216310:501:H'Mount Sinai Senior High School
+216310:502:Hackman Ouwusu Agyeman
+216310:503:Hadja Fatimata Ouattara
+216310:504:Halutie Hor
+216310:505:Hamamat Montia
+216310:506:Hamidu Baba Braimah
+216310:507:Hanna Tetteh
+216310:508:Hannah Kudjoe
+216310:509:Haruna Bayirga
+294582:510:Haruna Iddrisu
+294582:511:Hatra
+294582:512:Hawa Yakubu
+294582:513:Hebron Kurow Kɛse Dadaw
+294582:514:Helen Yawson
+294582:515:Hellena Wrappah
+294582:516:Hennric David Yeboah
+294582:517:Henry Ford Kamel
+294582:518:Herod Cobbina
+294582:519:Hilda Akua
+294582:520:Homowo
+294582:521:Honam akwaa a yɛdze kasa
+294582:522:Ibrahim Adam
+294582:523:Ibrahim Cudjoe Quaye
+294582:524:Ibrahim Dey Abubakari
+294582:525:Iddrisu Abdul-Kareem
+294582:526:Iddrisu Dawuda
+294582:527:Iddrisu Huudu
+294582:528:Iddrisu Zakari Alidu
+294582:529:Ignatius Baffour-Awuah
+294582:530:Ignatius Kofi Poku Edusei
+294582:531:Imoro Yakubu Kakpagu
+294582:532:Inchaban
+294582:533:Innocent Mahamadu Yahaya
+294582:534:Interlingue
+294582:535:Inusah Fuseini
+294582:536:Irene Agyepong
+294582:537:Irene Naa Torshie Addo
+294582:538:Isaac Kobina Nyame-Ofori
+294582:539:Isaac Kolibilla Batesimah
+294582:540:Isaac Kwadwo Adjei-Mensah
+294582:541:Isaac Kwame Asiamah
+294582:542:Ishmael Ashitey
+294582:543:Israella Kafui Mansu
+294582:544:Issac Eduasar Edwumadzi
+294582:545:Issaku Salia
+294582:546:Issifu Pangabu Mohammed
+294582:547:J.E. Afful
+294582:548:J. B. Danquah-Adu
+294582:549:J. H. Owusu Acheampong
+294582:550:Jabaah John Bennam
+294582:551:Jacob Scherrer Arthur
+294582:552:Jacqueline Marie Zaba Nikiema
+294582:553:Jagri John Kokpah
+294582:554:Jagri John Kophah
+294582:555:Jam Minarɛtse
+294582:556:James Appietu-Ankrah
+294582:557:James Edusei Sarkodie
+294582:558:James Victor Gbeho
+294582:559:Jane E. Clerk
+294582:560:Janet Egyir
+294582:561:Janet Owusu
+294582:562:Jemila Abdulai
+294582:563:Jennifer Cudjoe
+294582:564:Jeremie Van-Garshong
+294582:565:Jerusalɛm Afasu
+294582:566:Jessica Opare-Saforo
+294582:567:Joe Danquah
+294582:568:Joe Donkor
+294582:569:Joe Ghartey
+294582:570:Joe Gidisu
+294582:571:Joe Mettle
+294582:572:Johanna Odonkor Svanikier
+294582:573:John Agyabeng
+294582:574:John Akparibo Ndebugre
+294582:575:John Dramani Mahama
+294582:576:John Duoghr Baloroo
+294582:577:John Frank Abu
+294582:578:John Gyetuah
+294582:579:John Jagri Kokpahi
+294582:580:John Kofi Gyasi
+294582:581:John Kwadwo Gyapong
+294582:582:John Kweku Kumah
+294582:583:John Kwekuchur Ackah
+294582:584:John Mahama
+294582:585:John Setuni Achuliwor
+294582:586:John Tia
+294582:587:Joseph Aidoo
+294582:588:Joseph Aidoo (amanyɛnyi)
+294582:589:Joseph Akati Saaka
+294582:590:Joseph Amankwanor
+294582:591:Joseph Amenowode
+294582:592:Joseph Ampomah Bosompem
+294582:593:Joseph Arthur Ankrah
+294582:594:Joseph Darko Mensah
+294582:595:Joseph E.K. Abekah
+294582:596:Joseph Emmanuel Ackah
+294582:597:Joseph Ghansah
+294582:598:Joseph H. Owusu Acheampong
+294582:599:Joseph Henry Mensah
+294582:600:Joseph Kofi Adda
+294582:601:Joseph Kwaku Nayan
+294582:602:Joseph Nii Laryea-Afotey Agbo
+294582:603:Joseph Nii Laryea Afotey-Abgo
+294582:604:Joseph Nii Laryea Afotey-Agbo
+294582:605:Joseph Samuel Annan
+294582:606:Joseph Trumah Bayel
+294582:607:Joseph Tsatsu Agbenu
+294582:608:Joseph Yaani Labik
+294582:609:Joseph Yieleh Chireh
+364601:610:Josephine Hilda Addo
+364601:611:Josephine Hilda Andoh
+364601:612:Josephine Kuuire
+364601:613:Josephine Oppong Yeboah
+364601:614:Joses Asare-Akoto
+364601:615:Joshua Alabi
+364601:616:Joséphine Ouédraogo
+364601:617:Joy Henrietta Mensa-Bonsu
+364601:618:Joyce Ababio
+364601:619:Julia Agawu
+364601:620:Juliana Azumah-Mensah
+364601:621:Juliana Dogbadzi
+364601:622:Juliet Appiah
+364601:623:Juliet Asante
+364601:624:Juliet Ibrahim
+364601:625:Juliette Bonkoungou
+364601:626:Justice Joe Appiah
+364601:627:Justice Tweneboaa
+364601:628:Kaakie
+364601:629:Kaar
+364601:630:Kahuzi-Biéga Ɔman Prama
+364601:631:Kasa
+364601:632:Kasa no dwumadzi
+364601:633:Kasadwin
+364601:634:Kasadwin n'ahorow
+364601:635:Kasubi Nda
+364601:636:Kendrick Lamar
+364601:637:Kennedy Agyapong
+364601:638:Kenneth Dzirasah
+364601:639:Kenturah Davis
+364601:640:Kinston Akomeng Kissi
+364601:641:Kobi Hemaa Osisiadan
+364601:642:Kobina Tahir Hammond
+364601:643:Kobla Mensah Wisdom Woyome
+364601:644:Kodzisɛm
+364601:645:Kofi
+364601:646:Kofi Adu
+364601:647:Kofi Asare
+364601:648:Kofi Attor
+364601:649:Kofi Frimpong
+364601:650:Kofi Karim Wumbei
+364601:651:Kofi Kinaata
+364601:652:Kofi Konadu Apraku
+364601:653:Kofi Krah Mensah
+364601:654:Kofi Osei-Ameyaw
+364601:655:Kojo Adu Asare
+364601:656:Kojo Armah
+364601:657:Kojo Kum ( Member of parliament)
+364601:658:Kojo Yankah
+364601:659:Kokonte
+364601:660:Kokui Selormey Hanson
+364601:661:Kosi Kedem
+364601:662:Kotoko
+364601:663:Koumbou Boly Barry
+364601:664:Kradzin
+364601:665:Krak des Chevaliers
+364601:666:Kratafa Tsitsir
+364601:667:Krosbi Mensah
+364601:668:Kundum Afahyɛ
+364601:669:Kuukua Eshun
+364601:670:Kwabena Adjei
+364601:671:Kwabena Adusa Okerchiri
+364601:672:Kwabena Appiah-Pinkrah
+364601:673:Kwabena Appiah Pinkrah
+364601:674:Kwabena Okyere Darko-Mensah
+364601:675:Kwabena Owusu Aduomi
+364601:676:Kwabena Sarfo
+364601:677:Kwadjo Agyei Addo
+364601:678:Kwadwo Adjei-Darko
+364601:679:Kwadwo Adjei Darkoh
+364601:680:Kwadwo Baah-Wiredu
+364601:681:Kwadwo Mama Adams
+364601:682:Kwadwo Opare-Hammond
+364601:683:Kwaku Acheampong Bonful
+364601:684:Kwaku Adu Yeboah
+364601:685:Kwaku Agyemang-Manu
+364601:686:Kwaku Al-Alhassan Dadzie
+364601:687:Kwakwar
+364601:688:Kwakye Addo
+364601:689:Kwame Addo-Kufuor
+364601:690:Kwame Amporfo Twumasi
+364601:691:Kwame Anyimadu-Antwi
+364601:692:Kwame Nkrumah
+364601:693:Kwame Osei Prempeh
+364601:694:Kwame Owusu Frimpong
+364601:695:Kwamena Bartels
+364601:696:Kwamena Dwamena Aboagye
+364601:697:Kwasi Ameyaw-Cheremeh
+364601:698:Kwasi Annoh Ankama
+364601:699:Kweku Boateng-Lovinger
+364601:700:Kwesi Akomia Kyeremanteng
+364601:701:Kwesi Amoako Atta
+364601:702:Kwesida
+364601:703:Kwɔna
+364601:704:Kyeiwaa
+364601:705:Kyerɛw kasadwin
+364601:706:Kyɛnse
+364601:707:Kɔbena
+364601:708:Lake Tengrela
+364601:709:Lee Ocran
+425189:710:Legon Presec
+425189:711:Leila Djansi
+425189:712:Leptis Magna
+425189:713:Leticia Adelaide Appiah
+425189:714:Letitia Obeng
+425189:715:Likpalimor Kwajo Tawiah
+425189:716:Lordina Mahama
+425189:717:Lucy Quist
+425189:718:Luke Koo
+425189:719:Lydia Forson
+425189:720:Maame Biney
+425189:721:Maame Esi Acquah Taylor
+425189:722:Mabel Agyemang
+425189:723:Mabel Dove Danquah
+425189:724:Mabel Simpson
+425189:725:Madinatou Rouamba
+425189:726:Magnus Opare-Asamoah
+425189:727:Mahama Ayariga
+425189:728:Krataafa Tsitsir
+425189:729:Malik Al-Hassan Yakubu
+425189:730:Mankɛssim
+425189:731:Manovo-Gounda St. Floris Ɔman Ɔdomankoma abɔdze Prama
+425189:732:Mansa Nettey
+425189:733:Mantɔw ahorow
+425189:734:Mantɔw ahorow a ɔwɔ Ghana
+425189:735:Margaret Amoakohene
+425189:736:Margaret Clarke-Kwestie
+425189:737:Margaret Clarke Kwestie
+425189:738:Margaret Ekua Prah
+425189:739:Mariam Iddrisu
+425189:740:Mariama Owusu
+425189:741:Marian Ewurama Addy
+425189:742:Marie Humbert
+425189:743:Marie Louise Nignan-Bassolet
+425189:744:Mark Anthony Awuni
+425189:745:Marlène Zebango
+425189:746:Martha Ama Akyaa Pobee
+425189:747:Martha Appiah
+425189:748:Martha Bissah
+425189:749:Marthe Eféwélé Kwami
+425189:750:Mary Chinery-Hesse
+425189:751:Mary Mensah
+425189:752:Mary Salifu Boforo
+425189:753:Mary Winfred Koranteng
+425189:754:Masoud Baba Abdul-Rahman-Rahman
+425189:755:Mathias Asoma Puozaa
+425189:756:Matthew Kwaku Antwi
+425189:757:Maureen Abla Amematekpor
+425189:758:Mavis Akoto
+425189:759:Mavis Ama Frimpong
+425189:760:Mavis Hawa Koomson
+425189:761:Maxwell Kofi Jumah
+425189:762:Mbeabea yɛkɔ hɔ nserahwɛ
+425189:763:Mbowa edzin
+425189:764:Medieval Nkaadze a ɔwɔ Kosovo
+425189:765:Melody Millicent Danquah
+425189:766:Memenda
+425189:767:Mena
+425189:768:Mercy Adoma Owusu-Nimoh
+425189:769:Mercy Bampo Addo
+425189:770:Mercy ffoulkes-Crabbe
+425189:771:Meri Nana-Ama Danquah
+425189:772:Mfantse Ebusuakuw
+425189:773:Mfantsefo hɔn ekunyin
+425189:774:Mfantseman Girls
+425189:775:Mfantsepim Skuul
+425189:776:Michael Coffie Boampong
+425189:777:Michael Teye Nyuanu
+425189:778:Micheal Afedi Gizo
+425189:779:Mike Hammah
+425189:780:Miliky MiCool
+425189:781:Mimi Plange
+425189:782:Moctar Musah Bambah
+425189:783:Modestus Yao Z. Ahiable
+425189:784:Moesha Buduong
+425189:785:Mohammed Erzuah Siam
+425189:786:Mohammed Jagri
+425189:787:Mohammed Seidu Abah
+425189:788:Monica Amekoafia
+425189:789:Moses Asaga
+425189:790:Moses Dani Baah
+425189:791:Moses Mabengba Bukar
+425189:792:Moses Mabengba Bukari
+425189:793:Mount Mary Akyerɛkyerɛfo ntsetsee bea
+425189:794:Mperwa Nyinsen
+425189:795:Mubarak Mohammed Muntaka
+425189:796:Muhammad Mumuni
+425189:797:Mumu
+425189:798:Mumuni Abudu Seidu
+425189:799:Mustapha Ahmed
+425189:800:Mustapha Ali Iddris
+425189:801:MzVee
+425189:802:Mzbel
+425189:803:Mɔmɔɛ
+425189:804:Naa Ashorkor
+425189:805:Naa Gbewaa
+425189:806:Nadia Eke
+425189:807:Nan Madol
+425189:808:Nana Aba Anamoah
+425189:809:Nana Aba Appiah Amfo
+499966:810:Nana Abu Bonsra
+499966:811:Nana Afia Kobi Serwaa Ampem II
+499966:812:Nana Akomea
+499966:813:Nana Akosua Konadu
+499966:814:Nana Akua Addo
+499966:815:Nana Akua Oppong Birmeh
+499966:816:Nana Akufo-Addo
+499966:817:Nana Ama Agyemang Asante Asante
+499966:818:Nana Amoakoh Gyampa
+499966:819:Nana Anima Wiafe-Akenten
+499966:820:Nana Asante-Frimpong
+499966:821:Nana Darkoa Sekyiamah
+499966:822:Nana Kofi Abuna V
+499966:823:Nana Yaw Edward Ofori-Kuragu
+499966:824:Nana Yaw Otto
+499966:825:Nathaniel Kwadzo
+499966:826:Nathaniel Kwadzo Aduadjoe
+499966:827:National Democratic Congress
+499966:828:Nayaah
+499966:829:Nda ahorow a ɔwɔ ndawɔtwe mu.
+499966:830:Ndze/Bawol Ngyegyee
+499966:831:Ngo
+499966:832:Nicholas Appiah-Kubi
+499966:833:Nicholas K. Adjei-Kyeremeh
+499966:834:Nicole Amarteifio
+499966:835:Nii Adjei-Boye Sekan
+499966:836:Nii Adu Daku Mantey
+499966:837:Nii Amasah Namoale
+499966:838:Nii Armah Ashitey
+499966:839:Nii Nortey Duah
+499966:840:Nii Oakley Quaye-Kumah
+499966:841:Nii Okaidja Adamafio
+499966:842:Nii Okwei Kinka Dowuona VI
+499966:843:Niokolo-Koba Ɔman Prama
+499966:844:Nkrabeah Effah Dartey
+499966:845:Nkyia
+499966:846:Nkyia - ngyedo
+499966:847:Nkyia na ne ngyedo
+499966:848:Norbert Garko Awulley
+499966:849:Nsesa
+499966:850:Nsu
+499966:851:Nsuutaae Turkana Ɔman Prama
+499966:852:Nuong Faalong
+499966:853:Nuotama Bodomo
+499966:854:Nyakrom Senior High School
+499966:855:Nyinsen
+499966:856:Nyɛe
+499966:857:Obaapa Christy Ndwomtownyi
+499966:858:Obiradzi
+499966:859:Oburumankoma
+499966:860:Ofosu Akwamoa Boateng
+499966:861:Ofosu Asamoah
+499966:862:Ogyeahohoo Yaw Gyebi II
+499966:863:Ohemaa Mercy
+499966:864:Okapi Hambowa Korabea
+499966:865:Okunafo
+499966:866:Okunyin Charles Owu-Ewie
+499966:867:Olivia Rouamba
+499966:868:Ophelia Crossland
+499966:869:Oppey Abbey
+499966:870:Osabarimba Kwesi Atta II
+499966:871:Osagyefo Agyemang Badu I
+499966:872:Osei Kyei-Mensah-Bonsu
+499966:873:Otumfuo Nana Osei Tutu II
+499966:874:Ouahigouya
+499966:875:Owu Nkurow Akɛse
+499966:876:Owura Patrick Nana Wonkyi
+499966:877:Owusu Achaw Duah
+499966:878:Owusu Afriyie Akoto
+499966:879:PM (Di Asa winner)
+499966:880:Paa Kwesi Nduom
+499966:881:Paanoo
+499966:882:Palmyra
+499966:883:Papa Owusu Ankomah
+499966:884:Pascale Allotey
+499966:885:Pascaline Edwards
+499966:886:Patience Kpobi
+499966:887:Patience Opokua
+499966:888:Patience Peterson-Kundok
+499966:889:Patricia Mawuli Nyekodzi
+499966:890:Paul Collins Appiah Ofori
+499966:891:Paul Evans Addo
+499966:892:Paul Evans Aidoo
+499966:893:Paul Okoh
+499966:894:Paulina Patience Abagaye
+499966:895:Peace Ayisi Otchere
+499966:896:Peace Hyde
+499966:897:Pearl Amoah
+499966:898:Peter Boakye-Ansah
+499966:899:Peter Kwaw
+499966:900:Peter Sarkodie
+499966:901:Peter Wiafe Pepera
+499966:902:Poku Adu-Gyamfi
+499966:903:Portia Boakye
+499966:904:Potosi
+499966:905:Presbyterian Boys' Senior High School
+499966:906:Presbyterian Senior High School, Akuapim-Mampong
+499966:907:Presbyterian Senior High Technical School, Adukrom
+499966:908:Prince Jacob Hayibor
+499966:909:Prince Oduro-Mensah
+570049:910:Princess Shyngle
+570049:911:Professor Evans Fiifi Atta Mills
+570049:912:Puozaa Mathias Asuma
+570049:913:Queenster Maame Pokua Sawyerr
+570049:914:Raheem Sterling
+570049:915:Rama Brew
+570049:916:Raphael Kofi Ahaligah
+570049:917:Raquel Naa Ayorkor Ammah
+570049:918:Rashid Bawa
+570049:919:Raymond Tawiah Abraham
+570049:920:Rebecca Akufo-Addo
+570049:921:Rebecca Akweley Adotey
+570049:922:Rebecca Naa Dedei Aryeetey
+570049:923:Regina Antwi
+570049:924:Regina Okyere-Dankwa
+570049:925:Rennell Epuei
+570049:926:Reo Addai Basoah
+570049:927:Richard Akuoko Adiyiah
+570049:928:Richard Dornu Nartey
+570049:929:Richard Lassey Agbenyefia
+570049:930:Richard Sam Quarm
+570049:931:Richard Winfred Anane
+570049:932:Rita Tani Iddi
+570049:933:Robert Sarfo-Mensah
+570049:934:Rosamond Asiamah Nkansah
+570049:935:Rose Mensah-Kutin
+570049:936:Rosine Sori-Coulibaly
+570049:937:Ruby Yayra Goka
+570049:938:Ruins of Loropéni
+570049:939:Río Plátano Bisophere Korabea
+570049:940:Saani Iddi
+570049:941:Sabou
+570049:942:Sabratha Tsetsendɛm Babea
+570049:943:Salifu Abdul Hafiz
+570049:944:Salimata Sawadogo
+570049:945:Sally Mugabe
+570049:946:Sally Torpey
+570049:947:Salma Frances Mancell-Egala
+570049:949:Samarra
+570049:950:Samia Nkrumah
+570049:951:Samira Suleman
+570049:952:Sammy B. Wusah
+570049:953:Sampson Apraku
+570049:954:Sampson Kwaku Boafo
+570049:955:Sampson Ottu Darkoh
+570049:956:Samuel Erickson Abakah
+570049:957:Samuel Johnfiah
+570049:958:Samuel Kwadwo Amoako
+570049:959:Samuel Kwame Amponsah
+570049:960:Samuel Kwofie
+570049:961:Samuel Nii-Aryeetey Attoh
+570049:962:Samuel Nii Ayeetey Attoh
+570049:963:Samuel Nii Ayi Mankattah
+570049:964:Samuel Nkrumah Gyimah
+570049:965:Samuel Nyimakan
+570049:966:Samuel Ofosu-Ampofo
+570049:967:Samuel Oppong
+570049:968:Samuel Owusu Agyei
+570049:969:Samuel Sallas Mensah
+570049:970:Sana'a Dadaw
+570049:971:Sanda
+570049:972:Sandra &quot;Alexandrina&quot; Don-Arthur
+570049:973:Sandra Appiah
+570049:974:Sarah Adwoa Sarfo
+570049:975:Sarkodie
+570049:976:Seidu Paakuna Adamu
+570049:977:Sekondi-Takoradi
+570049:978:Sekunde-Takoradze
+570049:979:Selase Agbenyefia
+570049:980:Selous Agodzi Korabea
+570049:981:Senyuiedzorm Awusi Adadevoh
+570049:982:Seth Adjei Baah
+570049:983:Seth Dankwa Wiafe
+570049:984:Shahrisabz
+570049:985:Sherifa Gunu
+570049:986:Sherry Ayitey
+570049:987:Shibam
+570049:988:Sika Bella Kaboré
+570049:989:Sikakorabea
+570049:990:Simon Alangde Asabo
+570049:991:Simon Anyoa Abingya
+570049:992:Simon Atingban Akunye
+570049:993:Simon Osei-Mensah
+570049:994:Simons Addai
+570049:995:Sindou
+570049:996:Sista Afia
+570049:997:Skuul
+570049:998:Sofokrom
+570049:999:Solomon Kodjoe Akwetey
+570049:1000:Solomon Kwabena Sarfoh
+570049:1001:Solomon Tettey Terkper
+570049:1002:Sophia Akuffo
+570049:1003:Sophia Horner-Sam
+570049:1004:Sophia Oboshie Doku
+570049:1005:St. John's School Sekondi
+570049:1006:Stephen Adoma-Yeboah
+570049:1007:Stephen Amoanor Kwao
+570049:1008:Stephen Asamoah Boateng
+570049:1009:Stephen Cobbinah B. Karikari
+570049:1010:Stephen Kunsu
+634371:1011:Stephen Kwaku Balado Manu
+634371:1012:Stephen Michael Essuah Kofi Ackah
+634371:1013:Stephen Obimpeh
+634371:1014:Stephen Yakubu
+634371:1015:Steve Senu Akorli
+634371:1016:Suapɔn ahorow a ɔwɔ Ghana
+634371:1017:Sulemana Ibun Iddrisu
+634371:1018:Sumatra Trɔpekal Nsutaaekwaa Ewungyadze
+634371:1019:Susan Ofori-Atta
+634371:1020:Susana Adam
+634371:1021:Susukyerɛw Ahorow
+634371:1022:Sylvester A. Mensah
+634371:1023:Sylvia Boye
+634371:1024:Tabitha Sybil Quaye
+634371:1025:Takoradze Nsɔwdo Skuul
+634371:1026:Takoradze Sakrabudu/ Ankɔs Afahyɛ
+634371:1027:Tapoli
+634371:1028:Tariq Kwame Nii-Lante Lamptey
+634371:1029:Tarkwa
+634371:1030:Theo Sowa
+634371:1031:Theodore Basil Anuka
+634371:1032:Theodosia Okoh
+634371:1033:Theresa Abena Nyarko-Fofie
+634371:1034:Theresa Amerley Tagoe
+634371:1035:Theresa Joyce Baffoe
+634371:1036:Theresa Kufuor
+634371:1037:Theresa Nyarko-Fofie
+634371:1038:Thomas Kwame Yeboah
+634371:1039:Thomas Kweku Aubyn
+634371:1040:Thomas Kwesi Nasah
+634371:1041:Thérèse Striggner Scott
+634371:1042:Tia Sugri Alfred
+634371:1043:Tiebele
+634371:1044:Timbuktu
+634371:1045:Timothy Ataboadey Awotiirim
+634371:1046:Togbe Osei III
+634371:1047:Tsetse Ndwuma
+634371:1048:UNEP
+634371:1049:Uew Fankuw
+634371:1050:Umar Abdul-Razak
+634371:1051:Ursula Owusu
+634371:1052:Valerie Lawson
+634371:1053:Veronica Bawuah
+634371:1054:Veronica Bekoe
+634371:1055:Veronica Quarshie
+634371:1056:Vicky Zugah
+634371:1057:Victor Okuley Nortey
+634371:1058:Victoria Agyei
+634371:1059:Victoria Hammah
+634371:1060:Vida Akoto-Bamfo
+634371:1061:Vida Yeboah
+634371:1062:Virunga Ɔdomankoma abɔdze Prama
+634371:1063:W-Arly-Pendjari Complex
+634371:1064:Wikipedia:WHindanger contest
+634371:1065:W National Park
+634371:1066:Wasila Diwura-Soale
+634371:1067:Wesley Girls' High School
+634371:1068:Wikipedia
+634371:1069:William Ofori Boafo
+634371:1070:Wisdom Gidisu
+634371:1071:Wiyaala ndwomtownyi
+634371:1072:Women's football in Ghana
+634371:1073:Wukuda
+634371:1074:Yaa Asantewaa
+634371:1075:Yaa Asantewaa Festival
+634371:1076:Yaa Asantewaa War
+634371:1077:Yaa Ntiamoah Badu
+634371:1078:Yaba Badoe
+634371:1079:Yaw Asiedu-Mensah
+634371:1080:Yaw Baah
+634371:1081:Yaw Baning-Darko
+634371:1082:Yaw Barimah
+634371:1083:Yaw Brempong-Yeboah
+634371:1084:Yaw Effah-Baafi
+634371:1085:Yaw Ntow Ababio
+634371:1086:Yaw Osafo Maafo
+634371:1087:Yaw Owusu-Boateng
+634371:1088:Yaw Skyface
+634371:1089:Yawa Hansen-Quao
+634371:1090:Yawda
+634371:1091:Yvonne Nelson
+634371:1092:Zabid
+634371:1093:Zanetor Agyeman-Rawlings
+634371:1094:Ziniare
+634371:1095:Zion Asɔr
+634371:1096:Zuta Mary Nartey
+634371:1097:Zynnell Zuh
+634371:1098:Aboodoo
+634371:1099:Adwindze
+634371:1102:Hilla limann
+634371:1103:Kojo antwi
+634371:1104:Kwame Addo-Kufffour
+634371:1105:Ludo
+634371:1106:Sakordie
+634371:1107:Sukwadwom
+634371:1108:Ɔberɛfɛw
+634371:1109:Ɔbɛsɛ
+634371:1110:Ɔdapagyan
+634371:1111:Ɔhen
+634371:1112:Ɔson
+717027:1113:Ɔtsɛmbuafo
+717027:1116:Module:IncubatorInterwiki
+717027:1117:Nhwɛdo:INTERWIKI
+717027:1118:Main Page
+717027:1120:MediaWiki:Mainpage
+717027:1122:Nhwɛdo:Top Banner
+717027:1123:Nkyekyεmu:Ghanafo
+717027:1125:Nhwɛdo:Feature Article/Article 2
+717027:1126:Wikipedia:Featured Articles
+717027:1127:Nhwɛdo:Feature Articles All
+717027:1128:Nhwɛdo:Feature Article/section
+717027:1129:Nhwɛdo:Good Article/Article 1
+717027:1130:Wikipedia:Good Articles
+717027:1131:Nhwɛdo:-
+717027:1132:Nhwɛdo:Did You Know/featured list 1
+717027:1133:Wikipedia:Did You Know
+717027:1134:Nhwɛdo:Featured Image/Image 1
+717027:1135:Wikipedia:Featured Image
+717027:1136:Nhwɛdo:Wikimedia projects
+717027:1137:View total pages
+717027:1138:Wikipedia:Edwuma akwankyerɛfo
+717027:1139:Palestina
+717027:1140:Wikpedia:Mboa
+717027:1141:Fante kasa a wɔka
+717027:1142:Nhwɛdo:Nkrataafa soronko
+717027:1144:Nhwɛdo:Krataa Fuforo/styles.css
+717027:1145:Nkyekyεmu:Ghana mbrahyɛbaguafo 2005-2009
+717027:1146:New Patriotic Party
+717027:1148:Nhwɛdo:Documentation
+717027:1149:Module:Documentation
+717027:1150:Module:Arguments
+717027:1151:Module:Documentation/config
+717027:1152:Module:Documentation/styles.css
+717027:1153:Module:Check for unknown parameters
+717027:1154:Nhwɛdo:Main other
+717027:1155:Module:Infobox
+717027:1156:Nhwɛdo:Br separated entries
+717027:1157:Module:Separated entries
+717027:1158:Module:TableTools
+717027:1159:Nhwɛdo:Count
+717027:1160:Module:ParameterCount
+717027:1161:Module:Yesno
+717027:1162:Nhwɛdo:Country2nationality
+717027:1163:Nhwɛdo:Delink
+717027:1164:Module:Delink
+717027:1165:Nhwɛdo:Find country
+717027:1166:Nhwɛdo:Infobox officeholder/office
+717027:1167:Nhwɛdo:PAGENAMEBASE
+717027:1168:Module:String
+717027:1169:Nhwɛdo:ISO 3166 code
+717027:1170:Nhwɛdo:ISO 3166 conversion template doc
+717027:1171:Nhwɛdo:Lua
+717027:1172:Module:Lua banner
+717027:1173:Module:List
+717027:1174:Module:Message box
+717027:1175:Module:Message box/configuration
+717027:1176:Module:Message box/ombox.css
+717027:1177:Nhwɛdo:Country name
+717027:1178:Nhwɛdo:ISO 3166 code-3
+717027:1179:Nhwɛdo:ISO 3166 name
+717027:1180:Nhwɛdo:ISO 3166 numeric
+717027:1181:Module:ISO 3166
+717027:1182:Module:ISO 3166/data/National
+717027:1183:Module:ISO 3166/data/IR
+717027:1184:Nhwɛdo:Sandbox other
+717027:1185:Nhwɛdo:Str len
+717027:1186:Nhwɛdo:Tl
+717027:1187:Nhwɛdo:Tlx
+717027:1188:Module:Tlg
+717027:1189:Nhwɛdo:Pluralize from text
+717027:1190:Module:Detect singular
+717027:1191:Module:Text
+717027:1192:Nhwɛdo:Strfind short
+717027:1193:Nhwɛdo:Unbulleted list
+717027:1194:Nhwɛdo:Plainlist/styles.css
+717027:1195:Module:Infobox/styles.css
+717027:1196:Module:InfoboxImage
+717027:1197:Nhwɛdo:Infobox officeholder
+717027:1198:Module:Find country
+717027:1199:Nhwɛdo:Birth date and age
+717027:1200:Nhwɛdo:Both
+717027:1201:Module:Age
+717027:1202:Module:Date
+717027:1203:Nhwɛdo:DPP
+717027:1204:Nhwɛdo:DPP/logo
+717027:1205:Nhwɛdo:Detect singular
+717027:1206:Nhwɛdo:En dash range
+717027:1207:Nhwɛdo:Hlist
+717027:1208:Nhwɛdo:Hlist/styles.css
+717027:1209:Module:Plain text
+717027:1210:Nhwɛdo:IsValidPageName
+717027:1211:Module:Page
+717027:1212:Module:CallAssert
+717027:1213:Module:Protect
+717027:1214:Nhwɛdo:KMT
+717027:1215:Nhwɛdo:KMT/logo
+717027:1216:Nhwɛdo:Nowrap
+717027:1217:Nhwɛdo:Nobold
+717027:1218:Nhwɛdo:Nobold/styles.css
+717027:1219:Nhwɛdo:Constlk
+832992:1220:Nhwɛdo:Small
+832992:1221:Nhwɛdo:Iso2nationality
+832992:1224:Nhwɛdo:Support
+832992:1225:Wikipedia:Admin request
+832992:1226:National Democratic Congress (Ghana)
+832992:1227:Fante Wikipedia
+832992:1228:Osidɛntal
+832992:1231:Ancient Ferrous Metallurgy Sites of Burkina Faso
+832992:1232:GArli National Park
+832992:1259:Aseebu Amamfi
+832992:1260:Egya Ahor N’abakɔsɛm
+832992:1262:Africa(Ebibirim)
+832992:1263:Atekels a ɔsɛ dɛ Wikipedia biara enya
+832992:1264:Nkyekyεmu:Aman ahorow
+832992:1265:Abaduaba
+832992:1267:SabrathaTsetsendɛmbabea
+832992:1268:Peter Turkson
+832992:1269:Kofi Annan
+832992:1270:Jane Naana Opoku-Agyemang
+832992:1271:Tsirkor mpam
+832992:1272:Abɛbu
+832992:1274:Dza Ghanaman wikimedia mpɔtamfo yɛ
+832992:1275:Wikipedia:Autoconfirmed users
+832992:1276:Nkuto
+832992:1277:Sika eduaba soronko wɔ Tamale
+832992:1278:Dena Mpoano
+832992:1280:Sony Achiba
+832992:1281:Ahkan
+832992:1282:Amerado (musician)
+832992:1283:Lingua Franca Nova
+832992:1284:Lingua franca nova
+832992:1285:Kojo Antwi
+832992:1286:Appietus
+832992:1287:Asabea Cropper
+832992:1288:Derrick Ashong
+832992:1289:Atumpan (singer)
+832992:1290:Ayesem
+832992:1291:Gulf of Guinea
+832992:1292:Fameye
+832992:1293:Atlantic Ocean
+832992:1294:Pradze
+832992:1295:The rural industry promotion workers union
+832992:1296:Rural Industry Promotions Company Workers' Union
+832992:1297:Botswana Saving Bank Employees' Union
+832992:1298:Botswana Bank Employees' Union
+832992:1299:Federation
+832992:1300:Botswana Institute of Development Management Workers' Union
+832992:1301:Botswana Central Bank Staff Union
+832992:1302:Workers' Union (BCGWU) is a trade union affiliate of the Botswana Federation of Trade Unions in Botswana.
+832992:1303:Mariam Mahamat Nour
+832992:1304:Botswana Agricultural Marketing Board Workers' Union
+832992:1305:Botswana Mining Worker's Union
+832992:1306:Police and Prisons Civil Rights Union
+832992:1307:Botswana Federation of Trade Unions
+832992:1308:National Education, Health and Allied Workers' Union
+832992:1309:Congress of South African Trade Unions
+832992:1310:Botswana Private Medical &amp; Health Services Workers' Union
+832992:1311:Communication Workers Union (South Africa)
+832992:1312:Air Botswana Employees' Union
+832992:1313:National amalgamated central , local and parastatal manual workers union
+832992:1314:Botswana Manufacturing &amp; Packaging Workers' Union
+832992:1315:Creative Workers Union of South Africa
+832992:1316:Jay Nsaidoo
+832992:1317:Botswana Postal Services Workers' Union
+832992:1318:Joseph Mathunjwa
+832992:1319:Democratic Nursing Organisation of South Africa
+832992:1320:Botswana Wholesale, Furniture and Retail Workers' Union
+832992:1326:Public and Allied Workers Union of South Africa.
+832992:1327:Botswana Housing Corporation Staff Union
+832992:1332:Botswana Railways Amalgamated Workers' Union
+832992:1334:Ahobaa Afahyɛ wɔ Ajumako
+832992:1335:University of Botswana Non-Academic Staff Union
+832992:1337:National Union of Mineworkers (South Africa)
+832992:1338:Ananmɔn
+832992:1339:Botswana Power Corporation Workers' Union
+832992:1340:Mohammed Sakina Nasara
+832992:1341:Zulfawu Ishaku
+832992:1342:Mr. Dennis Yeribu
+832992:1343:Finimfin Mantɔw( Central region Ghana)
+832992:1344:Esuantse Mantɔw(Ashanti Region, Ghana)
+832992:1345:Oti Mantɔw
+832992:1346:Firaw Mantɔw
+832992:1347:Epuei Mantɔw
+832992:1348:Nkran Kuropɔn Mantɔw
+832992:1349:Etsifi Mantɔw(Ghana)
+832992:1350:Atɔe Etsifi Mantɔw
+832992:1351:Etsifi Anee Mantɔw
+832992:1352:Sekunde- Takoradze
+832992:1353:Bullgod
+832992:1354:Bullet( Ɔdwontownyi)
+832992:1356:Afahyɛ Ahorow A Wodzi Wɔ Ghana
+832992:1357:Stephanie Benson
+832992:1358:Bra Kevin Beats
+832992:1359:Bakatue
+832992:1366:Savannah Mantɔw
+832992:1368:Amoma
+832992:1369:Owuraku Ampofo
+832992:1373:Anee/Atɔe Etsifi Mantɔw
+832992:1374:Occupy Julorbi House
+832992:1375:Kyoto
+892409:1376:Pusuban
+892409:1377:Toyota
+892409:1378:Kundum
+892409:1379:Anandsagar Tanna
+892409:1382:Simpa Nwomasua Suapɔn
+892409:1383:Bono Mantɔw
+892409:1386:Westside Carnival
+892409:1387:AMOMA
+892409:1388:Cape Coast Esuapɔn (University of Cape Coast)
+892409:1390:Nhwɛdo:Align
+892409:1391:Nhwɛdo:Center
+892409:1392:Nhwɛdo:Percentage bar (larger)
+892409:1393:Nhwɛdo:Fante Wikimedians/Whintangible/Contest/Header
+892409:1394:Wikipedia:Fante Wikimedians/Whintangible/Contest
+892409:1395:Fante Wikimedians/Whintangible/Contest
+892409:1396:Wikipedia:Admin requests/Archive
+892409:1397:Karatsu Kunchi
+892409:1402:Bai choi
+892409:1405:Xi'an guyue
+892409:1407:Lhamo
+892409:1409:Festivity of Saint Blaise, the patron of Dubrovnik
+892409:1410:Wooden toys of Hrvatsko Zagorje
+892409:1411:Maloya
+892409:1412:Gagok
+892409:1413:Aubusson tapestry
+892409:1414:Giong Afahyɛ
+892409:1415:Owari Tsushima Tennō Afahyɛ
+892409:1416:Gwo ka
+892409:1417:Hung Ɔhen wu afedzi
+892409:1418:Baltic ndwom afahyɛ ahorow
+892409:1419:Ojiya-chijimi
+892409:1420:Esuantse Mantɔw( Ashanti Region, Ghana)
+892409:1421:Kawagoe Hikawa Afahyɛ
+892409:1422:Pirekua
+892409:1424:Ewia
+892409:1425:Bosoom
+892409:1426:Asaase
+892409:1427:Ewo hayɛ
+892409:1428:Huaconada
+892409:1429:Horezu nkukunwen
+892409:1430:Semeiskie
+892409:1431:Nōgaku
+892409:1432:Morna
+892409:1433:Cheoyongmu
+892409:1434:Meddah
+892409:1435:Klapa
+892409:1436:Bachata
+892409:1437:Seal ntwae
+892409:1438:Nsɔwano ntwae
+892409:1439:Fiesta de la Candelaria
+892409:1440:Lefkara ahoma atar
+892409:1441:Falak
+892409:1442:Chinese Zhusuan
+892409:1443:Chovgan
+892409:1444:Đờn ca tài tử
+892409:1445:Chamamé
+892409:1446:Radif
+892409:1447:Nanguan ndwom
+892409:1448:Naengmyeon
+892409:1449:Lithuanian asɛndua nyɛe
+892409:1450:Martenitsa
+892409:1451:Ɔbran na ɔtwease a wɔwɔ Belgium na France
+892409:1452:Pasillo
+892409:1453:Timkat
+892409:1454:ʏare esunsumfi asaw
+892409:1455:Gangneung Danoje
+892409:1456:Noria
+892409:1457:Haenyeo
+892409:1458:Călușari
+892409:1459:Cantu a tenore
+892409:1460:Tumba francesa
+892409:1461:Gagaku
+892409:1462:Jultagi
+892409:1463:Ganggangsullae
+892409:1464:Akyn
+892409:1465:Bećarac
+892409:1466:Fileteado
+892409:1467:Zvončari
+892409:1468:Adakabɛnyɛfo
+892409:1469:Nijemo kolo
+892409:1470:Wayampifo
+892409:1471:Patum de Berga
+892409:1472:Kolo
+892409:1473:Talchum
+892409:1474:Bakshy
+892409:1475:Drametse Ngacham
+892409:1476:Frevo
+892409:1477:Oku-noto no Aenokoto
+892409:1478:Idrija ahoma atar
+892409:1479:Regong edwin
+892409:1480:Gong Amambra Bea a ɔwɔ Central Highlands wɔ Vietnam
+892409:1481:Peña de Bernal
+892409:1482:Alençon ahoma atar
+892409:1483:Akiu no Taue Odori
+892409:1484:Jeju Chilmeoridang Yeongdeunggut
+892409:1485:Chakkirako
+892409:1486:Shiraz rug
+892409:1487:Škofja Loka Passion Play
+892409:1488:Dainichido Bugaku
+892409:1489:Sega tambour of Rodrigues Island
+992600:1490:Montea
+992600:1491:Kui
+992600:1492:Soup joumou
+992600:1493:Dondang sayang
+992600:1494:Tereré
+992600:1495:Khon
+992600:1496:Pütchipü'ü
+992600:1497:Lakalaka
+992600:1498:Celestinian Forgiveness
+992600:1499:Council of Wise Men of the plain of Murcia
+992600:1500:Quan họ
+992600:1501:Namur stilt jousting
+992600:1502:Fest Noz
+992600:1504:Mudiyettu
+992600:1505:Falles
+992600:1506:Danza de tijeras
+992600:1507:Kırkpınar
+992600:1508:Bokator
+992600:1509:Kalbelia
+992600:1510:Finnish sauna
+992600:1511:Azerbaijani carpet weaving
+992600:1512:Daimokutate
+992600:1513:Koodiyattam
+992600:1514:Kopačka
+992600:1515:Menora
+992600:1516:Ftira
+992600:1517:Hawker bea
+992600:1518:Nordic clinker hyɛamba amambra ahorow
+992600:1519:Ashiqs of Azerbaijan
+992600:1520:Khmer sunsum agorhwɛbea
+992600:1521:Mibu no Hana Taue
+992600:1522:Hachinohe Sansha Afahyɛ
+992600:1523:Thieboudienne
+992600:1524:Asaw nyɛe wɔ Echternach
+992600:1525:Latvian Ndwom na Asaw Afahyɛ
+992600:1526:Yūki-tsumugi
+992600:1527:Za križen
+992600:1528:Licitar
+992600:1529:Tam atar nyɛe wɔ Croatia
+992600:1530:Petrykivka painting
+992600:1531:Dutar
+992600:1532:Argungu Fardwuma Afahyɛ
+992600:1533:El Güegüense
+992600:1534:Punto guajiro
+992600:1535:Transhumance
+992600:1536:Takayama Afahyɛ
+992600:1537:Gadaa
+992600:1538:Castell
+992600:1539:Sibyl Ndwom
+992600:1540:Rebetiko
+992600:1541:Rabinal Achí
+992600:1542:Daredevils of Sassoun
+992600:1543:Hitachi Fūryūmono
+992600:1544:Dapɛn krɔnkrɔn wɔ Popayán
+992600:1545:Dapɛn krɔnkrɔn wɔ opayán
+992600:1546:Congolese rumba
+992600:1547:Pizzaiolo
+992600:1548:Festivity of ‘la Mare de Déu de la Salut’ of Algemesí
+992600:1549:Kashan rug
+992600:1551:Mahamudu Bawumia
+992600:1554:Moscow
+992600:1557:Berla Mundi
+992600:1558:Wikipedia:Nyimpakuw adzekorabea
+992600:1562:Nkyekyεmu:Hɔn a wɔwoo hɔn afe 1964 mu
+992600:1563:David Woodard
+992600:1565:Ophelia Hayford
+992600:1566:Serwaa Amihere
+992600:1567:Kiriri Women's University of Science and Technology
+992600:1568:Education in Africa
+992600:1570:Language Barrier
+992600:1571:Adisadel College
+992600:1572:Disproportionality in special education
+992600:1573:Sangha Trinational
+992600:1574:Asante Traditional Buildings
+992600:1575:M'banza-Kongo
+992600:1576:Australia
+992600:1577:Mando Senior High Technical
+992600:1578:St. Louis Senior High School (Ghana)
+992600:1579:Winneba Community Nursing Training College
+992600:1580:St. Augustine's College (Cape Coast)
+992600:1581:Bompeh Senior High Technical School
+992600:1582:University Practice Senior High School
+992600:1583:Nwansema
+992600:1584:Wesley Girls' Senior High School
+992600:1585:Shama Senior High School
+992600:1586:Fijai Senior High School
+992600:1587:Fosu college of Education
+992600:1588:Mfantsiman Girls' Senior High School
+992600:1589:Aggrey Memorial A.M.E. Zion Senior High School
+992600:1590:St. Teresa Secondary School
+992600:1591:Nana Ama McBrown
+992600:1593:Baidoo Bonsoe Senior High
+992600:1595:Osei Tutu Senior High School
+992600:1596:Kumasi Senior High Technical
+992600:1597:Prempeh College
+992600:1598:Kumasi Academy
+992600:1599:Kumasi Girls Senior High School
+992600:1600:Konongo Odumase Senior High School
+992600:1601:Accra Academy Senior High School
+992600:1602:Holy Child High School, Ghana
+1081741:1603:Asare Bediako Senior High School
+1081741:1604:Nhwɛdo:ISBN
+1081741:1606:St. Monica's Senior High School
+1081741:1607:Dompoase Senior High School
+1081741:1608:Bodwesango Senior High School
+1081741:1609:Sumaman Senior High School
+1081741:1610:Akrofuom Senior High Technical School
+1081741:1611:Adu Gyamfi Senior High School
+1081741:1612:Juaben Senior High School
+1081741:1613:Sunyani Senior High School
+1081741:1614:Serwaa kesse Girl's senior high school
+1081741:1615:Tamale Senior High School
+1081741:1616:St. James Seminary Senior High School
+1081741:1617:School
+1081741:1618:Oda Senior High School
+1081741:1619:Accra Senior High School
+1081741:1620:Accra Academy
+1081741:1621:Achimota School
+1081741:1622:Accra High School
+1081741:1623:Nifa Senior High School (NISEC) is a category B co-educational second-cycle institution in Adukrom, situated in the Okere District in the Eastern Region of Ghana
+1081741:1624:Opoku Ware School
+1081741:1625:Dormaa Senior High School
+1081741:1626:Tarkwa Senior High School
+1081741:1627:Nifa Senior High School
+1081741:1628:Nkawkaw Senior High School
+1081741:1629:Ahantaman Girls' Senior High School
+1081741:1630:Oda Senior High School (ODASCO) is a co-educational second-cycle institution in Akim Oda, situated in the Birim Central Municipal District in the Eastern Region of Ghana
+1081741:1631:Okuapeman School
+1081741:1632:Akosombo International School
+1081741:1633:St Rose's Senior High (Akwatia)
+1081741:1634:Koforidua Senior High Technical School
+1081741:1635:St. Peters, Missouri
+1081741:1636:Ofori Panin Senior High School
+1081741:1637:Krobo Girls Senior High School
+1081741:1639:Takoradi Senior High School
+1081741:1640:Ahantaman Girls Senior High School
+1081741:1641:Nsaba Presbyterian Senior High School
+1081741:1642:Suhum Secondary Technical School
+1081741:1643:Ghana Senior High School (Tamale)
+1081741:1644:Tamale Girls' Senior High School
+1081741:1645:Aburi Girls' Senior High School
+1081741:1646:Tepa Senior High School
+1081741:1647:Mfantsipim School
+1081741:1648:Ghana Senior High School, Koforidua
+1081741:1656:Samuel Godinman
+1081741:1657:Ofori panin senior high school
+1081741:1660:Fɔntɔmfrɔm
+1081741:1661:Awar
+1081741:1662:Ayan Kasa
+1081741:1663:Abɛntsia
+1081741:1664:Nkyekyεmu:West Africa
+1081741:1665:Nhwɛdo:Cite web
+1081741:1666:Module:Citation/CS1
+1081741:1667:Nhwɛdo:In lang
+1081741:1668:Module:In lang
+1081741:1669:Module:Lang/ISO 639 synonyms
+1081741:1670:Module:Lang
+1081741:1671:Nhwɛdo:OCLC
+1081741:1672:Nhwɛdo:Catalog lookup link
+1081741:1673:Module:Catalog lookup link
+1081741:1674:Module:Citation/CS1/styles.css
+1081741:1675:Module:Unicode data
+1081741:1676:Module:Lang/data
+1081741:1677:Nhwɛdo:Reflist
+1081741:1678:Nhwɛdo:Reflist/styles.css
+1081741:1679:Nhwɛdo:End
+1081741:1680:Nhwɛdo:Cite news
+1081741:1681:Nhwɛdo:Nom
+1081741:1682:Nhwɛdo:Won
+1081741:1683:Nhwɛdo:Pp
+1081741:1684:Nhwɛdo:Webarchive
+1081741:1685:Nhwɛdo:Cite book
+1081741:1686:Nhwɛdo:Pp-template
+1081741:1687:Nhwɛdo:Anchor
+1081741:1688:Nhwɛdo:Awards table
+1081741:1689:Nhwɛdo:Circa
+1081741:1690:Nhwɛdo:Citation
+1081741:1691:Nhwɛdo:Commons category
+1081741:1692:Nhwɛdo:Convert
+1081741:1693:Nhwɛdo:Coord
+1081741:1694:Nhwɛdo:Expand list
+1081741:1695:Nhwɛdo:External media
+1081741:1696:Nhwɛdo:Flagicon
+1081741:1697:Nhwɛdo:Infobox musician awards
+1081741:1698:Nhwɛdo:Interlanguage link
+1081741:1699:Nhwɛdo:Lang
+1081741:1700:Nhwɛdo:Lang-ar
+1081741:1701:Nhwɛdo:Lang-it
+1081741:1702:Nhwɛdo:Listen
+1081741:1703:Nhwɛdo:Nay
+1081741:1704:Nhwɛdo:Nominated
+1081741:1705:Nhwɛdo:Pending
+1081741:1706:Nhwɛdo:Portal
+1081741:1707:Nhwɛdo:Pp-protected
+1081741:1708:Nhwɛdo:Str rep
+1081741:1709:Nhwɛdo:Title disambig text
+1081741:1710:Nhwɛdo:Tlg/doc
+1081741:1711:Nhwɛdo:Userpage
+1081741:1712:Nhwɛdo:Y
+1081741:1713:Nhwɛdo:YouTube
+1200379:1714:Module:Citation/CS1/Configuration
+1200379:1715:Module:Lang/data/iana languages
+1200379:1716:Module:Citation/CS1/Whitelist
+1200379:1717:Module:Lang/data/iana scripts
+1200379:1718:C
+1200379:1719:Module:Protection banner
+1200379:1720:Module:Convert
+1200379:1721:Module:Coordinates
+1200379:1722:Module:Webarchive
+1200379:1723:Module:Portal
+1200379:1724:Module:Listen
+1200379:1725:Module:Anchor
+1200379:1726:Module:Lang/data/iana regions
+1200379:1727:Module:File link
+1200379:1728:Module:Citation/CS1/Utilities
+1200379:1729:Module:Webarchive/data
+1200379:1730:Module:Convert/data
+1200379:1731:Module:Citation/CS1/Date validation
+1200379:1732:Module:Convert/text
+1200379:1733:Module:Effective protection level
+1200379:1734:Module:Lang/data/iana variants
+1200379:1735:Module:Math
+1200379:1736:Module:Citation/CS1/Identifiers
+1200379:1737:Module:Lang/data/iana suppressed scripts
+1200379:1738:Module:Side box
+1200379:1739:Nkyekyεmu:Pages using ISBN magic links
+1200379:1740:Nkyekyεmu:Pages with script errors
+1200379:1741:Nkyekyεmu:Pages with reference errors
+1200379:1742:Nkyekyεmu:Pages with non-numeric formatnum arguments
+1200379:1743:Nkyekyεmu:Articles with hCards
+1200379:1744:Module:Citation/CS1/COinS
+1200379:1745:Module:Listen/styles.css
+1200379:1746:Module:Effective protection expiry
+1200379:1747:Module:Side box/styles.css
+1200379:1748:Nkyekyεmu:CS1 Arabic-language sources (ar)
+1200379:1749:Nkyekyεmu:Pages with TemplateStyles errors
+1200379:1750:Nhwɛdo:Awards table/styles.css
+1200379:1751:Module:Coordinates/styles.css
+1200379:1752:Nkyekyεmu:Articles containing Arabic-language text
+1200379:1753:Nkyekyεmu:Pages using gadget WikiMiniAtlas
+1200379:1754:Nkyekyεmu:Pages with maps
+1200379:1755:Nkyekyεmu:Articles containing Italian-language text
+1200379:1756:Nkyekyεmu:Articles with Ukrainian-language sources (uk)
+1200379:1757:Nkyekyεmu:Articles with German-language sources (de)
+1200379:1758:Nkyekyεmu:Articles with Danish-language sources (da)
+1200379:1759:Nhwɛdo:Hidden category
+1200379:1760:Nhwɛdo:Redirect category shell
+1200379:1761:Nhwɛdo:Trim
+1200379:1762:Nhwɛdo:Infobox
+1200379:1763:Nhwɛdo:R from merge
+1200379:1764:Nhwɛdo:Sister project
+1200379:1765:Nhwɛdo:Aye
+1200379:1766:Nhwɛdo:Cite book/TemplateData
+1200379:1767:Nhwɛdo:Collapse bottom
+1200379:1768:Nhwɛdo:Collapse top
+1200379:1769:Nhwɛdo:Flag icon
+1200379:1770:Nhwɛdo:Hidden
+1200379:1771:Nhwɛdo:Incomplete list
+1200379:1772:Nhwɛdo:Infobox awards list
+1200379:1773:Nhwɛdo:Rcat shell
+1200379:1774:Nhwɛdo:Replace
+1200379:1775:Nhwɛdo:Separated entries
+1200379:1776:Nhwɛdo:Template link general/doc
+1200379:1777:Nhwɛdo:User page
+1200379:1778:Module:Protection banner/config
+1200379:1779:Module:Infobox3cols
+1200379:1780:Module:Cs1 documentation support
+1200379:1781:Module:Unsubst
+1200379:1782:Nhwɛdo:Align/doc
+1200379:1783:Nhwɛdo:Align/sandbox
+1200379:1784:Nhwɛdo:Align/testcases
+1200379:1785:Nhwɛdo:Aligned table
+1200379:1786:Nhwɛdo:Ambox
+1200379:1787:Nhwɛdo:Anchor/doc
+1200379:1788:Nhwɛdo:Anchor/sandbox
+1200379:1789:Nhwɛdo:Anchor/testcases
+1200379:1790:Nhwɛdo:Awards table/doc
+1200379:1791:Nhwɛdo:Awards table/sandbox
+1200379:1792:Nhwɛdo:Aye/doc
+1200379:1793:Nhwɛdo:Aye/sandbox
+1200379:1794:Nhwɛdo:Birth date and age/doc
+1200379:1795:Nhwɛdo:Birth date and age/sandbox
+1200379:1796:Nhwɛdo:Birth date and age/testcases
+1200379:1797:Nhwɛdo:Both/doc
+1200379:1798:Nhwɛdo:Both/sandbox
+1200379:1799:Nhwɛdo:Both/testcases
+1200379:1800:Nhwɛdo:Br separated entries/doc
+1200379:1801:Nhwɛdo:Br separated entries/sandbox
+1200379:1802:Nhwɛdo:Br separated entries/testcases
+1200379:1803:Nhwɛdo:Catalog lookup link/doc
+1200379:1804:Nhwɛdo:Catalog lookup link/sandbox
+1200379:1805:Nhwɛdo:Catalog lookup link/testcases
+1200379:1806:Nhwɛdo:Center/doc
+1200379:1807:Nhwɛdo:Center/sandbox
+1200379:1808:Nhwɛdo:Center/testcases
+1200379:1809:Nhwɛdo:Circa/doc
+1200379:1810:Nhwɛdo:Circa/sandbox
+1200379:1811:Nhwɛdo:Circa/testcases
+1200379:1812:Nhwɛdo:Citation/doc
+1200379:1813:Nhwɛdo:Citation/sandbox
+1525269:1814:Nhwɛdo:Citation/styles.css
+1525269:1815:Nhwɛdo:Citation/testcases
+1525269:1816:Nhwɛdo:Cite book/doc
+1525269:1817:Nhwɛdo:Cite book/sandbox
+1525269:1818:Nhwɛdo:Cite book/testcases
+1525269:1819:Nhwɛdo:Cite news/doc
+1525269:1820:Nhwɛdo:Cite news/sandbox
+1525269:1821:Nhwɛdo:Cite news/testcases
+1525269:1822:Nhwɛdo:Cite web/doc
+1525269:1823:Nhwɛdo:Cite web/sandbox
+1525269:1824:Nhwɛdo:Cite web/testcases
+1525269:1825:Nhwɛdo:Cmbox
+1525269:1826:Nhwɛdo:Collapse bottom/sandbox
+1525269:1827:Nhwɛdo:Collapse bottom/testcases
+1525269:1828:Nhwɛdo:Collapse top/doc
+1525269:1829:Nhwɛdo:Collapse top/sandbox
+1525269:1830:Nhwɛdo:Collapse top/testcases
+1525269:1831:Nhwɛdo:Commons category/doc
+1525269:1832:Nhwɛdo:Commons category/sandbox
+1525269:1833:Nhwɛdo:Commons category/testcases
+1525269:1834:Nhwɛdo:Constlk/doc
+1525269:1835:Nhwɛdo:Convert/doc
+1525269:1836:Nhwɛdo:Convert/sandbox
+1525269:1837:Nhwɛdo:Convert/testcases
+1525269:1838:Nhwɛdo:Coord/doc
+1525269:1839:Nhwɛdo:Coord/sandbox
+1525269:1840:Nhwɛdo:Coord/testcases
+1525269:1841:Nhwɛdo:Count/doc
+1525269:1842:Nhwɛdo:Count/testcases
+1525269:1843:Nhwɛdo:Country data GHA
+1525269:1844:Nhwɛdo:Country name/sandbox
+1525269:1845:Nhwɛdo:Country name/testcases
+1525269:1846:Nhwɛdo:Country2nationality/doc
+1525269:1847:Nhwɛdo:DPP/logo/doc
+1525269:1848:Nhwɛdo:DPP/logo/sandbox
+1525269:1849:Nhwɛdo:Delink/doc
+1525269:1850:Nhwɛdo:Delink/sandbox
+1525269:1851:Nhwɛdo:Delink/testcases
+1525269:1852:Nhwɛdo:Detect singular/doc
+1525269:1853:Nhwɛdo:Detect singular/sandbox
+1525269:1854:Nhwɛdo:Detect singular/testcases
+1525269:1855:Nhwɛdo:Documentation subpage
+1525269:1856:Nhwɛdo:Documentation/doc
+1525269:1857:Nhwɛdo:Documentation/sandbox
+1525269:1858:Nhwɛdo:Documentation/testcases
+1525269:1859:Nhwɛdo:Efn
+1525269:1860:Nhwɛdo:En dash range/doc
+1525269:1861:Nhwɛdo:En dash range/sandbox
+1525269:1862:Nhwɛdo:En dash range/testcases
+1525269:1863:Nhwɛdo:End/doc
+1525269:1864:Nhwɛdo:Example
+1525269:1865:Nhwɛdo:External media/doc
+1525269:1866:Nhwɛdo:External media/sandbox
+1525269:1867:Nhwɛdo:External media/testcases
+1525269:1868:Nhwɛdo:Find country/doc
+1525269:1869:Nhwɛdo:Flag icon/doc
+1525269:1870:Nhwɛdo:Flag icon/sandbox
+1525269:1871:Nhwɛdo:Flag icon/testcases
+1525269:1872:Nhwɛdo:Hidden begin
+1525269:1873:Nhwɛdo:Hidden category/doc
+1525269:1874:Nhwɛdo:Hidden category/sandbox
+1525269:1875:Nhwɛdo:Hidden category/testcases
+1525269:1876:Nhwɛdo:Hidden end
+1525269:1877:Nhwɛdo:Hidden/doc
+1525269:1878:Nhwɛdo:Hidden/sandbox
+1525269:1879:Nhwɛdo:Hidden/testcases
+1525269:1880:Nhwɛdo:Hide
+1525269:1881:Nhwɛdo:Hlist/doc
+1525269:1882:Nhwɛdo:Hlist/sandbox
+1525269:1883:Nhwɛdo:Hlist/testcases
+1525269:1884:Nhwɛdo:ISO 3166 code-3/sandbox
+1525269:1885:Nhwɛdo:ISO 3166 code-3/testcases
+1525269:1886:Nhwɛdo:ISO 3166 code/sandbox
+1525269:1887:Nhwɛdo:ISO 3166 conversion template doc/doc
+1525269:1888:Nhwɛdo:ISO 3166 name/sandbox
+1525269:1889:Nhwɛdo:ISO 3166 numeric/doc
+1525269:1890:Nhwɛdo:If empty
+1525269:1891:Nhwɛdo:In lang/doc
+1525269:1892:Nhwɛdo:Incomplete list/doc
+1525269:1893:Nhwɛdo:Incomplete list/sandbox
+1525269:1894:Nhwɛdo:Incomplete list/testcases
+1525269:1895:Nhwɛdo:Infobox awards list/doc
+1525269:1896:Nhwɛdo:Infobox awards list/sandbox
+1525269:1897:Nhwɛdo:Infobox awards list/testcases
+1525269:1898:Nhwɛdo:Infobox officeholder/doc
+1525269:1899:Nhwɛdo:Infobox officeholder/office/doc
+1525269:1900:Nhwɛdo:Infobox officeholder/office/sandbox
+1525269:1901:Nhwɛdo:Infobox officeholder/sandbox
+1525269:1902:Nhwɛdo:Infobox officeholder/testcases
+1525269:1903:Nhwɛdo:Infobox/doc
+1525269:1904:Nhwɛdo:Infobox/sandbox
+1525269:1905:Nhwɛdo:Infobox/testcases
+1525269:1906:Nhwɛdo:Interlanguage link/doc
+1525269:1907:Nhwɛdo:Interlanguage link/sandbox
+1525269:1908:Nhwɛdo:Interlanguage link/testcases
+1525269:1909:Nhwɛdo:IsValidPageName/doc
+1525269:1910:Nhwɛdo:IsValidPageName/sandbox
+1525269:1911:Nhwɛdo:IsValidPageName/testcases
+1525269:1912:Nhwɛdo:Iso2nationality/doc
+1525269:1913:Nhwɛdo:KMT/doc
+1673415:1914:Nhwɛdo:KMT/logo/doc
+1673415:1915:Nhwɛdo:Lang-ar/doc
+1673415:1916:Nhwɛdo:Lang-ar/sandbox
+1673415:1917:Nhwɛdo:Lang-ar/testcases
+1673415:1918:Nhwɛdo:Lang-it/sandbox
+1673415:1919:Nhwɛdo:Lang-x/doc
+1673415:1920:Nhwɛdo:Lang/doc
+1673415:1921:Nhwɛdo:Lang/sandbox
+1673415:1922:Nhwɛdo:Lang/testcases
+1673415:1923:Nhwɛdo:Listen/doc
+1673415:1924:Nhwɛdo:Listen/sandbox
+1673415:1925:Nhwɛdo:Listen/testcases
+1673415:1926:Nhwɛdo:Lorem ipsum
+1673415:1927:Nhwɛdo:Lua/doc
+1673415:1928:Nhwɛdo:Lua/sandbox
+1673415:1929:Nhwɛdo:Lua/testcases
+1673415:1930:Nhwɛdo:Main other/doc
+1673415:1931:Nhwɛdo:Main other/sandbox
+1673415:1932:Nhwɛdo:Main other/testcases
+1673415:1933:Nhwɛdo:Mbox
+1673415:1934:Nhwɛdo:Min
+1673415:1935:Nhwɛdo:Mono
+1673415:1936:Nhwɛdo:Multiple image
+1673415:1937:Nhwɛdo:Namespace detect showall
+1673415:1938:Nhwɛdo:Nay/doc
+1673415:1939:Nhwɛdo:Nay/sandbox
+1673415:1940:Nhwɛdo:Nobold/doc
+1673415:1941:Nhwɛdo:Nobold/sandbox
+1673415:1942:Nhwɛdo:Nobold/testcases
+1673415:1943:Nhwɛdo:Nominated/sandbox
+1673415:1944:Nhwɛdo:Nowrap/doc
+1673415:1945:Nhwɛdo:Nowrap/sandbox
+1673415:1946:Nhwɛdo:Nowrap/testcases
+1673415:1947:Nhwɛdo:OCLC/doc
+1673415:1948:Nhwɛdo:OCLC/sandbox
+1673415:1949:Nhwɛdo:Ombox
+1673415:1950:Nhwɛdo:PAGENAMEBASE/doc
+1673415:1951:Nhwɛdo:PAGENAMEBASE/sandbox
+1673415:1952:Nhwɛdo:PAGENAMEBASE/testcases
+1673415:1953:Nhwɛdo:PP
+1673415:1954:Nhwɛdo:Pending/sandbox
+1673415:1955:Nhwɛdo:Pending/testcases
+1673415:1956:Nhwɛdo:Percentage bar (larger)/doc
+1673415:1957:Nhwɛdo:Pluralize from text/doc
+1673415:1958:Nhwɛdo:Pluralize from text/sandbox
+1673415:1959:Nhwɛdo:Pluralize from text/testcases
+1673415:1960:Nhwɛdo:Portal/doc
+1673415:1961:Nhwɛdo:Portal/sandbox
+1673415:1962:Nhwɛdo:Portal/testcases
+1673415:1963:Nhwɛdo:Pp-template/doc
+1673415:1964:Nhwɛdo:Pp-template/sandbox
+1673415:1965:Nhwɛdo:Pp-template/testcases
+1673415:1966:Nhwɛdo:Pp/doc
+1673415:1967:Nhwɛdo:Pp/sandbox
+1673415:1968:Nhwɛdo:Pp/testcases
+1673415:1969:Nhwɛdo:R from merge/doc
+1673415:1970:Nhwɛdo:R from merge/sandbox
+1673415:1971:Nhwɛdo:R from merge/testcases
+1673415:1972:Nhwɛdo:Redirect category shell/doc
+1673415:1973:Nhwɛdo:Redirect category shell/sandbox
+1673415:1974:Nhwɛdo:Redirect category shell/testcases
+1673415:1975:Nhwɛdo:Redirect template
+1673415:1976:Nhwɛdo:Reflist/doc
+1673415:1977:Nhwɛdo:Reflist/sandbox
+1673415:1978:Nhwɛdo:Reflist/testcases
+1673415:1979:Nhwɛdo:Replace/doc
+1673415:1980:Nhwɛdo:Replace/sandbox
+1673415:1981:Nhwɛdo:Replace/testcases
+1673415:1982:Nhwɛdo:Sandbox other/doc
+1673415:1983:Nhwɛdo:Sandbox other/sandbox
+1673415:1984:Nhwɛdo:Semantic markup templates
+1673415:1985:Nhwɛdo:Side box
+1673415:1986:Nhwɛdo:Sister project/doc
+1673415:1987:Nhwɛdo:Sister project/sandbox
+1673415:1988:Nhwɛdo:Sister project/testcases
+1673415:1989:Nhwɛdo:Small/doc
+1673415:1990:Nhwɛdo:Small/sandbox
+1673415:1991:Nhwɛdo:Small/testcases
+1673415:1992:Nhwɛdo:Str len/doc
+1673415:1993:Nhwɛdo:Str len/sandbox
+1673415:1994:Nhwɛdo:Str len/testcases
+1673415:1995:Nhwɛdo:Str rep/doc
+1673415:1996:Nhwɛdo:Str rep/sandbox
+1673415:1997:Nhwɛdo:Strfind short/doc
+1673415:1998:Nhwɛdo:Strfind short/sandbox
+1673415:1999:Nhwɛdo:Strfind short/testcases
+1673415:2000:Nhwɛdo:T
+1673415:2001:Nhwɛdo:TDMCA
+1673415:2002:Nhwɛdo:Table cell templates/doc
+1673415:2003:Nhwɛdo:Tag
+1673415:2004:Nhwɛdo:Template link expanded
+1673415:2005:Nhwɛdo:Template link general
+1673415:2006:Nhwɛdo:Template other
+1673415:2007:Nhwɛdo:Template-linking templates
+1673415:2008:Nhwɛdo:TemplateData header
+1673415:2009:Nhwɛdo:This is a redirect/rcat
+1673415:2010:Nhwɛdo:Title disambig text/doc
+1673415:2011:Nhwɛdo:Title disambig text/sandbox
+1673415:2012:Nhwɛdo:Title disambig text/testcases
+1673415:2013:Nhwɛdo:Tj
+1741223:2014:Nhwɛdo:Tji
+1741223:2015:Nhwɛdo:Tl/doc
+1741223:2016:Nhwɛdo:Tl/sandbox
+1741223:2017:Nhwɛdo:Tl/testcases
+1741223:2018:Nhwɛdo:Tla
+1741223:2019:Nhwɛdo:Tlb
+1741223:2020:Nhwɛdo:Tlc
+1741223:2021:Nhwɛdo:Tlf
+1741223:2022:Nhwɛdo:Tlg
+1741223:2023:Nhwɛdo:Tlp
+1741223:2024:Nhwɛdo:Tls
+1741223:2025:Nhwɛdo:Tltss
+1741223:2026:Nhwɛdo:Tlw
+1741223:2027:Nhwɛdo:Tlx/sandbox
+1741223:2028:Nhwɛdo:Tlx/testcases
+1741223:2029:Nhwɛdo:Tlxb
+1741223:2030:Nhwɛdo:Tlxi
+1741223:2031:Nhwɛdo:Tlxs
+1741223:2032:Nhwɛdo:Tn
+1741223:2033:Nhwɛdo:Tnull
+1741223:2034:Nhwɛdo:Trim/doc
+1741223:2035:Nhwɛdo:Trim/sandbox
+1741223:2036:Nhwɛdo:Trim/testcases
+1741223:2037:Nhwɛdo:Tsh
+1741223:2038:Nhwɛdo:Unbulleted list/doc
+1741223:2039:Nhwɛdo:Unbulleted list/sandbox
+1741223:2040:Nhwɛdo:Unbulleted list/testcases
+1741223:2041:Nhwɛdo:User other
+1741223:2042:Nhwɛdo:User page/doc
+1741223:2043:Nhwɛdo:User page/sandbox
+1741223:2044:Nhwɛdo:User page/testcases
+1741223:2045:Nhwɛdo:Webarchive/doc
+1741223:2046:Nhwɛdo:Webarchive/sandbox
+1741223:2047:Nhwɛdo:Webarchive/testcases
+1741223:2048:Nhwɛdo:Won/sandbox
+1741223:2049:Nhwɛdo:YouTube/doc
+1741223:2050:Nhwɛdo:YouTube/sandbox
+1741223:2051:Nhwɛdo:YouTube/testcases
+1741223:2052:Nhwɛdo:Convert/testcases/sandbox1
+1741223:2053:Nhwɛdo:Convert/testcases/sandbox2
+1741223:2054:Nhwɛdo:Convert/testcases/sandbox3
+1741223:2055:Nhwɛdo:Convert/testcases/sandbox4
+1741223:2056:Nhwɛdo:Language with name
+1741223:2057:Nhwɛdo:!
+1741223:2058:Nhwɛdo:!)
+1741223:2059:Nhwɛdo:!mxt
+1741223:2060:Nhwɛdo:!xt
+1741223:2061:Nhwɛdo:(!
+1741223:2062:Nhwɛdo:((
+1741223:2063:Nhwɛdo:))
+1741223:2064:Nhwɛdo:=
+1741223:2065:Nhwɛdo:AWB standard installation
+1741223:2066:Nhwɛdo:Abbr
+1741223:2067:Nhwɛdo:Active
+1741223:2068:Nhwɛdo:Active fire
+1741223:2069:Nhwɛdo:Aka
+1741223:2070:Nhwɛdo:Aligned table/doc
+1741223:2071:Nhwɛdo:Aligned table/sandbox
+1741223:2072:Nhwɛdo:Aligned table/testcases
+1741223:2073:Nhwɛdo:Also
+1741223:2074:Nhwɛdo:Ambox/doc
+1741223:2075:Nhwɛdo:Ambox/sandbox
+1741223:2076:Nhwɛdo:Ambox/testcases
+1741223:2077:Nhwɛdo:Anchor comment
+1741223:2078:Nhwɛdo:Anchored list
+1741223:2079:Nhwɛdo:Any
+1741223:2080:Nhwɛdo:Article only
+1741223:2081:Nhwɛdo:Article other
+1741223:2082:Nhwɛdo:As of
+1741223:2083:Nhwɛdo:Audio templates
+1741223:2084:Nhwɛdo:Auto short description
+1741223:2085:Nhwɛdo:BLACK
+1741223:2086:Nhwɛdo:BSD-lic
+1741223:2087:Nhwɛdo:Barnstar documentation
+1741223:2088:Nhwɛdo:Basepage subpage
+1741223:2089:Nhwɛdo:Beta
+1741223:2090:Nhwɛdo:Bg
+1741223:2091:Nhwɛdo:Birth date
+1741223:2092:Nhwɛdo:Birth year
+1741223:2093:Nhwɛdo:Birth year and age
+1741223:2094:Nhwɛdo:Birth, death and age templates
+1741223:2095:Nhwɛdo:Birth-date
+1741223:2096:Nhwɛdo:Birth-date and age
+1741223:2097:Nhwɛdo:Black Exempt
+1741223:2098:Nhwɛdo:Born in
+1741223:2099:Nhwɛdo:Bot use warning
+1741223:2100:Nhwɛdo:Bulleted list
+1741223:2101:Nhwɛdo:C
+1741223:2102:Nhwɛdo:C cat
+1741223:2103:Nhwɛdo:CAlso starring
+1741223:2104:Nhwɛdo:CFinalist
+1741223:2105:Nhwɛdo:CGuest
+1741223:2106:Nhwɛdo:CMain
+1741223:2107:Nhwɛdo:CNone
+1741223:2108:Nhwɛdo:COinS safe
+1741223:2109:Nhwɛdo:COther
+1741223:2110:Nhwɛdo:CRecurring
+1741223:2111:Nhwɛdo:CRemoved
+1741223:2112:Nhwɛdo:CSS list-style-type values
+1741223:2113:Nhwɛdo:CSS3 multiple column layout
+1823203:2114:Nhwɛdo:Cat
+1823203:2115:Nhwɛdo:Category Commons
+1823203:2116:Nhwɛdo:Category commons
+1823203:2117:Nhwɛdo:Category link
+1823203:2118:Nhwɛdo:Category link with count
+1823203:2119:Nhwɛdo:Caution
+1823203:2120:Nhwɛdo:Cbot
+1823203:2121:Nhwɛdo:Cc
+1823203:2122:Nhwɛdo:Ccat
+1823203:2123:Nhwɛdo:Cell color
+1823203:2124:Nhwɛdo:CellCategory
+1823203:2125:Nhwɛdo:Center block
+1823203:2126:Nhwɛdo:Change
+1823203:2127:Nhwɛdo:Check mark templates
+1823203:2128:Nhwɛdo:Circa/doc/sortable
+1823203:2129:Nhwɛdo:Citation Style 1
+1823203:2130:Nhwɛdo:Citation/Sandbox
+1823203:2131:Nhwɛdo:Citation/testcases/archive
+1823203:2132:Nhwɛdo:Cite AV media
+1823203:2133:Nhwɛdo:Cite book/new
+1823203:2134:Nhwɛdo:Cite conference
+1823203:2135:Nhwɛdo:Cite encyclopedia
+1823203:2136:Nhwɛdo:Cite episode
+1823203:2137:Nhwɛdo:Cite journal
+1823203:2138:Nhwɛdo:Cite magazine
+1823203:2139:Nhwɛdo:Cite serial
+1823203:2140:Nhwɛdo:Cite thesis
+1823203:2141:Nhwɛdo:Cite.php
+1823203:2142:Nhwɛdo:Cl
+1823203:2143:Nhwɛdo:Clc
+1823203:2144:Nhwɛdo:Cleanup lang
+1823203:2145:Nhwɛdo:Clear
+1823203:2146:Nhwɛdo:Clr
+1823203:2147:Nhwɛdo:Cmbox/doc
+1823203:2148:Nhwɛdo:Cmbox/sandbox
+1823203:2149:Nhwɛdo:Cmbox/testcases
+1823203:2150:Nhwɛdo:Coat of arms
+1823203:2151:Nhwɛdo:Cob
+1823203:2152:Nhwɛdo:Code
+1823203:2153:Nhwɛdo:Col-float
+1823203:2154:Nhwɛdo:Col-float-break
+1823203:2155:Nhwɛdo:Col-float-end
+1823203:2156:Nhwɛdo:Collapse
+1823203:2157:Nhwɛdo:Collapse Templates
+1823203:2158:Nhwɛdo:Collapsible list
+1823203:2159:Nhwɛdo:Collapsible test case
+1823203:2160:Nhwɛdo:Colon
+1823203:2161:Nhwɛdo:Column-generating template families
+1823203:2162:Nhwɛdo:Coming soon
+1823203:2163:Nhwɛdo:Comma separated entries
+1823203:2164:Nhwɛdo:Commons
+1823203:2165:Nhwɛdo:Commons cat
+1823203:2166:Nhwɛdo:Commons templates location
+1823203:2167:Nhwɛdo:Commons templates see also
+1823203:2168:Nhwɛdo:Commonscat
+1823203:2169:Nhwɛdo:Commonscategory
+1823203:2170:Nhwɛdo:Commonsimages cat
+1823203:2171:Nhwɛdo:Convert/doc/deprecations list
+1823203:2172:Nhwɛdo:Convert/doc/parameter list
+1823203:2173:Nhwɛdo:Convert/doc/range separator list
+1823203:2174:Nhwɛdo:Convert/documentation navbox
+1823203:2175:Nhwɛdo:Convert/list of units
+1823203:2176:Nhwɛdo:Coor at dms
+1823203:2177:Nhwɛdo:Coor title dms
+1823203:2178:Nhwɛdo:Coord how-to
+1823203:2179:Nhwɛdo:Coord missing
+1823203:2180:Nhwɛdo:Coord unknown
+1823203:2181:Nhwɛdo:CoordDM
+1823203:2182:Nhwɛdo:CoordDMS
+1823203:2183:Nhwɛdo:CoordDec
+1823203:2184:Nhwɛdo:Cot
+1823203:2185:Nhwɛdo:Count/testcase1
+1823203:2186:Nhwɛdo:Counter
+1823203:2187:Nhwɛdo:Country data Austria-Hungary
+1823203:2188:Nhwɛdo:Country data Ghana
+1823203:2189:Nhwɛdo:Country data PER
+1823203:2190:Nhwɛdo:Country data Peru
+1823203:2191:Nhwɛdo:Country2continent
+1823203:2192:Nhwɛdo:Crh
+1823203:2193:Nhwɛdo:Cross
+1823203:2194:Nhwɛdo:Crossreference
+1823203:2195:Nhwɛdo:Csdoc
+1823203:2196:Nhwɛdo:Ctop
+1823203:2197:Nhwɛdo:Custom award
+1823203:2198:Nhwɛdo:Cvt
+1823203:2199:Nhwɛdo:D-A
+1823203:2200:Nhwɛdo:D-I
+1823203:2201:Nhwɛdo:D-N
+1823203:2202:Nhwɛdo:D-Nv
+1823203:2203:Nhwɛdo:D-O
+1823203:2204:Nhwɛdo:D-Out
+1823203:2205:Nhwɛdo:D-P
+1823203:2206:Nhwɛdo:D-W
+1823203:2207:Nhwɛdo:DAT
+1823203:2208:Nhwɛdo:DEFAULTSORT
+1823203:2209:Nhwɛdo:Dated maintenance category by type (articles)
+1823203:2210:Nhwɛdo:Dead link
+1823203:2211:Nhwɛdo:Documentation/testcases/test2
+1823203:2212:Nhwɛdo:Done
+1823203:2213:Nhwɛdo:Done/See also
+1869706:2214:Nhwɛdo:Draw
+1869706:2215:Nhwɛdo:Dropped
+1869706:2216:Nhwɛdo:Dtl
+1869706:2217:Nhwɛdo:Dummy reference
+1869706:2218:Nhwɛdo:Dunno
+1869706:2219:Nhwɛdo:Edit protected
+1869706:2220:Nhwɛdo:Edit protected/doc
+1869706:2221:Nhwɛdo:Edit protected/sandbox
+1869706:2222:Nhwɛdo:Efn/doc
+1869706:2223:Nhwɛdo:Efn/sandbox
+1869706:2224:Nhwɛdo:Efn/testcases
+1869706:2225:Nhwɛdo:Elc
+1869706:2226:Nhwɛdo:Election table
+1869706:2227:Nhwɛdo:Eliminated
+1869706:2228:Nhwɛdo:Em
+1869706:2229:Nhwɛdo:Em dash
+1869706:2230:Nhwɛdo:Error
+1869706:2231:Nhwɛdo:Example/doc
+1869706:2232:Nhwɛdo:Example/sandbox
+1869706:2233:Nhwɛdo:Exempt
+1869706:2234:Nhwɛdo:Expand wikitext
+1869706:2235:Nhwɛdo:Expensive
+1869706:2236:Nhwɛdo:FULLPAGENAME
+1869706:2237:Nhwɛdo:Failure
+1869706:2238:Nhwɛdo:File mover granted
+1869706:2239:Nhwɛdo:File mover granted/doc
+1869706:2240:Nhwɛdo:Film- and television-related infobox templates
+1869706:2241:Nhwɛdo:Flag
+1869706:2242:Nhwɛdo:Flag country
+1869706:2243:Nhwɛdo:Flag decoration
+1869706:2244:Nhwɛdo:Flag icon/core
+1869706:2245:Nhwɛdo:Flagicon image
+1869706:2246:Nhwɛdo:Flatlist
+1869706:2247:Nhwɛdo:Floruit
+1869706:2248:Nhwɛdo:Fnote
+1869706:2249:Nhwɛdo:Font size templates
+1869706:2250:Nhwɛdo:Foo other see also
+1869706:2251:Nhwɛdo:Football demonyms
+1869706:2252:Nhwɛdo:For
+1869706:2253:Nhwɛdo:For-text
+1869706:2254:Nhwɛdo:Force plural
+1869706:2255:Nhwɛdo:Force singular
+1869706:2256:Nhwɛdo:Format TemplateData
+1869706:2257:Nhwɛdo:Frac
+1869706:2258:Nhwɛdo:Free
+1869706:2259:Nhwɛdo:Further
+1869706:2260:Nhwɛdo:Further ill
+1869706:2261:Nhwɛdo:Further information
+1869706:2262:Nhwɛdo:GPL-lic
+1869706:2263:Nhwɛdo:Generic template demo
+1869706:2264:Nhwɛdo:GeoGroup
+1869706:2265:Nhwɛdo:GetCountryNameFromAdjective
+1869706:2266:Nhwɛdo:Good
+1869706:2267:Nhwɛdo:Green
+1869706:2268:Nhwɛdo:Hands
+1869706:2269:Nhwɛdo:Harv
+1869706:2270:Nhwɛdo:Harvard citation
+1869706:2271:Nhwɛdo:Harvid
+1869706:2272:Nhwɛdo:Harvnb
+1869706:2273:Nhwɛdo:Hash
+1869706:2274:Nhwɛdo:Hatnote
+1869706:2275:Nhwɛdo:Help
+1869706:2276:Nhwɛdo:Hidden archive bottom
+1869706:2277:Nhwɛdo:Hidden archive top
+1869706:2278:Nhwɛdo:Hidden begin/doc
+1869706:2279:Nhwɛdo:Hidden begin/sandbox
+1869706:2280:Nhwɛdo:Hidden begin/testcases
+1869706:2281:Nhwɛdo:Hidden end/sandbox
+1869706:2282:Nhwɛdo:High use
+1869706:2283:Nhwɛdo:High-risk
+1869706:2284:Nhwɛdo:High-use
+1869706:2285:Nhwɛdo:Hilite
+1869706:2286:Nhwɛdo:IETF RFC
+1869706:2287:Nhwɛdo:IPA
+1869706:2288:Nhwɛdo:ISO 639 name
+1869706:2289:Nhwɛdo:ISSN
+1869706:2290:Nhwɛdo:ISSN link
+1869706:2291:Nhwɛdo:If
+1869706:2292:Nhwɛdo:If both
+1869706:2293:Nhwɛdo:If empty/doc
+1869706:2294:Nhwɛdo:If empty/sandbox
+1869706:2295:Nhwɛdo:If empty/testcases
+1869706:2296:Nhwɛdo:Ifnotempty
+1869706:2297:Nhwɛdo:Ifsubst
+1869706:2298:Nhwɛdo:Ill
+1869706:2299:Nhwɛdo:Image frame
+1869706:2300:Nhwɛdo:In5
+1869706:2301:Nhwɛdo:Included
+1869706:2302:Nhwɛdo:Incomplete list/metadoc
+1869706:2303:Nhwɛdo:Incorrect
+1869706:2304:Nhwɛdo:Incubator
+1869706:2305:Nhwɛdo:Inflation
+1869706:2306:Nhwɛdo:Info
+1869706:2307:Nhwɛdo:Infobox Protected area
+1869706:2308:Nhwɛdo:Infobox Telescope
+1869706:2309:Nhwɛdo:Infobox book
+1869706:2310:Nhwɛdo:Infobox building
+1869706:2311:Nhwɛdo:Infobox film
+1869706:2312:Nhwɛdo:Infobox journal
+1869706:2313:Nhwɛdo:Infobox magazine
+1909682:2314:Nhwɛdo:Infobox newspaper
+1909682:2315:Nhwɛdo:Infobox officeholder/example
+1909682:2316:Nhwɛdo:Infobox person
+1909682:2317:Nhwɛdo:Infobox protected area
+1909682:2318:Nhwɛdo:Infobox settlement
+1909682:2319:Nhwɛdo:Infobox/sandbox2
+1909682:2320:Nhwɛdo:Infobox3cols
+1909682:2321:Nhwɛdo:Inline test case
+1909682:2322:Nhwɛdo:Interlanguage link Wikidata
+1909682:2323:Nhwɛdo:Interlanguage link forced
+1909682:2324:Nhwɛdo:Interlanguage link info
+1909682:2325:Nhwɛdo:Interlanguage link multi
+1909682:2326:Nhwɛdo:Iso2continent
+1909682:2327:Nhwɛdo:Iso2country
+1909682:2328:Nhwɛdo:Italic title
+1909682:2329:Nhwɛdo:Justify
+1909682:2330:Nhwɛdo:Kuomintang Party/doc
+1909682:2331:Nhwɛdo:Kuomintang Party/logo/doc
+1909682:2332:Nhwɛdo:LGPL-lic
+1909682:2333:Nhwɛdo:Lang-ar/sandbox2
+1909682:2334:Nhwɛdo:Lang-ast
+1909682:2335:Nhwɛdo:Lang-de
+1909682:2336:Nhwɛdo:Lang-fr
+1909682:2337:Nhwɛdo:Lang-ru
+1909682:2338:Nhwɛdo:Lang-x
+1909682:2339:Nhwɛdo:Lang-x/doc/parameters
+1909682:2340:Nhwɛdo:Langr
+1909682:2341:Nhwɛdo:Language templates
+1909682:2342:Nhwɛdo:Language with name/for
+1909682:2343:Nhwɛdo:Large
+1909682:2344:Nhwɛdo:Larger
+1909682:2345:Nhwɛdo:Ldr
+1909682:2346:Nhwɛdo:Left
+1909682:2347:Nhwɛdo:Legend
+1909682:2348:Nhwɛdo:Link without disambiguator
+1909682:2349:Nhwɛdo:Link-interwiki
+1909682:2350:Nhwɛdo:LinkTemplate
+1909682:2351:Nhwɛdo:Linked
+1909682:2352:Nhwɛdo:List of nowrap-like templates
+1909682:2353:Nhwɛdo:Lmd
+1909682:2354:Nhwɛdo:Long ton
+1909682:2355:Nhwɛdo:Longlisted
+1909682:2356:Nhwɛdo:Lorem
+1909682:2357:Nhwɛdo:Lorem ipsum/doc
+1909682:2358:Nhwɛdo:Lorem ipsum/sandbox
+1909682:2359:Nhwɛdo:Lorem ipsum/testcases
+1909682:2360:Nhwɛdo:Lost
+1909682:2361:Nhwɛdo:Lt
+1909682:2362:Nhwɛdo:Lts
+1909682:2363:Nhwɛdo:MR
+1909682:2364:Nhwɛdo:Magic word
+1909682:2365:Nhwɛdo:Main
+1909682:2366:Nhwɛdo:Main talk other
+1909682:2367:Nhwɛdo:Maplink
+1909682:2368:Nhwɛdo:Markup
+1909682:2369:Nhwɛdo:Markup2
+1909682:2370:Nhwɛdo:Married in
+1909682:2371:Nhwɛdo:Maybe
+1909682:2372:Nhwɛdo:MaybeCheck
+1909682:2373:Nhwɛdo:Mbox/doc
+1909682:2374:Nhwɛdo:Mbox/sandbox
+1909682:2375:Nhwɛdo:Mbox/testcases
+1909682:2376:Nhwɛdo:MediaWiki
+1909682:2377:Nhwɛdo:Meta
+1909682:2378:Nhwɛdo:Mfl
+1909682:2379:Nhwɛdo:Min/doc
+1909682:2380:Nhwɛdo:Min/sandbox
+1909682:2381:Nhwɛdo:Ml
+1909682:2382:Nhwɛdo:Ml-lua
+1909682:2383:Nhwɛdo:Mlx
+1909682:2384:Nhwɛdo:Module link
+1909682:2385:Nhwɛdo:Module rating
+1909682:2386:Nhwɛdo:Mono/doc
+1909682:2387:Nhwɛdo:Mono/sandbox
+1909682:2388:Nhwɛdo:Multiple image/doc
+1909682:2389:Nhwɛdo:Multiple image/sandbox
+1909682:2390:Nhwɛdo:Multiple image/testcases
+1909682:2391:Nhwɛdo:Mw lang
+1909682:2392:Nhwɛdo:Mxt
+1909682:2393:Nhwɛdo:Myprefs
+1909682:2394:Nhwɛdo:N/a
+1909682:2395:Nhwɛdo:Na
+1909682:2396:Nhwɛdo:Namespace and pagename-detecting templates
+1909682:2397:Nhwɛdo:Namespace dependent testcases notice
+1909682:2398:Nhwɛdo:Namespace detect
+1909682:2399:Nhwɛdo:Namespace detect showall/doc
+1909682:2400:Nhwɛdo:Namespace detect showall/sandbox
+1909682:2401:Nhwɛdo:Namespace detect showall/testcases
+1909682:2402:Nhwɛdo:Nan
+1909682:2403:Nhwɛdo:Navbox
+1909682:2404:Nhwɛdo:Navbox lists
+1909682:2405:Nhwɛdo:Navbox visibility
+1909682:2406:Nhwɛdo:Nbsp
+1909682:2407:Nhwɛdo:Needs
+1909682:2408:Nhwɛdo:Never substitute
+1909682:2409:Nhwɛdo:Nightly
+1909682:2410:Nhwɛdo:No
+1909682:2411:Nhwɛdo:No O
+1909682:2412:Nhwɛdo:No X
+1909682:2413:Nhwɛdo:No Y
+1972447:2414:Nhwɛdo:No attempt
+1972447:2415:Nhwɛdo:No mark
+1972447:2416:Nhwɛdo:No ping
+1972447:2417:Nhwɛdo:No result
+1972447:2418:Nhwɛdo:No selflink
+1972447:2419:Nhwɛdo:No subst
+1972447:2420:Nhwɛdo:No2
+1972447:2421:Nhwɛdo:Nocaps
+1972447:2422:Nhwɛdo:Nocommons
+1972447:2423:Nhwɛdo:Nocontest
+1972447:2424:Nhwɛdo:Noitalic
+1972447:2425:Nhwɛdo:Non-album single
+1972447:2426:Nhwɛdo:Nonfree
+1972447:2427:Nhwɛdo:Nonpartisan
+1972447:2428:Nhwɛdo:Not done
+1972447:2429:Nhwɛdo:Not yet
+1972447:2430:Nhwɛdo:NoteFoot
+1972447:2431:Nhwɛdo:NoteTag
+1972447:2432:Nhwɛdo:Notelist
+1972447:2433:Nhwɛdo:Noteslist
+1972447:2434:Nhwɛdo:Notice
+1972447:2435:Nhwɛdo:Notnom
+1972447:2436:Nhwɛdo:Nowrap begin
+1972447:2437:Nhwɛdo:Nowrap end
+1972447:2438:Nhwɛdo:OCLC search link
+1972447:2439:Nhwɛdo:Okay
+1972447:2440:Nhwɛdo:Oldid
+1972447:2441:Nhwɛdo:Ombox/doc
+1972447:2442:Nhwɛdo:Ombox/sandbox
+1972447:2443:Nhwɛdo:Ombox/testcases
+1972447:2444:Nhwɛdo:Open source
+1972447:2445:Nhwɛdo:Operational
+1972447:2446:Nhwɛdo:Optional
+1972447:2447:Nhwɛdo:Ordered list
+1972447:2448:Nhwɛdo:Other category-header templates
+1972447:2449:Nhwɛdo:PAGENAME
+1972447:2450:Nhwɛdo:PAGENAMETDOC
+1972447:2451:Nhwɛdo:Pagelist
+1972447:2452:Nhwɛdo:Pam see also documentation
+1972447:2453:Nhwɛdo:Para
+1972447:2454:Nhwɛdo:Param
+1972447:2455:Nhwɛdo:Parameter names example
+1972447:2456:Nhwɛdo:Partial
+1972447:2457:Nhwɛdo:Partial failure
+1972447:2458:Nhwɛdo:Partial success
+1972447:2459:Nhwɛdo:Perhaps
+1972447:2460:Nhwɛdo:Person infobox header
+1972447:2461:Nhwɛdo:Pf
+1972447:2462:Nhwɛdo:Phab
+1972447:2463:Nhwɛdo:Plainlist
+1972447:2464:Nhwɛdo:Planned
+1972447:2465:Nhwɛdo:Pope list end
+1972447:2466:Nhwɛdo:Portal bar
+1972447:2467:Nhwɛdo:Portal icon demonstration
+1972447:2468:Nhwɛdo:Portal template list
+1972447:2469:Nhwɛdo:Portal-inline
+1972447:2470:Nhwɛdo:Pp-move
+1972447:2471:Nhwɛdo:Pp-semi-indef
+1972447:2472:Nhwɛdo:Pp-template/test1
+1972447:2473:Nhwɛdo:Pp-template/test2
+1972447:2474:Nhwɛdo:Pre
+1972447:2475:Nhwɛdo:Progress templates
+1972447:2476:Nhwɛdo:Prop
+1972447:2477:Nhwɛdo:Proprietary
+1972447:2478:Nhwɛdo:Protection templates
+1972447:2479:Nhwɛdo:Purge page
+1972447:2480:Nhwɛdo:Pval
+1972447:2481:Nhwɛdo:Q
+1972447:2482:Nhwɛdo:Quit
+1972447:2483:Nhwɛdo:Quotation
+1972447:2484:Nhwɛdo:R ME from duplicated article
+1972447:2485:Nhwɛdo:R comics from merge
+1972447:2486:Nhwɛdo:R from airport code
+1972447:2487:Nhwɛdo:R from alternative language
+1972447:2488:Nhwɛdo:R from ambiguous term/demo
+1972447:2489:Nhwɛdo:R from book
+1972447:2490:Nhwɛdo:R from duplicated article
+1972447:2491:Nhwɛdo:R from film
+1972447:2492:Nhwɛdo:R from high-use template
+1972447:2493:Nhwɛdo:R from misspelling
+1972447:2494:Nhwɛdo:R from modification
+1972447:2495:Nhwɛdo:R from move
+1972447:2496:Nhwɛdo:R from other name
+1972447:2497:Nhwɛdo:R from plural
+1972447:2498:Nhwɛdo:R from subtopic
+1972447:2499:Nhwɛdo:R from template shortcut
+1972447:2500:Nhwɛdo:R printworthy
+1972447:2501:Nhwɛdo:R scouting from merge
+1972447:2502:Nhwɛdo:R template index
+1972447:2503:Nhwɛdo:R to anchor
+1972447:2504:Nhwɛdo:R to list entry
+1972447:2505:Nhwɛdo:R to section
+1972447:2506:Nhwɛdo:R unprintworthy
+1972447:2507:Nhwɛdo:R with history
+1972447:2508:Nhwɛdo:Rarely
+1972447:2509:Nhwɛdo:Rcatsh
+1972447:2510:Nhwɛdo:Recent birth
+1972447:2511:Nhwɛdo:Recent death
+1972447:2512:Nhwɛdo:Red
+1972447:2513:Nhwɛdo:Red Wikidata link
+1997547:2514:Nhwɛdo:Redirect
+1997547:2515:Nhwɛdo:Redirect category shell/Comparison
+1997547:2516:Nhwɛdo:Redirect template/doc
+1997547:2517:Nhwɛdo:Redirect template/sandbox
+1997547:2518:Nhwɛdo:Redirect template/testcases
+1997547:2519:Nhwɛdo:Refbegin
+1997547:2520:Nhwɛdo:Refend
+1997547:2521:Nhwɛdo:Reflist hide
+1997547:2522:Nhwɛdo:Reflist-talk
+1997547:2523:Nhwɛdo:Refs
+1997547:2524:Nhwɛdo:Regional
+1997547:2525:Nhwɛdo:Reign
+1997547:2526:Nhwɛdo:Release-candidate
+1997547:2527:Nhwɛdo:Remove border
+1997547:2528:Nhwɛdo:Rh
+1997547:2529:Nhwɛdo:Rh2
+1997547:2530:Nhwɛdo:Right
+1997547:2531:Nhwɛdo:Rtl-para
+1997547:2532:Nhwɛdo:Rugby squad end
+1997547:2533:Nhwɛdo:Runner-up
+1997547:2534:Nhwɛdo:S-end
+1997547:2535:Nhwɛdo:S-start
+1997547:2536:Nhwɛdo:SI units
+1997547:2537:Nhwɛdo:Safe
+1997547:2538:Nhwɛdo:Samp
+1997547:2539:Nhwɛdo:Scheduled
+1997547:2540:Nhwɛdo:Sclx
+1997547:2541:Nhwɛdo:Screen reader-only
+1997547:2542:Nhwɛdo:Script
+1997547:2543:Nhwɛdo:Sdash
+1997547:2544:Nhwɛdo:Section link
+1997547:2545:Nhwɛdo:See
+1997547:2546:Nhwɛdo:See also
+1997547:2547:Nhwɛdo:Selfref
+1997547:2548:Nhwɛdo:Semantic markup templates/doc
+1997547:2549:Nhwɛdo:Sfn
+1997547:2550:Nhwɛdo:Sfnote
+1997547:2551:Nhwɛdo:Sfrac
+1997547:2552:Nhwɛdo:Shade
+1997547:2553:Nhwɛdo:Sho
+1997547:2554:Nhwɛdo:Shortcut
+1997547:2555:Nhwɛdo:Side box/doc
+1997547:2556:Nhwɛdo:Side box/sandbox
+1997547:2557:Nhwɛdo:Side box/testcases
+1997547:2558:Nhwɛdo:Sidebar
+1997547:2559:Nhwɛdo:Sister project links
+1997547:2560:Nhwɛdo:Sister-inline
+1997547:2561:Nhwɛdo:Site active
+1997547:2562:Nhwɛdo:Site inactive
+1997547:2563:Nhwɛdo:Sky
+1997547:2564:Nhwɛdo:Slink
+1997547:2565:Nhwɛdo:Smallcaps
+1997547:2566:Nhwɛdo:Smalldiv
+1997547:2567:Nhwɛdo:Snd
+1997547:2568:Nhwɛdo:Some
+1997547:2569:Nhwɛdo:Sometimes
+1997547:2570:Nhwɛdo:Sources-talk
+1997547:2571:Nhwɛdo:Sp
+1997547:2572:Nhwɛdo:Space separated entries
+1997547:2573:Nhwɛdo:Spaces
+1997547:2574:Nhwɛdo:Sronly
+1997547:2575:Nhwɛdo:Stack
+1997547:2576:Nhwɛdo:Start date
+1997547:2577:Nhwɛdo:Str len/core
+1997547:2578:Nhwɛdo:Str len/core/doc
+1997547:2579:Nhwɛdo:Str len/core/sandbox
+1997547:2580:Nhwɛdo:Str rep/doc/Dogs and cats
+1997547:2581:Nhwɛdo:String-handling templates
+1997547:2582:Nhwɛdo:Strong
+1997547:2583:Nhwɛdo:Strongbad
+1997547:2584:Nhwɛdo:Subject bar
+1997547:2585:Nhwɛdo:Subpage other
+1997547:2586:Nhwɛdo:Substitution
+1997547:2587:Nhwɛdo:Success
+1997547:2588:Nhwɛdo:Suppress categories
+1997547:2589:Nhwɛdo:T links
+1997547:2590:Nhwɛdo:TBA
+1997547:2591:Nhwɛdo:TEMPLATENAME
+1997547:2592:Nhwɛdo:TL
+1997547:2593:Nhwɛdo:Table alignment
+1997547:2594:Nhwɛdo:Table cell templates
+1997547:2595:Nhwɛdo:Table-experimental
+1997547:2596:Nhwɛdo:Tag/doc
+1997547:2597:Nhwɛdo:Tag/sandbox
+1997547:2598:Nhwɛdo:Tag/testcases
+1997547:2599:Nhwɛdo:Talk other
+1997547:2600:Nhwɛdo:Talk page of a redirect
+1997547:2601:Nhwɛdo:Template journal
+1997547:2602:Nhwɛdo:Template journal inline
+1997547:2603:Nhwɛdo:Template link
+1997547:2604:Nhwɛdo:Template link code
+1997547:2605:Nhwɛdo:Template link expanded with bold
+1997547:2606:Nhwɛdo:Template link expanded with italic
+1997547:2607:Nhwɛdo:Template link expanded with subst
+1997547:2608:Nhwɛdo:Template link expanded/sandbox
+1997547:2609:Nhwɛdo:Template link expanded/testcases
+1997547:2610:Nhwɛdo:Template link general/sandbox
+1997547:2611:Nhwɛdo:Template link general/testcases
+1997547:2612:Nhwɛdo:Template link null
+1997547:2613:Nhwɛdo:Template link with alternate text
+2033207:2614:Nhwɛdo:Template link with bold
+2033207:2615:Nhwɛdo:Template link with link off
+2033207:2616:Nhwɛdo:Template link with linked braces
+2033207:2617:Nhwɛdo:Template link with parameters
+2033207:2618:Nhwɛdo:Template link with subst
+2033207:2619:Nhwɛdo:Template link with title with subst
+2033207:2620:Nhwɛdo:Template link/doc
+2033207:2621:Nhwɛdo:Template link/sandbox
+2033207:2622:Nhwɛdo:Template link/testcases
+2033207:2623:Nhwɛdo:Template other/doc
+2033207:2624:Nhwɛdo:Template parameter usage
+2033207:2625:Nhwɛdo:Template redirect
+2033207:2626:Nhwɛdo:Template reference list
+2033207:2627:Nhwɛdo:Template sandbox notice
+2033207:2628:Nhwɛdo:Template shortcut
+2033207:2629:Nhwɛdo:Template shortcuts
+2033207:2630:Nhwɛdo:Template test cases notice
+2033207:2631:Nhwɛdo:Template testcases notice
+2033207:2632:Nhwɛdo:Template-linking templates/sandbox
+2033207:2633:Nhwɛdo:TemplateData header/doc
+2033207:2634:Nhwɛdo:TemplateData header/sandbox
+2033207:2635:Nhwɛdo:TemplateData header/testcases
+2033207:2636:Nhwɛdo:TemplateDataHeader
+2033207:2637:Nhwɛdo:Templatedata header
+2033207:2638:Nhwɛdo:Templateshortcut
+2033207:2639:Nhwɛdo:Terminate sentence
+2033207:2640:Nhwɛdo:Terminated
+2033207:2641:Nhwɛdo:Test case
+2033207:2642:Nhwɛdo:Test case nowiki
+2033207:2643:Nhwɛdo:Test case table
+2033207:2644:Nhwɛdo:Testcase
+2033207:2645:Nhwɛdo:Testcase rows
+2033207:2646:Nhwɛdo:Testcase table
+2033207:2647:Nhwɛdo:Testcases
+2033207:2648:Nhwɛdo:Testcases notice
+2033207:2649:Nhwɛdo:Tetl
+2033207:2650:Nhwɛdo:Tfd links
+2033207:2651:Nhwɛdo:This is a redirect/rcat/doc
+2033207:2652:Nhwɛdo:This is a redirect/rcat/sandbox
+2033207:2653:Nhwɛdo:This is a redirect/rcat/testcases
+2033207:2654:Nhwɛdo:Ti
+2033207:2655:Nhwɛdo:Tic
+2033207:2656:Nhwɛdo:Tick
+2033207:2657:Nhwɛdo:Tim
+2033207:2658:Nhwɛdo:Title country
+2033207:2659:Nhwɛdo:Title language
+2033207:2660:Nhwɛdo:Tiw
+2033207:2661:Nhwɛdo:Tl2
+2033207:2662:Nhwɛdo:Tld
+2033207:2663:Nhwɛdo:Tlm
+2033207:2664:Nhwɛdo:Tln
+2033207:2665:Nhwɛdo:Tlr
+2033207:2666:Nhwɛdo:Tlsc
+2033207:2667:Nhwɛdo:Tlsf
+2033207:2668:Nhwɛdo:Tlsu
+2033207:2669:Nhwɛdo:Tlt
+2033207:2670:Nhwɛdo:Tlu
+2033207:2671:Nhwɛdo:Tlxu
+2033207:2672:Nhwɛdo:To USD
+2033207:2673:Nhwɛdo:Tooltip
+2033207:2674:Nhwɛdo:Tracks Wikidata
+2033207:2675:Nhwɛdo:Transcluded section
+2033207:2676:Nhwɛdo:Transl
+2033207:2677:Nhwɛdo:Transliteration
+2033207:2678:Nhwɛdo:Transwiki guide
+2033207:2679:Nhwɛdo:Transwiki guide candidate
+2033207:2680:Nhwɛdo:Trim brackets
+2033207:2681:Nhwɛdo:Tsetl
+2033207:2682:Nhwɛdo:Ttl
+2033207:2683:Nhwɛdo:Twinkle standard installation
+2033207:2684:Nhwɛdo:Twlh
+2033207:2685:Nhwɛdo:UF-COinS
+2033207:2686:Nhwɛdo:UF-audio
+2033207:2687:Nhwɛdo:UF-coord-classes
+2033207:2688:Nhwɛdo:UF-hcard-person
+2033207:2689:Nhwɛdo:Ubl
+2033207:2690:Nhwɛdo:Unbulleted list citebundle
+2033207:2691:Nhwɛdo:Unknown
+2033207:2692:Nhwɛdo:Unofficial
+2033207:2693:Nhwɛdo:Unofficial2
+2033207:2694:Nhwɛdo:Unreleased
+2033207:2695:Nhwɛdo:Used in system
+2033207:2696:Nhwɛdo:Used in system/sandbox
+2033207:2697:Nhwɛdo:User other/doc
+2033207:2698:Nhwɛdo:Userbox
+2033207:2699:Nhwɛdo:Userspace Disclaimers
+2033207:2700:Nhwɛdo:Uses TemplateStyles
+2033207:2701:Nhwɛdo:Usually
+2033207:2702:Nhwɛdo:Vacant
+2033207:2703:Nhwɛdo:Val
+2033207:2704:Nhwɛdo:Var
+2033207:2705:Nhwɛdo:Varies
+2033207:2706:Nhwɛdo:Visible anchor
+2033207:2707:Nhwɛdo:Warchivenav
+2033207:2708:Nhwɛdo:Warning
+2033207:2709:Nhwɛdo:Warnsign
+2033207:2710:Nhwɛdo:Wbr
+2033207:2711:Nhwɛdo:Wbr/doc
+2033207:2712:Nhwɛdo:Webarchive/testcases/CiteArch
+2033207:2713:Nhwɛdo:Webarchive/testcases/Production
+2060020:2714:Nhwɛdo:Webarchive/testcases/Wayback
+2060020:2715:Nhwɛdo:Webarchive/testcases/Webcite
+2060020:2716:Nhwɛdo:Wide image
+2060020:2717:Nhwɛdo:WikiProject banner shell
+2060020:2718:Nhwɛdo:WikiProject link
+2060020:2719:Nhwɛdo:Wikibooks
+2060020:2720:Nhwɛdo:Wikidata entity link
+2060020:2721:Nhwɛdo:Wikidata fallback link
+2060020:2722:Nhwɛdo:Wikidata property
+2060020:2723:Nhwɛdo:Wikidata property link
+2060020:2724:Nhwɛdo:WikidataCoord
+2060020:2725:Nhwɛdo:Wikifunctions
+2060020:2726:Nhwɛdo:Wikimedia commons cat
+2060020:2727:Nhwɛdo:Wikinews
+2060020:2728:Nhwɛdo:Wikipedia help pages
+2060020:2729:Nhwɛdo:Wikipedia referencing
+2060020:2730:Nhwɛdo:Wikipedia technical help
+2060020:2731:Nhwɛdo:Wikipedia templates
+2060020:2732:Nhwɛdo:Wikipedia's sister projects
+2060020:2733:Nhwɛdo:Wikiquote
+2060020:2734:Nhwɛdo:Wikisourcecat
+2060020:2735:Nhwɛdo:Wikispecies
+2060020:2736:Nhwɛdo:Wikiversity
+2060020:2737:Nhwɛdo:Wikivoyage
+2060020:2738:Nhwɛdo:Wikt-lang
+2060020:2739:Nhwɛdo:Wiktionary
+2060020:2740:Nhwɛdo:WinDL
+2060020:2741:Nhwɛdo:Wings at the Speed of Sound tracks
+2060020:2742:Nhwɛdo:Xt
+2060020:2743:Nhwɛdo:Xtag
+2060020:2744:Nhwɛdo:Ya
+2060020:2745:Nhwɛdo:Yan
+2060020:2746:Nhwɛdo:Yes
+2060020:2747:Nhwɛdo:Yes C
+2060020:2748:Nhwɛdo:Yes N
+2060020:2749:Nhwɛdo:Yes O
+2060020:2750:Nhwɛdo:Yes check
+2060020:2751:Nhwɛdo:Yes-No
+2060020:2752:Nhwɛdo:Yes2
+2060020:2753:Nhwɛdo:YouTube navbox
+2060020:2754:Nhwɛdo:§l
+2060020:2755:Module:Convert/helper
+2060020:2756:Module:If empty
+2060020:2757:Module:Lang/documentor tool
+2060020:2758:Module:Webarchive/sandbox
+2060020:2759:Module:Multiple image
+2060020:2760:Module:Portal-inline
+2060020:2761:Module:ISO 3166/sandbox
+2060020:2762:Module:Banner shell
+2060020:2763:Module:High-use
+2060020:2764:Module:Uses TemplateStyles
+2060020:2765:Module:Sidebar
+2060020:2766:Module:Labelled list hatnote
+2060020:2767:Module:Template link general/sandbox
+2060020:2768:Module:DemoTemplate
+2060020:2769:Module:Coordinates/sandbox2
+2060020:2770:Module:Message box/cmbox.css
+2060020:2771:Module:Aligned table
+2060020:2772:Module:Uses Wikidata
+2060020:2773:Module:Redirect template
+2060020:2774:Module:Redirect template/sandbox
+2060020:2775:Module:Category handler
+2060020:2776:Module:CountryAdjectiveDemonym
+2060020:2777:Module:Listen/sandbox
+2060020:2778:Module:Redirect hatnote
+2060020:2779:Module:Infobox/sandbox
+2060020:2780:Module:Protection banner/documentation
+2060020:2781:Module:For
+2060020:2782:Module:Suppress categories
+2060020:2783:Module:TNT
+2060020:2784:Module:Wikidata
+2060020:2785:Module:Anchored list
+2060020:2786:Module:Message box/sandbox
+2060020:2787:Module:In5
+2060020:2788:Module:List/sandbox
+2060020:2789:Module:Delink/sandbox
+2060020:2790:Module:No ping
+2060020:2791:Module:Val
+2060020:2792:Module:Navbox
+2060020:2793:Module:Format TemplateData
+2060020:2794:Module:Userbox
+2060020:2795:Module:Template test case
+2060020:2796:Module:Detect singular/sandbox
+2060020:2797:Module:Protection banner/sandbox
+2060020:2798:Module:Expand wikitext
+2060020:2799:Module:Coordinates/sandbox
+2060020:2800:Module:Citation/CS1/sandbox
+2060020:2801:Module:Message box/ambox.css
+2060020:2802:Module:Infobox/sandbox2
+2060020:2803:Module:Navbar
+2060020:2804:Module:Parameter names example
+2060020:2805:Module:Error
+2060020:2806:Module:Lang/sandbox
+2060020:2807:Module:Collapsible list
+2060020:2808:Module:Namespace detect
+2060020:2809:Module:Infobox mapframe
+2060020:2810:Module:Sister project links
+2060020:2811:Module:Portal/sandbox
+2060020:2812:Module:Commons link
+2060020:2813:Module:Documentation/sandbox
+2286845:2814:Module:Wd
+2286845:2815:Module:Section link
+2286845:2816:Module:Anchor/sandbox
+2286845:2817:Module:Aligned table/sandbox
+2286845:2818:Module:Mapframe
+2286845:2819:Module:Wide image
+2286845:2820:Module:Tfd links
+2286845:2821:Module:Citation/CS1/Suggestions
+2286845:2822:Module:Check for clobbered parameters
+2286845:2823:Module:Params
+2286845:2824:Module:Lang/tag from name
+2286845:2825:Module:Subject bar
+2286845:2826:Module:Portal bar
+2286845:2827:Module:Hatnote
+2286845:2828:Module:If empty/sandbox
+2286845:2829:Module:Template link general
+2286845:2830:Module:Catalog lookup link/sandbox
+2286845:2831:Module:Pagelist
+2286845:2832:Module:Lorem ipsum
+2286845:2833:Module:Footnotes
+2286845:2834:Module:Navbox with collapsible groups
+2286845:2835:Module:Multiple image/sandbox
+2286845:2836:Module:Side box/sandbox
+2286845:2837:Module:Shortcut
+2286845:2838:Module:OutputBuffer
+2286845:2839:Module:Message box/configuration/sandbox
+2286845:2840:Module:Footnotes/anchor id list
+2286845:2841:Module:Protection banner/config/sandbox
+2286845:2842:Module:Protection banner/documentation/config
+2286845:2843:Module:Citation/CS1/Configuration/sandbox
+2286845:2844:Module:Navbar/configuration
+2286845:2845:Module:Sidebar/configuration
+2286845:2846:Module:Namespace detect/data
+2286845:2847:Module:ISO 3166/data/National/sandbox
+2286845:2848:Module:CountryAdjectiveDemonym/The
+2286845:2849:Module:Lorem ipsum/data
+2286845:2850:Module:Redirect
+2286845:2851:Module:Template test case/data
+2286845:2852:Module:Transclusion count
+2286845:2853:Module:Webarchive/data/sandbox
+2286845:2854:Module:Hatnote/styles.css
+2286845:2855:Module:Sister project links/config
+2286845:2856:Module:Navbox/configuration
+2286845:2857:Module:Gapnum
+2286845:2858:Module:Color contrast
+2286845:2859:Module:Category handler/data
+2286845:2860:Module:Template invocation
+2286845:2861:Module:Hatnote list
+2286845:2862:Module:Shortcut/config
+2286845:2863:Module:Wd/i18n
+2286845:2864:Module:Uses TemplateStyles/config
+2286845:2865:Module:Pagetype
+2286845:2866:Module:Documentation/config/sandbox
+2286845:2867:Module:Coordinates/sandbox/styles.css
+2286845:2868:Module:Category handler/config
+2286845:2869:Module:CountryAdjectiveDemonym/Adjectives
+2286845:2870:Module:Message box/sandbox/ombox.css
+2286845:2871:Module:Val/units
+2286845:2872:Module:Navbox/styles.css
+2286845:2873:Module:Format link
+2286845:2874:Module:Navbar/styles.css
+2286845:2875:Module:Color contrast/colors
+2286845:2876:Module:Icon
+2286845:2877:Module:Sidebar/styles.css
+2286845:2878:Module:Footnotes/anchor id list/data
+2286845:2879:Module:Namespace detect/config
+2286845:2880:Module:Citation/CS1/Whitelist/sandbox
+2286845:2881:Module:Pagetype/config
+2286845:2882:Module:Template test case/config
+2286845:2883:Nhwɛdo:Transclusion count
+2286845:2884:Nhwɛdo:Transclusion count/doc
+2286845:2885:Module:Lua banner/sandbox
+2286845:2886:Module:Icon/data
+2286845:2887:Module:Category handler/shared
+2286845:2888:Module:CountryAdjectiveDemonym/Demonyms
+2286845:2889:Module:Wikitext Parsing
+2286845:2890:Module:Age/sandbox
+2286845:2891:Module:Footnotes/whitelist
+2286845:2892:Module:Citation/CS1/Utilities/sandbox
+2286845:2893:Nhwɛdo:R from move/except
+2286845:2894:Nhwɛdo:Yesno-no
+2286845:2895:Nhwɛdo:Yesno
+2286845:2896:Nhwɛdo:Mono/styles.css
+2286845:2897:Nhwɛdo:Category link without namespace
+2286845:2898:Nhwɛdo:Warning sign
+2286845:2899:Nhwɛdo:CategoryBgColor
+2286845:2900:Nhwɛdo:Rh2/bgcolor
+2286845:2901:Nhwɛdo:Debate-absent
+2286845:2902:Nhwɛdo:Debate-invited
+2286845:2903:Nhwɛdo:Debate-not invited
+2286845:2904:Nhwɛdo:Debate-not voting
+2286845:2905:Nhwɛdo:Debate-other
+2286845:2906:Nhwɛdo:Debate-out
+2286845:2907:Nhwɛdo:Debate-present
+2286845:2908:Nhwɛdo:Debate-withdrawn
+2286845:2909:Nhwɛdo:Depends
+2286845:2910:Nhwɛdo:Greater color contrast ratio
+2286845:2911:Nhwɛdo:YesNo
+2286845:2912:Nhwɛdo:R from shortcut
+2286845:2913:Nhwɛdo:R to rcat
+2501498:2914:Nhwɛdo:FULLBASEPAGENAME
+2501498:2915:Nhwɛdo:Purge
+2501498:2916:Nhwɛdo:Select skin
+2501498:2917:Nhwɛdo:Db-g8
+2501498:2918:Nhwɛdo:Navbar
+2501498:2919:Nhwɛdo:Sister project/styles.css
+2501498:2920:Nhwɛdo:Smallcaps/styles.css
+2501498:2921:Nhwɛdo:Module link expanded
+2501498:2922:Nhwɛdo:Smaller
+2501498:2923:Nhwɛdo:Template journal/arg
+2501498:2924:Nhwɛdo:Template journal/styles.css
+2501498:2925:Nhwɛdo:Demo
+2501498:2926:Nhwɛdo:ParserFunction
+2501498:2927:Nhwɛdo:Hidden begin/styles.css
+2501498:2928:Nhwɛdo:Str left
+2501498:2929:Nhwɛdo:Module function link
+2501498:2930:Nhwɛdo:Module link lua
+2501498:2931:Nhwɛdo:T links/sandbox links
+2501498:2932:Nhwɛdo:Template journal inline/arg
+2501498:2933:Nhwɛdo:Template journal inline/styles.css
+2501498:2934:Nhwɛdo:Template link normal
+2501498:2935:Nhwɛdo:WikiData template link
+2501498:2936:Nhwɛdo:Incorrect redirect template
+2501498:2937:Nhwɛdo:Template information
+2501498:2938:Nhwɛdo:Template information compact
+2501498:2939:Nhwɛdo:Template link universal
+2501498:2940:Nhwɛdo:Template link universal expanded
+2501498:2941:Nhwɛdo:Template link universal with subst
+2501498:2942:Nhwɛdo:Template link with Whatlinkshere
+2501498:2943:Module:Demo
+2501498:2944:Module:Portal/styles.css
+2501498:2945:Module:Portal/sandbox/styles.css
+2501498:2946:Module:Category handler/blacklist
+2501498:2947:Module:Citation/CS1/Date validation/sandbox
+2501498:2948:Module:Date/sandbox
+2501498:2949:Module:Purge
+2501498:2950:Module:Pagetype/softredirect
+2501498:2951:Module:Italic title
+2501498:2952:Module:Message box/sandbox/ambox.css
+2501498:2953:Nhwɛdo:No redirect
+2501498:2954:Nhwɛdo:Citation Style documentation
+2501498:2955:Nhwɛdo:Yesno-yes
+2501498:2956:Module:Pagetype/rfd
+2501498:2957:Module:Shortcut/styles.css
+2501498:2958:Module:Citation/CS1/Identifiers/sandbox
+2501498:2959:Module:Template wrapper
+2501498:2960:Nhwɛdo:Template links
+2501498:2961:Nhwɛdo:Template links short
+2501498:2962:Nhwɛdo:Category link/core
+2501498:2963:Nhwɛdo:Distinguish
+2501498:2964:Nhwɛdo:!!
+2501498:2965:Nhwɛdo:Div col
+2501498:2966:Nhwɛdo:For loop
+2501498:2967:Nhwɛdo:Div col end
+2501498:2968:Nhwɛdo:Xmark
+2501498:2969:Nhwɛdo:Col-float/styles.css
+2501498:2970:Nhwɛdo:Cascade-protected template
+2501498:2971:Nhwɛdo:Mbox templates (small)
+2501498:2972:Nhwɛdo:Mbox templates see also
+2501498:2973:Nhwɛdo:Navbar-header
+2501498:2974:Nhwɛdo:Collapsible templates
+2501498:2975:Nhwɛdo:DMCA
+2501498:2976:Nhwɛdo:Param value
+2501498:2977:Nhwɛdo:Always substitute
+2501498:2978:Nhwɛdo:Bang
+2501498:2979:Nhwɛdo:Check mark-n
+2501498:2980:Nhwɛdo:Checked box
+2501498:2981:Nhwɛdo:Cloc
+2501498:2982:Nhwɛdo:Diff
+2501498:2983:Nhwɛdo:Equc
+2501498:2984:Nhwɛdo:Idkc
+2501498:2985:Nhwɛdo:'&quot;
+2501498:2986:Nhwɛdo:-r
+2501498:2987:Nhwɛdo:!-
+2501498:2988:Nhwɛdo:!((
+2501498:2989:Nhwɛdo:(n)
+2501498:2990:Nhwɛdo:(y)
+2501498:2991:Nhwɛdo:))!
+2501498:2992:Nhwɛdo:\
+2501498:2993:Nhwɛdo:8ball
+2501498:2994:Nhwɛdo:A note
+2501498:2995:Nhwɛdo:About
+2501498:2996:Nhwɛdo:Absolute page title
+2501498:2997:Nhwɛdo:Accepted
+2501498:2998:Nhwɛdo:Action and close
+2501498:2999:Nhwɛdo:Added
+2501498:3000:Nhwɛdo:Administrator note
+2501498:3001:Nhwɛdo:Advert
+2501498:3002:Nhwɛdo:Age
+2501498:3003:Nhwɛdo:Agree
+2501498:3004:Nhwɛdo:Already declined
+2501498:3005:Nhwɛdo:Already done
+2501498:3006:Nhwɛdo:Also known as
+2501498:3007:Nhwɛdo:Ambox globe current red
+2501498:3008:Nhwɛdo:Approved
+2501498:3009:Nhwɛdo:Archive now
+2501498:3010:Nhwɛdo:Asterisk
+2501498:3011:Nhwɛdo:Autp
+2501498:3012:Nhwɛdo:Await
+2501498:3013:Nhwɛdo:Awaiting
+2569681:3014:Nhwɛdo:Awaitingadmin
+2569681:3015:Nhwɛdo:Background color
+2569681:3016:Nhwɛdo:Behaviour
+2569681:3017:Nhwɛdo:Big
+2569681:3018:Nhwɛdo:Birth date text
+2569681:3019:Nhwɛdo:Block indent
+2569681:3020:Nhwɛdo:Blockedandtagged
+2569681:3021:Nhwɛdo:Blockedtaggedclosing
+2569681:3022:Nhwɛdo:Blockedwithouttags
+2569681:3023:Nhwɛdo:Blockquote
+2569681:3024:Nhwɛdo:Bold div
+2569681:3025:Nhwɛdo:Bracket
+2569681:3026:Nhwɛdo:Bug acknowledged
+2569681:3027:Nhwɛdo:Bug assigned
+2569681:3028:Nhwɛdo:Bug closed
+2569681:3029:Nhwɛdo:Bug confirmed
+2569681:3030:Nhwɛdo:Bug dupe
+2569681:3031:Nhwɛdo:Bug feedback
+2569681:3032:Nhwɛdo:Bug new
+2569681:3033:Nhwɛdo:Bug pending
+2569681:3034:Nhwɛdo:Bug resolved
+2569681:3035:Nhwɛdo:BugFixed
+2569681:3036:Nhwɛdo:Bulb
+2569681:3037:Nhwɛdo:Bulb2
+2569681:3038:Nhwɛdo:Bureaucrat note
+2569681:3039:Nhwɛdo:Buttinsky
+2569681:3040:Nhwɛdo:Button
+2569681:3041:Nhwɛdo:Cancelled
+2569681:3042:Nhwɛdo:Ccot
+2569681:3043:Nhwɛdo:Center/styles.css
+2569681:3044:Nhwɛdo:Check mark
+2569681:3045:Nhwɛdo:Checked
+2569681:3046:Nhwɛdo:Checked2
+2569681:3047:Nhwɛdo:Checking
+2569681:3048:Nhwɛdo:Chk
+2569681:3049:Nhwɛdo:Citation style
+2569681:3050:Nhwɛdo:Clerk-Note
+2569681:3051:Nhwɛdo:Clerk-Note-bot
+2569681:3052:Nhwɛdo:Clerk-Note-merged
+2569681:3053:Nhwɛdo:Clerk Request
+2569681:3054:Nhwɛdo:Close
+2569681:3055:Nhwɛdo:Closing without action
+2569681:3056:Nhwɛdo:Col-begin
+2569681:3057:Nhwɛdo:Col-break
+2569681:3058:Nhwɛdo:Col-end
+2569681:3059:Nhwɛdo:Collapsible option
+2569681:3060:Nhwɛdo:Color
+2569681:3061:Nhwɛdo:Comment
+2569681:3062:Nhwɛdo:Commentvote
+2569681:3063:Nhwɛdo:Completed
+2569681:3064:Nhwɛdo:Conditional yes
+2569681:3065:Nhwɛdo:Confirmed
+2569681:3066:Nhwɛdo:Confirmed-nc
+2569681:3067:Nhwɛdo:Confuse
+2569681:3068:Nhwɛdo:Convert/list of units/area/short list
+2569681:3069:Nhwɛdo:Convert/list of units/density/short list
+2569681:3070:Nhwɛdo:Convert/list of units/energy/short list
+2569681:3071:Nhwɛdo:Convert/list of units/explanation
+2569681:3072:Nhwɛdo:Convert/list of units/extra
+2569681:3073:Nhwɛdo:Convert/list of units/force/short list
+2569681:3074:Nhwɛdo:Convert/list of units/length/short list
+2569681:3075:Nhwɛdo:Convert/list of units/mass/short list
+2569681:3076:Nhwɛdo:Convert/list of units/speed/short list
+2569681:3077:Nhwɛdo:Convert/list of units/temperature/short list
+2569681:3078:Nhwɛdo:Convert/list of units/torque/short list
+2569681:3079:Nhwɛdo:Convert/list of units/volume/short list
+2569681:3080:Nhwɛdo:Coordinator-note
+2569681:3081:Nhwɛdo:Country data
+2569681:3082:Nhwɛdo:Country data Belize
+2569681:3083:Nhwɛdo:Country showdata
+2569681:3084:Nhwɛdo:CountryPrefixThe
+2569681:3085:Nhwɛdo:Crossref
+2569681:3086:Nhwɛdo:Crossreference/styles.css
+2569681:3087:Nhwɛdo:Crystalball
+2569681:3088:Nhwɛdo:CSS list-style-type values/core
+2569681:3089:Nhwɛdo:Cu-endorsed
+2569681:3090:Nhwɛdo:Cudecline
+2569681:3091:Nhwɛdo:CUnote
+2569681:3092:Nhwɛdo:Dagger
+2569681:3093:Nhwɛdo:Date
+2569681:3094:Nhwɛdo:Death date and age
+2569681:3095:Nhwɛdo:Decline
+2569681:3096:Nhwɛdo:Decline-IP
+2569681:3097:Nhwɛdo:Declined
+2569681:3098:Nhwɛdo:Deferabusefilter
+2569681:3099:Nhwɛdo:Deferblack
+2569681:3100:Nhwɛdo:Defermetablack
+2569681:3101:Nhwɛdo:Deferred
+2569681:3102:Nhwɛdo:Deferspam
+2569681:3103:Nhwɛdo:Deferspambot
+2569681:3104:Nhwɛdo:Deferwhite
+2569681:3105:Nhwɛdo:Deleted
+2569681:3106:Nhwɛdo:Deleted-image
+2569681:3107:Nhwɛdo:Delisted
+2569681:3108:Nhwɛdo:Denied
+2569681:3109:Nhwɛdo:Deprecated code
+2569681:3110:Nhwɛdo:Disagree
+2569681:3111:Nhwɛdo:Discussing
+2569681:3112:Nhwɛdo:Dislike
+2569681:3113:Nhwɛdo:Doc
+2593899:3114:Nhwɛdo:Doing
+2593899:3115:Nhwɛdo:Donetask
+2593899:3116:Nhwɛdo:Duck
+2593899:3117:Nhwɛdo:Duck2
+2593899:3118:Nhwɛdo:Duplicate bug
+2593899:3119:Nhwɛdo:DuplicateProposal
+2593899:3120:Nhwɛdo:Edit interface-protected/doc
+2593899:3121:Nhwɛdo:Edited2
+2593899:3122:Nhwɛdo:Election table/category
+2593899:3123:Nhwɛdo:Endorse
+2593899:3124:Nhwɛdo:Endplainlist
+2593899:3125:Nhwɛdo:Example needed
+2593899:3126:Nhwɛdo:Expired
+2593899:3127:Nhwɛdo:Facepalm
+2593899:3128:Nhwɛdo:Fail
+2593899:3129:Nhwɛdo:Failed-ga
+2593899:3130:Nhwɛdo:Fake citation needed
+2593899:3131:Nhwɛdo:Fake heading
+2593899:3132:Nhwɛdo:Fake link/styles.css
+2593899:3133:Nhwɛdo:File other
+2593899:3134:Nhwɛdo:Fishing
+2593899:3135:Nhwɛdo:Fix
+2593899:3136:Nhwɛdo:Fix comma category
+2593899:3137:Nhwɛdo:Fixed
+2593899:3138:Nhwɛdo:Fixed by reporter
+2593899:3139:Nhwɛdo:Flag country/core
+2593899:3140:Nhwɛdo:Flag decoration/core
+2593899:3141:Nhwɛdo:Flag/core
+2593899:3142:Nhwɛdo:Fraction
+2593899:3143:Nhwɛdo:Fraction/styles.css
+2593899:3144:Nhwɛdo:GA2ndopinion
+2593899:3145:Nhwɛdo:GAOnHold
+2593899:3146:Nhwɛdo:Get QID
+2593899:3147:Nhwɛdo:GlobalLocksRequested
+2593899:3148:Nhwɛdo:Gnis
+2593899:3149:Nhwɛdo:Go ahead
+2593899:3150:Nhwɛdo:Great
+2593899:3151:Nhwɛdo:Half done
+2593899:3152:Nhwɛdo:Hands/numdisp
+2593899:3153:Nhwɛdo:Harvard citation no brackets
+2593899:3154:Nhwɛdo:Hatnote inline
+2593899:3155:Nhwɛdo:Helped
+2593899:3156:Nhwɛdo:High priority
+2593899:3157:Nhwɛdo:Highlight
+2593899:3158:Nhwɛdo:Highly likely
+2593899:3159:Nhwɛdo:Historical
+2593899:3160:Nhwɛdo:History
+2593899:3161:Nhwɛdo:Hmmm
+2593899:3162:Nhwɛdo:Horizontal TOC
+2593899:3163:Nhwɛdo:HTML lists
+2593899:3164:Nhwɛdo:Huge
+2593899:3165:Nhwɛdo:Idea
+2593899:3166:Nhwɛdo:If then show
+2593899:3167:Nhwɛdo:Imbox
+2593899:3168:Nhwɛdo:Implemented
+2593899:3169:Nhwɛdo:In progress
+2593899:3170:Nhwɛdo:Inconclusive
+2593899:3171:Nhwɛdo:Infobox album/color
+2593899:3172:Nhwɛdo:Infobox AM
+2593899:3173:Nhwɛdo:Infobox ambassador
+2593899:3174:Nhwɛdo:Infobox awards list/custom
+2593899:3175:Nhwɛdo:Infobox congressman
+2593899:3176:Nhwɛdo:Infobox governor
+2593899:3177:Nhwɛdo:Infobox judge
+2593899:3178:Nhwɛdo:Infobox MP
+2593899:3179:Nhwɛdo:Infobox person/height
+2593899:3180:Nhwɛdo:Infobox president
+2593899:3181:Nhwɛdo:Infobox senator
+2593899:3182:Nhwɛdo:Infobox settlement/densdisp
+2593899:3183:Nhwɛdo:Infobox settlement/lengthdisp
+2593899:3184:Nhwɛdo:Infobox settlement/styles.css
+2593899:3185:Nhwɛdo:Infobox state representative
+2593899:3186:Nhwɛdo:Infobox state senator
+2593899:3187:Nhwɛdo:Infobox Ukrainian legislative office
+2593899:3188:Nhwɛdo:Infobox/sandbox/styles.css
+2593899:3189:Nhwɛdo:InfoNeeded
+2593899:3190:Nhwɛdo:Invalid
+2593899:3191:Nhwɛdo:Investigating
+2593899:3192:Nhwɛdo:Ipbedone
+2593899:3193:Nhwɛdo:IPblock
+2593899:3194:Nhwɛdo:Isdoing
+2593899:3195:Nhwɛdo:Italic div
+2593899:3196:Nhwɛdo:IUCN banner
+2593899:3197:Nhwɛdo:Justcurious
+2593899:3198:Nhwɛdo:Lang-cel-x-proto
+2593899:3199:Nhwɛdo:Later
+2593899:3200:Nhwɛdo:Lcs
+2593899:3201:Nhwɛdo:Lenny
+2593899:3202:Nhwɛdo:Like
+2593899:3203:Nhwɛdo:Likely
+2593899:3204:Nhwɛdo:Linkless exists
+2593899:3205:Nhwɛdo:Location map
+2593899:3206:Nhwɛdo:Longitem
+2593899:3207:Nhwɛdo:Loop
+2593899:3208:Nhwɛdo:Make code
+2593899:3209:Nhwɛdo:Marked
+2593899:3210:Nhwɛdo:Maroon
+2593899:3211:Nhwɛdo:Maybe-i
+2593899:3212:Nhwɛdo:Maybe-t
+2593899:3213:Nhwɛdo:Mby
+2613313:3214:Nhwɛdo:MediaWiki checkbox
+2613313:3215:Nhwɛdo:Megaphoneduck
+2613313:3216:Nhwɛdo:Merge done
+2613313:3217:Nhwɛdo:Microformat message
+2613313:3218:Nhwɛdo:Microformat message templates
+2613313:3219:Nhwɛdo:Midsize
+2613313:3220:Nhwɛdo:Module links
+2613313:3221:Nhwɛdo:Module other
+2613313:3222:Nhwɛdo:MONTHNAME
+2613313:3223:Nhwɛdo:MONTHNUMBER
+2613313:3224:Nhwɛdo:MoreInfo
+2613313:3225:Nhwɛdo:Moved to commons
+2613313:3226:Nhwɛdo:Multiple image/styles.css
+2613313:3227:Nhwɛdo:Multiple issues
+2613313:3228:Nhwɛdo:Myprefs/section
+2613313:3229:Nhwɛdo:N&amp;
+2613313:3230:Nhwɛdo:N.b.
+2613313:3231:Nhwɛdo:N/A icon
+2613313:3232:Nhwɛdo:Navbar-collapsible
+2613313:3233:Nhwɛdo:Navbox with collapsible groups
+2613313:3234:Nhwɛdo:Nayc
+2613313:3235:Nhwɛdo:Nayd
+2613313:3236:Nhwɛdo:Nayg
+2613313:3237:Nhwɛdo:Nbhyph
+2613313:3238:Nhwɛdo:Nc
+2613313:3239:Nhwɛdo:NeedsDiscussion
+2613313:3240:Nhwɛdo:NewBug
+2613313:3241:Nhwɛdo:NewProposal
+2613313:3242:Nhwɛdo:No action
+2613313:3243:Nhwɛdo:No documentation
+2613313:3244:Nhwɛdo:No problem
+2613313:3245:Nhwɛdo:No tags
+2613313:3246:Nhwɛdo:Nobr
+2613313:3247:Nhwɛdo:Nocomment
+2613313:3248:Nhwɛdo:Noitalic/styles.css
+2613313:3249:Nhwɛdo:Nojoy
+2613313:3250:Nhwɛdo:Noredirect
+2613313:3251:Nhwɛdo:Nosleepers
+2613313:3252:Nhwɛdo:Nosubst
+2613313:3253:Nhwɛdo:Not a sandbox
+2613313:3254:Nhwɛdo:Not done-t
+2613313:3255:Nhwɛdo:Not done empty request
+2613313:3256:Nhwɛdo:Not done for now
+2613313:3257:Nhwɛdo:Not done not likely
+2613313:3258:Nhwɛdo:Not done unclear
+2613313:3259:Nhwɛdo:Not possible
+2613313:3260:Nhwɛdo:Not sure
+2613313:3261:Nhwɛdo:Not sure2
+2613313:3262:Nhwɛdo:Notabug
+2613313:3263:Nhwɛdo:NotBug
+2613313:3264:Nhwɛdo:Notfixed
+2613313:3265:Nhwɛdo:Nowiki template demo
+2613313:3266:Nhwɛdo:Off-topic talk
+2613313:3267:Nhwɛdo:OldStyleDate
+2613313:3268:Nhwɛdo:On hold
+2613313:3269:Nhwɛdo:OnHoldUntil
+2613313:3270:Nhwɛdo:Opblocked
+2613313:3271:Nhwɛdo:Orz
+2613313:3272:Nhwɛdo:P1
+2613313:3273:Nhwɛdo:P2
+2613313:3274:Nhwɛdo:Pagetype
+2613313:3275:Nhwɛdo:Partly done
+2613313:3276:Nhwɛdo:Pass
+2613313:3277:Nhwɛdo:Passed
+2613313:3278:Nhwɛdo:Pblock
+2613313:3279:Nhwɛdo:Peanut
+2613313:3280:Nhwɛdo:PendingRequest
+2613313:3281:Nhwɛdo:Permission granted navbox
+2613313:3282:Nhwɛdo:PImplemented
+2613313:3283:Nhwɛdo:Pipe
+2613313:3284:Nhwɛdo:Pixiedust
+2613313:3285:Nhwɛdo:Plain link
+2613313:3286:Nhwɛdo:Portal templates navbox
+2613313:3287:Nhwɛdo:Possible
+2613313:3288:Nhwɛdo:Possibly
+2613313:3289:Nhwɛdo:Possilikely
+2613313:3290:Nhwɛdo:Posted
+2613313:3291:Nhwɛdo:POV
+2613313:3292:Nhwɛdo:Pre/styles.css
+2613313:3293:Nhwɛdo:Preview warning
+2613313:3294:Nhwɛdo:ProposalOnHold
+2613313:3295:Nhwɛdo:ProposalOutOfScope
+2613313:3296:Nhwɛdo:Psblock
+2613313:3297:Nhwɛdo:Qmark
+2613313:3298:Nhwɛdo:Question
+2613313:3299:Nhwɛdo:Question mark
+2613313:3300:Nhwɛdo:Question mark box
+2613313:3301:Nhwɛdo:R an
+2613313:3302:Nhwɛdo:R avoided double redirect
+2613313:3303:Nhwɛdo:R cat shell
+2613313:3304:Nhwɛdo:R category with possibilities
+2613313:3305:Nhwɛdo:R extended-protected
+2613313:3306:Nhwɛdo:R extendedprotected
+2613313:3307:Nhwɛdo:R from acronym
+2613313:3308:Nhwɛdo:R from adjective
+2613313:3309:Nhwɛdo:R from adverb
+2613313:3310:Nhwɛdo:R from album
+2613313:3311:Nhwɛdo:R from alternative hyphenation
+2613313:3312:Nhwɛdo:R from alternative name
+2613313:3313:Nhwɛdo:R from alternative punctuation
+2630206:3314:Nhwɛdo:R from alternative scientific name
+2630206:3315:Nhwɛdo:R from alternative spacing
+2630206:3316:Nhwɛdo:R from alternative spelling
+2630206:3317:Nhwɛdo:R from ambiguous sort name
+2630206:3318:Nhwɛdo:R from ambiguous term
+2630206:3319:Nhwɛdo:R from American English
+2630206:3320:Nhwɛdo:R from antonym
+2630206:3321:Nhwɛdo:R from ASCII-only
+2630206:3322:Nhwɛdo:R from birth name
+2630206:3323:Nhwɛdo:R from Bluebook abbreviation
+2630206:3324:Nhwɛdo:R from British English
+2630206:3325:Nhwɛdo:R from CamelCase
+2630206:3326:Nhwɛdo:R from common noun
+2630206:3327:Nhwɛdo:R from diacritic
+2630206:3328:Nhwɛdo:R from domain name
+2630206:3329:Nhwɛdo:R from drafts
+2630206:3330:Nhwɛdo:R from drug trade name
+2630206:3331:Nhwɛdo:R from fictional character
+2630206:3332:Nhwɛdo:R from fictional element
+2630206:3333:Nhwɛdo:R from fictional location
+2630206:3334:Nhwɛdo:R from file metadata link
+2630206:3335:Nhwɛdo:R from filename
+2630206:3336:Nhwɛdo:R from former name
+2630206:3337:Nhwɛdo:R from gender
+2630206:3338:Nhwɛdo:R from gerund
+2630206:3339:Nhwɛdo:R from given name
+2630206:3340:Nhwɛdo:R from hook line
+2630206:3341:Nhwɛdo:R from incomplete disambiguation
+2630206:3342:Nhwɛdo:R from incorrect disambiguation
+2630206:3343:Nhwɛdo:R from incorrect name
+2630206:3344:Nhwɛdo:R from initialism
+2630206:3345:Nhwɛdo:R from ISO 15924 code
+2630206:3346:Nhwɛdo:R from ISO 3166 code
+2630206:3347:Nhwɛdo:R from ISO 4 abbreviation
+2630206:3348:Nhwɛdo:R from ISO 4217 code
+2630206:3349:Nhwɛdo:R from ISO 639 code
+2630206:3350:Nhwɛdo:R from Java package name
+2630206:3351:Nhwɛdo:R from legislation
+2630206:3352:Nhwɛdo:R from less specific name
+2630206:3353:Nhwɛdo:R from ligature
+2630206:3354:Nhwɛdo:R from list topic
+2630206:3355:Nhwɛdo:R from long name
+2630206:3356:Nhwɛdo:R from lyric
+2630206:3357:Nhwɛdo:R from married name
+2630206:3358:Nhwɛdo:R from MathSciNet abbreviation
+2630206:3359:Nhwɛdo:R from member
+2630206:3360:Nhwɛdo:R from miscapitalisation
+2630206:3361:Nhwɛdo:R from molecular formula
+2630206:3362:Nhwɛdo:R from monotypic taxon
+2630206:3363:Nhwɛdo:R from more specific geographic name
+2630206:3364:Nhwɛdo:R from more specific name
+2630206:3365:Nhwɛdo:R from name and country
+2630206:3366:Nhwɛdo:R from name with title
+2630206:3367:Nhwɛdo:R from NLM abbreviation
+2630206:3368:Nhwɛdo:R from other capitalisation
+2630206:3369:Nhwɛdo:R from other disambiguation
+2630206:3370:Nhwɛdo:R from personal name
+2630206:3371:Nhwɛdo:R from phrase
+2630206:3372:Nhwɛdo:R from portmanteau
+2630206:3373:Nhwɛdo:R from postal code
+2630206:3374:Nhwɛdo:R from predictable disambiguation
+2630206:3375:Nhwɛdo:R from proper noun
+2630206:3376:Nhwɛdo:R from pseudonym
+2630206:3377:Nhwɛdo:R from related word
+2630206:3378:Nhwɛdo:R from remote page
+2630206:3379:Nhwɛdo:R from Roman numerals
+2630206:3380:Nhwɛdo:R from school
+2630206:3381:Nhwɛdo:R from scientific name
+2630206:3382:Nhwɛdo:R from search term
+2630206:3383:Nhwɛdo:R from short name
+2630206:3384:Nhwɛdo:R from song
+2630206:3385:Nhwɛdo:R from sort name
+2630206:3386:Nhwɛdo:R from stylization
+2630206:3387:Nhwɛdo:R from subpage
+2630206:3388:Nhwɛdo:R from surname
+2630206:3389:Nhwɛdo:R from synonym
+2630206:3390:Nhwɛdo:R from team
+2630206:3391:Nhwɛdo:R from technical name
+2630206:3392:Nhwɛdo:R from top-level domain
+2630206:3393:Nhwɛdo:R from Unicode
+2630206:3394:Nhwɛdo:R from unnecessary disambiguation
+2630206:3395:Nhwɛdo:R from verb
+2630206:3396:Nhwɛdo:R fully protected
+2630206:3397:Nhwɛdo:R long
+2630206:3398:Nhwɛdo:R mentioned in hatnote
+2630206:3399:Nhwɛdo:R semi-protected
+2630206:3400:Nhwɛdo:R semiprotected
+2630206:3401:Nhwɛdo:R template-protected
+2630206:3402:Nhwɛdo:R to acronym
+2630206:3403:Nhwɛdo:R to article without mention
+2630206:3404:Nhwɛdo:R to ASCII-only
+2630206:3405:Nhwɛdo:R to category namespace
+2630206:3406:Nhwɛdo:R to decade
+2630206:3407:Nhwɛdo:R to diacritic
+2630206:3408:Nhwɛdo:R to disambiguation page
+2630206:3409:Nhwɛdo:R to documentation page
+2630206:3410:Nhwɛdo:R to draft namespace
+2630206:3411:Nhwɛdo:R to help namespace
+2630206:3412:Nhwɛdo:R to initialism
+2630206:3413:Nhwɛdo:R to joint biography
+2648591:3414:Nhwɛdo:R to ligature
+2648591:3415:Nhwɛdo:R to main namespace
+2648591:3416:Nhwɛdo:R to monotypic taxon
+2648591:3417:Nhwɛdo:R to plural
+2648591:3418:Nhwɛdo:R to portal namespace
+2648591:3419:Nhwɛdo:R to project namespace
+2648591:3420:Nhwɛdo:R to redirect template
+2648591:3421:Nhwɛdo:R to related topic
+2648591:3422:Nhwɛdo:R to scientific name
+2648591:3423:Nhwɛdo:R to subpage
+2648591:3424:Nhwɛdo:R to subtopic
+2648591:3425:Nhwɛdo:R to talk
+2648591:3426:Nhwɛdo:R to talk page
+2648591:3427:Nhwɛdo:R to technical name
+2648591:3428:Nhwɛdo:R to template namespace
+2648591:3429:Nhwɛdo:R to TV episode list entry
+2648591:3430:Nhwɛdo:R to user namespace
+2648591:3431:Nhwɛdo:R tsh
+2648591:3432:Nhwɛdo:R with draft
+2648591:3433:Nhwɛdo:R with old history
+2648591:3434:Nhwɛdo:R with possibilities
+2648591:3435:Nhwɛdo:R with Wikidata item
+2648591:3436:Nhwɛdo:Rblock
+2648591:3437:Nhwɛdo:Read
+2648591:3438:Nhwɛdo:Received
+2648591:3439:Nhwɛdo:Redflag
+2648591:3440:Nhwɛdo:Redirect-distinguish
+2648591:3441:Nhwɛdo:Redr
+2648591:3442:Nhwɛdo:Redundant symbol
+2648591:3443:Nhwɛdo:Refbegin/styles.css
+2648591:3444:Nhwɛdo:Reflist-talk/styles.css
+2648591:3445:Nhwɛdo:Relisted
+2648591:3446:Nhwɛdo:Remark
+2648591:3447:Nhwɛdo:Remind
+2648591:3448:Nhwɛdo:Removed
+2648591:3449:Nhwɛdo:Renamer note
+2648591:3450:Nhwɛdo:Reopened
+2648591:3451:Nhwɛdo:Replaced
+2648591:3452:Nhwɛdo:Reply to
+2648591:3453:Nhwɛdo:Request edit button
+2648591:3454:Nhwɛdo:Resize
+2648591:3455:Nhwɛdo:Resolved mark
+2648591:3457:Nhwɛdo:Resolved1
+2648591:3458:Nhwɛdo:Responded
+2648591:3459:Nhwɛdo:Reverted
+2648591:3460:Nhwɛdo:Reviewing
+2648591:3461:Nhwɛdo:Reviewing request
+2648591:3462:Nhwɛdo:Revoked
+2648591:3463:Nhwɛdo:Rimshot
+2648591:3464:Nhwɛdo:S-start/TemplateData
+2648591:3465:Nhwɛdo:Sandbox notice
+2648591:3466:Nhwɛdo:Sans-serif
+2648591:3467:Nhwɛdo:Sblock
+2648591:3468:Nhwɛdo:Scissors
+2648591:3469:Nhwɛdo:Screen reader-only/styles.css
+2648591:3470:Nhwɛdo:Script/doc/id-unk
+2648591:3471:Nhwɛdo:Script/styles.css
+2648591:3472:Nhwɛdo:Self-reference
+2648591:3473:Nhwɛdo:Self-trout
+2648591:3474:Nhwɛdo:Self-whale
+2648591:3475:Nhwɛdo:Semi-done
+2648591:3476:Nhwɛdo:Sent
+2648591:3477:Nhwɛdo:SfnRef
+2648591:3478:Nhwɛdo:Sfrac/styles.css
+2648591:3479:Nhwɛdo:Short description
+2648591:3480:Nhwɛdo:Shrug
+2648591:3481:Nhwɛdo:Small div
+2648591:3482:Nhwɛdo:Smallrejected
+2648591:3483:Nhwɛdo:Snow
+2648591:3484:Nhwɛdo:Socks tagged
+2648591:3485:Nhwɛdo:Sorry
+2648591:3486:Nhwɛdo:Spaced en dash
+2648591:3487:Nhwɛdo:Stack/styles.css
+2648591:3488:Nhwɛdo:Stale-small
+2648591:3489:Nhwɛdo:Stale GAN
+2648591:3490:Nhwɛdo:StaleIP
+2648591:3491:Nhwɛdo:Start date and age
+2648591:3492:Nhwɛdo:Started
+2648591:3493:Nhwɛdo:Str find
+2648591:3494:Nhwɛdo:Subst only
+2648591:3495:Nhwɛdo:Suggestion
+2648591:3496:Nhwɛdo:SULcheck
+2648591:3497:Nhwɛdo:Sup
+2648591:3498:Nhwɛdo:Sure
+2648591:3499:Nhwɛdo:Table
+2648591:3500:Nhwɛdo:Table alignment/tables.css
+2648591:3501:Nhwɛdo:Table flip
+2648591:3502:Nhwɛdo:Tallyho
+2648591:3503:Nhwɛdo:Tc
+2648591:3504:Nhwɛdo:Template doc
+2648591:3505:Nhwɛdo:Template for discussion/dated
+2648591:3506:Nhwɛdo:Template link with magic
+2648591:3507:Nhwɛdo:TEMPLATENAMEE
+2648591:3508:Nhwɛdo:Templates for archiving
+2648591:3509:Nhwɛdo:Testcase nowiki
+2648591:3510:Nhwɛdo:Thank
+2648591:3511:Nhwɛdo:Thank you
+2648591:3512:Nhwɛdo:Thank you very much
+2648591:3513:Nhwɛdo:Thin space
+2648591:3514:Nhwɛdo:Thumbs down
+2668666:3515:Nhwɛdo:Thumbs up
+2668666:3516:Nhwɛdo:Tobedone
+2668666:3517:Nhwɛdo:TOC right
+2668666:3518:Nhwɛdo:ToDo
+2668666:3519:Nhwɛdo:Tooltip/styles.css
+2668666:3520:Nhwɛdo:Tq
+2668666:3521:Nhwɛdo:Transclusionless
+2668666:3522:Nhwɛdo:Twomanrule
+2668666:3523:Nhwɛdo:U
+2668666:3524:Nhwɛdo:Unapproved
+2668666:3525:Nhwɛdo:Unchecked box
+2668666:3526:Nhwɛdo:Underlinked
+2668666:3527:Nhwɛdo:UnderReview
+2668666:3528:Nhwɛdo:Undone
+2668666:3529:Nhwɛdo:Unexed box
+2668666:3530:Nhwɛdo:Unichar
+2668666:3531:Nhwɛdo:Unlikely
+2668666:3532:Nhwɛdo:Unnecessary
+2668666:3533:Nhwɛdo:Unprod
+2668666:3534:Nhwɛdo:Unrelated
+2668666:3535:Nhwɛdo:Uploaded
+2668666:3536:Nhwɛdo:Urgent
+2668666:3537:Nhwɛdo:URL
+2668666:3538:Nhwɛdo:User-blocked
+2668666:3539:Nhwɛdo:Userspace disclaimers
+2668666:3540:Nhwɛdo:Verified
+2668666:3541:Nhwɛdo:View
+2668666:3542:Nhwɛdo:Visible anchor/styles.css
+2668666:3543:Nhwɛdo:Vr
+2668666:3544:Nhwɛdo:When on basepage
+2668666:3545:Nhwɛdo:Wikidata
+2668666:3546:Nhwɛdo:Wikidata image
+2668666:3547:Nhwɛdo:Wikidata redirect
+2668666:3548:Nhwɛdo:Wikipedia's sister projects/styles.css
+2668666:3549:Nhwɛdo:WikiThanks
+2668666:3550:Nhwɛdo:Withdraw
+2668666:3551:Nhwɛdo:Withdrawn
+2668666:3552:Nhwɛdo:Won't fix
+2668666:3553:Nhwɛdo:Working
+2668666:3554:Nhwɛdo:Works for me
+2668666:3555:Nhwɛdo:WPcrystalball
+2668666:3556:Nhwɛdo:Wrap
+2668666:3557:Nhwɛdo:X mark
+2668666:3558:Nhwɛdo:X mark-n
+2668666:3559:Nhwɛdo:Xed box
+2668666:3560:Nhwɛdo:Y&amp;
+2668666:3561:Nhwɛdo:Yeac
+2668666:3562:Nhwɛdo:Yeag
+2668666:3563:Nhwɛdo:Yes/no
+2668666:3564:Nhwɛdo:You're welcome
+2668666:3565:Wikipedia:Ghana Nsɔwdo Skuul Akansi
+2668666:3566:Charlotte Osei
+2668666:3567:Abeaseman Community Day Senior High School
+2668666:3568:Abor Senior High School
+2668666:3569:Abuakwa State College
+2668666:3570:Accra Girls Senior High School
+2668666:3571:Accra Technical Training Center
+2668666:3572:Achiase Senior High School
+2668666:3573:Adanwomase Senior High School
+2668666:3574:Adventist Girls High School
+2668666:3575:Afia Kobi Ampem Senior High School
+2668666:3576:Agona Senior High Technical School
+2668666:3577:Ahamansu Islamic Senior High School
+2668666:3578:Akim Swedru Senior High School
+2668666:3579:Akro Senior High Technical School
+2668666:3580:Akumadan Senior High School
+2668666:3581:Anlo Senior High School
+2668666:3582:Asankrangwa Senior High School
+2668666:3583:Asankrangwa Senior High Technical School
+2668666:3584:Ashaiman Senior High School
+2668666:3585:Awudome Senior High School
+2668666:3586:Axim Girls Senior High School
+2668666:3587:Baidoo Bonsoe Senior High Technical School
+2668666:3588:Barekese Senior High School
+2668666:3589:Bimbilla Senior High School
+2668666:3590:Boa Amponsem Senior High School
+2668666:3591:Bole Senior High School
+2668666:3592:Bolgatanga Girls Senior High School
+2668666:3593:Christian Methodist Senior High School
+2668666:3594:Diaso Senior High School
+2668666:3595:Ejisu Senior High Technical School
+2668666:3596:Fumbisi Senior High School
+2668666:3597:Gambaga Girls Senior High School
+2668666:3598:Ghana Greentech Academy
+2668666:3599:Ghana National College
+2668666:3600:Ghana-Lebanon Islamic School
+2668666:3601:Half Assini Senior High School
+2668666:3602:Ideal College Senior High School
+2668666:3603:Jukwa Senior High School
+2668666:3604:Kadjebi-Asato Senior High School
+2668666:3605:Kalpohin Senior High School
+2668666:3606:Keta Senior High Technical School
+2668666:3607:Kinbu Senior High Technical School
+2668666:3608:Kintampo Senior High School
+2668666:3609:KNUST Senior High School
+2668666:3610:Kpando Senior High School
+2668666:3611:Kpedze Senior High School
+2668666:3612:Krobea Asante Vocational/Technical Institute
+2668666:3613:Kumasi High School
+2668666:3614:Kumasi Senior High Technical School
+2696720:3615:Kumasi Technical Institute
+2696720:3616:Lycée Français International Jacques Prévert d'Accra
+2696720:3617:Breman Asikuma Senior High School
+2696720:3618:Sacred Heart Senior High School
+2696720:3619:Labone Senior High School
+2696720:3620:Manhean Senior High School
+2696720:3621:Mawuko Girls Senior High School
+2696720:3622:Mawuli School
+2696720:3623:Methodist Girls' High School (Mamfe)
+2696720:3624:Mim Senior High School
+2696720:3625:Mirigu Senior High School
+2696720:3626:Nsein Senior High School
+2696720:3627:OLA Girls Senior High School (Ho)
+2696720:3628:Northern School of Business
+2696720:3629:Notre Dame Seminary Senior High School, Navrongo
+2696720:3630:Nungua Senior High School
+2696720:3631:Obuasi Senior High Technical School
+2696720:3632:Zuarungu Senior High School
+2696720:3633:St Mary's Senior High School (Ghana)
+2696720:3634:Zion Senior High School
+2696720:3635:Zamse Senior High Technical School
+2696720:3636:Zabzugu Senior High School
+2696720:3637:Osei Kyeretwie Senior High School
+2696720:3638:Yendi Senior High School
+2696720:3639:Yaa Asantewaa Girls' Senior High School
+2696720:3640:West Africa Senior High School
+2696720:3641:Walewale Senior High Technical School
+2696720:3642:Wa Senior High Technical School
+2696720:3643:Tweneboa Kodua Senior High School
+2696720:3644:Tolon Senior High School
+2696720:3645:Three Town Senior High School
+2696720:3646:Techiman Senior High School
+2696720:3648:T.I. Ahmadiyya Senior High School, Kumasi
+2696720:3649:Takoradi Technical Institute
+2696720:3650:T.I. Ahmadiyya Girls Senior High School, Asokore
+2696720:3651:Seventh Day Adventist Senior High School, Bekwai
+2696720:3652:Serwaa Nyarko Girls' Senior High School
+2696720:3653:Sefwi Wiawso Senior High School
+2696720:3654:Saviour Presby
+2696720:3655:Salaga Senior High School
+2696720:3656:St. Paul's Senior High School
+2696720:3657:Asanteman Senior High School
+2696720:3658:Bolgatanga Senior High School
+2696720:3659:Anglican Senior High School
+2696720:3660:Lassia-Tuolu Senior High School
+2696720:3661:Odorgonno Senior High School
+2696720:3662:St. Francis Girls' Senior High School
+2696720:3663:Chemu Senior High School
+2696720:3664:St. Mary's Seminary/Senior High School
+2696720:3665:Reverend John Teye Memorial Institute
+2696720:3666:Presbyterian Senior High School, Osu
+2696720:3667:OLA Girls Senior High School (Kenyasi)
+2696720:3668:Bishop Herman College
+2696720:3669:Fodoa Community Day Senior High School
+2696720:3670:Ghana Senior High Technical School (Takoradi)
+2696720:3671:Huni Valley Senior High School
+2696720:3672:Islamic Senior High School, Kumasi
+2696720:3673:Navrongo Senior High School
+2696720:3674:Notre Dame High School (Ghana)
+2696720:3675:O'Reilly Senior High School
+2696720:3676:St. Peter's Boys Senior High School
+2696720:3677:St. Thomas Aquinas Senior High School
+2696720:3678:Oyoko Methodist Senior High School
+2696720:3679:Pope John Senior High School and Minor Seminary
+2696720:3680:Dzodze Penyi Senior High School
+2696720:3681:Ebenezer Senior High School

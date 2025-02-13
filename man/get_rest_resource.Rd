@@ -37,7 +37,7 @@ be parsed using the schema.}
 
 \item{failure_mode}{How to respond if a request fails
 "error", the default: raise an error
-"quiet", silently return NA}
+"quiet", silently return NA, and include the http error code in the response}
 }
 \value{
 A list of responses. If \code{response_format} == "json", then the responses
@@ -50,4 +50,9 @@ silently unlisted, returning a simple list or vector.
 \description{
 This function is intended for developer use. It makes it easy to quickly
 generate vectorised calls to the different APIs.
+}
+\details{
+The key invariant to maintain is the number of rows. Users ought to be able
+to use this function with \link[dplyr:mutate]{dplyr::mutate}, which requires the number of rows
+to be invariant.
 }

@@ -9,7 +9,8 @@ get_history_count(
   type = c("edits", "anonymous", "bot", "editors", "minor", "reverted"),
   from = NULL,
   to = NULL,
-  language = "en"
+  language = "en",
+  failure_mode = c("error", "quiet")
 )
 }
 \arguments{
@@ -22,6 +23,8 @@ get_history_count(
 \item{to}{Optional: a vector of revision ids}
 
 \item{language}{Vector of two-letter language codes for Wikipedia editions}
+
+\item{failure_mode}{What to do if no data is found. See \code{\link[=get_rest_resource]{get_rest_resource()}}}
 }
 \value{
 A \link[tibble:tbl_df-class]{tibble::tbl_df} with two columns:
@@ -38,7 +41,13 @@ Count how many times Wikipedia articles have been edited
 \examples{
 # Get the number of edits made by auto-confirmed editors to a page between
 # revisions 384955912 and 406217369
-get_history_count("Jupiter", "editors", 384955912, 406217369)
+get_history_count(
+  title="Jupiter",
+  type="editors",
+  from=384955912,
+  to=406217369,
+  failure_mode="quiet"
+  )
 
 # Compare which authors have the most edit activity
 authors <- tibble::tribble(
@@ -47,6 +56,6 @@ authors <- tibble::tribble(
   "William Shakespeare",
   "Emily Dickinson"
 ) \%>\%
-  dplyr::mutate(get_history_count(author))
+  dplyr::mutate(get_history_count(author, failure_mode="quiet"))
 authors
 }

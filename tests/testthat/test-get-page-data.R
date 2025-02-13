@@ -15,10 +15,6 @@ test_that("wikimedia API page endpoints return data for known requests", {
   expect_equal(nrow(summary), length(title))
   expect_s3_class(summary, "tbl_df")
 
-  related <- get_page_related(title, language)
-  expect_length(related, 2)
-  expect_true(rlang::is_bare_list(related))
-  expect_s3_class(related[[1]], "tbl_df")
 })
 
 test_that("`get_page_talk` throws a `bad_title` error in the right circumstances", {

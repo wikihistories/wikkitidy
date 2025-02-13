@@ -4,6 +4,10 @@
 #' This function is intended for developer use. It makes it easy to quickly
 #' generate vectorised calls to the different APIs.
 #'
+#' The key invariant to maintain is the number of rows. Users ought to be able
+#' to use this function with [dplyr::mutate], which requires the number of rows
+#' to be invariant.
+#'
 #' @param ... <[`dynamic-dots`][rlang::dyn-dots]> The URL components and query
 #'   parameters of the desired resources. Names of the arguments are ignored.
 #'   The function follows the [tidyverse vector recycling
@@ -23,7 +27,7 @@
 #'   be parsed using the schema.
 #' @param failure_mode How to respond if a request fails
 #'   "error", the default: raise an error
-#'   "quiet", silently return NA
+#'   "quiet", silently return NA, and include the http error code in the response
 #'
 #' @return A list of responses. If `response_format` == "json", then the responses
 #'   will be simple R lists. If `response_format` == "html", then the responses
@@ -86,7 +90,9 @@ new_response_function <- function(response_format, failure_mode) {
 handle_without_error <- function(handler) {
   function(resp) {
     if (httr2::resp_is_error(resp)) {
-      list()
+      # Record failed requests in output data frame
+      # This also maintains the row number invariant
+      list(error_code = httr2::resp_status(resp))
     } else {
       handler(resp)
     }

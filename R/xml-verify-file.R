@@ -8,6 +8,8 @@
 #'
 #' @return True (invisibly) if successful, otherwise error
 #'
+#' @keywords internal
+#'
 verify_xml_integrity <- function(path) {
   checksum <- .get_checksum(path)
   conn <- file(path, open="rb")
