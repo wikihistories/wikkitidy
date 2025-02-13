@@ -12,7 +12,7 @@ License: MIT + file LICENSE
 URL: https://wikihistories.github.io/wikkitidy/, https://github.com/wikihistories/wikkitidy
 BugReports: https://github.com/wikihistories/wikkitidy/issues
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1.0)
 Imports: 
     cli,
     coro,
