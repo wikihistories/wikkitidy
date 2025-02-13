@@ -27,7 +27,8 @@ Imports:
     rlang (>= 0.4.11),
     stringr,
     tibble,
-    vctrs
+    vctrs,
+    webfakes
 Suggests: 
     covr,
     igraph,
