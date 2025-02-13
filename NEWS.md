@@ -1,4 +1,4 @@
-# wikkitidy (development version)
+# wikkitidy 0.1.14
 
 * Added `failure_mode` parameter to `get_history_count()` and `page_vector_functions`
 * Changed behaviour of `get_rest_resource()` so that the number of output rows is guaranteed to be the same as the number of input rows. Now if a request fails, a new column is added to the output `error_code`, with the http response code.
