@@ -1,5 +1,8 @@
 # wikkitidy (development version)
 
+* Added `skip_on_cran()` to remaining live Action API tests (`query_generate_pages()`, `query_list_pages()`, `query_by_title()`), which were failing on CRAN
+* `gracefully()` tests now skip if `webfakes` is not installed
+
 # wikkitidy 0.1.14
 
 * Added `failure_mode` parameter to `get_history_count()` and `page_vector_functions`

@@ -13,3 +13,8 @@
 ^tests/testthat/fixtures/big$
 ^CRAN-SUBMISSION$
 ^revdep
+^\.posit/assistant$
+^CONTEXT\.md$
+^AGENTS\.md$
+^skills-lock.json$
+^docs$

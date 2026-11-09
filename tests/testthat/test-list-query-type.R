@@ -1,4 +1,5 @@
 test_that("`query_list_pages` returns data for a known request", {
+  skip_on_cran()
   physics_pages <- wiki_action_request() %>%
     query_list_pages("categorymembers",
                      cmsort = "timestamp",

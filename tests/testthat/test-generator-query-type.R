@@ -12,6 +12,7 @@ test_that("`query_generate_pages` throws an error if list and property generator
 })
 
 test_that("`query_generate_pages` returns data for a known request", {
+  skip_on_cran()
   seagulls <- wiki_action_request() %>%
     query_generate_pages("search", gsrsearch = "seagull") %>%
     next_batch()

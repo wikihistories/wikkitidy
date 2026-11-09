@@ -1,4 +1,5 @@
 test_that("`query_by_title` returns data for a known request", {
+  skip_on_cran()
   resp <- wiki_action_request() %>%
     query_by_title("Charles Harpur") %>%
     query_by_title("Henry Lawson") %>%
