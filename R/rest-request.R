@@ -57,7 +57,7 @@ wikimedia_rest_request <- function(..., language = "en") {
 #' Build a REST request to one of the Wikimedia Foundation's central APIs
 #'
 #' @description `wikimedia_org_rest_request()` builds a request for the
-#'   [wikimedia.org REST API](https://wikimedia.org/api/rest_v1/), which
+#'   [wikimedia.org REST API](https://meta.wikimedia.org/wiki/Special:RestSandbox), which
 #'   provides statistical data about Wikimedia Foundation projects
 #'
 #'   `xtools_rest_request()` builds a request to the [XTools
@@ -91,7 +91,7 @@ NULL
 #' @rdname wikimedia_rest_apis
 #' @export
 wikimedia_org_rest_request <- function(endpoint, ..., language = "en") {
-  base_url <- "https://wikimedia.org/api/rest_v1/"
+  base_url <- "https://meta.wikimedia.org/wiki/Special:RestSandbox"
   project <- glue::glue("{language}.wikipedia.org")
   request <- wm_rest_request(..., base_url = base_url, project = project, endpoint = endpoint, language = language) %>%
     httr2::req_throttle(200, realm = "wikmedia_org")

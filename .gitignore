@@ -7,4 +7,5 @@ docs
 
 # Large files for local testing only
 tests/testthat/fixtures/big
+
 .posit/assistant

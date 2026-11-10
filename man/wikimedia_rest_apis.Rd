@@ -27,7 +27,7 @@ subclasses \link[httr2:request]{httr2::request}.
 }
 \description{
 \code{wikimedia_org_rest_request()} builds a request for the
-\href{https://wikimedia.org/api/rest_v1/}{wikimedia.org REST API}, which
+\href{https://meta.wikimedia.org/wiki/Special:RestSandbox}{wikimedia.org REST API}, which
 provides statistical data about Wikimedia Foundation projects
 
 \code{xtools_rest_request()} builds a request to the \href{https://www.mediawiki.org/wiki/XTools/API}{XTools API}, which provides additional

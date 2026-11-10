@@ -26,7 +26,7 @@ parameters}
 \item{api}{The desired REST api:
 "\href{https://www.mediawiki.org/wiki/API:REST_API}{core}",
 "\href{https://www.mediawiki.org/wiki/Wikimedia_REST_API}{wikimedia}",
-"\href{https://wikimedia.org/api/rest_v1/}{wikimedia_org}", or
+"\href{https://meta.wikimedia.org/wiki/Special:RestSandbox}{wikimedia_org}", or
 "\href{https://www.mediawiki.org/wiki/XTools/API}{xtools}"}
 
 \item{response_format}{The expected Content-Type of the response. Currently "html" and

@@ -19,7 +19,7 @@
 #' @param api The desired REST api:
 #'   "[core](https://www.mediawiki.org/wiki/API:REST_API)",
 #'   "[wikimedia](https://www.mediawiki.org/wiki/Wikimedia_REST_API)",
-#'   "[wikimedia_org](https://wikimedia.org/api/rest_v1/)", or
+#'   "[wikimedia_org](https://meta.wikimedia.org/wiki/Special:RestSandbox)", or
 #'   "[xtools](https://www.mediawiki.org/wiki/XTools/API)"
 #' @param response_format The expected Content-Type of the response. Currently "html" and
 #'   "json" are supported.
