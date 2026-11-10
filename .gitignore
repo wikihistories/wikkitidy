@@ -3,7 +3,6 @@
 .Rdata
 .httr-oauth
 .DS_Store
-docs
 
 # Large files for local testing only
 tests/testthat/fixtures/big
