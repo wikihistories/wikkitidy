@@ -14,7 +14,7 @@
 ^CRAN-SUBMISSION$
 ^revdep
 ^\.posit/assistant$
-^CONTEXT\.md$
+^GLOSSARY\.md$
 ^AGENTS\.md$
 ^skills-lock.json$
 ^docs$
