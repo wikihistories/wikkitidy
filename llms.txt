@@ -38,7 +38,7 @@ minimal data wrangling and cleaning.
 | 0.3 | Calls and response objects for [MediaWiki Action API Query Modules](https://www.mediawiki.org/wiki/API:Query) | ⬜ |
 | 0.4 | Interface to Wikipedia XML dumps | ⬜ |
 | 0.5 | Implementation of [Wikiblame](https://github.com/FlominatorTM/wikiblame) | ⬜ |
-| 0.6 | Calls and response objects for the [XTools](https://www.mediawiki.org/wiki/XTools/API) and [WikiMedia](https://wikimedia.org/api/rest_v1/) APIs | ⬜ |
+| 0.6 | Calls and response objects for the [XTools](https://www.mediawiki.org/wiki/XTools/API) and [WikiMedia](https://meta.wikimedia.org/wiki/Special:RestSandbox) APIs | ⬜ |
 
 ## Installation
 

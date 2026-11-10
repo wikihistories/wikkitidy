@@ -1,8 +1,8 @@
 # Build a REST request to one of the Wikimedia Foundation's central APIs
 
 `wikimedia_org_rest_request()` builds a request for the [wikimedia.org
-REST API](https://wikimedia.org/api/rest_v1/), which provides
-statistical data about Wikimedia Foundation projects
+REST API](https://meta.wikimedia.org/wiki/Special:RestSandbox), which
+provides statistical data about Wikimedia Foundation projects
 
 `xtools_rest_request()` builds a request to the [XTools
 API](https://www.mediawiki.org/wiki/XTools/API), which provides
