@@ -137,8 +137,8 @@ physics_members
 
 # Build the tree of all albums for the Melbourne band Custard
 tree <- gracefully("Category:Custard_(band)_albums", build_category_tree)
-#> ⠙ Walking subcategories: 1 done (508/s) | 3ms
-#> ⠹ Walking subcategories: 2 done (21/s) | 94ms
+#> ⠙ Walking subcategories: 1 done (501/s) | 3ms
+#> ⠹ Walking subcategories: 2 done (23/s) | 89ms
 tree
 #> $nodes
 #> # A tibble: 12 × 4
@@ -180,9 +180,9 @@ if (!is_wikkitidy_failure(tree)) {
   tree_graph <- igraph::graph_from_data_frame(tree$edges, vertices = tree$nodes)
   tree_graph
 }
-#> IGRAPH 96edbc5 DN-B 12 11 -- 
+#> IGRAPH c032269 DN-B 12 11 -- 
 #> + attr: name (v/c), ns (v/n), title (v/c), type (v/c), timestamp (e/c)
-#> + edges from 96edbc5 (vertex names):
+#> + edges from c032269 (vertex names):
 #>  [1] 41181643->47888836 41181643->59271122 41181643->30333352 41181643->63691299
 #>  [5] 41181643->77627299 41181643->43770191 41181643->30333401 41181643->43769837
 #>  [9] 41181643->41148700 41148700->43770688 41148700->43770872

@@ -79,14 +79,14 @@ seagulls
 #> # A tibble: 10 × 4
 #>      pageid    ns title                       index
 #>       <int> <int> <chr>                       <int>
-#>  1    45232     0 Jonathan Livingston Seagull     4
+#>  1    45232     0 Jonathan Livingston Seagull     5
 #>  2   210481     0 Gull                            2
-#>  3   210492     0 Seagull (disambiguation)        5
+#>  3   210492     0 Seagull (disambiguation)        4
 #>  4   474370     0 The Seagull                     1
-#>  5  2305766     0 British Seagull                10
+#>  5  2305766     0 British Seagull                 9
 #>  6  6386157     0 Seagull management              6
 #>  7 22496419     0 HMS Seagull                     8
-#>  8 24071169     0 Tianjin Seagull                 9
+#>  8 24071169     0 Tianjin Seagull                10
 #>  9 58723600     0 Bobby Seagull                   7
 #> 10 73546753     0 BYD Seagull                     3
 #> ℹ There are more results on the server. Retrieve them with `next_batch()` or `retrieve_all()`

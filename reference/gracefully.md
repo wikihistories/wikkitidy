@@ -52,7 +52,7 @@ resp <- gracefully(req, httr2::req_perform)
 print(resp)
 #> → The query you tried was unsuccessful. See details below.
 #> <httr2_response>
-#> GET http://127.0.0.1:39501/status/404
+#> GET http://127.0.0.1:38461/status/404
 #> Status: 404 Not Found
 #> Content-Type: text/plain
 #> Body: None
@@ -78,7 +78,7 @@ resp <- gracefully(req, httr2::req_perform)
 
 print(resp)
 #> <httr2_response>
-#> GET http://127.0.0.1:39501/
+#> GET http://127.0.0.1:38461/
 #> Status: 200 OK
 #> Content-Type: text/html
 #> Body: In memory (357062 bytes)
