@@ -1,6 +1,8 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url><loc>https://wikihistories.github.io/wikkitidy/404.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/AGENTS.html</loc></url>
 <url><loc>https://wikihistories.github.io/wikkitidy/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/GLOSSARY.html</loc></url>
 <url><loc>https://wikihistories.github.io/wikkitidy/LICENSE-text.html</loc></url>
 <url><loc>https://wikihistories.github.io/wikkitidy/LICENSE.html</loc></url>
 <url><loc>https://wikihistories.github.io/wikkitidy/authors.html</loc></url>
@@ -17,6 +19,7 @@
 <url><loc>https://wikihistories.github.io/wikkitidy/reference/gracefully.html</loc></url>
 <url><loc>https://wikihistories.github.io/wikkitidy/reference/id_or_title.html</loc></url>
 <url><loc>https://wikihistories.github.io/wikkitidy/reference/index.html</loc></url>
+<url><loc>https://wikihistories.github.io/wikkitidy/reference/is_wikkitidy_failure.html</loc></url>
 <url><loc>https://wikihistories.github.io/wikkitidy/reference/new_generator_query.html</loc></url>
 <url><loc>https://wikihistories.github.io/wikkitidy/reference/new_list_query.html</loc></url>
 <url><loc>https://wikihistories.github.io/wikkitidy/reference/new_prop_query.html</loc></url>

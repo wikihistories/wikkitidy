@@ -1,0 +1,138 @@
+# Package index
+
+## Query Wikipedia using the Action API
+
+### Build a query
+
+Compose a complex query to Wikipedia’s Action API, combining list,
+property, and generator endpoints.
+
+- [`wiki_action_request()`](https://wikihistories.github.io/wikkitidy/reference/wiki_action_request.md)
+  :
+
+  Query Wikipedia using the [MediaWiki Action
+  API](https://www.mediawiki.org/wiki/API:Main_page)
+
+- [`query_generate_pages()`](https://wikihistories.github.io/wikkitidy/reference/query_generate_pages.md)
+  [`list_all_generators()`](https://wikihistories.github.io/wikkitidy/reference/query_generate_pages.md)
+  : Generate pages that meet certain criteria, or which are related to a
+  set of known pages by certain properties
+
+- [`query_list_pages()`](https://wikihistories.github.io/wikkitidy/reference/query_list_pages.md)
+  [`list_all_list_modules()`](https://wikihistories.github.io/wikkitidy/reference/query_list_pages.md)
+  : List pages that meet certain criteria
+
+- [`query_page_properties()`](https://wikihistories.github.io/wikkitidy/reference/query_page_properties.md)
+  [`list_all_property_modules()`](https://wikihistories.github.io/wikkitidy/reference/query_page_properties.md)
+  : Choose properties to return for pages from the action API
+
+- [`query_by_title()`](https://wikihistories.github.io/wikkitidy/reference/query_by_.md)
+  [`query_by_pageid()`](https://wikihistories.github.io/wikkitidy/reference/query_by_.md)
+  [`query_by_revid()`](https://wikihistories.github.io/wikkitidy/reference/query_by_.md)
+  :
+
+  Query the [MediaWiki Action
+  API](https://www.mediawiki.org/wiki/API:Main_page) using a vector of
+  Wikipedia pages
+
+- [`next_result()`](https://wikihistories.github.io/wikkitidy/reference/get_query_results.md)
+  [`next_batch()`](https://wikihistories.github.io/wikkitidy/reference/get_query_results.md)
+  [`retrieve_all()`](https://wikihistories.github.io/wikkitidy/reference/get_query_results.md)
+  :
+
+  Perform a query using the [MediaWiki Action
+  API](https://www.mediawiki.org/wiki/Special:MyLanguage/API:Main_page)
+
+### Common queries
+
+- [`query_category_members()`](https://wikihistories.github.io/wikkitidy/reference/query_category_members.md)
+  [`build_category_tree()`](https://wikihistories.github.io/wikkitidy/reference/query_category_members.md)
+  : Explore Wikipedia's category system
+
+### Low-level API
+
+- [`new_generator_query()`](https://wikihistories.github.io/wikkitidy/reference/new_generator_query.md)
+  : Constructor for generator query type
+
+- [`new_list_query()`](https://wikihistories.github.io/wikkitidy/reference/new_list_query.md)
+  :
+
+  Constructor for [list](https://www.mediawiki.org/wiki/API:Lists)
+  queries
+
+- [`new_prop_query()`](https://wikihistories.github.io/wikkitidy/reference/new_prop_query.md)
+  : Constructor for the property query type
+
+## Get page data
+
+Functions to retrieve additional data about pages. These functions
+typically rely on one of Wikipedia’s REST APIs, and work on a vector of
+page ids, titles or revision ids.
+
+### Vector functions
+
+- [`get_latest_revision()`](https://wikihistories.github.io/wikkitidy/reference/page_vector_functions.md)
+  [`get_page_html()`](https://wikihistories.github.io/wikkitidy/reference/page_vector_functions.md)
+  [`get_page_summary()`](https://wikihistories.github.io/wikkitidy/reference/page_vector_functions.md)
+  [`get_page_talk()`](https://wikihistories.github.io/wikkitidy/reference/page_vector_functions.md)
+  [`get_page_langlinks()`](https://wikihistories.github.io/wikkitidy/reference/page_vector_functions.md)
+  : Get data about pages from their titles
+
+- [`get_diff()`](https://wikihistories.github.io/wikkitidy/reference/get_diff.md)
+  : Search for insertions, deletions or relocations of text between two
+  versions of a Wikipedia page
+
+- [`get_history_count()`](https://wikihistories.github.io/wikkitidy/reference/get_history_count.md)
+  : Count how many times Wikipedia articles have been edited
+
+- [`get_xtools_page_info()`](https://wikihistories.github.io/wikkitidy/reference/xtools_page.md)
+  [`get_xtools_page_prose()`](https://wikihistories.github.io/wikkitidy/reference/xtools_page.md)
+  [`get_xtools_page_links()`](https://wikihistories.github.io/wikkitidy/reference/xtools_page.md)
+  [`get_xtools_page_top_editors()`](https://wikihistories.github.io/wikkitidy/reference/xtools_page.md)
+  [`get_xtools_page_assessment()`](https://wikihistories.github.io/wikkitidy/reference/xtools_page.md)
+  :
+
+  Access page-level statistics from the [XTools Page API
+  endpoint](https://www.mediawiki.org/wiki/XTools/API/Page)
+
+### Low-level API
+
+- [`core_rest_request()`](https://wikihistories.github.io/wikkitidy/reference/wikipedia_rest_apis.md)
+  [`wikimedia_rest_request()`](https://wikihistories.github.io/wikkitidy/reference/wikipedia_rest_apis.md)
+  : Build a REST request to one of Wikipedia's specific REST APIs
+
+- [`wikimedia_org_rest_request()`](https://wikihistories.github.io/wikkitidy/reference/wikimedia_rest_apis.md)
+  [`xtools_rest_request()`](https://wikihistories.github.io/wikkitidy/reference/wikimedia_rest_apis.md)
+  : Build a REST request to one of the Wikimedia Foundation's central
+  APIs
+
+- [`get_rest_resource()`](https://wikihistories.github.io/wikkitidy/reference/get_rest_resource.md)
+  :
+
+  Get resources from one of Wikipedia's [two REST
+  APIs](https://www.mediawiki.org/wiki/API)
+
+## Use WikiMedia XML dumps
+
+- [`verify_xml_integrity()`](https://wikihistories.github.io/wikkitidy/reference/verify_xml_integrity.md)
+  : Check that a Wikimedia XML file has not been corrupted
+
+## Data types
+
+Data types returned by wikkitidy functions.
+
+- [`query_tbl()`](https://wikihistories.github.io/wikkitidy/reference/query_tbl.md)
+  :
+
+  Representation of Wikipedia data returned from an [Action API Query
+  module](https://www.mediawiki.org/wiki/API:Query) as tibble, with
+  request metadata stored as attributes.
+
+## Utilities
+
+- [`gracefully()`](https://wikihistories.github.io/wikkitidy/reference/gracefully.md)
+  : Gracefully request a resource from Wikipedia
+- [`is_wikkitidy_failure()`](https://wikihistories.github.io/wikkitidy/reference/is_wikkitidy_failure.md)
+  : Failed wikkitidy requests
+- [`wikkitidy_example()`](https://wikihistories.github.io/wikkitidy/reference/wikkitidy_example.md)
+  : Get path to wikkitidy example
