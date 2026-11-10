@@ -38,7 +38,7 @@
 #' # The functions are vectorised over title and language
 #' # Find all articles about Joanna Baillie, and retrieve summary data for
 #' # the first two.
-#' baillie <- get_page_langlinks("Joanna Baillie") %>%
+#' baillie <- get_page_langlinks("Joanna Baillie", failure_mode = "quiet") %>%
 #'   dplyr::slice(1:2) %>%
 #'   dplyr::mutate(get_page_summary(title = title, language = code, failure_mode = "quiet"))
 #' baillie

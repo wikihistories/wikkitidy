@@ -15,14 +15,22 @@ typically one of those in \link{get_query_results}}
 }
 \value{
 The output of \code{request_method} called on \code{request_object}, if the
-request was successful. Otherwise a \code{httr2_response} object with details
-of the failed request.
+request was successful. Otherwise a \code{wikkitidy_failure} object wrapping
+the \code{httr2_response} (HTTP error) or the condition (connection failure).
+Test for it with \code{\link[=is_wikkitidy_failure]{is_wikkitidy_failure()}}.
 }
 \description{
 The main purpose of this function is to enable examples using live resources
 in the documentation. Examples must not throw errors, according to CRAN
 policy. If you wrap a requesting method in \code{gracefully}, then any
-errors of type \code{httr2_http} will be caught and no error will be thrown.
+errors of type \code{httr2_http} (HTTP errors) or \code{httr2_failure} (e.g. connection
+failures) will be caught and no error will be thrown.
+}
+\details{
+If \code{request_object} is already a \code{wikkitidy_failure} (see
+\code{\link[=is_wikkitidy_failure]{is_wikkitidy_failure()}}), it is returned unchanged without calling
+\code{request_method}. This lets failures pass through a pipeline of
+\code{gracefully()} calls.
 }
 \examples{
 \dontshow{if (rlang::is_installed("webfakes")) withAutoprint(\{ # examplesIf}
@@ -33,6 +41,18 @@ req <- httr2::request(httr2::example_url()) |>
 resp <- gracefully(req, httr2::req_perform)
 
 print(resp)
+
+# A connection failure is also caught
+bad <- httr2::request("http://127.0.0.1:1") |>
+  httr2::req_retry(max_tries = 1)
+
+failed <- gracefully(bad, httr2::req_perform)
+
+is_wikkitidy_failure(failed)
+
+# A failure short-circuits: the method is not called again
+gracefully(failed, httr2::req_perform) |>
+  is_wikkitidy_failure()
 
 # This request succeeds
 req <- httr2::request(httr2::example_url())

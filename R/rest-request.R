@@ -23,16 +23,18 @@
 #' @examples
 #' # Get the html of the 'Earth' article on English Wikipedia
 #' response <- core_rest_request("page", "Earth", "html") %>%
-#'   httr2::req_perform()
+#'   gracefully(httr2::req_perform)
 #'
 #' response <- wikimedia_rest_request("page", "html", "Earth") %>%
-#'   httr2::req_perform()
+#'   gracefully(httr2::req_perform)
 #'
 #' # Some REST requests take query parameters. Pass these as named arguments.
 #' # To search German Wikipedia for articles about Goethe
 #' response <- core_rest_request("search/page", q = "Goethe", limit = 2, language = "de") %>%
-#'   httr2::req_perform() %>%
-#'   httr2::resp_body_json()
+#'   gracefully(httr2::req_perform)
+#' if (!is_wikkitidy_failure(response)) {
+#'   httr2::resp_body_json(response)
+#' }
 NULL
 
 #' @rdname wikipedia_rest_apis

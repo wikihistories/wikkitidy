@@ -85,13 +85,15 @@ physics_members
 
 
 # Build the tree of all albums for the Melbourne band Custard
-tree <- build_category_tree("Category:Custard_(band)_albums")
+tree <- gracefully("Category:Custard_(band)_albums", build_category_tree)
 tree
 
 # For network analysis and visualisation, you can pass the category tree
 # to igraph
-tree_graph <- igraph::graph_from_data_frame(tree$edges, vertices = tree$nodes)
-tree_graph
+if (!is_wikkitidy_failure(tree)) {
+  tree_graph <- igraph::graph_from_data_frame(tree$edges, vertices = tree$nodes)
+  tree_graph
+}
 }
 \seealso{
 \code{\link[=gracefully]{gracefully()}}

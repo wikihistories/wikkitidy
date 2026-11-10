@@ -11,6 +11,7 @@
 #' @param language Vector of two-letter language codes (will be recycled if
 #'   length==1)
 #' @param simplify logical: should R simplify the result (see [return])
+#' @param failure_mode Either "quiet" or "error." See [get_rest_resource()]
 #'
 #' @return The return value depends on the `simplify` parameter.
 #' * If `simplify` == TRUE: A list of [tibble::tbl_df] objects the same
@@ -26,7 +27,7 @@
 #'
 #' @examples
 #' # Compare revision 847170467 to 851733941 on English Wikipedia
-#' get_diff(847170467, 851733941)
+#' get_diff(847170467, 851733941, failure_mode = "quiet")
 #'
 #' # The function is vectorised, so you can compare multiple pairs of revisions
 #' # in a single call
@@ -39,22 +40,26 @@
 #'   ) %>%
 #'   gracefully(next_result)
 #'
-#' if (tibble::is_tibble(revisions)) {
+#' if (!is_wikkitidy_failure(revisions)) {
 #'   revisions <- revisions %>%
 #'     tidyr::unnest(cols = c(revisions)) %>%
-#'     dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
+#'     dplyr::mutate(diffs = get_diff(
+#'       from = parentid, to = revid, failure_mode = "quiet"
+#'     ))
 #'
 #'   print(revisions)
 #' }
 #'
-get_diff <- function(from, to, language = "en", simplify = TRUE) {
+get_diff <- function(from, to, language = "en", simplify = TRUE,
+                     failure_mode = "error") {
   if (!rlang::is_scalar_logical(simplify)) {
     rlang::abort("`simplify` must be either TRUE or FALSE")
   }
   response_type <- if (simplify) "wikidiff2" else NULL
   get_rest_resource(
     "revision", from, "compare", to,
-    language = language, response_type = response_type)
+    language = language, response_type = response_type,
+    failure_mode = failure_mode)
 }
 
 diff_to_tbl <- function(diff_list) {

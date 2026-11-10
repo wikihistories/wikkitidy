@@ -5,7 +5,7 @@
 \title{Search for insertions, deletions or relocations of text between two versions
 of a Wikipedia page}
 \usage{
-get_diff(from, to, language = "en", simplify = TRUE)
+get_diff(from, to, language = "en", simplify = TRUE, failure_mode = "error")
 }
 \arguments{
 \item{from}{Vector of revision ids}
@@ -16,6 +16,8 @@ get_diff(from, to, language = "en", simplify = TRUE)
 length==1)}
 
 \item{simplify}{logical: should R simplify the result (see \link{return})}
+
+\item{failure_mode}{Either "quiet" or "error." See \code{\link[=get_rest_resource]{get_rest_resource()}}}
 }
 \value{
 The return value depends on the \code{simplify} parameter.
@@ -38,7 +40,7 @@ in any order, across any span of revisions.
 }
 \examples{
 # Compare revision 847170467 to 851733941 on English Wikipedia
-get_diff(847170467, 851733941)
+get_diff(847170467, 851733941, failure_mode = "quiet")
 
 # The function is vectorised, so you can compare multiple pairs of revisions
 # in a single call
@@ -51,10 +53,12 @@ revisions <- wiki_action_request() \%>\%
   ) \%>\%
   gracefully(next_result)
 
-if (tibble::is_tibble(revisions)) {
+if (!is_wikkitidy_failure(revisions)) {
   revisions <- revisions \%>\%
     tidyr::unnest(cols = c(revisions)) \%>\%
-    dplyr::mutate(diffs = get_diff(from = parentid, to = revid))
+    dplyr::mutate(diffs = get_diff(
+      from = parentid, to = revid, failure_mode = "quiet"
+    ))
 
   print(revisions)
 }

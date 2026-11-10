@@ -1,5 +1,10 @@
 # wikkitidy (development version)
 
+* New `wikkitidy_failure` class and `is_wikkitidy_failure()`. `gracefully()` now returns a `wikkitidy_failure` on HTTP errors and connection failures, and short-circuits if passed one
+* `failure_mode = "quiet"` in `get_rest_resource()` now records connection failures as a placeholder row (`error_code = NA`, with `error_message`)
+* `get_diff()` gains `failure_mode`
+* Live API examples now always fail gracefully
+
 * Added `skip_on_cran()` to remaining live Action API tests (`query_generate_pages()`, `query_list_pages()`, `query_by_title()`), which were failing on CRAN
 * `gracefully()` tests now skip if `webfakes` is not installed
 * Fixed `failure_mode = "quiet"` in `get_rest_resource()`: `error_code` column was dropped when some requests succeeded, and a vector (not tibble) was returned when all failed

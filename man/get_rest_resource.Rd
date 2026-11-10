@@ -37,7 +37,10 @@ be parsed using the schema.}
 
 \item{failure_mode}{How to respond if a request fails
 "error", the default: raise an error
-"quiet", silently return NA, and include the http error code in the response}
+"quiet", don't raise an error; instead return a placeholder for each failed
+request, preserving the number of rows. HTTP errors record the status in
+\code{error_code}. Connection failures (no response) record \code{error_code = NA}
+and the condition message in \code{error_message}.}
 }
 \value{
 A list of responses. If \code{response_format} == "json", then the responses

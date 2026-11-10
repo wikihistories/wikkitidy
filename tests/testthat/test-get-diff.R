@@ -13,6 +13,12 @@ test_that("`get_diff` returns a list of the right kind when simplify=FALSE", {
   expect_true(rlang::is_bare_list(diffs))
 })
 
+test_that("`get_diff` runs with failure_mode = 'quiet'", {
+  skip_on_cran()
+  diffs <- get_diff(847170467, 851733941, failure_mode = "quiet")
+  expect_s3_class(diffs, "tbl_df")
+})
+
 test_that("`get_diff` throws an error with simplify is the wrong type", {
   expect_error(get_diff(100, 200, simplify = 7), "must be either TRUE or FALSE")
 })

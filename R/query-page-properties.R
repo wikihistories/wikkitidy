@@ -29,8 +29,10 @@
 #' resp <- wiki_action_request() %>%
 #'   query_generate_pages("search", gsrsearch = "seagull") %>%
 #'   query_page_properties("info", inprop = "watchers") %>%
-#'   gracefully(next_batch) %>%
-#'   dplyr::select(pageid, ns, title, watchers)
+#'   gracefully(next_batch)
+#' if (!is_wikkitidy_failure(resp)) {
+#'   resp <- dplyr::select(resp, pageid, ns, title, watchers)
+#' }
 #' resp
 query_page_properties <- function(.req, property, ...) {
   check_module(property, "prop")

@@ -27,7 +27,10 @@
 #'   be parsed using the schema.
 #' @param failure_mode How to respond if a request fails
 #'   "error", the default: raise an error
-#'   "quiet", silently return NA, and include the http error code in the response
+#'   "quiet", don't raise an error; instead return a placeholder for each failed
+#'   request, preserving the number of rows. HTTP errors record the status in
+#'   `error_code`. Connection failures (no response) record `error_code = NA`
+#'   and the condition message in `error_message`.
 #'
 #' @return A list of responses. If `response_format` == "json", then the responses
 #'   will be simple R lists. If `response_format` == "html", then the responses
@@ -65,6 +68,9 @@ get_rest_resource <- function(
   }
   params <- vctrs::vec_recycle_common(!!!dots, language = language)
   get_one <- purrr::compose(!!!pipeline, .dir = "forward")
+  if (failure_mode == "quiet") {
+    get_one <- catch_connection_failure(get_one)
+  }
   response <- purrr::pmap(params, get_one, .progress = T)
   if (!is.null(response_type)) {
     class(response) <- c(response_type, class(response))
@@ -87,6 +93,23 @@ new_response_function <- function(response_format, failure_mode) {
     "error" = handler,
     "quiet" = handle_without_error(handler)
     )
+}
+
+catch_connection_failure <- function(fn) {
+  # Force, as callers rebind the name they pass in
+  force(fn)
+  function(...) {
+    tryCatch(
+      fn(...),
+      # No response exists, so there is no status code
+      httr2_failure = function(cnd) {
+        list(
+          error_code = NA_integer_,
+          error_message = conditionMessage(cnd)
+        )
+      }
+    )
+  }
 }
 
 handle_without_error <- function(handler) {

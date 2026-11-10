@@ -56,7 +56,7 @@ all_results <- preview \%>\%
 all_results
 
 # tidyr is useful for list-columns.
-if (tibble::is_tibble(all_results)) {
+if (!is_wikkitidy_failure(all_results)) {
   all_results \%>\%
     tidyr::unnest(cols=c(categories), names_sep = "_")
 }
