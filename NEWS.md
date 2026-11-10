@@ -1,3 +1,5 @@
+# wikkitidy (development version)
+
 # wikkitidy 0.2.0
 
 * New `wikkitidy_failure` class and `is_wikkitidy_failure()`. `gracefully()` now returns a `wikkitidy_failure` on HTTP errors and connection failures, and short-circuits if passed one
