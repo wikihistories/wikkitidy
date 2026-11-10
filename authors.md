@@ -11,12 +11,12 @@ Source:
 [`DESCRIPTION`](https://github.com/wikihistories/wikkitidy/blob/main/DESCRIPTION)
 
 Falk M (2026). *wikkitidy: Tidy Analysis of Wikipedia*. R package
-version 0.1.14.9000, <https://wikihistories.github.io/wikkitidy/>.
+version 0.2.0, <https://wikihistories.github.io/wikkitidy/>.
 
     @Manual{,
       title = {wikkitidy: Tidy Analysis of Wikipedia},
       author = {Michael Falk},
       year = {2026},
-      note = {R package version 0.1.14.9000},
+      note = {R package version 0.2.0},
       url = {https://wikihistories.github.io/wikkitidy/},
     }

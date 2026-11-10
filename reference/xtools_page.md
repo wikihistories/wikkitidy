@@ -109,7 +109,7 @@ auerbach
 #> # A tibble: 1 × 17
 #>   project page  watchers pageviews pageviews_offset revisions editors anon_edits
 #>   <chr>   <chr> <lgl>        <int>            <int>     <int>   <int>      <int>
-#> 1 de.wik… Eric… NA             523               30       455     153         42
+#> 1 de.wik… Eric… NA             539               30       455     153         42
 #> # ℹ 9 more variables: minor_edits <int>, creator <chr>,
 #> #   creator_editcount <lgl>, created_at <chr>, created_rev_id <int>,
 #> #   modified_at <chr>, secs_since_last_edit <int>, modified_rev_id <int>,

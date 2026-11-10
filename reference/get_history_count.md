@@ -86,5 +86,5 @@ authors
 #>   <chr>               <int> <lgl>
 #> 1 Jane Austen          6098 FALSE
 #> 2 William Shakespeare 13770 FALSE
-#> 3 Emily Dickinson      5803 FALSE
+#> 3 Emily Dickinson      5804 FALSE
 ```

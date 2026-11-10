@@ -1,6 +1,8 @@
 # Changelog
 
-## wikkitidy (development version)
+## wikkitidy 0.2.0
+
+CRAN release: 2026-11-10
 
 - New `wikkitidy_failure` class and
   [`is_wikkitidy_failure()`](https://wikihistories.github.io/wikkitidy/reference/is_wikkitidy_failure.md).
