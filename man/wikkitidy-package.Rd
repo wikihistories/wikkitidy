@@ -22,5 +22,10 @@ Useful links:
 \author{
 \strong{Maintainer}: Michael Falk \email{michaelgfalk@gmail.com} (\href{https://orcid.org/0000-0001-9261-8390}{ORCID}) [copyright holder]
 
+Authors:
+\itemize{
+  \item Michael Falk \email{michaelgfalk@gmail.com} (\href{https://orcid.org/0000-0001-9261-8390}{ORCID}) [copyright holder]
+}
+
 }
 \keyword{internal}

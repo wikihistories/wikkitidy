@@ -70,7 +70,9 @@ get_rest_resource <- function(
     class(response) <- c(response_type, class(response))
     response <- parse_response(response)
   }
-  response <- if (rlang::is_scalar_list(response)) response[[1]] else response
+  if (rlang::is_scalar_list(response) && !is.data.frame(response)) {
+    response <- response[[1]]
+  }
   response
 }
 

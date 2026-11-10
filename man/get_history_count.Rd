@@ -27,7 +27,7 @@ get_history_count(
 \item{failure_mode}{What to do if no data is found. See \code{\link[=get_rest_resource]{get_rest_resource()}}}
 }
 \value{
-A \link[tibble:tbl_df-class]{tibble::tbl_df} with two columns:
+A \link[tibble:tbl_df]{tibble::tbl_df} with two columns:
 \itemize{
 \item 'count': integer, the number of edits of the given type
 \item 'limit': logical, whether the 'count' exceeds the API's limit. Each type of

@@ -25,7 +25,7 @@ generator}
 \link{query_generate_pages}: The modified request, which can be passed to \link{next_batch} or
 \link{retrieve_all} as appropriate.
 
-\link{list_all_generators}: a \link[tibble:tbl_df-class]{tibble} of all the available generator
+\link{list_all_generators}: a \link[tibble:tbl_df]{tibble} of all the available generator
 modules. The \code{name} column gives the name of the generator, while the
 \code{group} column indicates whether the generator is based on a list module
 or a property module. Generators based on property modules can only be

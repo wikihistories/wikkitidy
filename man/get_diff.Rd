@@ -20,7 +20,7 @@ length==1)}
 \value{
 The return value depends on the \code{simplify} parameter.
 \itemize{
-\item If \code{simplify} == TRUE: A list of \link[tibble:tbl_df-class]{tibble::tbl_df} objects the same
+\item If \code{simplify} == TRUE: A list of \link[tibble:tbl_df]{tibble::tbl_df} objects the same
 length as \code{from} and \code{to}. Most of the response data is stripped away,
 leaving just the textual differences between the revisions, their location,
 type and 'highlightRanges' if the textual differences are complicated.

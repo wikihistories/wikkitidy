@@ -140,8 +140,10 @@ robust_bind <- function(response) {
   } else if (rlang::is_scalar_list(response) && !rlang::is_list(response[[1]])) {
     tibble::tibble(!!!response)
   } else {
+    # Union of all names, so e.g. `error_code` from failed requests is kept
     template_idx <- purrr::map_int(response, length) %>% which.max()
-    template <- names(response[[template_idx]])
+    template <- purrr::map(response, names) %>%
+      purrr::reduce(union, .init = names(response[[template_idx]]))
     response <- purrr::list_transpose(response, template = template, default = NA)
     response <- tibble::tibble(!!!response)
     response

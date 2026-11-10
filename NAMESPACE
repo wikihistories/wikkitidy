@@ -84,13 +84,19 @@ export(wikimedia_rest_request)
 export(wikkitidy_example)
 export(xtools_rest_request)
 importFrom(magrittr,"%>%")
-importFrom(pillar,tbl_format_footer)
-importFrom(pillar,tbl_sum)
-importFrom(rlang,":=")
-importFrom(rlang,.data)
-importFrom(rlang,as_label)
-importFrom(rlang,as_name)
-importFrom(rlang,enquo)
-importFrom(rlang,enquos)
-importFrom(vctrs,vec_ptype_abbr)
-importFrom(vctrs,vec_ptype_full)
+importFrom(pillar,
+  tbl_format_footer,
+  tbl_sum
+)
+importFrom(rlang,
+  ":=",
+  .data,
+  as_label,
+  as_name,
+  enquo,
+  enquos
+)
+importFrom(vctrs,
+  vec_ptype_abbr,
+  vec_ptype_full
+)

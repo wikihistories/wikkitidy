@@ -20,7 +20,7 @@ parse_response(response)
 }
 \value{
 A vector the same length as the response. Generally, this will be
-a simple vector, a \link[tibble:tbl_df-class]{tibble::tbl_df} or a list of \link[tibble:tbl_df-class]{tibble::tbl_df} objects.
+a simple vector, a \link[tibble:tbl_df]{tibble::tbl_df} or a list of \link[tibble:tbl_df]{tibble::tbl_df} objects.
 }
 \description{
 Wikipedia's APIs provide data using a range of different json schemas.

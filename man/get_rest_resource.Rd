@@ -43,7 +43,7 @@ be parsed using the schema.}
 A list of responses. If \code{response_format} == "json", then the responses
 will be simple R lists. If \code{response_format} == "html", then the responses
 will \code{xml_document} objects. If \code{response_type} is supplied, the response
-will be coerced into a \link[tibble:tbl_df-class]{tibble::tbl_df} or vector using the relevant schema.
+will be coerced into a \link[tibble:tbl_df]{tibble::tbl_df} or vector using the relevant schema.
 If the response is a 'scalar list' (i.e. a list of length == 1), then it is
 silently unlisted, returning a simple list or vector.
 }

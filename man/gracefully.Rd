@@ -25,7 +25,7 @@ policy. If you wrap a requesting method in \code{gracefully}, then any
 errors of type \code{httr2_http} will be caught and no error will be thrown.
 }
 \examples{
-\dontshow{if (rlang::is_installed("webfakes")) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (rlang::is_installed("webfakes")) withAutoprint(\{ # examplesIf}
 # This fails without throwing an error
 req <- httr2::request(httr2::example_url()) |>
   httr2::req_url_path("/status/404")
