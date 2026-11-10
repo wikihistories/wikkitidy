@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/wikihistories/wikkitidy/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/wikihistories/wikkitidy/blob/v0.2.0/DESCRIPTION)
 
 Falk M (2026). *wikkitidy: Tidy Analysis of Wikipedia*. R package
 version 0.2.0, <https://wikihistories.github.io/wikkitidy/>.
